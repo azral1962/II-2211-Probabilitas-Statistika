@@ -22,7 +22,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -82,7 +102,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Materi Kuliah Per Minggu</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html">Pengantar</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -110,19 +130,19 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./index.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Materi Kuliah Per Minggu</span></span></a>
+ <span class="menu-text">Pengantar</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./petunjuk/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Petunjuk</span></span></a>
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Petunjuk</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./materi/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Preface</span></a>
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Bahan Kuliah</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -171,7 +191,14 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#materi-kuliah-per-minggu" id="toc-materi-kuliah-per-minggu" class="nav-link active" data-scroll-target="#materi-kuliah-per-minggu"><span class="header-section-number">1</span> Materi Kuliah Per Minggu</a></li>
+  <li><a href="#pengantar" id="toc-pengantar" class="nav-link active" data-scroll-target="#pengantar">Pengantar</a></li>
+  <li><a href="#pengantar-1" id="toc-pengantar-1" class="nav-link" data-scroll-target="#pengantar-1">Pengantar</a>
+  <ul class="collapse">
+  <li><a href="#topik" id="toc-topik" class="nav-link" data-scroll-target="#topik">Topik</a></li>
+  <li><a href="#orientasi-nilai" id="toc-orientasi-nilai" class="nav-link" data-scroll-target="#orientasi-nilai">Orientasi Nilai</a></li>
+  <li><a href="#konsep-kms" id="toc-konsep-kms" class="nav-link" data-scroll-target="#konsep-kms">Konsep KMS</a></li>
+  <li><a href="#proses-pembelajaran" id="toc-proses-pembelajaran" class="nav-link" data-scroll-target="#proses-pembelajaran">Proses Pembelajaran</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -210,12 +237,44 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="materi-kuliah-per-minggu" class="level1" data-number="1">
-<h1 data-number="1"><span class="header-section-number">1</span> Materi Kuliah Per Minggu</h1>
-<p>Sedang disusun</p>
-<p>To learn more about Quarto books visit <a href="https://quarto.org/docs/books" class="uri">https://quarto.org/docs/books</a>.</p>
+<section id="pengantar" class="level1 unnumbered">
+<h1 class="unnumbered">Pengantar</h1>
+<p>Selamat datang di kuliah II-2211 Probabilitas Statistika</p>
+</section>
+<section id="pengantar-1" class="level1 unnumbered">
+<h1 class="unnumbered">Pengantar</h1>
+<p>Kompetensi yang diharapkan dari lulusan kuliah ini memahami dan menguasai konsep probabilitas dan statistika, lalu dapat menerapkan konsep itu untuk memecakan masalah analisa, dan pengambilan kesimpulan .</p>
+<section id="topik" class="level2">
+<h2 class="anchored" data-anchor-id="topik">Topik</h2>
+<p>Saat ini ada 13 topik materi pengetahuan yang perlu dikuasai, satu umtuk tiap minggu. Juga ada enam problem set mewakili pengujian pengusaan materi. Di tahun tahun-tahun sebelumnya soal-soal ini, dan kunci jawaban, sudah tersedia. Namun beban kognitif terlalu berat bagi seorang mahasiwa sendirian untuk mengerjakan semua soal ini dengan kualitas solusi yang memuaskan.</p>
+</section>
+<section id="orientasi-nilai" class="level2">
+<h2 class="anchored" data-anchor-id="orientasi-nilai">Orientasi Nilai</h2>
+<p>Di era kecerdasan artifisial (artificial intelligence, AI), pendidikan tidak lagi menekan kan pada pengetahuan, tetapi pada perannya terhadap penciptaan nilai. Saat ini kuliah ini hendak menonjolkan edukasi nilai yang penting, seperti bekerjasama, sensitif pada hal-hal yang berharga, seperti penggunaan waktu, kualitas pekerjaan, dan komitment untuk memberikan hasil.</p>
+</section>
+<section id="konsep-kms" class="level2">
+<h2 class="anchored" data-anchor-id="konsep-kms">Konsep KMS</h2>
+<p>Oleh sebab itu mulai tahun ini proses belajar coba dilakukan dengan mengembangkan sistem penglolaan pengetahuan (knowledge management system, KMS) yang mengakuisi pengetahuan, dan menerapkan pada berbagai persoalan.</p>
+<p>Dalam bentuk yang paling sederhana, KMS yang dimaksud adalah dokumen pemrograman literasi, di mana ringkasan pengetahuan dan kode (python, R, dan yang sejenis) terembedded di dalamnya, yanng diindex perdasarkan topik materi, jenis persoalan, serta pola berpikir untuk menyelasikan masalah.</p>
+<p>Untuk mengembangkan KMS, diidentifikasi 1. Tiga belas topik materi 2. Lima jenis kategori persoalan 3. Sebuah pola berpikir solutif dengan lima langkah di dalamnya</p>
+</section>
+<section id="proses-pembelajaran" class="level2">
+<h2 class="anchored" data-anchor-id="proses-pembelajaran">Proses Pembelajaran</h2>
+<p>Instruktur menyediakan problem set serta set ujian-ujian yang sudah pernah, sebagai input, dan secara bertahap mahasiswa mengembakan solusi dan menjelaskannya ke dalam Dokumen KMS, sebagai ouput. Bila hal ini dilakukan dengan baik, maka saat menghadapi soal (kuiz atau ujian), mahasiswa mencari soal yang serupa di dalam KMS ini, kemudian memanfaatkan langkah penyusunan solusi untuk menjawabnya. Kuliah ini sudah menyediakan kumpulan soal dari berbagai sumber. Tugas peserta adalah menganalisa soal dengan mengidentifikasi topik apa, jenis apa, dan pola berpikir apa yang paling tepat untuk memecahkan persoalan ini.</p>
+<p>Jadi garis besar proses belajar yang ditempuh mahasiswa: 1. Setiap Minggu, mahasiswa mendapatkan tugas dari problem-set, sebagai “training set”. 2. Mahasiswa ber kolaborasi menyusun prinsip-prinsip ke dalam dokumen ini, serta menggunakannya untuk menjawab problem set. 2, Instruktur memberikan Kuiz, dan peserta mendemonstrasikan penggunaan KMS untuk menjawabnya secara cepat.</p>
+<p>Jadi untuk pertamakali mahasiswa diminta mengerjaan <em>semua</em> soal latihan dengan benar sebagai ukuran kompetensi. Target ini diharapkan bisa dicapai menggunan KMS yang dikembangkan bersama dalam tim.</p>
+<p>Dalam kuliah ini penggunaan AI dianjurkan dalam proses akuisisi dan pengelolaan KMS, tetapi tidak untuk ujian.</p>
+<p>Selamat Belajar</p>
+<p>This is a book created from markdown and executable code.</p>
+<p>See <span class="citation" data-cites="knuth84">Knuth (<a href="references.html#ref-knuth84" role="doc-biblioref">1984</a>)</span> for additional discussion of literate programming.</p>
 
 
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">
+<div id="ref-knuth84" class="csl-entry" role="listitem">
+Knuth, Donald E. 1984. <span>“Literate Programming.”</span> <em>Comput. J.</em> 27 (2): 97–111. <a href="https://doi.org/10.1093/comjnl/27.2.97">https://doi.org/10.1093/comjnl/27.2.97</a>.
+</div>
+</div>
+</section>
 </section>
 
 </main> <!-- /main -->
@@ -641,7 +700,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   </div>
   <div class="nav-page nav-page-next">
       <a href="./petunjuk/index.html" class="pagination-link" aria-label="Petunjuk">
-        <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Petunjuk</span></span> <i class="bi bi-arrow-right-short"></i>
+        <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Petunjuk</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

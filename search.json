@@ -4,9 +4,49 @@
     "href": "index.html",
     "title": "II-2211 Probabilitas dan Statistika",
     "section": "",
-    "text": "1 Materi Kuliah Per Minggu\nSedang disusun\nTo learn more about Quarto books visit https://quarto.org/docs/books.",
+    "text": "Pengantar\nSelamat datang di kuliah II-2211 Probabilitas Statistika",
     "crumbs": [
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Materi Kuliah Per Minggu</span>"
+      "Pengantar"
+    ]
+  },
+  {
+    "objectID": "index.html#topik",
+    "href": "index.html#topik",
+    "title": "II-2211 Probabilitas dan Statistika",
+    "section": "Topik",
+    "text": "Topik\nSaat ini ada 13 topik materi pengetahuan yang perlu dikuasai, satu umtuk tiap minggu. Juga ada enam problem set mewakili pengujian pengusaan materi. Di tahun tahun-tahun sebelumnya soal-soal ini, dan kunci jawaban, sudah tersedia. Namun beban kognitif terlalu berat bagi seorang mahasiwa sendirian untuk mengerjakan semua soal ini dengan kualitas solusi yang memuaskan.",
+    "crumbs": [
+      "Pengantar"
+    ]
+  },
+  {
+    "objectID": "index.html#orientasi-nilai",
+    "href": "index.html#orientasi-nilai",
+    "title": "II-2211 Probabilitas dan Statistika",
+    "section": "Orientasi Nilai",
+    "text": "Orientasi Nilai\nDi era kecerdasan artifisial (artificial intelligence, AI), pendidikan tidak lagi menekan kan pada pengetahuan, tetapi pada perannya terhadap penciptaan nilai. Saat ini kuliah ini hendak menonjolkan edukasi nilai yang penting, seperti bekerjasama, sensitif pada hal-hal yang berharga, seperti penggunaan waktu, kualitas pekerjaan, dan komitment untuk memberikan hasil.",
+    "crumbs": [
+      "Pengantar"
+    ]
+  },
+  {
+    "objectID": "index.html#konsep-kms",
+    "href": "index.html#konsep-kms",
+    "title": "II-2211 Probabilitas dan Statistika",
+    "section": "Konsep KMS",
+    "text": "Konsep KMS\nOleh sebab itu mulai tahun ini proses belajar coba dilakukan dengan mengembangkan sistem penglolaan pengetahuan (knowledge management system, KMS) yang mengakuisi pengetahuan, dan menerapkan pada berbagai persoalan.\nDalam bentuk yang paling sederhana, KMS yang dimaksud adalah dokumen pemrograman literasi, di mana ringkasan pengetahuan dan kode (python, R, dan yang sejenis) terembedded di dalamnya, yanng diindex perdasarkan topik materi, jenis persoalan, serta pola berpikir untuk menyelasikan masalah.\nUntuk mengembangkan KMS, diidentifikasi 1. Tiga belas topik materi 2. Lima jenis kategori persoalan 3. Sebuah pola berpikir solutif dengan lima langkah di dalamnya",
+    "crumbs": [
+      "Pengantar"
+    ]
+  },
+  {
+    "objectID": "index.html#proses-pembelajaran",
+    "href": "index.html#proses-pembelajaran",
+    "title": "II-2211 Probabilitas dan Statistika",
+    "section": "Proses Pembelajaran",
+    "text": "Proses Pembelajaran\nInstruktur menyediakan problem set serta set ujian-ujian yang sudah pernah, sebagai input, dan secara bertahap mahasiswa mengembakan solusi dan menjelaskannya ke dalam Dokumen KMS, sebagai ouput. Bila hal ini dilakukan dengan baik, maka saat menghadapi soal (kuiz atau ujian), mahasiswa mencari soal yang serupa di dalam KMS ini, kemudian memanfaatkan langkah penyusunan solusi untuk menjawabnya. Kuliah ini sudah menyediakan kumpulan soal dari berbagai sumber. Tugas peserta adalah menganalisa soal dengan mengidentifikasi topik apa, jenis apa, dan pola berpikir apa yang paling tepat untuk memecahkan persoalan ini.\nJadi garis besar proses belajar yang ditempuh mahasiswa: 1. Setiap Minggu, mahasiswa mendapatkan tugas dari problem-set, sebagai “training set”. 2. Mahasiswa ber kolaborasi menyusun prinsip-prinsip ke dalam dokumen ini, serta menggunakannya untuk menjawab problem set. 2, Instruktur memberikan Kuiz, dan peserta mendemonstrasikan penggunaan KMS untuk menjawabnya secara cepat.\nJadi untuk pertamakali mahasiswa diminta mengerjaan semua soal latihan dengan benar sebagai ukuran kompetensi. Target ini diharapkan bisa dicapai menggunan KMS yang dikembangkan bersama dalam tim.\nDalam kuliah ini penggunaan AI dianjurkan dalam proses akuisisi dan pengelolaan KMS, tetapi tidak untuk ujian.\nSelamat Belajar\nThis is a book created from markdown and executable code.\nSee Knuth (1984) for additional discussion of literate programming.\n\n\n\n\nKnuth, Donald E. 1984. “Literate Programming.” Comput. J. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97.",
+    "crumbs": [
+      "Pengantar"
     ]
   },
   {
@@ -16,17 +56,17 @@
     "section": "",
     "text": "Sedang disusun\nTo learn more about Quarto books visit https://quarto.org/docs/books.",
     "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Petunjuk</span>"
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Petunjuk</span>"
     ]
   },
   {
     "objectID": "materi/index.html",
     "href": "materi/index.html",
-    "title": "Preface",
+    "title": "Bahan Kuliah",
     "section": "",
     "text": "This is a Quarto book.\nTo learn more about Quarto books visit https://quarto.org/docs/books.",
     "crumbs": [
-      "Preface"
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Bahan Kuliah</span>"
     ]
   },
   {
