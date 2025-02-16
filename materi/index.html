@@ -2,12 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.6.40">
+<meta name="generator" content="quarto-1.4.553">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Bahan Kuliah – II-2211 Probabilitas dan Statistika</title>
+<title>II-2211 Probabilitas dan Statistika - Bahan Kuliah</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -19,6 +19,40 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -37,10 +71,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-549806ee2085284f45b00abea8c6df48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-8da5b4427184b79ecddefad3d342027e.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -78,13 +112,13 @@ ul.task-list li input[type="checkbox"] {
   <header id="quarto-header" class="headroom fixed-top">
   <nav class="quarto-secondary-nav">
     <div class="container-fluid d-flex">
-      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
         <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../materi/index.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Bahan Kuliah</span></a></li></ol></nav>
-        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
-      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+      <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
         <i class="bi bi-search"></i>
       </button>
     </div>
@@ -165,8 +199,46 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#pendahuluan" id="toc-pendahuluan" class="nav-link active" data-scroll-target="#pendahuluan"><strong>Pendahuluan</strong></a></li>
+  <li><a href="#tujuan-pembelajaran" id="toc-tujuan-pembelajaran" class="nav-link" data-scroll-target="#tujuan-pembelajaran"><strong>Tujuan Pembelajaran</strong></a></li>
+  <li><a href="#definisi-probabilitas" id="toc-definisi-probabilitas" class="nav-link" data-scroll-target="#definisi-probabilitas"><strong>Definisi Probabilitas</strong></a>
+  <ul class="collapse">
+  <li><a href="#contoh-sederhana" id="toc-contoh-sederhana" class="nav-link" data-scroll-target="#contoh-sederhana"><strong>Contoh Sederhana</strong></a></li>
+  </ul></li>
+  <li><a href="#statistik-ilmu-data" id="toc-statistik-ilmu-data" class="nav-link" data-scroll-target="#statistik-ilmu-data"><strong>Statistik: Ilmu Data</strong></a></li>
+  <li><a href="#quadran-deterministik-vs-prediktabilitas" id="toc-quadran-deterministik-vs-prediktabilitas" class="nav-link" data-scroll-target="#quadran-deterministik-vs-prediktabilitas"><strong>Quadran Deterministik vs Prediktabilitas</strong></a></li>
+  <li><a href="#peran-probabilitas-dan-statistik" id="toc-peran-probabilitas-dan-statistik" class="nav-link" data-scroll-target="#peran-probabilitas-dan-statistik"><strong>Peran Probabilitas dan Statistik</strong></a></li>
+  <li><a href="#kesimpulan" id="toc-kesimpulan" class="nav-link" data-scroll-target="#kesimpulan"><strong>Kesimpulan</strong></a></li>
+  <li><a href="#diskusi" id="toc-diskusi" class="nav-link" data-scroll-target="#diskusi"><strong>Diskusi</strong></a></li>
+  <li><a href="#prinsip-dasar" id="toc-prinsip-dasar" class="nav-link" data-scroll-target="#prinsip-dasar">Prinsip Dasar</a>
+  <ul class="collapse">
+  <li><a href="#masalah-yang-dapat-diselesaikan-dengan-probabilitas-dan-statistika" id="toc-masalah-yang-dapat-diselesaikan-dengan-probabilitas-dan-statistika" class="nav-link" data-scroll-target="#masalah-yang-dapat-diselesaikan-dengan-probabilitas-dan-statistika"><strong>2. Masalah yang Dapat Diselesaikan dengan Probabilitas dan Statistika</strong></a></li>
+  <li><a href="#bidang-penerapan-ilmu-probabilitas-dan-statistika" id="toc-bidang-penerapan-ilmu-probabilitas-dan-statistika" class="nav-link" data-scroll-target="#bidang-penerapan-ilmu-probabilitas-dan-statistika"><strong>3. Bidang Penerapan Ilmu Probabilitas dan Statistika</strong></a></li>
+  <li><a href="#kesimpulan-1" id="toc-kesimpulan-1" class="nav-link" data-scroll-target="#kesimpulan-1"><strong>Kesimpulan</strong></a></li>
+  </ul></li>
+  <li><a href="#kategori-problem" id="toc-kategori-problem" class="nav-link" data-scroll-target="#kategori-problem">Kategori Problem</a>
+  <ul class="collapse">
+  <li><a href="#a.-problem-set-konseptual-pemahaman-teori" id="toc-a.-problem-set-konseptual-pemahaman-teori" class="nav-link" data-scroll-target="#a.-problem-set-konseptual-pemahaman-teori"><strong>A. Problem Set Konseptual (Pemahaman Teori)</strong></a></li>
+  <li><a href="#b.-problem-set-perhitungan-kuantitatif" id="toc-b.-problem-set-perhitungan-kuantitatif" class="nav-link" data-scroll-target="#b.-problem-set-perhitungan-kuantitatif"><strong>B. Problem Set Perhitungan (Kuantitatif)</strong></a></li>
+  <li><a href="#c.-problem-set-simulasi-pemrograman" id="toc-c.-problem-set-simulasi-pemrograman" class="nav-link" data-scroll-target="#c.-problem-set-simulasi-pemrograman"><strong>C. Problem Set Simulasi &amp; Pemrograman</strong></a></li>
+  <li><a href="#d.-problem-set-aplikasi-dunia-nyata" id="toc-d.-problem-set-aplikasi-dunia-nyata" class="nav-link" data-scroll-target="#d.-problem-set-aplikasi-dunia-nyata"><strong>D. Problem Set Aplikasi Dunia Nyata</strong></a></li>
+  </ul></li>
+  <li><a href="#pola-berpikir-probabilitas-dan-statistika-dalam-menjawab-problem-set" id="toc-pola-berpikir-probabilitas-dan-statistika-dalam-menjawab-problem-set" class="nav-link" data-scroll-target="#pola-berpikir-probabilitas-dan-statistika-dalam-menjawab-problem-set"><strong>2. Pola Berpikir Probabilitas dan Statistika dalam Menjawab Problem Set</strong></a>
+  <ul class="collapse">
+  <li><a href="#a.-memahami-konteks-masalah" id="toc-a.-memahami-konteks-masalah" class="nav-link" data-scroll-target="#a.-memahami-konteks-masalah"><strong>A. Memahami Konteks Masalah</strong></a></li>
+  <li><a href="#b.-menentukan-model-probabilitas-atau-statistik-yang-sesuai" id="toc-b.-menentukan-model-probabilitas-atau-statistik-yang-sesuai" class="nav-link" data-scroll-target="#b.-menentukan-model-probabilitas-atau-statistik-yang-sesuai"><strong>B. Menentukan Model Probabilitas atau Statistik yang Sesuai</strong></a></li>
+  <li><a href="#c.-melakukan-perhitungan-atau-simulasi" id="toc-c.-melakukan-perhitungan-atau-simulasi" class="nav-link" data-scroll-target="#c.-melakukan-perhitungan-atau-simulasi"><strong>C. Melakukan Perhitungan atau Simulasi</strong></a></li>
+  <li><a href="#d.-menafsirkan-hasil" id="toc-d.-menafsirkan-hasil" class="nav-link" data-scroll-target="#d.-menafsirkan-hasil"><strong>D. Menafsirkan Hasil</strong></a></li>
+  <li><a href="#e.-mengevaluasi-memberikan-insight" id="toc-e.-mengevaluasi-memberikan-insight" class="nav-link" data-scroll-target="#e.-mengevaluasi-memberikan-insight"><strong>E. Mengevaluasi &amp; Memberikan Insight</strong></a></li>
+  </ul></li>
+  <li><a href="#kesimpulan-2" id="toc-kesimpulan-2" class="nav-link" data-scroll-target="#kesimpulan-2"><strong>Kesimpulan</strong></a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -190,10 +262,398 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<section id="pendahuluan" class="level2">
+<h2 class="anchored" data-anchor-id="pendahuluan"><strong>Pendahuluan</strong></h2>
+<ul>
+<li><strong>Probabilitas dan Statistik</strong> adalah cabang matematika yang berperan penting dalam berbagai bidang.</li>
+<li>Digunakan untuk menganalisis data, membuat prediksi, dan mengambil keputusan berbasis bukti.</li>
+</ul>
+</section>
+<section id="tujuan-pembelajaran" class="level2">
+<h2 class="anchored" data-anchor-id="tujuan-pembelajaran"><strong>Tujuan Pembelajaran</strong></h2>
+<ol type="1">
+<li>Memahami konsep dasar probabilitas dan statistik.</li>
+<li>Mengenal aplikasi probabilitas dan statistik dalam dunia nyata.</li>
+<li>Menyadari pentingnya data dalam pengambilan keputusan.</li>
+</ol>
+</section>
+<section id="definisi-probabilitas" class="level2">
+<h2 class="anchored" data-anchor-id="definisi-probabilitas"><strong>Definisi Probabilitas</strong></h2>
+<ul>
+<li>Probabilitas adalah <strong>ukuran kemungkinan</strong> terjadinya suatu peristiwa.</li>
+<li>Dituliskan dalam rentang <strong>0 hingga 1</strong>, di mana:
+<ul>
+<li><strong>0</strong> berarti tidak mungkin terjadi.</li>
+<li><strong>1</strong> berarti pasti terjadi.</li>
+</ul></li>
+</ul>
+<section id="contoh-sederhana" class="level3">
+<h3 class="anchored" data-anchor-id="contoh-sederhana"><strong>Contoh Sederhana</strong></h3>
+<ul>
+<li>Melempar koin:
+<ul>
+<li>Peluang muncul <strong>kepala</strong> = 1/2</li>
+<li>Peluang muncul <strong>ekor</strong> = 1/2</li>
+</ul></li>
+</ul>
+</section>
+</section>
+<section id="statistik-ilmu-data" class="level2">
+<h2 class="anchored" data-anchor-id="statistik-ilmu-data"><strong>Statistik: Ilmu Data</strong></h2>
+<ul>
+<li>Statistik adalah ilmu yang mempelajari cara <strong>mengumpulkan, mengolah, menganalisis, dan menyajikan data</strong>.</li>
+<li>Statistik terbagi menjadi <strong>dua jenis utama</strong>:
+<ul>
+<li><strong>Statistik Deskriptif</strong> (ringkasan data)</li>
+<li><strong>Statistik Inferensial</strong> (pengambilan kesimpulan dari data)</li>
+</ul></li>
+</ul>
+</section>
+<section id="quadran-deterministik-vs-prediktabilitas" class="level2">
+<h2 class="anchored" data-anchor-id="quadran-deterministik-vs-prediktabilitas"><strong>Quadran Deterministik vs Prediktabilitas</strong></h2>
+<table class="table">
+<colgroup>
+<col style="width: 21%">
+<col style="width: 39%">
+<col style="width: 39%">
+</colgroup>
+<thead>
+<tr class="header">
+<th></th>
+<th><strong>Prediktabilitas Tinggi</strong></th>
+<th><strong>Prediktabilitas Rendah</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Deterministik</strong></td>
+<td>Model <strong>Persamaan Diferensial</strong></td>
+<td>Model <strong>Chaos</strong></td>
+</tr>
+<tr class="even">
+<td><strong>Non-Deterministik</strong></td>
+<td>Model <strong>Random</strong></td>
+<td>Model <strong>Undetermined</strong></td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><strong>Persamaan Diferensial</strong>: Sistem yang dapat diprediksi dengan model matematis tertentu.</li>
+<li><strong>Chaos</strong>: Sistem deterministik tetapi sangat sensitif terhadap kondisi awal.</li>
+<li><strong>Random</strong>: Sistem yang benar-benar acak tanpa pola yang jelas.</li>
+<li><strong>Undetermined</strong>: Sistem yang tidak memiliki pola pasti dan sulit diprediksi.</li>
+</ul>
+</section>
+<section id="peran-probabilitas-dan-statistik" class="level2">
+<h2 class="anchored" data-anchor-id="peran-probabilitas-dan-statistik"><strong>Peran Probabilitas dan Statistik</strong></h2>
+<ul>
+<li>Digunakan dalam:
+<ul>
+<li><strong>Ilmu Komputer</strong> (AI, Machine Learning)</li>
+<li><strong>Kesehatan</strong> (Analisis medis)</li>
+<li><strong>Ekonomi</strong> (Prediksi pasar)</li>
+<li><strong>Teknik</strong> (Keandalan sistem)</li>
+</ul></li>
+</ul>
+</section>
+<section id="kesimpulan" class="level2">
+<h2 class="anchored" data-anchor-id="kesimpulan"><strong>Kesimpulan</strong></h2>
+<ul>
+<li>Probabilitas dan statistik membantu kita dalam memahami <strong>ketidakpastian</strong>.</li>
+<li>Dengan statistik, kita dapat <strong>mengambil keputusan lebih baik</strong> berdasarkan data.</li>
+</ul>
+</section>
+<section id="diskusi" class="level2">
+<h2 class="anchored" data-anchor-id="diskusi"><strong>Diskusi</strong></h2>
+<ul>
+<li>Apa contoh aplikasi probabilitas dan statistik yang pernah Anda temui?</li>
+<li>Bagaimana probabilitas membantu dalam pengambilan keputusan sehari-hari?</li>
+</ul>
+</section>
+<section id="prinsip-dasar" class="level2">
+<h2 class="anchored" data-anchor-id="prinsip-dasar">Prinsip Dasar</h2>
+<p>Prinsip Dasar Probabilitas dan Statistika P&amp;S 1. Apa saja materi matakuliah prinsip dasar P&amp;S? 2. Masalah seperti apa yang di pecahkan ilmu P&amp;S 3. Bidang apa saja penerapan ilmu P&amp;S</p>
+<pre><code>### **1. Materi Mata Kuliah Prinsip Dasar Probabilitas dan Statistika**</code></pre>
+<p>Mata kuliah <strong>Prinsip Dasar Probabilitas dan Statistika</strong> mencakup konsep fundamental yang menjadi dasar bagi analisis data dan pengambilan keputusan berbasis probabilitas. Berikut adalah materi utama yang biasanya diajarkan:</p>
+<section id="a.-dasar-dasar-probabilitas" class="level4">
+<h4 class="anchored" data-anchor-id="a.-dasar-dasar-probabilitas"><strong>A. Dasar-dasar Probabilitas</strong></h4>
+<ul>
+<li>Konsep <strong>Peluang dan Ketidakpastian</strong>: Apa itu probabilitas? Mengapa penting dalam pengambilan keputusan?</li>
+<li><strong>Ruang Sampel dan Kejadian</strong>: Cara mendefinisikan eksperimen probabilistik.</li>
+<li><strong>Aksioma dan Teorema Probabilitas</strong>: Hukum dasar dalam probabilitas.</li>
+<li><strong>Probabilitas Bersyarat dan Teorema Bayes</strong>: Bagaimana informasi baru dapat memperbarui probabilitas kejadian.</li>
+<li><strong>Variabel Acak dan Distribusi</strong>: Distribusi diskrit dan kontinu (Bernoulli, Binomial, Poisson, Normal, dsb.).</li>
+</ul>
+</section>
+<section id="b.-dasar-dasar-statistika" class="level4">
+<h4 class="anchored" data-anchor-id="b.-dasar-dasar-statistika"><strong>B. Dasar-dasar Statistika</strong></h4>
+<ul>
+<li><strong>Statistika Deskriptif</strong>: Mean, median, modus, variansi, deviasi standar.</li>
+<li><strong>Visualisasi Data</strong>: Histogram, boxplot, scatter plot, dsb.</li>
+<li><strong>Inferensi Statistik</strong>:
+<ul>
+<li>Estimasi parameter (estimasi titik dan selang kepercayaan).</li>
+<li>Pengujian hipotesis (uji-t, uji-z, uji chi-square, dsb.).</li>
+<li>Regresi dan Korelasi.</li>
+</ul></li>
+<li><strong>Teori Estimasi dan Sampling</strong>: Teknik pengambilan sampel dan distribusi sampling.</li>
+<li><strong>Uji Hipotesis dan Pengambilan Keputusan</strong>: Cara menggunakan statistik dalam pengambilan keputusan berbasis data.</li>
+</ul>
+</section>
+<section id="c.-penerapan-dalam-analisis-data-dan-machine-learning" class="level4">
+<h4 class="anchored" data-anchor-id="c.-penerapan-dalam-analisis-data-dan-machine-learning"><strong>C. Penerapan dalam Analisis Data dan Machine Learning</strong></h4>
+<ul>
+<li><strong>Pemodelan Probabilistik</strong>: Model probabilitas dalam pengambilan keputusan.</li>
+<li><strong>Simulasi Monte Carlo</strong>: Teknik simulasi berbasis probabilitas.</li>
+<li><strong>Statistika dalam Big Data dan AI</strong>: Probabilitas dalam algoritma machine learning.</li>
+<li><strong>Penggunaan Perangkat Lunak Statistik</strong>: Python, R, Excel, dan tools lainnya.</li>
+</ul>
+<hr>
+</section>
+<section id="masalah-yang-dapat-diselesaikan-dengan-probabilitas-dan-statistika" class="level3">
+<h3 class="anchored" data-anchor-id="masalah-yang-dapat-diselesaikan-dengan-probabilitas-dan-statistika"><strong>2. Masalah yang Dapat Diselesaikan dengan Probabilitas dan Statistika</strong></h3>
+<p>Ilmu <strong>Probabilitas dan Statistika</strong> digunakan untuk memecahkan berbagai masalah di dunia nyata yang melibatkan <strong>ketidakpastian</strong>, <strong>pengambilan keputusan</strong>, dan <strong>analisis data</strong>. Beberapa contoh masalah yang dapat diselesaikan meliputi:</p>
+<section id="a.-pengambilan-keputusan-dalam-ketidakpastian" class="level4">
+<h4 class="anchored" data-anchor-id="a.-pengambilan-keputusan-dalam-ketidakpastian"><strong>A. Pengambilan Keputusan dalam Ketidakpastian</strong></h4>
+<ul>
+<li><strong>Prediksi Cuaca</strong>: Probabilitas hujan berdasarkan data cuaca historis.</li>
+<li><strong>Analisis Risiko Keuangan</strong>: Menentukan kemungkinan gagal bayar suatu investasi.</li>
+<li><strong>Manajemen Rantai Pasok</strong>: Memastikan ketersediaan stok barang dengan memperhitungkan variabilitas permintaan.</li>
+</ul>
+</section>
+<section id="b.-analisis-data-dan-pemodelan-statistik" class="level4">
+<h4 class="anchored" data-anchor-id="b.-analisis-data-dan-pemodelan-statistik"><strong>B. Analisis Data dan Pemodelan Statistik</strong></h4>
+<ul>
+<li><strong>Deteksi Anomali dalam Keamanan Siber</strong>: Menggunakan distribusi probabilitas untuk mengidentifikasi aktivitas mencurigakan dalam jaringan.</li>
+<li><strong>Analisis Tren Konsumen</strong>: Memahami perilaku pelanggan berdasarkan data transaksi.</li>
+<li><strong>Pemantauan Kesehatan Masyarakat</strong>: Prediksi penyebaran penyakit berdasarkan data epidemiologi.</li>
+</ul>
+</section>
+<section id="c.-eksperimen-dan-optimasi" class="level4">
+<h4 class="anchored" data-anchor-id="c.-eksperimen-dan-optimasi"><strong>C. Eksperimen dan Optimasi</strong></h4>
+<ul>
+<li><strong>A/B Testing</strong> dalam Pengembangan Produk: Membandingkan efektivitas dua versi produk atau kampanye pemasaran.</li>
+<li><strong>Optimasi Produksi di Industri</strong>: Menentukan parameter optimal untuk meningkatkan efisiensi pabrik.</li>
+<li><strong>Analisis Kinerja Sistem Komputer</strong>: Memodelkan waktu respons sistem dengan distribusi probabilitas.</li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="bidang-penerapan-ilmu-probabilitas-dan-statistika" class="level3">
+<h3 class="anchored" data-anchor-id="bidang-penerapan-ilmu-probabilitas-dan-statistika"><strong>3. Bidang Penerapan Ilmu Probabilitas dan Statistika</strong></h3>
+<p>Ilmu <strong>Probabilitas dan Statistika</strong> digunakan dalam berbagai bidang, mulai dari sains hingga industri. Beberapa bidang utama penerapannya meliputi:</p>
+<section id="a.-teknologi-dan-sistem-informasi" class="level4">
+<h4 class="anchored" data-anchor-id="a.-teknologi-dan-sistem-informasi"><strong>A. Teknologi dan Sistem Informasi</strong></h4>
+<ul>
+<li><strong>Machine Learning dan AI</strong>: Banyak algoritma AI menggunakan konsep probabilitas dan statistika, seperti Naïve Bayes, Hidden Markov Models, dan Gaussian Mixture Models.</li>
+<li><strong>Keamanan Siber</strong>: Deteksi serangan dengan analisis probabilitas.</li>
+<li><strong>Pemrosesan Bahasa Alami (NLP)</strong>: Model probabilistik untuk memahami teks, seperti LLM (Large Language Model).</li>
+</ul>
+</section>
+<section id="b.-keuangan-dan-ekonomi" class="level4">
+<h4 class="anchored" data-anchor-id="b.-keuangan-dan-ekonomi"><strong>B. Keuangan dan Ekonomi</strong></h4>
+<ul>
+<li><strong>Analisis Risiko Investasi</strong>: Model stokastik dalam pasar saham.</li>
+<li><strong>Prediksi Inflasi dan Pertumbuhan Ekonomi</strong>: Menggunakan model regresi dan analisis data time-series.</li>
+<li><strong>Penentuan Kredit dan Asuransi</strong>: Model probabilitas untuk menilai risiko nasabah.</li>
+</ul>
+</section>
+<section id="c.-kesehatan-dan-biostatistika" class="level4">
+<h4 class="anchored" data-anchor-id="c.-kesehatan-dan-biostatistika"><strong>C. Kesehatan dan Biostatistika</strong></h4>
+<ul>
+<li><strong>Analisis Data Medis</strong>: Mendeteksi pola penyakit dari data pasien.</li>
+<li><strong>Uji Klinis Obat</strong>: Statistik inferensial dalam penelitian obat dan pengobatan baru.</li>
+<li><strong>Model Epidemiologi</strong>: Memprediksi penyebaran penyakit dan efektivitas vaksin.</li>
+</ul>
+</section>
+<section id="d.-teknik-dan-manufaktur" class="level4">
+<h4 class="anchored" data-anchor-id="d.-teknik-dan-manufaktur"><strong>D. Teknik dan Manufaktur</strong></h4>
+<ul>
+<li><strong>Reliabilitas dan Kualitas Produk</strong>: Menggunakan distribusi probabilitas untuk memperkirakan masa pakai produk.</li>
+<li><strong>Pemeliharaan Prediktif (Predictive Maintenance)</strong>: Probabilitas kegagalan mesin dalam industri.</li>
+<li><strong>Optimasi Logistik</strong>: Model statistik untuk menentukan jalur pengiriman yang paling efisien.</li>
+</ul>
+</section>
+<section id="e.-ilmu-sosial-dan-psikologi" class="level4">
+<h4 class="anchored" data-anchor-id="e.-ilmu-sosial-dan-psikologi"><strong>E. Ilmu Sosial dan Psikologi</strong></h4>
+<ul>
+<li><strong>Survei dan Analisis Data Sosial</strong>: Teknik sampling dalam survei politik dan opini publik.</li>
+<li><strong>Psikometri dan Pengukuran Kinerja</strong>: Penggunaan statistika dalam tes kepribadian dan pendidikan.</li>
+<li><strong>Kriminologi dan Forensik</strong>: Model probabilitas dalam analisis pola kejahatan.</li>
+</ul>
+</section>
+<section id="f.-transportasi-dan-smart-city" class="level4">
+<h4 class="anchored" data-anchor-id="f.-transportasi-dan-smart-city"><strong>F. Transportasi dan Smart City</strong></h4>
+<ul>
+<li><strong>Model Lalu Lintas</strong>: Prediksi kemacetan dan optimalisasi transportasi publik.</li>
+<li><strong>Sistem Navigasi dan Self-Driving Cars</strong>: Algoritma probabilistik untuk kendaraan otonom.</li>
+<li><strong>Perencanaan Tata Kota</strong>: Penggunaan statistika dalam desain urban berdasarkan pola kepadatan penduduk.</li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="kesimpulan-1" class="level3">
+<h3 class="anchored" data-anchor-id="kesimpulan-1"><strong>Kesimpulan</strong></h3>
+<p>Ilmu <strong>Probabilitas dan Statistika</strong> memiliki cakupan luas dan menjadi fondasi dalam berbagai bidang sains dan industri. Mata kuliah ini mengajarkan konsep probabilitas, analisis data, inferensi statistik, serta aplikasinya dalam pemodelan dan pengambilan keputusan berbasis data.</p>
+<p>Probabilitas dan Statistika tidak hanya menyajikan teori, tetapi juga alat penting untuk menghadapi dunia berbasis <strong>data-driven decision making</strong>, yang semakin krusial di era digital saat ini.</p>
+</section>
+</section>
+<section id="kategori-problem" class="level2">
+<h2 class="anchored" data-anchor-id="kategori-problem">Kategori Problem</h2>
+<p>Problem Set 1. Apa saja kategori problem set dari matakuliah P&amp;S? 2. Bagaimana pola berpikir P&amp;S untuk mencari solusi dan menjawab problem set?</p>
+<pre><code>## **1. Kategori Problem Set dalam Mata Kuliah Probabilitas dan Statistika (P&amp;S)**</code></pre>
+<p>Dalam mata kuliah <strong>Probabilitas dan Statistika (P&amp;S)</strong>, <strong>problem set</strong> dapat dikategorikan berdasarkan <strong>tingkat kesulitan</strong>, <strong>jenis permasalahan</strong>, dan <strong>aplikasi dunia nyata</strong>. Berikut adalah beberapa kategori utama:</p>
+<section id="a.-problem-set-konseptual-pemahaman-teori" class="level3">
+<h3 class="anchored" data-anchor-id="a.-problem-set-konseptual-pemahaman-teori"><strong>A. Problem Set Konseptual (Pemahaman Teori)</strong></h3>
+<ul>
+<li><strong>Probabilitas Dasar</strong>: Menghitung peluang kejadian sederhana dan majemuk.
+<ul>
+<li>Contoh: Jika sebuah dadu dilempar dua kali, berapa probabilitas mendapatkan jumlah mata dadu ≥ 8?</li>
+</ul></li>
+<li><strong>Teorema Bayes &amp; Probabilitas Bersyarat</strong>: Menentukan probabilitas suatu kejadian berdasarkan informasi baru.
+<ul>
+<li>Contoh: Jika 5% orang di suatu populasi menderita penyakit X dan tes diagnostik memiliki akurasi 90%, berapa peluang seseorang benar-benar sakit jika hasil tesnya positif?</li>
+</ul></li>
+<li><strong>Distribusi Peluang</strong>: Menentukan distribusi diskrit (Binomial, Poisson) dan kontinu (Normal, Eksponensial).
+<ul>
+<li>Contoh: Sebuah pabrik menemukan bahwa jumlah cacat dalam produksi per jam mengikuti distribusi Poisson dengan rata-rata 3 cacat. Berapa probabilitas menemukan 5 cacat dalam satu jam?</li>
+</ul></li>
+</ul>
+</section>
+<section id="b.-problem-set-perhitungan-kuantitatif" class="level3">
+<h3 class="anchored" data-anchor-id="b.-problem-set-perhitungan-kuantitatif"><strong>B. Problem Set Perhitungan (Kuantitatif)</strong></h3>
+<ul>
+<li><strong>Statistika Deskriptif</strong>: Menghitung mean, median, variansi, standar deviasi dari dataset.
+<ul>
+<li>Contoh: Diberikan kumpulan data nilai ujian, hitung rata-rata dan deviasi standarnya.</li>
+</ul></li>
+<li><strong>Inferensi Statistik</strong>: Estimasi parameter, uji hipotesis, dan interval kepercayaan.
+<ul>
+<li>Contoh: Suatu perusahaan ingin mengetahui apakah rata-rata waktu tunggu pelanggan lebih dari 10 menit dengan tingkat signifikansi 5%.</li>
+</ul></li>
+<li><strong>Regresi dan Korelasi</strong>: Menggunakan regresi linier sederhana/multivariat untuk memahami hubungan antarvariabel.
+<ul>
+<li>Contoh: Menentukan hubungan antara jumlah jam belajar dengan nilai ujian menggunakan analisis regresi.</li>
+</ul></li>
+</ul>
+</section>
+<section id="c.-problem-set-simulasi-pemrograman" class="level3">
+<h3 class="anchored" data-anchor-id="c.-problem-set-simulasi-pemrograman"><strong>C. Problem Set Simulasi &amp; Pemrograman</strong></h3>
+<ul>
+<li><strong>Simulasi Monte Carlo</strong>: Menggunakan metode Monte Carlo untuk memprediksi probabilitas suatu kejadian.
+<ul>
+<li>Contoh: Menulis kode Python untuk mensimulasikan probabilitas memenangkan permainan dadu.</li>
+</ul></li>
+<li><strong>Distribusi Sampling</strong>: Menggunakan metode statistik untuk memahami distribusi sampel.
+<ul>
+<li>Contoh: Menggunakan Python/R untuk memverifikasi Central Limit Theorem dengan mengambil 1000 sampel dari distribusi berbeda.</li>
+</ul></li>
+<li><strong>Pengolahan Data Statistik dengan Python/R</strong>: Implementasi algoritma statistik dengan dataset dunia nyata.
+<ul>
+<li>Contoh: Menggunakan dataset real dari Kaggle untuk menganalisis tren pasar saham menggunakan statistik deskriptif dan inferensi.</li>
+</ul></li>
+</ul>
+</section>
+<section id="d.-problem-set-aplikasi-dunia-nyata" class="level3">
+<h3 class="anchored" data-anchor-id="d.-problem-set-aplikasi-dunia-nyata"><strong>D. Problem Set Aplikasi Dunia Nyata</strong></h3>
+<ul>
+<li><strong>Analisis Data dalam Industri</strong>: Menerapkan statistika dalam produksi, pemasaran, atau pengambilan keputusan berbasis data.
+<ul>
+<li>Contoh: Sebuah perusahaan e-commerce ingin mengetahui apakah ada perbedaan signifikan dalam rata-rata transaksi pelanggan antara bulan Januari dan Februari.</li>
+</ul></li>
+<li><strong>Pengambilan Keputusan dalam Keuangan</strong>: Menggunakan probabilitas untuk memprediksi risiko investasi.
+<ul>
+<li>Contoh: Menghitung probabilitas gagal bayar (default) pada pinjaman bank menggunakan distribusi probabilitas.</li>
+</ul></li>
+<li><strong>Penerapan Statistik dalam Machine Learning</strong>: Menggunakan probabilitas dalam algoritma Naïve Bayes untuk klasifikasi data.
+<ul>
+<li>Contoh: Menganalisis probabilitas spam pada email berdasarkan kata-kata dalam teks.</li>
+</ul></li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="pola-berpikir-probabilitas-dan-statistika-dalam-menjawab-problem-set" class="level2">
+<h2 class="anchored" data-anchor-id="pola-berpikir-probabilitas-dan-statistika-dalam-menjawab-problem-set"><strong>2. Pola Berpikir Probabilitas dan Statistika dalam Menjawab Problem Set</strong></h2>
+<p>Untuk menyelesaikan problem set dalam <strong>Probabilitas dan Statistika</strong>, diperlukan pola berpikir yang sistematis. Berikut adalah langkah-langkah utama:</p>
+<section id="a.-memahami-konteks-masalah" class="level3">
+<h3 class="anchored" data-anchor-id="a.-memahami-konteks-masalah"><strong>A. Memahami Konteks Masalah</strong></h3>
+<ul>
+<li><strong>Apa yang diketahui?</strong> (Parameter, data, distribusi probabilitas, asumsi yang diberikan)</li>
+<li><strong>Apa yang ditanyakan?</strong> (Probabilitas suatu kejadian, estimasi parameter, uji hipotesis, dll.)</li>
+<li><strong>Bagaimana data diberikan?</strong> (Apakah dalam bentuk tabel, grafik, atau deskripsi numerik?)</li>
+</ul>
+<p><strong>Contoh:</strong><br>
+<em>“Sebuah studi menunjukkan bahwa 20% pengguna aplikasi e-commerce meninggalkan keranjang belanja mereka tanpa menyelesaikan transaksi. Jika kita memilih 5 pengguna secara acak, berapa probabilitas setidaknya 2 dari mereka tidak menyelesaikan transaksi?”</em><br>
+- <strong>Yang diketahui</strong>: Probabilitas pengguna meninggalkan transaksi = 0,2, jumlah sampel = 5. - <strong>Yang ditanyakan</strong>: Probabilitas setidaknya 2 pengguna tidak menyelesaikan transaksi.</p>
+<hr>
+</section>
+<section id="b.-menentukan-model-probabilitas-atau-statistik-yang-sesuai" class="level3">
+<h3 class="anchored" data-anchor-id="b.-menentukan-model-probabilitas-atau-statistik-yang-sesuai"><strong>B. Menentukan Model Probabilitas atau Statistik yang Sesuai</strong></h3>
+<ul>
+<li>Apakah masalah ini melibatkan <strong>peristiwa independen</strong>?</li>
+<li>Apakah memerlukan <strong>hukum probabilitas dasar</strong>, <strong>teorema Bayes</strong>, atau <strong>distribusi probabilitas</strong> tertentu?</li>
+<li>Jika masalahnya berbasis sampel, apakah membutuhkan <strong>uji hipotesis</strong> atau <strong>estimasi parameter</strong>?</li>
+</ul>
+<p><strong>Contoh:</strong><br>
+Kasus di atas mengikuti <strong>Distribusi Binomial</strong>, karena: - Setiap pengguna bisa <strong>menyelesaikan atau tidak menyelesaikan transaksi</strong> (dua kemungkinan). - Probabilitas meninggalkan transaksi tetap sama untuk setiap pengguna. - Kita ingin mengetahui probabilitas setidaknya 2 pengguna tidak menyelesaikan transaksi.</p>
+<hr>
+</section>
+<section id="c.-melakukan-perhitungan-atau-simulasi" class="level3">
+<h3 class="anchored" data-anchor-id="c.-melakukan-perhitungan-atau-simulasi"><strong>C. Melakukan Perhitungan atau Simulasi</strong></h3>
+<ul>
+<li>Gunakan <strong>rumus probabilitas</strong> jika kasusnya masih sederhana.</li>
+<li>Jika kasus kompleks, gunakan <strong>pendekatan numerik atau simulasi</strong> dengan Python/R.</li>
+</ul>
+<p><strong>Contoh Penyelesaian dengan Rumus Binomial:</strong> [ P(X ) = 1 - P(X = 0) - P(X = 1) ]</p>
+<p>Jika menggunakan Python:</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> scipy.stats <span class="im">import</span> binom</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>p_0 <span class="op">=</span> binom.pmf(<span class="dv">0</span>, <span class="dv">5</span>, <span class="fl">0.2</span>)</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>p_1 <span class="op">=</span> binom.pmf(<span class="dv">1</span>, <span class="dv">5</span>, <span class="fl">0.2</span>)</span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>p_geq_2 <span class="op">=</span> <span class="dv">1</span> <span class="op">-</span> (p_0 <span class="op">+</span> p_1)</span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Probabilitas setidaknya 2 pengguna tidak menyelesaikan transaksi: </span><span class="sc">{</span>p_geq_2<span class="sc">:.4f}</span><span class="ss">"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<hr>
+</section>
+<section id="d.-menafsirkan-hasil" class="level3">
+<h3 class="anchored" data-anchor-id="d.-menafsirkan-hasil"><strong>D. Menafsirkan Hasil</strong></h3>
+<ul>
+<li>Setelah mendapatkan hasil perhitungan, kita perlu <strong>menghubungkannya dengan konteks masalah</strong>.</li>
+<li><strong>Apakah hasilnya masuk akal?</strong> Jika tidak, mungkin ada kesalahan dalam asumsi atau perhitungan.</li>
+<li><strong>Apa implikasi dari hasil ini dalam dunia nyata?</strong> Misalnya, jika hasil menunjukkan <strong>60% pelanggan meninggalkan transaksi</strong>, perusahaan bisa mempertimbangkan strategi pemasaran untuk mengurangi angka ini.</li>
+</ul>
+<hr>
+</section>
+<section id="e.-mengevaluasi-memberikan-insight" class="level3">
+<h3 class="anchored" data-anchor-id="e.-mengevaluasi-memberikan-insight"><strong>E. Mengevaluasi &amp; Memberikan Insight</strong></h3>
+<ul>
+<li>Bagaimana jika kita <strong>mengubah asumsi</strong> (misalnya, meningkatkan diskon untuk mencegah pelanggan meninggalkan transaksi)?</li>
+<li>Bagaimana kita bisa <strong>menggunakan hasil ini untuk pengambilan keputusan</strong>?</li>
+<li>Apakah metode yang digunakan <strong>cukup kuat</strong>, atau perlu pendekatan lain seperti <strong>simulasi Monte Carlo</strong>?</li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="kesimpulan-2" class="level2">
+<h2 class="anchored" data-anchor-id="kesimpulan-2"><strong>Kesimpulan</strong></h2>
+<ol type="1">
+<li><strong>Problem set dalam P&amp;S mencakup berbagai kategori</strong>, dari pemahaman konsep hingga analisis data berbasis aplikasi dunia nyata.</li>
+<li><strong>Pola berpikir dalam P&amp;S bersifat sistematis</strong>, meliputi:
+<ul>
+<li><strong>Memahami masalah</strong> (mengidentifikasi data dan pertanyaan),</li>
+<li><strong>Menentukan model probabilitas/statistik yang tepat</strong>,</li>
+<li><strong>Melakukan perhitungan atau simulasi</strong>,</li>
+<li><strong>Menafsirkan hasil</strong>, dan</li>
+<li><strong>Mengevaluasi solusi untuk mendapatkan insight praktis</strong>.</li>
+</ul></li>
+</ol>
+<p>Dengan <strong>pemikiran yang terstruktur</strong>, mahasiswa tidak hanya mampu <strong>menjawab soal</strong>, tetapi juga <strong>menggunakan probabilitas dan statistika untuk memecahkan masalah di dunia nyata</strong>. 🚀</p>
 <p>This is a Quarto book.</p>
 <p>To learn more about Quarto books visit <a href="https://quarto.org/docs/books" class="uri">https://quarto.org/docs/books</a>.</p>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -231,7 +691,18 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
     return false;
   }
-  const onCopySuccess = function(e) {
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
     // button target
     const button = e.trigger;
     // don't keep focus
@@ -263,27 +734,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }, 1000);
     // clear code selection
     e.clearSelection();
-  }
-  const getTextToCopy = function(trigger) {
-      const codeEl = trigger.previousElementSibling.cloneNode(true);
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
-        }
-      }
-      return codeEl.innerText;
-  }
-  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
-    text: getTextToCopy
   });
-  clipboard.on('success', onCopySuccess);
-  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
-    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
-      text: getTextToCopy,
-      container: window.document.getElementById('quarto-embedded-source-code-modal')
-    });
-    clipboardModal.on('success', onCopySuccess);
-  }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
       var filterRegex = new RegExp('/' + window.location.host + '/');
@@ -291,7 +742,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }
     // Inspect non-navigation links and adorn them if external
- 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
     for (var i=0; i<links.length; i++) {
       const link = links[i];
       if (!isInternal(link.href)) {
@@ -388,6 +839,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       if (window.Quarto?.typesetMath) {
         window.Quarto.typesetMath(note);
       }
+      // TODO in 1.5, we should make sure this works without a callout special case
       if (note.classList.contains("callout")) {
         return note.outerHTML;
       } else {

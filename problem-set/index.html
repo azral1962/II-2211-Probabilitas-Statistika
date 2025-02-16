@@ -2,12 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.6.40">
+<meta name="generator" content="quarto-1.4.553">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Problem Set – II-2211 Probabilitas dan Statistika</title>
+<title>II-2211 Probabilitas dan Statistika - Problem Set</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -19,6 +19,40 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -37,10 +71,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-549806ee2085284f45b00abea8c6df48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-8da5b4427184b79ecddefad3d342027e.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -69,6 +103,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -78,13 +141,13 @@ ul.task-list li input[type="checkbox"] {
   <header id="quarto-header" class="headroom fixed-top">
   <nav class="quarto-secondary-nav">
     <div class="container-fluid d-flex">
-      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
         <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../problem-set/index.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Problem Set</span></a></li></ol></nav>
-        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
-      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+      <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
         <i class="bi bi-search"></i>
       </button>
     </div>
@@ -165,8 +228,192 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#kerangka-kerja-probabilitas" id="toc-kerangka-kerja-probabilitas" class="nav-link active" data-scroll-target="#kerangka-kerja-probabilitas">Kerangka Kerja Probabilitas</a>
+  <ul class="collapse">
+  <li><a href="#soal-1-ruang-sampel-eksperimen" id="toc-soal-1-ruang-sampel-eksperimen" class="nav-link" data-scroll-target="#soal-1-ruang-sampel-eksperimen">Soal 1: Ruang Sampel Eksperimen</a>
+  <ul class="collapse">
+  <li><a href="#prinsip-yang-digunakan" id="toc-prinsip-yang-digunakan" class="nav-link" data-scroll-target="#prinsip-yang-digunakan">Prinsip yang Digunakan:</a></li>
+  <li><a href="#pola-berpikir" id="toc-pola-berpikir" class="nav-link" data-scroll-target="#pola-berpikir">Pola Berpikir:</a></li>
+  </ul></li>
+  <li><a href="#jawaban" id="toc-jawaban" class="nav-link" data-scroll-target="#jawaban">Jawaban:</a></li>
+  <li><a href="#soal-2-diagram-venn" id="toc-soal-2-diagram-venn" class="nav-link" data-scroll-target="#soal-2-diagram-venn">Soal 2: Diagram Venn</a>
+  <ul class="collapse">
+  <li><a href="#prinsip-yang-digunakan-1" id="toc-prinsip-yang-digunakan-1" class="nav-link" data-scroll-target="#prinsip-yang-digunakan-1">Prinsip yang Digunakan:</a></li>
+  <li><a href="#pola-berpikir-1" id="toc-pola-berpikir-1" class="nav-link" data-scroll-target="#pola-berpikir-1">Pola Berpikir:</a></li>
+  </ul></li>
+  <li><a href="#jawaban-1" id="toc-jawaban-1" class="nav-link" data-scroll-target="#jawaban-1">Jawaban:</a></li>
+  <li><a href="#soal-3-probabilitas-ruang-sampel" id="toc-soal-3-probabilitas-ruang-sampel" class="nav-link" data-scroll-target="#soal-3-probabilitas-ruang-sampel">Soal 3: Probabilitas Ruang Sampel</a>
+  <ul class="collapse">
+  <li><a href="#prinsip-yang-digunakan-2" id="toc-prinsip-yang-digunakan-2" class="nav-link" data-scroll-target="#prinsip-yang-digunakan-2">Prinsip yang Digunakan:</a></li>
+  <li><a href="#pola-berpikir-2" id="toc-pola-berpikir-2" class="nav-link" data-scroll-target="#pola-berpikir-2">Pola Berpikir:</a></li>
+  </ul></li>
+  <li><a href="#jawaban-2" id="toc-jawaban-2" class="nav-link" data-scroll-target="#jawaban-2">Jawaban:</a></li>
+  <li><a href="#soal" id="toc-soal" class="nav-link" data-scroll-target="#soal">Soal</a>
+  <ul class="collapse">
+  <li><a href="#model-komunikasi" id="toc-model-komunikasi" class="nav-link" data-scroll-target="#model-komunikasi">1. Model Komunikasi</a></li>
+  <li><a href="#probabilitas-website-judi-dan-teorema-bayes" id="toc-probabilitas-website-judi-dan-teorema-bayes" class="nav-link" data-scroll-target="#probabilitas-website-judi-dan-teorema-bayes">2. Probabilitas Website Judi dan Teorema Bayes</a></li>
+  <li><a href="#parkir-kampus" id="toc-parkir-kampus" class="nav-link" data-scroll-target="#parkir-kampus">3. Parkir Kampus</a></li>
+  <li><a href="#asuransi-dan-risiko-kecelakaan" id="toc-asuransi-dan-risiko-kecelakaan" class="nav-link" data-scroll-target="#asuransi-dan-risiko-kecelakaan">4. Asuransi dan Risiko Kecelakaan</a></li>
+  <li><a href="#tes-darah-dan-false-positives" id="toc-tes-darah-dan-false-positives" class="nav-link" data-scroll-target="#tes-darah-dan-false-positives">5. Tes Darah dan False Positives</a></li>
+  </ul></li>
+  <li><a href="#soal-set-3" id="toc-soal-set-3" class="nav-link" data-scroll-target="#soal-set-3">Soal Set 3</a>
+  <ul class="collapse">
+  <li><a href="#random-variable-diskrit" id="toc-random-variable-diskrit" class="nav-link" data-scroll-target="#random-variable-diskrit">1. Random Variable Diskrit</a></li>
+  <li><a href="#fungsi-distribusi-random-variable-diskrit" id="toc-fungsi-distribusi-random-variable-diskrit" class="nav-link" data-scroll-target="#fungsi-distribusi-random-variable-diskrit">2. Fungsi Distribusi Random Variable Diskrit</a></li>
+  <li><a href="#timbangan-elektrik" id="toc-timbangan-elektrik" class="nav-link" data-scroll-target="#timbangan-elektrik">3. Timbangan Elektrik</a></li>
+  <li><a href="#sampling-part-mesin" id="toc-sampling-part-mesin" class="nav-link" data-scroll-target="#sampling-part-mesin">4. Sampling Part Mesin</a></li>
+  <li><a href="#sistem-komunikasi" id="toc-sistem-komunikasi" class="nav-link" data-scroll-target="#sistem-komunikasi">5. Sistem Komunikasi</a></li>
+  <li><a href="#analisis-keberhasilan-produk" id="toc-analisis-keberhasilan-produk" class="nav-link" data-scroll-target="#analisis-keberhasilan-produk">6. Analisis Keberhasilan Produk</a></li>
+  <li><a href="#manufaktur-semikonduktor" id="toc-manufaktur-semikonduktor" class="nav-link" data-scroll-target="#manufaktur-semikonduktor">7. Manufaktur Semikonduktor</a></li>
+  <li><a href="#maskapai-penerbangan" id="toc-maskapai-penerbangan" class="nav-link" data-scroll-target="#maskapai-penerbangan">8. Maskapai Penerbangan</a></li>
+  <li><a href="#distribusi-poisson-dalam-panggilan-telepon" id="toc-distribusi-poisson-dalam-panggilan-telepon" class="nav-link" data-scroll-target="#distribusi-poisson-dalam-panggilan-telepon">9. Distribusi Poisson dalam Panggilan Telepon</a></li>
+  <li><a href="#distribusi-poisson-dalam-cacat-panel-plastik" id="toc-distribusi-poisson-dalam-cacat-panel-plastik" class="nav-link" data-scroll-target="#distribusi-poisson-dalam-cacat-panel-plastik">10. Distribusi Poisson dalam Cacat Panel Plastik</a></li>
+  <li><a href="#infrastruktur-data-center" id="toc-infrastruktur-data-center" class="nav-link" data-scroll-target="#infrastruktur-data-center">11. Infrastruktur Data Center</a></li>
+  <li><a href="#distribusi-geometrik-dalam-umur-komponen" id="toc-distribusi-geometrik-dalam-umur-komponen" class="nav-link" data-scroll-target="#distribusi-geometrik-dalam-umur-komponen">12. Distribusi Geometrik dalam Umur Komponen</a></li>
+  <li><a href="#fungsi-probabilitas-kontinu" id="toc-fungsi-probabilitas-kontinu" class="nav-link" data-scroll-target="#fungsi-probabilitas-kontinu">13. Fungsi Probabilitas Kontinu</a></li>
+  <li><a href="#distribusi-pareto-dalam-running-time" id="toc-distribusi-pareto-dalam-running-time" class="nav-link" data-scroll-target="#distribusi-pareto-dalam-running-time">14. Distribusi Pareto dalam Running Time</a></li>
+  <li><a href="#distribusi-eksponensial-dalam-ftp" id="toc-distribusi-eksponensial-dalam-ftp" class="nav-link" data-scroll-target="#distribusi-eksponensial-dalam-ftp">15. Distribusi Eksponensial dalam FTP</a></li>
+  <li><a href="#distribusi-uniform-dalam-kedatangan-kereta" id="toc-distribusi-uniform-dalam-kedatangan-kereta" class="nav-link" data-scroll-target="#distribusi-uniform-dalam-kedatangan-kereta">16. Distribusi Uniform dalam Kedatangan Kereta</a></li>
+  <li><a href="#distribusi-poisson-dalam-kesalahan-ketik" id="toc-distribusi-poisson-dalam-kesalahan-ketik" class="nav-link" data-scroll-target="#distribusi-poisson-dalam-kesalahan-ketik">17. Distribusi Poisson dalam Kesalahan Ketik</a></li>
+  <li><a href="#probabilitas-lampu-hijau-di-persimpangan" id="toc-probabilitas-lampu-hijau-di-persimpangan" class="nav-link" data-scroll-target="#probabilitas-lampu-hijau-di-persimpangan">18. Probabilitas Lampu Hijau di Persimpangan</a></li>
+  <li><a href="#distribusi-binomial-dalam-komponen-cacat" id="toc-distribusi-binomial-dalam-komponen-cacat" class="nav-link" data-scroll-target="#distribusi-binomial-dalam-komponen-cacat">19. Distribusi Binomial dalam Komponen Cacat</a></li>
+  <li><a href="#distribusi-eksponensial-dalam-daya-tahan-aki" id="toc-distribusi-eksponensial-dalam-daya-tahan-aki" class="nav-link" data-scroll-target="#distribusi-eksponensial-dalam-daya-tahan-aki">20. Distribusi Eksponensial dalam Daya Tahan Aki</a></li>
+  </ul></li>
+  <li><a href="#soal-set-4" id="toc-soal-set-4" class="nav-link" data-scroll-target="#soal-set-4">Soal Set 4</a>
+  <ul class="collapse">
+  <li><a href="#distribusi-seragam" id="toc-distribusi-seragam" class="nav-link" data-scroll-target="#distribusi-seragam">1. Distribusi Seragam</a></li>
+  <li><a href="#distribusi-normal" id="toc-distribusi-normal" class="nav-link" data-scroll-target="#distribusi-normal">2. Distribusi Normal</a></li>
+  <li><a href="#distribusi-binomial" id="toc-distribusi-binomial" class="nav-link" data-scroll-target="#distribusi-binomial">3. Distribusi Binomial</a></li>
+  <li><a href="#distribusi-poisson" id="toc-distribusi-poisson" class="nav-link" data-scroll-target="#distribusi-poisson">4. Distribusi Poisson</a></li>
+  <li><a href="#distribusi-eksponensial" id="toc-distribusi-eksponensial" class="nav-link" data-scroll-target="#distribusi-eksponensial">5. Distribusi Eksponensial</a></li>
+  <li><a href="#distribusi-geometrik" id="toc-distribusi-geometrik" class="nav-link" data-scroll-target="#distribusi-geometrik">6. Distribusi Geometrik</a></li>
+  <li><a href="#distribusi-bernoulli" id="toc-distribusi-bernoulli" class="nav-link" data-scroll-target="#distribusi-bernoulli">7. Distribusi Bernoulli</a></li>
+  <li><a href="#distribusi-pareto" id="toc-distribusi-pareto" class="nav-link" data-scroll-target="#distribusi-pareto">8. Distribusi Pareto</a></li>
+  <li><a href="#distribusi-weibull" id="toc-distribusi-weibull" class="nav-link" data-scroll-target="#distribusi-weibull">9. Distribusi Weibull</a></li>
+  <li><a href="#fungsi-kepadatan-probabilitas-pdf" id="toc-fungsi-kepadatan-probabilitas-pdf" class="nav-link" data-scroll-target="#fungsi-kepadatan-probabilitas-pdf">10. Fungsi Kepadatan Probabilitas (PDF)</a></li>
+  <li><a href="#distribusi-gamma" id="toc-distribusi-gamma" class="nav-link" data-scroll-target="#distribusi-gamma">11. Distribusi Gamma</a></li>
+  <li><a href="#statistik-deskriptif" id="toc-statistik-deskriptif" class="nav-link" data-scroll-target="#statistik-deskriptif">12. Statistik Deskriptif</a></li>
+  <li><a href="#pengujian-hipotesis" id="toc-pengujian-hipotesis" class="nav-link" data-scroll-target="#pengujian-hipotesis">13. Pengujian Hipotesis</a></li>
+  <li><a href="#regresi-linier" id="toc-regresi-linier" class="nav-link" data-scroll-target="#regresi-linier">14. Regresi Linier</a></li>
+  <li><a href="#analisis-varians-anova" id="toc-analisis-varians-anova" class="nav-link" data-scroll-target="#analisis-varians-anova">15. Analisis Varians (ANOVA)</a></li>
+  <li><a href="#chi-square-test" id="toc-chi-square-test" class="nav-link" data-scroll-target="#chi-square-test">16. Chi-Square Test</a></li>
+  <li><a href="#simulasi-monte-carlo" id="toc-simulasi-monte-carlo" class="nav-link" data-scroll-target="#simulasi-monte-carlo">17. Simulasi Monte Carlo</a></li>
+  <li><a href="#teorema-bayes" id="toc-teorema-bayes" class="nav-link" data-scroll-target="#teorema-bayes">18. Teorema Bayes</a></li>
+  <li><a href="#estimasi-interval-kepercayaan" id="toc-estimasi-interval-kepercayaan" class="nav-link" data-scroll-target="#estimasi-interval-kepercayaan">19. Estimasi Interval Kepercayaan</a></li>
+  <li><a href="#probabilitas-gabungan-dan-bersyarat" id="toc-probabilitas-gabungan-dan-bersyarat" class="nav-link" data-scroll-target="#probabilitas-gabungan-dan-bersyarat">20. Probabilitas Gabungan dan Bersyarat</a></li>
+  </ul></li>
+  <li><a href="#soal-set-5" id="toc-soal-set-5" class="nav-link" data-scroll-target="#soal-set-5">Soal Set 5</a>
+  <ul class="collapse">
+  <li><a href="#distribusi-eksponensial-dalam-kegagalan-komponen" id="toc-distribusi-eksponensial-dalam-kegagalan-komponen" class="nav-link" data-scroll-target="#distribusi-eksponensial-dalam-kegagalan-komponen">1. Distribusi Eksponensial dalam Kegagalan Komponen</a></li>
+  <li><a href="#fungsi-distribusi-kumulatif" id="toc-fungsi-distribusi-kumulatif" class="nav-link" data-scroll-target="#fungsi-distribusi-kumulatif">2. Fungsi Distribusi Kumulatif</a></li>
+  <li><a href="#distribusi-kontinu-dalam-ketebalan-coating" id="toc-distribusi-kontinu-dalam-ketebalan-coating" class="nav-link" data-scroll-target="#distribusi-kontinu-dalam-ketebalan-coating">3. Distribusi Kontinu dalam Ketebalan Coating</a></li>
+  <li><a href="#distribusi-uniform-dalam-berat-paket-kimia" id="toc-distribusi-uniform-dalam-berat-paket-kimia" class="nav-link" data-scroll-target="#distribusi-uniform-dalam-berat-paket-kimia">4. Distribusi Uniform dalam Berat Paket Kimia</a></li>
+  <li><a href="#distribusi-normal-dalam-pembelahan-sel" id="toc-distribusi-normal-dalam-pembelahan-sel" class="nav-link" data-scroll-target="#distribusi-normal-dalam-pembelahan-sel">5. Distribusi Normal dalam Pembelahan Sel</a></li>
+  <li><a href="#distribusi-normal-dalam-kekuatan-semen" id="toc-distribusi-normal-dalam-kekuatan-semen" class="nav-link" data-scroll-target="#distribusi-normal-dalam-kekuatan-semen">6. Distribusi Normal dalam Kekuatan Semen</a></li>
+  <li><a href="#distribusi-binomial-dalam-produksi-chip" id="toc-distribusi-binomial-dalam-produksi-chip" class="nav-link" data-scroll-target="#distribusi-binomial-dalam-produksi-chip">7. Distribusi Binomial dalam Produksi Chip</a></li>
+  <li><a href="#distribusi-poisson-dalam-partikel-asbes" id="toc-distribusi-poisson-dalam-partikel-asbes" class="nav-link" data-scroll-target="#distribusi-poisson-dalam-partikel-asbes">8. Distribusi Poisson dalam Partikel Asbes</a></li>
+  <li><a href="#distribusi-eksponensial-dalam-umur-regulator-voltase" id="toc-distribusi-eksponensial-dalam-umur-regulator-voltase" class="nav-link" data-scroll-target="#distribusi-eksponensial-dalam-umur-regulator-voltase">9. Distribusi Eksponensial dalam Umur Regulator Voltase</a></li>
+  <li><a href="#distribusi-eksponensial-dalam-kegagalan-kipas-pc" id="toc-distribusi-eksponensial-dalam-kegagalan-kipas-pc" class="nav-link" data-scroll-target="#distribusi-eksponensial-dalam-kegagalan-kipas-pc">10. Distribusi Eksponensial dalam Kegagalan Kipas PC</a></li>
+  <li><a href="#distribusi-eksponensial-dalam-kegagalan-laser" id="toc-distribusi-eksponensial-dalam-kegagalan-laser" class="nav-link" data-scroll-target="#distribusi-eksponensial-dalam-kegagalan-laser">11. Distribusi Eksponensial dalam Kegagalan Laser</a></li>
+  <li><a href="#distribusi-poisson-dalam-error-kepingan-optik" id="toc-distribusi-poisson-dalam-error-kepingan-optik" class="nav-link" data-scroll-target="#distribusi-poisson-dalam-error-kepingan-optik">12. Distribusi Poisson dalam Error Kepingan Optik</a></li>
+  <li><a href="#distribusi-weibull-dalam-umur-kepingan-magnetik" id="toc-distribusi-weibull-dalam-umur-kepingan-magnetik" class="nav-link" data-scroll-target="#distribusi-weibull-dalam-umur-kepingan-magnetik">13. Distribusi Weibull dalam Umur Kepingan Magnetik</a></li>
+  <li><a href="#distribusi-eksponensial-dalam-umur-aki-mobil" id="toc-distribusi-eksponensial-dalam-umur-aki-mobil" class="nav-link" data-scroll-target="#distribusi-eksponensial-dalam-umur-aki-mobil">14. Distribusi Eksponensial dalam Umur Aki Mobil</a></li>
+  </ul></li>
+  <li><a href="#problem-set6" id="toc-problem-set6" class="nav-link" data-scroll-target="#problem-set6"><strong>Problem Set:6</strong></a>
+  <ul class="collapse">
+  <li><a href="#soal-1-fungsi-massa-probabilitas-gabungan" id="toc-soal-1-fungsi-massa-probabilitas-gabungan" class="nav-link" data-scroll-target="#soal-1-fungsi-massa-probabilitas-gabungan"><strong>Soal 1: Fungsi Massa Probabilitas Gabungan</strong></a></li>
+  <li><a href="#soal-2-distribusi-probabilitas-gabungan-dari-dua-variabel" id="toc-soal-2-distribusi-probabilitas-gabungan-dari-dua-variabel" class="nav-link" data-scroll-target="#soal-2-distribusi-probabilitas-gabungan-dari-dua-variabel"><strong>Soal 2: Distribusi Probabilitas Gabungan dari Dua Variabel</strong></a></li>
+  <li><a href="#soal-3-probabilitas-kondisional" id="toc-soal-3-probabilitas-kondisional" class="nav-link" data-scroll-target="#soal-3-probabilitas-kondisional"><strong>Soal 3: Probabilitas Kondisional</strong></a></li>
+  <li><a href="#soal-4-distribusi-multinomial" id="toc-soal-4-distribusi-multinomial" class="nav-link" data-scroll-target="#soal-4-distribusi-multinomial"><strong>Soal 4: Distribusi Multinomial</strong></a></li>
+  <li><a href="#soal-5-probabilitas-pada-distribusi-eksponensial" id="toc-soal-5-probabilitas-pada-distribusi-eksponensial" class="nav-link" data-scroll-target="#soal-5-probabilitas-pada-distribusi-eksponensial"><strong>Soal 5: Probabilitas pada Distribusi Eksponensial</strong></a></li>
+  <li><a href="#soal-6-distribusi-normal-dan-batas-spesifikasi" id="toc-soal-6-distribusi-normal-dan-batas-spesifikasi" class="nav-link" data-scroll-target="#soal-6-distribusi-normal-dan-batas-spesifikasi"><strong>Soal 6: Distribusi Normal dan Batas Spesifikasi</strong></a></li>
+  <li><a href="#soal-7-korelasi-dan-kovarian-dalam-distribusi-probabilitas-gabungan" id="toc-soal-7-korelasi-dan-kovarian-dalam-distribusi-probabilitas-gabungan" class="nav-link" data-scroll-target="#soal-7-korelasi-dan-kovarian-dalam-distribusi-probabilitas-gabungan"><strong>Soal 7: Korelasi dan Kovarian dalam Distribusi Probabilitas Gabungan</strong></a></li>
+  <li><a href="#soal-8-distribusi-normal-bivariat" id="toc-soal-8-distribusi-normal-bivariat" class="nav-link" data-scroll-target="#soal-8-distribusi-normal-bivariat"><strong>Soal 8: Distribusi Normal Bivariat</strong></a></li>
+  <li><a href="#soal-9-probabilitas-sampel-dalam-distribusi-binomial" id="toc-soal-9-probabilitas-sampel-dalam-distribusi-binomial" class="nav-link" data-scroll-target="#soal-9-probabilitas-sampel-dalam-distribusi-binomial"><strong>Soal 9: Probabilitas Sampel dalam Distribusi Binomial</strong></a></li>
+  <li><a href="#soal-10-investasi-dan-risiko" id="toc-soal-10-investasi-dan-risiko" class="nav-link" data-scroll-target="#soal-10-investasi-dan-risiko"><strong>Soal 10: Investasi dan Risiko</strong></a></li>
+  </ul></li>
+  <li><a href="#soal-7" id="toc-soal-7" class="nav-link" data-scroll-target="#soal-7">Soal 7</a>
+  <ul class="collapse">
+  <li><a href="#definisi-populasi-dan-sampel" id="toc-definisi-populasi-dan-sampel" class="nav-link" data-scroll-target="#definisi-populasi-dan-sampel">1. Definisi Populasi dan Sampel</a></li>
+  <li><a href="#sampling-tidak-acak" id="toc-sampling-tidak-acak" class="nav-link" data-scroll-target="#sampling-tidak-acak">2. Sampling Tidak Acak</a></li>
+  <li><a href="#statistik-deskriptif-1" id="toc-statistik-deskriptif-1" class="nav-link" data-scroll-target="#statistik-deskriptif-1">3. Statistik Deskriptif</a></li>
+  <li><a href="#distribusi-sampling" id="toc-distribusi-sampling" class="nav-link" data-scroll-target="#distribusi-sampling">4. Distribusi Sampling</a></li>
+  <li><a href="#standar-error-dan-ukuran-sampel" id="toc-standar-error-dan-ukuran-sampel" class="nav-link" data-scroll-target="#standar-error-dan-ukuran-sampel">5. Standar Error dan Ukuran Sampel</a></li>
+  <li><a href="#estimasi-probabilitas-error" id="toc-estimasi-probabilitas-error" class="nav-link" data-scroll-target="#estimasi-probabilitas-error">6. Estimasi Probabilitas Error</a></li>
+  <li><a href="#distribusi-chi-square" id="toc-distribusi-chi-square" class="nav-link" data-scroll-target="#distribusi-chi-square">7. Distribusi Chi-Square</a></li>
+  <li><a href="#distribusi-normal-dalam-ujian" id="toc-distribusi-normal-dalam-ujian" class="nav-link" data-scroll-target="#distribusi-normal-dalam-ujian">8. Distribusi Normal dalam Ujian</a></li>
+  <li><a href="#distribusi-normal-dalam-resistor" id="toc-distribusi-normal-dalam-resistor" class="nav-link" data-scroll-target="#distribusi-normal-dalam-resistor">9. Distribusi Normal dalam Resistor</a></li>
+  <li><a href="#uji-statistik-pada-material-baja" id="toc-uji-statistik-pada-material-baja" class="nav-link" data-scroll-target="#uji-statistik-pada-material-baja">10. Uji Statistik pada Material Baja</a></li>
+  <li><a href="#distribusi-f-test-dalam-variansi" id="toc-distribusi-f-test-dalam-variansi" class="nav-link" data-scroll-target="#distribusi-f-test-dalam-variansi">11. Distribusi F-Test dalam Variansi</a></li>
+  <li><a href="#uji-t-untuk-perbandingan-mean" id="toc-uji-t-untuk-perbandingan-mean" class="nav-link" data-scroll-target="#uji-t-untuk-perbandingan-mean">12. Uji T untuk Perbandingan Mean</a></li>
+  <li><a href="#pengaruh-pembungkusan-pada-kuat-tarik" id="toc-pengaruh-pembungkusan-pada-kuat-tarik" class="nav-link" data-scroll-target="#pengaruh-pembungkusan-pada-kuat-tarik">13. Pengaruh Pembungkusan pada Kuat Tarik</a></li>
+  <li><a href="#perbandingan-variansi-dari-dua-tambang" id="toc-perbandingan-variansi-dari-dua-tambang" class="nav-link" data-scroll-target="#perbandingan-variansi-dari-dua-tambang">14. Perbandingan Variansi dari Dua Tambang</a></li>
+  </ul></li>
+  <li><a href="#soal-8" id="toc-soal-8" class="nav-link" data-scroll-target="#soal-8">Soal 8</a>
+  <ul class="collapse">
+  <li><a href="#selang-kepercayaan-untuk-variansi-diketahui" id="toc-selang-kepercayaan-untuk-variansi-diketahui" class="nav-link" data-scroll-target="#selang-kepercayaan-untuk-variansi-diketahui">1. Selang Kepercayaan untuk Variansi Diketahui</a></li>
+  <li><a href="#selang-kepercayaan-untuk-gain-perangkat-semikonduktor" id="toc-selang-kepercayaan-untuk-gain-perangkat-semikonduktor" class="nav-link" data-scroll-target="#selang-kepercayaan-untuk-gain-perangkat-semikonduktor">2. Selang Kepercayaan untuk Gain Perangkat Semikonduktor</a></li>
+  <li><a href="#selang-kepercayaan-untuk-siklus-kegagalan-mekanisme-kait" id="toc-selang-kepercayaan-untuk-siklus-kegagalan-mekanisme-kait" class="nav-link" data-scroll-target="#selang-kepercayaan-untuk-siklus-kegagalan-mekanisme-kait">3. Selang Kepercayaan untuk Siklus Kegagalan Mekanisme Kait</a></li>
+  <li><a href="#selang-kepercayaan-untuk-konsentrasi-kalsium" id="toc-selang-kepercayaan-untuk-konsentrasi-kalsium" class="nav-link" data-scroll-target="#selang-kepercayaan-untuk-konsentrasi-kalsium">4. Selang Kepercayaan untuk Konsentrasi Kalsium</a></li>
+  <li><a href="#selang-kepercayaan-untuk-umur-guna-ban" id="toc-selang-kepercayaan-untuk-umur-guna-ban" class="nav-link" data-scroll-target="#selang-kepercayaan-untuk-umur-guna-ban">5. Selang Kepercayaan untuk Umur Guna Ban</a></li>
+  <li><a href="#selang-kepercayaan-untuk-kandungan-asam-lemak" id="toc-selang-kepercayaan-untuk-kandungan-asam-lemak" class="nav-link" data-scroll-target="#selang-kepercayaan-untuk-kandungan-asam-lemak">6. Selang Kepercayaan untuk Kandungan Asam Lemak</a></li>
+  <li><a href="#selang-kepercayaan-untuk-diameter-batang-logam" id="toc-selang-kepercayaan-untuk-diameter-batang-logam" class="nav-link" data-scroll-target="#selang-kepercayaan-untuk-diameter-batang-logam">7. Selang Kepercayaan untuk Diameter Batang Logam</a></li>
+  <li><a href="#selang-kepercayaan-untuk-ketebalan-botol-kaca" id="toc-selang-kepercayaan-untuk-ketebalan-botol-kaca" class="nav-link" data-scroll-target="#selang-kepercayaan-untuk-ketebalan-botol-kaca">8. Selang Kepercayaan untuk Ketebalan Botol Kaca</a></li>
+  <li><a href="#persentil-untuk-selang-kepercayaan" id="toc-persentil-untuk-selang-kepercayaan" class="nav-link" data-scroll-target="#persentil-untuk-selang-kepercayaan">9. Persentil untuk Selang Kepercayaan</a></li>
+  <li><a href="#selang-kepercayaan-untuk-kadar-sirup-gula" id="toc-selang-kepercayaan-untuk-kadar-sirup-gula" class="nav-link" data-scroll-target="#selang-kepercayaan-untuk-kadar-sirup-gula">10. Selang Kepercayaan untuk Kadar Sirup Gula</a></li>
+  <li><a href="#selang-kepercayaan-untuk-kandungan-titanium" id="toc-selang-kepercayaan-untuk-kandungan-titanium" class="nav-link" data-scroll-target="#selang-kepercayaan-untuk-kandungan-titanium">11. Selang Kepercayaan untuk Kandungan Titanium</a></li>
+  <li><a href="#selang-kepercayaan-untuk-tingkat-kematian-kanker-paru" id="toc-selang-kepercayaan-untuk-tingkat-kematian-kanker-paru" class="nav-link" data-scroll-target="#selang-kepercayaan-untuk-tingkat-kematian-kanker-paru">12. Selang Kepercayaan untuk Tingkat Kematian Kanker Paru</a></li>
+  <li><a href="#selang-kepercayaan-untuk-helm-yang-rusak" id="toc-selang-kepercayaan-untuk-helm-yang-rusak" class="nav-link" data-scroll-target="#selang-kepercayaan-untuk-helm-yang-rusak">13. Selang Kepercayaan untuk Helm yang Rusak</a></li>
+  <li><a href="#selang-kepercayaan-untuk-batas-kecepatan-jalan" id="toc-selang-kepercayaan-untuk-batas-kecepatan-jalan" class="nav-link" data-scroll-target="#selang-kepercayaan-untuk-batas-kecepatan-jalan">14. Selang Kepercayaan untuk Batas Kecepatan Jalan</a></li>
+  <li><a href="#selang-prediksi-untuk-umur-guna-ban" id="toc-selang-prediksi-untuk-umur-guna-ban" class="nav-link" data-scroll-target="#selang-prediksi-untuk-umur-guna-ban">15. Selang Prediksi untuk Umur Guna Ban</a></li>
+  <li><a href="#selang-prediksi-untuk-kandungan-asam-lemak" id="toc-selang-prediksi-untuk-kandungan-asam-lemak" class="nav-link" data-scroll-target="#selang-prediksi-untuk-kandungan-asam-lemak">16. Selang Prediksi untuk Kandungan Asam Lemak</a></li>
+  <li><a href="#selang-prediksi-untuk-diameter-batang-logam" id="toc-selang-prediksi-untuk-diameter-batang-logam" class="nav-link" data-scroll-target="#selang-prediksi-untuk-diameter-batang-logam">17. Selang Prediksi untuk Diameter Batang Logam</a></li>
+  <li><a href="#selang-prediksi-untuk-pengayaan-fuel-rod" id="toc-selang-prediksi-untuk-pengayaan-fuel-rod" class="nav-link" data-scroll-target="#selang-prediksi-untuk-pengayaan-fuel-rod">18. Selang Prediksi untuk Pengayaan Fuel Rod</a></li>
+  <li><a href="#selang-toleransi-untuk-uji-izod-impact" id="toc-selang-toleransi-untuk-uji-izod-impact" class="nav-link" data-scroll-target="#selang-toleransi-untuk-uji-izod-impact">19. Selang Toleransi untuk Uji Izod Impact</a></li>
+  <li><a href="#selang-kepercayaan-untuk-kandungan-sirup-dalam-minuman" id="toc-selang-kepercayaan-untuk-kandungan-sirup-dalam-minuman" class="nav-link" data-scroll-target="#selang-kepercayaan-untuk-kandungan-sirup-dalam-minuman">20. Selang Kepercayaan untuk Kandungan Sirup dalam Minuman</a></li>
+  <li><a href="#uji-keakuratan-estimasi-sampel" id="toc-uji-keakuratan-estimasi-sampel" class="nav-link" data-scroll-target="#uji-keakuratan-estimasi-sampel">21. Uji Keakuratan Estimasi Sampel</a></li>
+  <li><a href="#estimasi-waktu-respon-sistem-operasi" id="toc-estimasi-waktu-respon-sistem-operasi" class="nav-link" data-scroll-target="#estimasi-waktu-respon-sistem-operasi">22. Estimasi Waktu Respon Sistem Operasi</a></li>
+  <li><a href="#selang-kepercayaan-untuk-tinggi-busa-sampo" id="toc-selang-kepercayaan-untuk-tinggi-busa-sampo" class="nav-link" data-scroll-target="#selang-kepercayaan-untuk-tinggi-busa-sampo">23. Selang Kepercayaan untuk Tinggi Busa Sampo</a></li>
+  <li><a href="#selang-kepercayaan-untuk-proporsi-kalkulator-cacat" id="toc-selang-kepercayaan-untuk-proporsi-kalkulator-cacat" class="nav-link" data-scroll-target="#selang-kepercayaan-untuk-proporsi-kalkulator-cacat">24. Selang Kepercayaan untuk Proporsi Kalkulator Cacat</a></li>
+  <li><a href="#perbandingan-plastik-dalam-produksi-komponen-elektronik" id="toc-perbandingan-plastik-dalam-produksi-komponen-elektronik" class="nav-link" data-scroll-target="#perbandingan-plastik-dalam-produksi-komponen-elektronik">25. Perbandingan Plastik dalam Produksi Komponen Elektronik</a></li>
+  <li><a href="#perbandingan-waktu-respons-sms-banking" id="toc-perbandingan-waktu-respons-sms-banking" class="nav-link" data-scroll-target="#perbandingan-waktu-respons-sms-banking">26. Perbandingan Waktu Respons SMS Banking</a></li>
+  <li><a href="#selang-kepercayaan-untuk-kepuasan-layanan-pelanggan" id="toc-selang-kepercayaan-untuk-kepuasan-layanan-pelanggan" class="nav-link" data-scroll-target="#selang-kepercayaan-untuk-kepuasan-layanan-pelanggan">27. Selang Kepercayaan untuk Kepuasan Layanan Pelanggan</a></li>
+  <li><a href="#selang-kepercayaan-untuk-latensi-situs-web" id="toc-selang-kepercayaan-untuk-latensi-situs-web" class="nav-link" data-scroll-target="#selang-kepercayaan-untuk-latensi-situs-web">28. Selang Kepercayaan untuk Latensi Situs Web</a></li>
+  </ul></li>
+  <li><a href="#soal-set-9" id="toc-soal-set-9" class="nav-link" data-scroll-target="#soal-set-9">Soal Set 9</a>
+  <ul class="collapse">
+  <li><a href="#pengujian-hipotesis-1" id="toc-pengujian-hipotesis-1" class="nav-link" data-scroll-target="#pengujian-hipotesis-1">1. Pengujian Hipotesis</a></li>
+  <li><a href="#uji-hipotesis-untuk-temperatur-air" id="toc-uji-hipotesis-untuk-temperatur-air" class="nav-link" data-scroll-target="#uji-hipotesis-untuk-temperatur-air">2. Uji Hipotesis untuk Temperatur Air</a></li>
+  <li><a href="#uji-hipotesis-untuk-umur-baterai" id="toc-uji-hipotesis-untuk-umur-baterai" class="nav-link" data-scroll-target="#uji-hipotesis-untuk-umur-baterai">3. Uji Hipotesis untuk Umur Baterai</a></li>
+  <li><a href="#uji-hipotesis-untuk-waktu-penerbangan" id="toc-uji-hipotesis-untuk-waktu-penerbangan" class="nav-link" data-scroll-target="#uji-hipotesis-untuk-waktu-penerbangan">4. Uji Hipotesis untuk Waktu Penerbangan</a></li>
+  <li><a href="#uji-hipotesis-untuk-persentase-produk-cacat" id="toc-uji-hipotesis-untuk-persentase-produk-cacat" class="nav-link" data-scroll-target="#uji-hipotesis-untuk-persentase-produk-cacat">5. Uji Hipotesis untuk Persentase Produk Cacat</a></li>
+  <li><a href="#uji-hipotesis-untuk-latensi-internet" id="toc-uji-hipotesis-untuk-latensi-internet" class="nav-link" data-scroll-target="#uji-hipotesis-untuk-latensi-internet">6. Uji Hipotesis untuk Latensi Internet</a></li>
+  <li><a href="#confidence-interval-untuk-preferensi-belanja-online" id="toc-confidence-interval-untuk-preferensi-belanja-online" class="nav-link" data-scroll-target="#confidence-interval-untuk-preferensi-belanja-online">7. Confidence Interval untuk Preferensi Belanja Online</a></li>
+  <li><a href="#uji-hipotesis-selisih-proporsi" id="toc-uji-hipotesis-selisih-proporsi" class="nav-link" data-scroll-target="#uji-hipotesis-selisih-proporsi">8. Uji Hipotesis Selisih Proporsi</a></li>
+  <li><a href="#uji-hipotesis-untuk-penggunaan-uang-elektronik" id="toc-uji-hipotesis-untuk-penggunaan-uang-elektronik" class="nav-link" data-scroll-target="#uji-hipotesis-untuk-penggunaan-uang-elektronik">9. Uji Hipotesis untuk Penggunaan Uang Elektronik</a></li>
+  <li><a href="#uji-hipotesis-preferensi-belanja-online-2017-vs-2019" id="toc-uji-hipotesis-preferensi-belanja-online-2017-vs-2019" class="nav-link" data-scroll-target="#uji-hipotesis-preferensi-belanja-online-2017-vs-2019">10. Uji Hipotesis Preferensi Belanja Online 2017 vs 2019</a></li>
+  <li><a href="#uji-hipotesis-untuk-kecepatan-download-isp" id="toc-uji-hipotesis-untuk-kecepatan-download-isp" class="nav-link" data-scroll-target="#uji-hipotesis-untuk-kecepatan-download-isp">11. Uji Hipotesis untuk Kecepatan Download ISP</a></li>
+  </ul></li>
+  <li><a href="#soal-set-10" id="toc-soal-set-10" class="nav-link" data-scroll-target="#soal-set-10">Soal set 10</a>
+  <ul class="collapse">
+  <li><a href="#regresi-linear-untuk-biaya-promosi-dan-penjualan" id="toc-regresi-linear-untuk-biaya-promosi-dan-penjualan" class="nav-link" data-scroll-target="#regresi-linear-untuk-biaya-promosi-dan-penjualan">1. Regresi Linear untuk Biaya Promosi dan Penjualan</a></li>
+  <li><a href="#regresi-linear-untuk-titik-didih-air-dan-tekanan-barometrik" id="toc-regresi-linear-untuk-titik-didih-air-dan-tekanan-barometrik" class="nav-link" data-scroll-target="#regresi-linear-untuk-titik-didih-air-dan-tekanan-barometrik">2. Regresi Linear untuk Titik Didih Air dan Tekanan Barometrik</a></li>
+  <li><a href="#regresi-linear-untuk-kebutuhan-daya-listrik-di-data-center" id="toc-regresi-linear-untuk-kebutuhan-daya-listrik-di-data-center" class="nav-link" data-scroll-target="#regresi-linear-untuk-kebutuhan-daya-listrik-di-data-center">3. Regresi Linear untuk Kebutuhan Daya Listrik di Data Center</a></li>
+  </ul></li>
+  <li><a href="#soal-set-11" id="toc-soal-set-11" class="nav-link" data-scroll-target="#soal-set-11">Soal Set 11</a>
+  <ul class="collapse">
+  <li><a href="#pengaruh-tinggi-terhadap-daya-pembangkit-listrik-tenaga-air" id="toc-pengaruh-tinggi-terhadap-daya-pembangkit-listrik-tenaga-air" class="nav-link" data-scroll-target="#pengaruh-tinggi-terhadap-daya-pembangkit-listrik-tenaga-air">1. Pengaruh Tinggi terhadap Daya Pembangkit Listrik Tenaga Air</a></li>
+  <li><a href="#perbandingan-algoritma-estimasi-biaya-perangkat-lunak" id="toc-perbandingan-algoritma-estimasi-biaya-perangkat-lunak" class="nav-link" data-scroll-target="#perbandingan-algoritma-estimasi-biaya-perangkat-lunak">2. Perbandingan Algoritma Estimasi Biaya Perangkat Lunak</a></li>
+  <li><a href="#eksperimen-benjamin-franklin-tentang-gaya-seret-pada-kapal" id="toc-eksperimen-benjamin-franklin-tentang-gaya-seret-pada-kapal" class="nav-link" data-scroll-target="#eksperimen-benjamin-franklin-tentang-gaya-seret-pada-kapal">3. Eksperimen Benjamin Franklin tentang Gaya Seret pada Kapal</a></li>
+  </ul></li>
+  </ul></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -191,9 +438,754 @@ ul.task-list li input[type="checkbox"] {
 
 
 <p>Sedang disusun.</p>
+<section id="kerangka-kerja-probabilitas" class="level1">
+<h1>Kerangka Kerja Probabilitas</h1>
+<section id="soal-1-ruang-sampel-eksperimen" class="level2">
+<h2 class="anchored" data-anchor-id="soal-1-ruang-sampel-eksperimen">Soal 1: Ruang Sampel Eksperimen</h2>
+<p>Tentukan ruang sampel dari eksperimen berikut:</p>
+<ol type="1">
+<li>Sebuah paket data dikirimkan melalui jaringan hingga berhasil diterima tanpa kesalahan.</li>
+<li>Sistem komunikasi digital mengirimkan sinyal antara tegangan +5V dan -5V.</li>
+<li>Pengujian papan sirkuit dengan kemungkinan lulus atau gagal uji. Jika gagal, ditentukan jenis cacatnya dari enam kemungkinan.</li>
+<li>Waktu yang dibutuhkan benda jatuh ke tanah setelah dilempar ke udara.</li>
+<li>Dalam penyimpanan data optik, pembacaan dilakukan hingga empat kali sebelum sistem memutuskan kegagalan. Gambarkan ruang sampel dengan diagram pohon.</li>
+</ol>
+<section id="prinsip-yang-digunakan" class="level3">
+<h3 class="anchored" data-anchor-id="prinsip-yang-digunakan">Prinsip yang Digunakan:</h3>
+<ul>
+<li>Ruang sampel adalah himpunan semua kemungkinan hasil dari suatu eksperimen.</li>
+<li>Untuk kasus diskrit, ruang sampel terdiri dari sejumlah elemen yang bisa dihitung.</li>
+<li>Untuk kasus kontinu, ruang sampel terdiri dari rentang nilai.</li>
+</ul>
+</section>
+<section id="pola-berpikir" class="level3">
+<h3 class="anchored" data-anchor-id="pola-berpikir">Pola Berpikir:</h3>
+<ol type="1">
+<li>Identifikasi kejadian utama dalam eksperimen.</li>
+<li>Tentukan apakah hasil eksperimen bersifat diskrit atau kontinu.</li>
+<li>Jika diskrit, buat daftar kemungkinan hasil.</li>
+<li>Jika kontinu, tentukan batas rentang nilai yang mungkin.</li>
+<li>Jika perlu, gunakan diagram pohon untuk memvisualisasikan hasil percobaan yang berulang.</li>
+</ol>
+</section>
+</section>
+<section id="jawaban" class="level2">
+<h2 class="anchored" data-anchor-id="jawaban">Jawaban:</h2>
+<p>(Disertakan jawaban untuk setiap soal dalam bentuk tabel atau diagram sesuai kebutuhan)</p>
+<div id="e7ff6f3e" class="cell" data-execution_count="1">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> networkx <span class="im">as</span> nx</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> draw_tree():</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>    G <span class="op">=</span> nx.DiGraph()</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>    edges <span class="op">=</span> [(<span class="st">"Start"</span>, <span class="st">"Read 1"</span>),</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>             (<span class="st">"Read 1"</span>, <span class="st">"Success"</span>), (<span class="st">"Read 1"</span>, <span class="st">"Read 2"</span>),</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>             (<span class="st">"Read 2"</span>, <span class="st">"Success"</span>), (<span class="st">"Read 2"</span>, <span class="st">"Read 3"</span>),</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>             (<span class="st">"Read 3"</span>, <span class="st">"Success"</span>), (<span class="st">"Read 3"</span>, <span class="st">"Failure"</span>)]</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>    G.add_edges_from(edges)</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>    pos <span class="op">=</span> nx.spring_layout(G)</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>    nx.draw(G, pos, with_labels<span class="op">=</span><span class="va">True</span>, node_color<span class="op">=</span><span class="st">'lightblue'</span>, edge_color<span class="op">=</span><span class="st">'gray'</span>)</span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>    plt.show()</span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>draw_tree()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="index_files/figure-html/cell-2-output-1.png" width="691" height="499" class="figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+<hr>
+</section>
+<section id="soal-2-diagram-venn" class="level2">
+<h2 class="anchored" data-anchor-id="soal-2-diagram-venn">Soal 2: Diagram Venn</h2>
+<p>Gambarkan diagram Venn untuk tiga kejadian A, B, dan C serta arsirlah daerah yang sesuai untuk kejadian berikut:</p>
+<ol type="1">
+<li><span class="math inline">\(A \cup B\)</span></li>
+<li><span class="math inline">\(A \cap B\)</span></li>
+<li><span class="math inline">\(A^c \cup B\)</span></li>
+<li><span class="math inline">\(A \cap (B \cup C)\)</span></li>
+</ol>
+<section id="prinsip-yang-digunakan-1" class="level3">
+<h3 class="anchored" data-anchor-id="prinsip-yang-digunakan-1">Prinsip yang Digunakan:</h3>
+<ul>
+<li>Diagram Venn digunakan untuk memvisualisasikan hubungan antara himpunan dalam probabilitas.</li>
+<li>Operasi himpunan seperti union (<span class="math inline">\(\cup\)</span>) dan intersection (<span class="math inline">\(\cap\)</span>) menunjukkan bagaimana kejadian saling berhubungan.</li>
+</ul>
+</section>
+<section id="pola-berpikir-1" class="level3">
+<h3 class="anchored" data-anchor-id="pola-berpikir-1">Pola Berpikir:</h3>
+<ol type="1">
+<li>Tentukan himpunan yang diberikan dalam soal.</li>
+<li>Gunakan operasi himpunan untuk menemukan daerah yang sesuai.</li>
+<li>Gunakan diagram Venn untuk membantu visualisasi.</li>
+<li>Tandai daerah yang sesuai dengan arsir atau warna.</li>
+</ol>
+</section>
+</section>
+<section id="jawaban-1" class="level2">
+<h2 class="anchored" data-anchor-id="jawaban-1">Jawaban:</h2>
+<div id="ead77863" class="cell" data-execution_count="2">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> matplotlib_venn <span class="im">import</span> venn3</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> draw_venn():</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>    venn3(subsets <span class="op">=</span> (<span class="dv">1</span>, <span class="dv">1</span>, <span class="dv">1</span>, <span class="dv">1</span>, <span class="dv">1</span>, <span class="dv">1</span>, <span class="dv">1</span>), set_labels<span class="op">=</span>(<span class="st">'A'</span>, <span class="st">'B'</span>, <span class="st">'C'</span>))</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>    plt.show()</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>draw_venn()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="index_files/figure-html/cell-3-output-1.png" width="394" height="382" class="figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+<hr>
+</section>
+<section id="soal-3-probabilitas-ruang-sampel" class="level2">
+<h2 class="anchored" data-anchor-id="soal-3-probabilitas-ruang-sampel">Soal 3: Probabilitas Ruang Sampel</h2>
+<p>Diketahui ruang sampel <span class="math inline">\(S = \{s_1, s_2, s_3, s_4, s_5\}\)</span> dengan probabilitas berturut-turut 0.1, 0.1, 0.2, 0.4, dan 0.2. Jika <span class="math inline">\(A = \{s_1, s_2\}\)</span> dan <span class="math inline">\(B = \{s_3, s_4\}\)</span>, tentukan:</p>
+<ol type="1">
+<li><span class="math inline">\(P(A)\)</span></li>
+<li><span class="math inline">\(P(B)\)</span></li>
+<li><span class="math inline">\(P(A \cup B)\)</span></li>
+<li><span class="math inline">\(P(A \cap B)\)</span></li>
+<li><span class="math inline">\(P(A^c)\)</span></li>
+</ol>
+<section id="prinsip-yang-digunakan-2" class="level3">
+<h3 class="anchored" data-anchor-id="prinsip-yang-digunakan-2">Prinsip yang Digunakan:</h3>
+<ul>
+<li>Probabilitas dari suatu kejadian adalah jumlah probabilitas elemen yang termasuk dalam kejadian tersebut.</li>
+<li>Probabilitas komplemen dihitung dengan 1 dikurangi probabilitas kejadian.</li>
+<li>Jika dua kejadian tidak memiliki elemen bersama, maka <span class="math inline">\(P(A \cap B) = 0\)</span>.</li>
+</ul>
+</section>
+<section id="pola-berpikir-2" class="level3">
+<h3 class="anchored" data-anchor-id="pola-berpikir-2">Pola Berpikir:</h3>
+<ol type="1">
+<li>Identifikasi elemen yang termasuk dalam setiap kejadian.</li>
+<li>Jumlahkan probabilitas elemen yang masuk dalam kejadian tersebut.</li>
+<li>Gunakan aturan probabilitas dasar untuk menghitung probabilitas lainnya.</li>
+</ol>
+</section>
+</section>
+<section id="jawaban-2" class="level2">
+<h2 class="anchored" data-anchor-id="jawaban-2">Jawaban:</h2>
+<div id="2ff582a7" class="cell" data-execution_count="3">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>P_S <span class="op">=</span> [<span class="fl">0.1</span>, <span class="fl">0.1</span>, <span class="fl">0.2</span>, <span class="fl">0.4</span>, <span class="fl">0.2</span>]</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>A <span class="op">=</span> [<span class="fl">0.1</span>, <span class="fl">0.1</span>]</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>B <span class="op">=</span> [<span class="fl">0.2</span>, <span class="fl">0.4</span>]</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>P_A <span class="op">=</span> <span class="bu">sum</span>(A)</span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>P_B <span class="op">=</span> <span class="bu">sum</span>(B)</span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>P_A_union_B <span class="op">=</span> P_A <span class="op">+</span> P_B</span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>P_A_intersection_B <span class="op">=</span> <span class="dv">0</span>  <span class="co"># karena A dan B tidak memiliki irisan</span></span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>P_A_complement <span class="op">=</span> <span class="dv">1</span> <span class="op">-</span> P_A</span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>P_A, P_B, P_A_union_B, P_A_intersection_B, P_A_complement</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="3">
+<pre><code>(0.2, 0.6000000000000001, 0.8, 0, 0.8)</code></pre>
+</div>
+</div>
+<hr>
+<p>Dokumen ini berisi soal-soal yang serupa dengan yang ada dalam Problem Set 1, lengkap dengan prinsip yang digunakan, pola berpikir yang diterapkan, serta jawaban dan implementasi kode Python untuk perhitungan probabilitas dan visualisasi diagram.</p>
+<hr>
+</section>
+<section id="soal" class="level2">
+<h2 class="anchored" data-anchor-id="soal">Soal</h2>
+<section id="model-komunikasi" class="level3">
+<h3 class="anchored" data-anchor-id="model-komunikasi">1. Model Komunikasi</h3>
+<p>Banyak sistem komunikasi dapat dimodelkan dengan cara ini. Pengguna memasukkan sebuah 0 atau 1 ke dalam sistem, dan sinyal yang sesuai akan dikirimkan. Penerima membuat keputusan berdasarkan sinyal yang diterima. Jika pengguna mengirimkan 0 dengan probabilitas <span class="math inline">\(1 - p\)</span> dan 1 dengan probabilitas <span class="math inline">\(p\)</span>, serta kesalahan penerima terjadi dengan probabilitas tertentu. Tentukan probabilitas keputusan penerima untuk berbagai skenario dan gambarkan diagram pohonnya!</p>
+</section>
+<section id="probabilitas-website-judi-dan-teorema-bayes" class="level3">
+<h3 class="anchored" data-anchor-id="probabilitas-website-judi-dan-teorema-bayes">2. Probabilitas Website Judi dan Teorema Bayes</h3>
+<p>Diketahui bahwa 5% website yang diakses penduduk Indonesia bermuatan judi. Sebuah sistem klasifikasi berbasis Data Science memiliki tingkat akurasi dan false positive tertentu. Gunakan Teorema Bayes untuk menentukan probabilitas website benar-benar bermuatan judi saat diuji positif!</p>
+</section>
+<section id="parkir-kampus" class="level3">
+<h3 class="anchored" data-anchor-id="parkir-kampus">3. Parkir Kampus</h3>
+<p>Pak Abbas mengamati peluang mendapatkan parkiran di kampus dengan tiga pilihan parkir: SR, Kubus, dan Sipil. Jika tidak tersedia, maka ia berlanjut ke opsi berikutnya dengan probabilitas tertentu. Tentukan probabilitas Pak Abbas mendapatkan parkir gratis!</p>
+</section>
+<section id="asuransi-dan-risiko-kecelakaan" class="level3">
+<h3 class="anchored" data-anchor-id="asuransi-dan-risiko-kecelakaan">4. Asuransi dan Risiko Kecelakaan</h3>
+<p>Suatu perusahaan asuransi membagi masyarakat menjadi dua kelas: rawan kecelakaan dan tidak rawan kecelakaan, dengan probabilitas kecelakaan masing-masing. Tentukan probabilitas seseorang mengalami kecelakaan dan apakah mereka rawan kecelakaan jika mengalami kecelakaan!</p>
+</section>
+<section id="tes-darah-dan-false-positives" class="level3">
+<h3 class="anchored" data-anchor-id="tes-darah-dan-false-positives">5. Tes Darah dan False Positives</h3>
+<p>Sebuah tes darah memiliki efektivitas tertentu dalam mendeteksi suatu penyakit. Gunakan Teorema Bayes untuk menentukan probabilitas seseorang benar-benar sakit jika tesnya positif!</p>
+</section>
+</section>
+<section id="soal-set-3" class="level2">
+<h2 class="anchored" data-anchor-id="soal-set-3">Soal Set 3</h2>
+<section id="random-variable-diskrit" class="level3">
+<h3 class="anchored" data-anchor-id="random-variable-diskrit">1. Random Variable Diskrit</h3>
+<p>Misalkan <span class="math inline">\(X\)</span> adalah random variable diskrit dengan PMF tertentu. Tentukan: - <span class="math inline">\(P(X = x)\)</span> untuk berbagai nilai <span class="math inline">\(x\)</span>. - Range dari <span class="math inline">\(X\)</span>. - <span class="math inline">\(E(X)\)</span> dan <span class="math inline">\(Var(X)\)</span>.</p>
+</section>
+<section id="fungsi-distribusi-random-variable-diskrit" class="level3">
+<h3 class="anchored" data-anchor-id="fungsi-distribusi-random-variable-diskrit">2. Fungsi Distribusi Random Variable Diskrit</h3>
+<p>Diketahui fungsi distribusi random variable <span class="math inline">\(X\)</span> sebagai berikut: - Gambarkan grafik fungsi distribusi! - Tentukan fungsi massa probabilitas dari <span class="math inline">\(X\)</span>! - Hitung <span class="math inline">\(P(X &lt; 1)\)</span>, <span class="math inline">\(P(0 &lt; X \leq 3)\)</span>, <span class="math inline">\(P(0 \leq X &lt; 3)\)</span>, <span class="math inline">\(P(0 &lt; X &lt; 3)\)</span>, dan <span class="math inline">\(P(0 \leq X \leq 3)\)</span>.</p>
+</section>
+<section id="timbangan-elektrik" class="level3">
+<h3 class="anchored" data-anchor-id="timbangan-elektrik">3. Timbangan Elektrik</h3>
+<p>Sebuah timbangan elektrik menampilkan berat dengan ketelitian tertentu dan batas maksimal tertentu. Tentukan range dari random variable berat yang ditampilkan.</p>
+</section>
+<section id="sampling-part-mesin" class="level3">
+<h3 class="anchored" data-anchor-id="sampling-part-mesin">4. Sampling Part Mesin</h3>
+<p>Sebanyak 500 part mesin mengandung 10 part cacat. Sebuah sampel sebanyak 5 part diambil. - Tentukan distribusi jumlah part cacat dalam sampel. - Tentukan probabilitas setidaknya 1 part dalam sampel cacat.</p>
+</section>
+<section id="sistem-komunikasi" class="level3">
+<h3 class="anchored" data-anchor-id="sistem-komunikasi">5. Sistem Komunikasi</h3>
+<p>Sebuah sistem komunikasi memiliki 4 jalur eksternal. Pada waktu tertentu, probabilitas satu jalur digunakan adalah 0,8. Tentukan: - Ruang sampel dari jumlah jalur yang digunakan. - Tabel probabilitas dari jumlah jalur yang digunakan.</p>
+</section>
+<section id="analisis-keberhasilan-produk" class="level3">
+<h3 class="anchored" data-anchor-id="analisis-keberhasilan-produk">6. Analisis Keberhasilan Produk</h3>
+<p>Divisi Marketing memperkirakan sebuah produk dapat sangat berhasil, berhasil, atau gagal dengan probabilitas tertentu. Tentukan PMF dari pendapatan tahunan yang dihasilkan produk tersebut.</p>
+</section>
+<section id="manufaktur-semikonduktor" class="level3">
+<h3 class="anchored" data-anchor-id="manufaktur-semikonduktor">7. Manufaktur Semikonduktor</h3>
+<p>Dalam proses manufaktur semikonduktor, 3 wafer diuji. Probabilitas setiap wafer lolos uji adalah 0,8. Tentukan: - PMF dari jumlah wafer yang lolos. - CMF dari jumlah wafer yang lolos. - Mean dan variansi dari random variable tersebut.</p>
+</section>
+<section id="maskapai-penerbangan" class="level3">
+<h3 class="anchored" data-anchor-id="maskapai-penerbangan">8. Maskapai Penerbangan</h3>
+<p>Sebuah maskapai menjual 125 tiket untuk 120 kursi. Probabilitas seorang penumpang tidak datang adalah 0,1. Tentukan: - Probabilitas semua penumpang yang datang mendapatkan kursi. - Probabilitas terdapat kursi kosong dalam penerbangan.</p>
+</section>
+<section id="distribusi-poisson-dalam-panggilan-telepon" class="level3">
+<h3 class="anchored" data-anchor-id="distribusi-poisson-dalam-panggilan-telepon">9. Distribusi Poisson dalam Panggilan Telepon</h3>
+<p>Misalkan jumlah panggilan telepon yang masuk dalam satu jam mengikuti distribusi Poisson dengan rata-rata 10 panggilan per jam. Hitung: - Probabilitas terdapat tepat 5 panggilan dalam 1 jam. - Probabilitas terdapat 3 atau kurang panggilan dalam 1 jam. - Probabilitas terdapat tepat 15 panggilan dalam 2 jam. - Probabilitas terdapat tepat 5 panggilan dalam 30 menit.</p>
+</section>
+<section id="distribusi-poisson-dalam-cacat-panel-plastik" class="level3">
+<h3 class="anchored" data-anchor-id="distribusi-poisson-dalam-cacat-panel-plastik">10. Distribusi Poisson dalam Cacat Panel Plastik</h3>
+<p>Jumlah cacat permukaan pada panel plastik digunakan dalam interior mobil mengikuti distribusi Poisson dengan rata-rata 0,05 cacat per ft². Jika interior mobil mengandung 10 ft² panel plastik, tentukan: - Probabilitas tidak ada cacat permukaan. - Probabilitas dari 10 mobil, tidak ada yang memiliki cacat permukaan. - Probabilitas paling banyak satu mobil memiliki cacat permukaan. - Probabilitas lebih sedikit dari 5 panel memiliki cacat permukaan dalam 100 panel.</p>
+</section>
+<section id="infrastruktur-data-center" class="level3">
+<h3 class="anchored" data-anchor-id="infrastruktur-data-center">11. Infrastruktur Data Center</h3>
+<p>Sebuah bank menggunakan 5 Data Center untuk menjalankan sistem Core Banking. Probabilitas setiap Data Center berfungsi dengan baik adalah 0,8. Tentukan: - Tabel distribusi probabilitas jumlah Data Center yang berfungsi. - Distribusi kumulatif dari jumlah Data Center yang berfungsi. - Estimasi median dari distribusi ini. - Mean dan variansi dari jumlah Data Center yang berfungsi. - Probabilitas sistem down secara total. - Probabilitas sistem nyaris down (hanya 1 Data Center berfungsi). - Probabilitas minimal 1 Data Center berfungsi.</p>
+</section>
+<section id="distribusi-geometrik-dalam-umur-komponen" class="level3">
+<h3 class="anchored" data-anchor-id="distribusi-geometrik-dalam-umur-komponen">12. Distribusi Geometrik dalam Umur Komponen</h3>
+<p>Sebuah komponen memiliki umur yang mengikuti distribusi geometrik dengan parameter tertentu. Tentukan: - Distribusi probabilitas umur komponen. - Distribusi kumulatif umur komponen. - Median dari distribusi ini. - Ekspektasi umur komponen. - Probabilitas komponen bertahan setidaknya sampai hari ke-i.</p>
+</section>
+<section id="fungsi-probabilitas-kontinu" class="level3">
+<h3 class="anchored" data-anchor-id="fungsi-probabilitas-kontinu">13. Fungsi Probabilitas Kontinu</h3>
+<p>Diketahui fungsi probabilitas density function (PDF) dari random variable kontinu <span class="math inline">\(X\)</span>: - Hitung nilai konstanta <span class="math inline">\(k\)</span>. - Gambarkan grafik <span class="math inline">\(f(x)\)</span>. - Hitung fungsi distribusi kumulatif <span class="math inline">\(F(x)\)</span>. - Hitung <span class="math inline">\(P(X &lt; 1/2)\)</span> dan <span class="math inline">\(P(1/2 &lt; X &lt; 1)\)</span>.</p>
+</section>
+<section id="distribusi-pareto-dalam-running-time" class="level3">
+<h3 class="anchored" data-anchor-id="distribusi-pareto-dalam-running-time">14. Distribusi Pareto dalam Running Time</h3>
+<p>Sebuah algoritma memiliki running time minimal 1 unit waktu dan mengikuti distribusi Pareto. Tentukan probabilitas running time melebihi 1000 unit waktu.</p>
+</section>
+<section id="distribusi-eksponensial-dalam-ftp" class="level3">
+<h3 class="anchored" data-anchor-id="distribusi-eksponensial-dalam-ftp">15. Distribusi Eksponensial dalam FTP</h3>
+<p>Sebuah sesi FTP memiliki durasi minimum tertentu dan mengikuti distribusi eksponensial. Tentukan probabilitas sesi melebihi waktu tertentu.</p>
+</section>
+<section id="distribusi-uniform-dalam-kedatangan-kereta" class="level3">
+<h3 class="anchored" data-anchor-id="distribusi-uniform-dalam-kedatangan-kereta">16. Distribusi Uniform dalam Kedatangan Kereta</h3>
+<p>Kereta tiba setiap 15 menit, dan seorang penumpang tiba secara uniform dalam rentang 30 menit. Tentukan probabilitas penumpang menunggu kurang dari 5 menit.</p>
+</section>
+<section id="distribusi-poisson-dalam-kesalahan-ketik" class="level3">
+<h3 class="anchored" data-anchor-id="distribusi-poisson-dalam-kesalahan-ketik">17. Distribusi Poisson dalam Kesalahan Ketik</h3>
+<p>Kesalahan ketik dalam buku mengikuti distribusi Poisson dengan rata-rata 0,01 kesalahan per halaman. Tentukan probabilitas terdapat kurang dari atau sama dengan tiga kesalahan dalam 100 halaman.</p>
+</section>
+<section id="probabilitas-lampu-hijau-di-persimpangan" class="level3">
+<h3 class="anchored" data-anchor-id="probabilitas-lampu-hijau-di-persimpangan">18. Probabilitas Lampu Hijau di Persimpangan</h3>
+<p>Lampu lalu lintas memiliki probabilitas hijau 20% saat dilewati setiap pagi. Tentukan: - Probabilitas hijau hanya 1 kali dalam 5 pagi. - Probabilitas hijau tepat 4 kali dalam 20 pagi. - Probabilitas hijau lebih dari 4 kali dalam 20 minggu.</p>
+</section>
+<section id="distribusi-binomial-dalam-komponen-cacat" class="level3">
+<h3 class="anchored" data-anchor-id="distribusi-binomial-dalam-komponen-cacat">19. Distribusi Binomial dalam Komponen Cacat</h3>
+<p>Suatu perusahaan menyimpan komponen dengan 2% cacat. Berapa banyak komponen yang dibutuhkan agar 100 order dapat dipenuhi dengan probabilitas minimal 0,95 tanpa komponen cacat?</p>
+</section>
+<section id="distribusi-eksponensial-dalam-daya-tahan-aki" class="level3">
+<h3 class="anchored" data-anchor-id="distribusi-eksponensial-dalam-daya-tahan-aki">20. Distribusi Eksponensial dalam Daya Tahan Aki</h3>
+<p>Jarak tempuh mobil hingga aki habis mengikuti distribusi eksponensial dengan rata-rata 10.000 km. Tentukan probabilitas mobil dapat menempuh 5000 km tanpa mengganti aki.</p>
+</section>
+</section>
+<section id="soal-set-4" class="level2">
+<h2 class="anchored" data-anchor-id="soal-set-4">Soal Set 4</h2>
+<section id="distribusi-seragam" class="level3">
+<h3 class="anchored" data-anchor-id="distribusi-seragam">1. Distribusi Seragam</h3>
+<p>Misalkan <span class="math inline">\(X\)</span> adalah peubah acak berdistribusi seragam dengan rentang bilangan bulat dari 0 sampai 9. Tentukan: - Rataan (<span class="math inline">\(E(X)\)</span>), - Variansi (<span class="math inline">\(Var(X)\)</span>), - Standar deviasi dari <span class="math inline">\(X\)</span>, - Bandingkan hasilnya dengan nilai yang diperoleh secara empiris.</p>
+</section>
+<section id="distribusi-normal" class="level3">
+<h3 class="anchored" data-anchor-id="distribusi-normal">2. Distribusi Normal</h3>
+<p>Misalkan tinggi rata-rata mahasiswa di suatu universitas mengikuti distribusi normal dengan mean 170 cm dan standar deviasi 10 cm. Tentukan: - Probabilitas seorang mahasiswa memiliki tinggi lebih dari 180 cm. - Probabilitas seorang mahasiswa memiliki tinggi antara 160 cm dan 175 cm. - Persentil ke-90 dari distribusi tinggi mahasiswa.</p>
+</section>
+<section id="distribusi-binomial" class="level3">
+<h3 class="anchored" data-anchor-id="distribusi-binomial">3. Distribusi Binomial</h3>
+<p>Sebuah perusahaan memiliki tingkat keberhasilan produksi sebesar 90%. Dari 15 unit yang diproduksi, tentukan: - Probabilitas tepat 12 unit berhasil. - Probabilitas minimal 13 unit berhasil. - Probabilitas kurang dari 10 unit berhasil.</p>
+</section>
+<section id="distribusi-poisson" class="level3">
+<h3 class="anchored" data-anchor-id="distribusi-poisson">4. Distribusi Poisson</h3>
+<p>Sebuah sistem panggilan darurat menerima rata-rata 4 panggilan per jam. Hitung: - Probabilitas menerima tepat 3 panggilan dalam satu jam. - Probabilitas menerima lebih dari 5 panggilan dalam satu jam. - Probabilitas tidak ada panggilan dalam 30 menit.</p>
+</section>
+<section id="distribusi-eksponensial" class="level3">
+<h3 class="anchored" data-anchor-id="distribusi-eksponensial">5. Distribusi Eksponensial</h3>
+<p>Misalkan waktu antara dua kegagalan pada mesin industri mengikuti distribusi eksponensial dengan rata-rata 20 jam. - Tentukan probabilitas mesin mengalami kegagalan dalam waktu kurang dari 10 jam. - Tentukan probabilitas mesin bertahan lebih dari 30 jam tanpa kegagalan.</p>
+</section>
+<section id="distribusi-geometrik" class="level3">
+<h3 class="anchored" data-anchor-id="distribusi-geometrik">6. Distribusi Geometrik</h3>
+<p>Suatu mesin hanya berfungsi jika tombol dinyalakan dengan benar. Probabilitas menyalakan tombol dengan benar adalah 0.7. Hitung: - Probabilitas bahwa pertama kali berhasil menyalakan tombol pada percobaan ke-3. - Probabilitas bahwa tombol menyala dalam percobaan pertama atau kedua.</p>
+</section>
+<section id="distribusi-bernoulli" class="level3">
+<h3 class="anchored" data-anchor-id="distribusi-bernoulli">7. Distribusi Bernoulli</h3>
+<p>Dalam sebuah ujian pilihan ganda dengan 5 pilihan per soal, seorang mahasiswa menebak jawabannya secara acak. Hitung probabilitas mahasiswa tersebut menjawab benar jika: - Satu soal dijawab secara acak. - Dari 10 soal, mahasiswa menjawab benar minimal 3 soal.</p>
+</section>
+<section id="distribusi-pareto" class="level3">
+<h3 class="anchored" data-anchor-id="distribusi-pareto">8. Distribusi Pareto</h3>
+<p>Misalkan waktu tunggu untuk mendapatkan layanan di suatu kantor mengikuti distribusi Pareto dengan parameter tertentu. Tentukan probabilitas seorang pelanggan menunggu lebih dari 30 menit.</p>
+</section>
+<section id="distribusi-weibull" class="level3">
+<h3 class="anchored" data-anchor-id="distribusi-weibull">9. Distribusi Weibull</h3>
+<p>Dalam suatu uji keandalan komponen elektronik, waktu kegagalan suatu komponen mengikuti distribusi Weibull dengan parameter skala tertentu. Tentukan probabilitas komponen bertahan lebih dari waktu tertentu.</p>
+</section>
+<section id="fungsi-kepadatan-probabilitas-pdf" class="level3">
+<h3 class="anchored" data-anchor-id="fungsi-kepadatan-probabilitas-pdf">10. Fungsi Kepadatan Probabilitas (PDF)</h3>
+<p>Diketahui fungsi kepadatan probabilitas suatu distribusi kontinu. Hitung: - Nilai normalisasi konstanta. - Fungsi distribusi kumulatif (CDF). - Probabilitas dalam interval tertentu.</p>
+</section>
+<section id="distribusi-gamma" class="level3">
+<h3 class="anchored" data-anchor-id="distribusi-gamma">11. Distribusi Gamma</h3>
+<p>Sebuah pabrik memiliki mesin dengan umur pakai yang mengikuti distribusi Gamma. Tentukan probabilitas mesin bertahan lebih dari waktu tertentu.</p>
+</section>
+<section id="statistik-deskriptif" class="level3">
+<h3 class="anchored" data-anchor-id="statistik-deskriptif">12. Statistik Deskriptif</h3>
+<p>Diberikan sekumpulan data observasi, hitung: - Mean, - Median, - Modus, - Kuartil, - Standar deviasi, - Variansi, - Skewness, - Kurtosis.</p>
+</section>
+<section id="pengujian-hipotesis" class="level3">
+<h3 class="anchored" data-anchor-id="pengujian-hipotesis">13. Pengujian Hipotesis</h3>
+<p>Seorang peneliti ingin menguji apakah rata-rata penghasilan di suatu daerah lebih dari Rp5 juta per bulan. Gunakan uji-t untuk menjawab pertanyaan tersebut.</p>
+</section>
+<section id="regresi-linier" class="level3">
+<h3 class="anchored" data-anchor-id="regresi-linier">14. Regresi Linier</h3>
+<p>Misalkan hubungan antara pengalaman kerja (tahun) dan gaji (juta rupiah) di suatu perusahaan dapat dimodelkan dengan regresi linier. Tentukan: - Persamaan regresi linier berdasarkan data sampel. - Koefisien determinasi (<span class="math inline">\(R^2\)</span>). - Signifikansi hubungan antara pengalaman dan gaji.</p>
+</section>
+<section id="analisis-varians-anova" class="level3">
+<h3 class="anchored" data-anchor-id="analisis-varians-anova">15. Analisis Varians (ANOVA)</h3>
+<p>Suatu penelitian membandingkan rata-rata skor ujian dari tiga metode pembelajaran yang berbeda. Gunakan uji ANOVA untuk menentukan apakah terdapat perbedaan yang signifikan antara metode pembelajaran tersebut.</p>
+</section>
+<section id="chi-square-test" class="level3">
+<h3 class="anchored" data-anchor-id="chi-square-test">16. Chi-Square Test</h3>
+<p>Sebuah supermarket ingin mengetahui apakah terdapat hubungan antara jenis kelamin pelanggan dan preferensi produk tertentu. Gunakan uji Chi-Square untuk menguji hipotesis ini.</p>
+</section>
+<section id="simulasi-monte-carlo" class="level3">
+<h3 class="anchored" data-anchor-id="simulasi-monte-carlo">17. Simulasi Monte Carlo</h3>
+<p>Gunakan metode simulasi Monte Carlo untuk memperkirakan nilai <span class="math inline">\(\pi\)</span> dengan menggunakan pendekatan acak.</p>
+</section>
+<section id="teorema-bayes" class="level3">
+<h3 class="anchored" data-anchor-id="teorema-bayes">18. Teorema Bayes</h3>
+<p>Seorang dokter melakukan tes medis untuk mendeteksi suatu penyakit dengan akurasi tertentu. Tentukan probabilitas seorang pasien benar-benar memiliki penyakit jika hasil tesnya positif.</p>
+</section>
+<section id="estimasi-interval-kepercayaan" class="level3">
+<h3 class="anchored" data-anchor-id="estimasi-interval-kepercayaan">19. Estimasi Interval Kepercayaan</h3>
+<p>Diberikan data sampel mengenai tinggi badan mahasiswa, hitung interval kepercayaan 95% untuk mean populasi.</p>
+</section>
+<section id="probabilitas-gabungan-dan-bersyarat" class="level3">
+<h3 class="anchored" data-anchor-id="probabilitas-gabungan-dan-bersyarat">20. Probabilitas Gabungan dan Bersyarat</h3>
+<p>Dua kejadian <span class="math inline">\(A\)</span> dan <span class="math inline">\(B\)</span> memiliki hubungan probabilitas tertentu. Tentukan: - Probabilitas gabungan <span class="math inline">\(P(A \cap B)\)</span>. - Probabilitas bersyarat <span class="math inline">\(P(A | B)\)</span>. - Probabilitas <span class="math inline">\(P(A \cup B)\)</span> dengan aturan probabilitas.</p>
+</section>
+</section>
+<section id="soal-set-5" class="level2">
+<h2 class="anchored" data-anchor-id="soal-set-5">Soal Set 5</h2>
+<section id="distribusi-eksponensial-dalam-kegagalan-komponen" class="level3">
+<h3 class="anchored" data-anchor-id="distribusi-eksponensial-dalam-kegagalan-komponen">1. Distribusi Eksponensial dalam Kegagalan Komponen</h3>
+<p>Misalkan waktu kegagalan sebuah komponen elektronik dalam mesin fotokopi mengikuti distribusi eksponensial. Tentukan: - Probabilitas komponen bertahan lebih dari 3000 jam sebelum mengalami kegagalan. - Probabilitas komponen gagal dalam rentang 1000 hingga 2000 jam. - Probabilitas komponen gagal sebelum 1000 jam. - Waktu saat 10% dari seluruh komponen telah mengalami kegagalan.</p>
+</section>
+<section id="fungsi-distribusi-kumulatif" class="level3">
+<h3 class="anchored" data-anchor-id="fungsi-distribusi-kumulatif">2. Fungsi Distribusi Kumulatif</h3>
+<p>Lebar gap suatu kepala rekaman magnetik merupakan variabel acak kontinu dalam rentang 0 hingga 2. Jika fungsi kepadatan probabilitasnya diberikan, tentukan: - Fungsi distribusi kumulatifnya.</p>
+</section>
+<section id="distribusi-kontinu-dalam-ketebalan-coating" class="level3">
+<h3 class="anchored" data-anchor-id="distribusi-kontinu-dalam-ketebalan-coating">3. Distribusi Kontinu dalam Ketebalan Coating</h3>
+<p>Ketebalan sebuah conductive coating memiliki fungsi kepadatan tertentu pada interval tertentu. Tentukan: - Nilai rata-rata dan variansi dari ketebalan coating. - Biaya rata-rata proses coating jika dikenakan biaya per mikrometer ketebalan.</p>
+</section>
+<section id="distribusi-uniform-dalam-berat-paket-kimia" class="level3">
+<h3 class="anchored" data-anchor-id="distribusi-uniform-dalam-berat-paket-kimia">4. Distribusi Uniform dalam Berat Paket Kimia</h3>
+<p>Berat bersih sebuah paket senyawa kimia mengikuti distribusi seragam pada interval tertentu. Tentukan: - Rata-rata dan variansi berat paket. - Fungsi distribusi kumulatifnya.</p>
+</section>
+<section id="distribusi-normal-dalam-pembelahan-sel" class="level3">
+<h3 class="anchored" data-anchor-id="distribusi-normal-dalam-pembelahan-sel">5. Distribusi Normal dalam Pembelahan Sel</h3>
+<p>Waktu yang dibutuhkan sel untuk mitosis mengikuti distribusi normal dengan rata-rata dan standar deviasi tertentu. Tentukan: - Probabilitas sel membelah dalam waktu kurang dari 45 menit. - Probabilitas sel membelah dalam waktu lebih dari 65 menit. - Waktu minimum untuk 99% sel menyelesaikan mitosis.</p>
+</section>
+<section id="distribusi-normal-dalam-kekuatan-semen" class="level3">
+<h3 class="anchored" data-anchor-id="distribusi-normal-dalam-kekuatan-semen">6. Distribusi Normal dalam Kekuatan Semen</h3>
+<p>Kekuatan sampel semen mengikuti distribusi normal dengan rata-rata dan standar deviasi tertentu. Tentukan: - Probabilitas kekuatan sampel kurang dari nilai tertentu. - Probabilitas kekuatan sampel dalam rentang tertentu. - Kekuatan yang dimiliki oleh lebih dari 95% sampel.</p>
+</section>
+<section id="distribusi-binomial-dalam-produksi-chip" class="level3">
+<h3 class="anchored" data-anchor-id="distribusi-binomial-dalam-produksi-chip">7. Distribusi Binomial dalam Produksi Chip</h3>
+<p>Suatu proses manufaktur menghasilkan chip dengan tingkat kecacatan 2%. Dari 1000 chip, tentukan: - Probabilitas lebih dari 25 chip cacat. - Probabilitas antara 20 hingga 30 chip cacat.</p>
+</section>
+<section id="distribusi-poisson-dalam-partikel-asbes" class="level3">
+<h3 class="anchored" data-anchor-id="distribusi-poisson-dalam-partikel-asbes">8. Distribusi Poisson dalam Partikel Asbes</h3>
+<p>Jumlah partikel asbes dalam sampel debu mengikuti distribusi Poisson. Tentukan: - Probabilitas 10 cm² debu mengandung lebih dari 10.000 partikel menggunakan pendekatan normal.</p>
+</section>
+<section id="distribusi-eksponensial-dalam-umur-regulator-voltase" class="level3">
+<h3 class="anchored" data-anchor-id="distribusi-eksponensial-dalam-umur-regulator-voltase">9. Distribusi Eksponensial dalam Umur Regulator Voltase</h3>
+<p>Regulator voltase mobil mengikuti distribusi eksponensial dengan rata-rata 6 tahun. Jika mobil telah digunakan selama 6 tahun, tentukan: - Probabilitas regulator mengalami kegagalan dalam 6 tahun ke depan. - Rata-rata waktu hingga kegagalan berikutnya setelah penggantian regulator.</p>
+</section>
+<section id="distribusi-eksponensial-dalam-kegagalan-kipas-pc" class="level3">
+<h3 class="anchored" data-anchor-id="distribusi-eksponensial-dalam-kegagalan-kipas-pc">10. Distribusi Eksponensial dalam Kegagalan Kipas PC</h3>
+<p>Misalkan waktu kegagalan kipas PC mengikuti distribusi eksponensial. Tentukan: - Probabilitas kipas bertahan setidaknya 10.000 jam. - Probabilitas kipas bertahan paling lama 7.000 jam.</p>
+</section>
+<section id="distribusi-eksponensial-dalam-kegagalan-laser" class="level3">
+<h3 class="anchored" data-anchor-id="distribusi-eksponensial-dalam-kegagalan-laser">11. Distribusi Eksponensial dalam Kegagalan Laser</h3>
+<p>Waktu antara kegagalan laser dalam mesin sitogenik mengikuti distribusi eksponensial. Tentukan: - Variansi waktu antar kegagalan. - Prakiraan waktu hingga kegagalan kedua. - Probabilitas waktu hingga kegagalan ketiga lebih dari 50.000 jam.</p>
+</section>
+<section id="distribusi-poisson-dalam-error-kepingan-optik" class="level3">
+<h3 class="anchored" data-anchor-id="distribusi-poisson-dalam-error-kepingan-optik">12. Distribusi Poisson dalam Error Kepingan Optik</h3>
+<p>Error pada kepingan optik muncul dengan kecepatan tertentu mengikuti distribusi Poisson. Tentukan: - Nilai rata-rata bilangan bit hingga 5 error muncul. - Standar deviasi dari bilangan bit hingga 5 error muncul. - Probabilitas terdapat 3 atau lebih error dalam rentang tertentu.</p>
+</section>
+<section id="distribusi-weibull-dalam-umur-kepingan-magnetik" class="level3">
+<h3 class="anchored" data-anchor-id="distribusi-weibull-dalam-umur-kepingan-magnetik">13. Distribusi Weibull dalam Umur Kepingan Magnetik</h3>
+<p>Umur paket kepingan magnetik terkena gas korosif mengikuti distribusi Weibull. Tentukan: - Probabilitas kepingan bertahan setidaknya 500 jam. - Probabilitas kepingan gagal sebelum 400 jam. - Distribusi lain yang sesuai untuk variabel ini serta nilai ekspektasinya.</p>
+</section>
+<section id="distribusi-eksponensial-dalam-umur-aki-mobil" class="level3">
+<h3 class="anchored" data-anchor-id="distribusi-eksponensial-dalam-umur-aki-mobil">14. Distribusi Eksponensial dalam Umur Aki Mobil</h3>
+<p>Jarak tempuh mobil hingga aki habis mengikuti distribusi eksponensial dengan rata-rata 10.000 km. Jika seseorang ingin melakukan perjalanan 5000 km, tentukan: - Probabilitas perjalanan selesai tanpa mengganti aki.</p>
+</section>
+</section>
+<section id="problem-set6" class="level2">
+<h2 class="anchored" data-anchor-id="problem-set6"><strong>Problem Set:6</strong></h2>
+<section id="soal-1-fungsi-massa-probabilitas-gabungan" class="level3">
+<h3 class="anchored" data-anchor-id="soal-1-fungsi-massa-probabilitas-gabungan"><strong>Soal 1: Fungsi Massa Probabilitas Gabungan</strong></h3>
+<p>Tunjukkan bahwa fungsi berikut memenuhi sifat-sifat dari fungsi massa probabilitas gabungan:</p>
+<p><span class="math display">\[ f(x, y) = \frac{k}{x+y}, \quad \text{untuk } x = 1, 2, 3 \text{ dan } y = 1, 2, 3. \]</span></p>
+<p>Tentukan nilai ( k ) agar ( f(x, y) ) menjadi fungsi massa probabilitas gabungan yang valid.</p>
+<hr>
+</section>
+<section id="soal-2-distribusi-probabilitas-gabungan-dari-dua-variabel" class="level3">
+<h3 class="anchored" data-anchor-id="soal-2-distribusi-probabilitas-gabungan-dari-dua-variabel"><strong>Soal 2: Distribusi Probabilitas Gabungan dari Dua Variabel</strong></h3>
+<p>Dua sensor pendeteksi kesalahan dalam sistem produksi bekerja secara independen. Sensor pertama (X) mendeteksi kesalahan pada sebuah produk dengan probabilitas 0,3, sedangkan sensor kedua (Y) mendeteksi kesalahan dengan probabilitas 0,5. Jika 4 produk diperiksa, tentukan distribusi probabilitas gabungan dari X (jumlah produk yang dideteksi rusak oleh sensor pertama) dan Y (jumlah produk yang dideteksi rusak oleh sensor kedua).</p>
+<hr>
+</section>
+<section id="soal-3-probabilitas-kondisional" class="level3">
+<h3 class="anchored" data-anchor-id="soal-3-probabilitas-kondisional"><strong>Soal 3: Probabilitas Kondisional</strong></h3>
+<p>Sebuah toko online memiliki 200 halaman web, dengan 50% berisi grafik rendah, 30% grafik sedang, dan 20% grafik tinggi. Sebuah sampel 5 halaman diambil tanpa penggantian. Definisikan X sebagai jumlah halaman dengan grafik sedang dan Y sebagai jumlah halaman dengan grafik tinggi. Tentukan:</p>
+<ul>
+<li>( f_{Y|X=2}(y) ), distribusi probabilitas bersyarat dari Y ketika X = 2.</li>
+<li>Apakah X dan Y independen?</li>
+</ul>
+<hr>
+</section>
+<section id="soal-4-distribusi-multinomial" class="level3">
+<h3 class="anchored" data-anchor-id="soal-4-distribusi-multinomial"><strong>Soal 4: Distribusi Multinomial</strong></h3>
+<p>Empat telepon seluler mengalami cacat akibat kesalahan produksi. Setiap telepon diklasifikasikan ke dalam tiga kategori cacat: berat, sedang, dan ringan. Berdasarkan data sebelumnya, 50% dari telepon yang rusak mengalami cacat berat, 35% cacat sedang, dan 15% cacat ringan.</p>
+<ul>
+<li>Apakah distribusi probabilitas jumlah telepon dalam setiap kategori bersifat multinomial? Mengapa atau mengapa tidak?</li>
+<li>Berapa probabilitas bahwa dari empat telepon tersebut, 2 mengalami cacat berat, 1 cacat sedang, dan 1 cacat ringan?</li>
+</ul>
+<hr>
+</section>
+<section id="soal-5-probabilitas-pada-distribusi-eksponensial" class="level3">
+<h3 class="anchored" data-anchor-id="soal-5-probabilitas-pada-distribusi-eksponensial"><strong>Soal 5: Probabilitas pada Distribusi Eksponensial</strong></h3>
+<p>Sebuah sistem pemrosesan pesanan online memiliki dua server yang bekerja secara independen. Waktu antar kedatangan pesanan pada server pertama dan kedua masing-masing berdistribusi eksponensial dengan rata-rata 4 menit dan 5 menit.</p>
+<ul>
+<li>Berapa probabilitas tidak ada pesanan yang diterima dalam waktu 6 menit sejak pesanan terakhir?</li>
+<li>Berapa probabilitas bahwa kedua server menerima setidaknya 1 pesanan dalam 8 menit?</li>
+</ul>
+<hr>
+</section>
+<section id="soal-6-distribusi-normal-dan-batas-spesifikasi" class="level3">
+<h3 class="anchored" data-anchor-id="soal-6-distribusi-normal-dan-batas-spesifikasi"><strong>Soal 6: Distribusi Normal dan Batas Spesifikasi</strong></h3>
+<p>Sebuah perusahaan manufaktur memproduksi chip elektronik yang memiliki ukuran ketebalan distribusi normal dengan rata-rata 1,5 mm dan standar deviasi 0,02 mm. Produk hanya dianggap memenuhi spesifikasi jika ketebalannya berada antara 1,47 mm dan 1,53 mm.</p>
+<ul>
+<li>Berapa probabilitas bahwa sebuah chip acak memenuhi spesifikasi?</li>
+<li>Jika sampel 30 chip diambil secara acak, berapa probabilitas bahwa setidaknya 28 di antaranya memenuhi spesifikasi?</li>
+</ul>
+<hr>
+</section>
+<section id="soal-7-korelasi-dan-kovarian-dalam-distribusi-probabilitas-gabungan" class="level3">
+<h3 class="anchored" data-anchor-id="soal-7-korelasi-dan-kovarian-dalam-distribusi-probabilitas-gabungan"><strong>Soal 7: Korelasi dan Kovarian dalam Distribusi Probabilitas Gabungan</strong></h3>
+<p>Diberikan fungsi massa probabilitas gabungan:</p>
+<p><span class="math display">\[ f(x, y) = c (x + y), \quad \text{untuk } x = 1, 2, 3 \text{ dan } y = 1, 2, 3. \]</span></p>
+<ul>
+<li>Tentukan nilai ( c ).</li>
+<li>Hitung nilai kovarian dan korelasi antara X dan Y.</li>
+</ul>
+<hr>
+</section>
+<section id="soal-8-distribusi-normal-bivariat" class="level3">
+<h3 class="anchored" data-anchor-id="soal-8-distribusi-normal-bivariat"><strong>Soal 8: Distribusi Normal Bivariat</strong></h3>
+<p>X dan Y melambangkan suhu dan tekanan pada suatu reaktor kimia. X dan Y berdistribusi normal bivariat dengan rata-rata ( _X = 300 ) dan ( _Y = 150 ), standar deviasi ( _X = 5 ) dan ( _Y = 10 ), serta koefisien korelasi ( = 0.6 ).</p>
+<ul>
+<li>Gambarkan plot kontur dari fungsi probabilitas gabungan untuk ( = 0, = -0.5, = 0.5 ).</li>
+<li>Jika ( X = 305 ), berapa probabilitas bahwa ( Y &gt; 160 )?</li>
+</ul>
+<hr>
+</section>
+<section id="soal-9-probabilitas-sampel-dalam-distribusi-binomial" class="level3">
+<h3 class="anchored" data-anchor-id="soal-9-probabilitas-sampel-dalam-distribusi-binomial"><strong>Soal 9: Probabilitas Sampel dalam Distribusi Binomial</strong></h3>
+<p>Sebuah uji coba vaksin menunjukkan bahwa 20% dari populasi mengalami efek samping ringan, 10% mengalami efek samping sedang, dan 5% mengalami efek samping parah. Dari 50 orang yang diberi vaksin:</p>
+<ul>
+<li>Berapa probabilitas bahwa 5 orang mengalami efek samping sedang dan 3 orang mengalami efek samping parah?</li>
+<li>Berapa probabilitas bahwa tidak ada yang mengalami efek samping parah?</li>
+<li>Hitung nilai rata-rata dan variansi dari jumlah orang yang mengalami efek samping parah.</li>
+</ul>
+<hr>
+</section>
+<section id="soal-10-investasi-dan-risiko" class="level3">
+<h3 class="anchored" data-anchor-id="soal-10-investasi-dan-risiko"><strong>Soal 10: Investasi dan Risiko</strong></h3>
+<p>Sebuah perusahaan ingin menginvestasikan dana dalam dua jenis aset. Aset pertama memiliki tingkat pengembalian rata-rata 6% dengan standar deviasi 3%, sedangkan aset kedua memiliki tingkat pengembalian rata-rata 4% dengan standar deviasi 5%. Korelasi antara dua aset adalah -0.4. Jika perusahaan menginvestasikan $500,000 dalam setiap aset, tentukan:</p>
+<ul>
+<li>Rata-rata dan standar deviasi dari total pengembalian investasi.</li>
+<li>Bandingkan risiko strategi ini dengan strategi investasi hanya pada aset pertama.</li>
+</ul>
+</section>
+</section>
+<section id="soal-7" class="level2">
+<h2 class="anchored" data-anchor-id="soal-7">Soal 7</h2>
+<section id="definisi-populasi-dan-sampel" class="level3">
+<h3 class="anchored" data-anchor-id="definisi-populasi-dan-sampel">1. Definisi Populasi dan Sampel</h3>
+<p>Definisikan populasi yang sesuai dari sampel berikut: - 200 orang yang berdomisili di Bandung ditanyakan nama kandidat yang mereka pilih dalam pemilihan Walikota Bandung. - 200 pasang sepatu diuji ketahanannya, dan rata-rata hanya bertahan selama 1 tahun. - Seorang dosen membutuhkan waktu 21, 25, 29, 32, dan 26 menit untuk menyetir dari kampus ke rumah dalam 5 kesempatan.</p>
+</section>
+<section id="sampling-tidak-acak" class="level3">
+<h3 class="anchored" data-anchor-id="sampling-tidak-acak">2. Sampling Tidak Acak</h3>
+<p>Jelaskan mengapa proses berikut tidak menghasilkan sampel random: - Wawancara kepada penumpang kapal pesiar untuk menentukan pengeluaran liburan orang biasa. - Survei penghasilan alumni universitas berdasarkan respons angkatan 2010. - Pewawancara bertanya: “Apa kamu rasa praktik tidak adil ini harus dihentikan?” untuk menentukan sentimen publik. - Inspeksi barang setiap 20 barang dalam produksi.</p>
+</section>
+<section id="statistik-deskriptif-1" class="level3">
+<h3 class="anchored" data-anchor-id="statistik-deskriptif-1">3. Statistik Deskriptif</h3>
+<p>Diberikan waktu tunggu pasien dalam menit: 5, 11, 10, 5, 8, 10, 15, 6, 10, 5. Hitung: - Mean sampel - Median sampel - Mode sampel - Variansi sampel</p>
+<p>Waktu reaksi terhadap stimulus pada 9 subjek: 2.5, 3.6, 3.1, 4.3, 2.9, 2.3, 2.6, 4.1, 3.4. Hitung: - Mean sampel - Median sampel - Variansi sampel</p>
+</section>
+<section id="distribusi-sampling" class="level3">
+<h3 class="anchored" data-anchor-id="distribusi-sampling">4. Distribusi Sampling</h3>
+<p>Misalkan populasi tak terhitung memiliki distribusi sebagai berikut: | X | 1 | 2 | 3 | 4 | 5 | |—-|—-|—-|—-|—-|—-| | P(X)| 0.2 | 0.2 | 0.3 | 0.25 | 0.05 | - Tuliskan semua sampel berukuran 2 dan buat distribusi sampling untuk rata-rata. - Tuliskan semua sampel berukuran 3 dan buat distribusi sampling untuk rata-rata. - Verifikasi mean dan variansi distribusi sampling.</p>
+</section>
+<section id="standar-error-dan-ukuran-sampel" class="level3">
+<h3 class="anchored" data-anchor-id="standar-error-dan-ukuran-sampel">5. Standar Error dan Ukuran Sampel</h3>
+<p>Bagaimana standar error berubah jika ukuran sampel: - Meningkat dari 40 menjadi 1000? - Turun dari 256 ke 65? - Meningkat dari 225 ke 1225? - Turun dari 450 ke 18?</p>
+</section>
+<section id="estimasi-probabilitas-error" class="level3">
+<h3 class="anchored" data-anchor-id="estimasi-probabilitas-error">6. Estimasi Probabilitas Error</h3>
+<p>Gunakan Teorema Chebyshev dan Central Limit Theorem untuk memperkirakan probabilitas error kurang dari 1.2 dalam estimasi mean.</p>
+</section>
+<section id="distribusi-chi-square" class="level3">
+<h3 class="anchored" data-anchor-id="distribusi-chi-square">7. Distribusi Chi-Square</h3>
+<p>Tentukan: - <span class="math inline">\(\chi^2_{0.05, 10}\)</span> - <span class="math inline">\(\chi^2_{0.01, 15}\)</span> - <span class="math inline">\(\chi^2_{0.10, 20}\)</span> - <span class="math inline">\(\chi^2_{0.05, 25}\)</span></p>
+</section>
+<section id="distribusi-normal-dalam-ujian" class="level3">
+<h3 class="anchored" data-anchor-id="distribusi-normal-dalam-ujian">8. Distribusi Normal dalam Ujian</h3>
+<p>Distribusi nilai mahasiswa di ujian memiliki mean 76 dan standar deviasi 8. Hitung probabilitas bahwa total nilai dari 50 mahasiswa kurang dari 3250.</p>
+</section>
+<section id="distribusi-normal-dalam-resistor" class="level3">
+<h3 class="anchored" data-anchor-id="distribusi-normal-dalam-resistor">9. Distribusi Normal dalam Resistor</h3>
+<p>Mesin produksi resistor menghasilkan komponen dengan mean dan standar deviasi tertentu. Tentukan probabilitas bahwa resistansi total dari sampel 36 resistor melebihi nilai tertentu.</p>
+</section>
+<section id="uji-statistik-pada-material-baja" class="level3">
+<h3 class="anchored" data-anchor-id="uji-statistik-pada-material-baja">10. Uji Statistik pada Material Baja</h3>
+<p>Dua campuran baja diuji dengan kapasitas beban tertentu. Tentukan apakah terdapat perbedaan signifikan antara kedua campuran menggunakan analisis statistik.</p>
+</section>
+<section id="distribusi-f-test-dalam-variansi" class="level3">
+<h3 class="anchored" data-anchor-id="distribusi-f-test-dalam-variansi">11. Distribusi F-Test dalam Variansi</h3>
+<p>Dua sampel dengan variansi berbeda diuji untuk menentukan kesamaan variansinya. Hitung nilai statistik uji F.</p>
+</section>
+<section id="uji-t-untuk-perbandingan-mean" class="level3">
+<h3 class="anchored" data-anchor-id="uji-t-untuk-perbandingan-mean">12. Uji T untuk Perbandingan Mean</h3>
+<p>Sebuah populasi normal dengan mean 20 diuji dengan sampel random berukuran 9. Apakah mungkin mendapatkan mean sampel 24 dengan standar deviasi 4.1?</p>
+</section>
+<section id="pengaruh-pembungkusan-pada-kuat-tarik" class="level3">
+<h3 class="anchored" data-anchor-id="pengaruh-pembungkusan-pada-kuat-tarik">13. Pengaruh Pembungkusan pada Kuat Tarik</h3>
+<p>Hasil uji kuat tarik timah sebelum dan setelah pembungkusan diberikan. Tentukan apakah ada peningkatan signifikan dalam kekuatan tarik.</p>
+</section>
+<section id="perbandingan-variansi-dari-dua-tambang" class="level3">
+<h3 class="anchored" data-anchor-id="perbandingan-variansi-dari-dua-tambang">14. Perbandingan Variansi dari Dua Tambang</h3>
+<p>Data panas yang dihasilkan oleh batu bara dari dua tambang diberikan. Gunakan uji statistik untuk menentukan apakah variansi kedua tambang sama.</p>
+</section>
+</section>
+<section id="soal-8" class="level2">
+<h2 class="anchored" data-anchor-id="soal-8">Soal 8</h2>
+<section id="selang-kepercayaan-untuk-variansi-diketahui" class="level3">
+<h3 class="anchored" data-anchor-id="selang-kepercayaan-untuk-variansi-diketahui">1. Selang Kepercayaan untuk Variansi Diketahui</h3>
+<p>Untuk sebuah populasi normal dengan variansi yang diketahui, tentukan tingkat kepercayaan untuk berbagai selang kepercayaan yang diberikan.</p>
+</section>
+<section id="selang-kepercayaan-untuk-gain-perangkat-semikonduktor" class="level3">
+<h3 class="anchored" data-anchor-id="selang-kepercayaan-untuk-gain-perangkat-semikonduktor">2. Selang Kepercayaan untuk Gain Perangkat Semikonduktor</h3>
+<p>Misalkan gain perangkat semikonduktor berdistribusi normal dengan standar deviasi tertentu. Tentukan selang kepercayaan untuk: - 95% ketika <span class="math inline">\(n=25\)</span> dan <span class="math inline">\(ar{x} = 10\)</span> - 95% ketika <span class="math inline">\(n=30\)</span> dan <span class="math inline">\(ar{x} = 12\)</span> - 99% ketika <span class="math inline">\(n=25\)</span> dan <span class="math inline">\(ar{x} = 10\)</span> - 99% ketika <span class="math inline">\(n=30\)</span> dan <span class="math inline">\(ar{x} = 12\)</span></p>
+<p>Hitung juga <span class="math inline">\(n\)</span> yang diperlukan jika panjang selang kepercayaan 95% adalah 20.</p>
+</section>
+<section id="selang-kepercayaan-untuk-siklus-kegagalan-mekanisme-kait" class="level3">
+<h3 class="anchored" data-anchor-id="selang-kepercayaan-untuk-siklus-kegagalan-mekanisme-kait">3. Selang Kepercayaan untuk Siklus Kegagalan Mekanisme Kait</h3>
+<p>Diberikan dua selang kepercayaan untuk siklus kegagalan mekanisme kait pintu otomotif: - Tentukan nilai mean sampel dari siklus sampai gagal. - Tentukan selang kepercayaan dengan tingkat 95% dan 99%.</p>
+</section>
+<section id="selang-kepercayaan-untuk-konsentrasi-kalsium" class="level3">
+<h3 class="anchored" data-anchor-id="selang-kepercayaan-untuk-konsentrasi-kalsium">4. Selang Kepercayaan untuk Konsentrasi Kalsium</h3>
+<p>Diberikan 100 sampel random air danau dengan selang kepercayaan tertentu, jawab pertanyaan: - Apakah selang kepercayaan 99% akan lebih panjang dari 95%? - Interpretasi selang kepercayaan dan kemungkinan 95%.</p>
+</section>
+<section id="selang-kepercayaan-untuk-umur-guna-ban" class="level3">
+<h3 class="anchored" data-anchor-id="selang-kepercayaan-untuk-umur-guna-ban">5. Selang Kepercayaan untuk Umur Guna Ban</h3>
+<p>Diberikan 16 ban diuji dengan mean dan standar deviasi tertentu, tentukan selang kepercayaan 95% untuk umur guna ban.</p>
+</section>
+<section id="selang-kepercayaan-untuk-kandungan-asam-lemak" class="level3">
+<h3 class="anchored" data-anchor-id="selang-kepercayaan-untuk-kandungan-asam-lemak">6. Selang Kepercayaan untuk Kandungan Asam Lemak</h3>
+<p>Diberikan sampel margarin rendah lemak, tentukan selang kepercayaan 99% untuk kandungan asam lemak tak jenuh.</p>
+</section>
+<section id="selang-kepercayaan-untuk-diameter-batang-logam" class="level3">
+<h3 class="anchored" data-anchor-id="selang-kepercayaan-untuk-diameter-batang-logam">7. Selang Kepercayaan untuk Diameter Batang Logam</h3>
+<p>Sebuah mesin memproduksi batang logam dengan data sampel tertentu, tentukan: - Selang kepercayaan 95%. - Selang kepercayaan satu sisi bawah 99%.</p>
+</section>
+<section id="selang-kepercayaan-untuk-ketebalan-botol-kaca" class="level3">
+<h3 class="anchored" data-anchor-id="selang-kepercayaan-untuk-ketebalan-botol-kaca">8. Selang Kepercayaan untuk Ketebalan Botol Kaca</h3>
+<p>Diberikan 25 botol kaca dengan ketebalan rata-rata dan standar deviasi tertentu, tentukan selang kepercayaan satu sisi bawah dengan tingkat kepercayaan 95%.</p>
+</section>
+<section id="persentil-untuk-selang-kepercayaan" class="level3">
+<h3 class="anchored" data-anchor-id="persentil-untuk-selang-kepercayaan">9. Persentil untuk Selang Kepercayaan</h3>
+<p>Tentukan persentil yang diperlukan untuk berbagai tingkat kepercayaan dan derajat kebebasan.</p>
+</section>
+<section id="selang-kepercayaan-untuk-kadar-sirup-gula" class="level3">
+<h3 class="anchored" data-anchor-id="selang-kepercayaan-untuk-kadar-sirup-gula">10. Selang Kepercayaan untuk Kadar Sirup Gula</h3>
+<p>Misalkan kadar sirup gula dalam buah kaleng berdistribusi normal. Tentukan selang kepercayaan 95% untuk rata-rata kadar sirup gula.</p>
+</section>
+<section id="selang-kepercayaan-untuk-kandungan-titanium" class="level3">
+<h3 class="anchored" data-anchor-id="selang-kepercayaan-untuk-kandungan-titanium">11. Selang Kepercayaan untuk Kandungan Titanium</h3>
+<p>Diberikan sampel logam campuran pesawat, tentukan selang kepercayaan 99% untuk kandungan titanium.</p>
+</section>
+<section id="selang-kepercayaan-untuk-tingkat-kematian-kanker-paru" class="level3">
+<h3 class="anchored" data-anchor-id="selang-kepercayaan-untuk-tingkat-kematian-kanker-paru">12. Selang Kepercayaan untuk Tingkat Kematian Kanker Paru</h3>
+<p>Diberikan data tingkat kematian kanker paru-paru, tentukan: - Selang kepercayaan 95%. - Sampel yang diperlukan untuk tingkat kesalahan &lt; 0.03.</p>
+</section>
+<section id="selang-kepercayaan-untuk-helm-yang-rusak" class="level3">
+<h3 class="anchored" data-anchor-id="selang-kepercayaan-untuk-helm-yang-rusak">13. Selang Kepercayaan untuk Helm yang Rusak</h3>
+<p>Diberikan 50 helm diuji dengan 18 helm rusak, tentukan: - Selang kepercayaan dua sisi untuk proporsi populasi. - Jumlah helm yang harus diuji agar tingkat kesalahan &lt; 0.02.</p>
+</section>
+<section id="selang-kepercayaan-untuk-batas-kecepatan-jalan" class="level3">
+<h3 class="anchored" data-anchor-id="selang-kepercayaan-untuk-batas-kecepatan-jalan">14. Selang Kepercayaan untuk Batas Kecepatan Jalan</h3>
+<p>Berapa banyak survei yang dibutuhkan agar tingkat kesalahan dalam estimasi batas kecepatan jalan raya tidak lebih dari 0.05 dengan kepercayaan 99%?</p>
+</section>
+<section id="selang-prediksi-untuk-umur-guna-ban" class="level3">
+<h3 class="anchored" data-anchor-id="selang-prediksi-untuk-umur-guna-ban">15. Selang Prediksi untuk Umur Guna Ban</h3>
+<p>Hitung selang prediksi 95% untuk umur guna ban dan bandingkan dengan selang kepercayaan mean populasi.</p>
+</section>
+<section id="selang-prediksi-untuk-kandungan-asam-lemak" class="level3">
+<h3 class="anchored" data-anchor-id="selang-prediksi-untuk-kandungan-asam-lemak">16. Selang Prediksi untuk Kandungan Asam Lemak</h3>
+<p>Hitung selang prediksi 99% untuk kandungan asam lemak dan bandingkan dengan selang kepercayaan mean populasi.</p>
+</section>
+<section id="selang-prediksi-untuk-diameter-batang-logam" class="level3">
+<h3 class="anchored" data-anchor-id="selang-prediksi-untuk-diameter-batang-logam">17. Selang Prediksi untuk Diameter Batang Logam</h3>
+<p>Hitung selang prediksi 95% untuk diameter batang logam dan bandingkan dengan selang kepercayaan mean populasi.</p>
+</section>
+<section id="selang-prediksi-untuk-pengayaan-fuel-rod" class="level3">
+<h3 class="anchored" data-anchor-id="selang-prediksi-untuk-pengayaan-fuel-rod">18. Selang Prediksi untuk Pengayaan Fuel Rod</h3>
+<p>Hitung selang prediksi 99% untuk pengayaan fuel rod berikutnya dan bandingkan dengan selang kepercayaan mean populasi.</p>
+</section>
+<section id="selang-toleransi-untuk-uji-izod-impact" class="level3">
+<h3 class="anchored" data-anchor-id="selang-toleransi-untuk-uji-izod-impact">19. Selang Toleransi untuk Uji Izod Impact</h3>
+<p>Diberikan sampel pipa PVC, hitung selang toleransi 99% dan bandingkan dengan selang kepercayaan mean populasi.</p>
+</section>
+<section id="selang-kepercayaan-untuk-kandungan-sirup-dalam-minuman" class="level3">
+<h3 class="anchored" data-anchor-id="selang-kepercayaan-untuk-kandungan-sirup-dalam-minuman">20. Selang Kepercayaan untuk Kandungan Sirup dalam Minuman</h3>
+<p>Hitung selang kepercayaan 95% dan selang toleransi 95% untuk rata-rata jumlah sirup dalam minuman.</p>
+</section>
+<section id="uji-keakuratan-estimasi-sampel" class="level3">
+<h3 class="anchored" data-anchor-id="uji-keakuratan-estimasi-sampel">21. Uji Keakuratan Estimasi Sampel</h3>
+<p>Diberikan populasi normal dengan mean 50 dan variansi tidak diketahui, hitung probabilitas bahwa nilai rata-rata sampel berbeda dari mean populasi.</p>
+</section>
+<section id="estimasi-waktu-respon-sistem-operasi" class="level3">
+<h3 class="anchored" data-anchor-id="estimasi-waktu-respon-sistem-operasi">22. Estimasi Waktu Respon Sistem Operasi</h3>
+<p>Tentukan jumlah sampel yang diperlukan agar panjang selang kepercayaan 95% untuk waktu respon sistem operasi tidak lebih dari 5 ms.</p>
+</section>
+<section id="selang-kepercayaan-untuk-tinggi-busa-sampo" class="level3">
+<h3 class="anchored" data-anchor-id="selang-kepercayaan-untuk-tinggi-busa-sampo">23. Selang Kepercayaan untuk Tinggi Busa Sampo</h3>
+<p>Diberikan data tinggi busa sampo, tentukan: - Selang kepercayaan 95%. - Selang prediksi 95%. - Selang mencakup 95% dengan tingkat kepercayaan 99%.</p>
+</section>
+<section id="selang-kepercayaan-untuk-proporsi-kalkulator-cacat" class="level3">
+<h3 class="anchored" data-anchor-id="selang-kepercayaan-untuk-proporsi-kalkulator-cacat">24. Selang Kepercayaan untuk Proporsi Kalkulator Cacat</h3>
+<p>Diberikan 1200 kalkulator diuji dengan 8 kalkulator cacat, tentukan selang kepercayaan 95% untuk proporsi kalkulator cacat.</p>
+</section>
+<section id="perbandingan-plastik-dalam-produksi-komponen-elektronik" class="level3">
+<h3 class="anchored" data-anchor-id="perbandingan-plastik-dalam-produksi-komponen-elektronik">25. Perbandingan Plastik dalam Produksi Komponen Elektronik</h3>
+<p>Dua jenis plastik diuji untuk ketahanan. Gunakan uji statistik untuk menentukan apakah plastik 1 lebih baik dari plastik 2.</p>
+</section>
+<section id="perbandingan-waktu-respons-sms-banking" class="level3">
+<h3 class="anchored" data-anchor-id="perbandingan-waktu-respons-sms-banking">26. Perbandingan Waktu Respons SMS Banking</h3>
+<p>Diberikan data waktu pengiriman SMS melalui tiga operator, tentukan apakah ada perbedaan signifikan dalam waktu pengiriman.</p>
+</section>
+<section id="selang-kepercayaan-untuk-kepuasan-layanan-pelanggan" class="level3">
+<h3 class="anchored" data-anchor-id="selang-kepercayaan-untuk-kepuasan-layanan-pelanggan">27. Selang Kepercayaan untuk Kepuasan Layanan Pelanggan</h3>
+<p>Diberikan survei kepada pengguna broadband mengenai gangguan customer service, tentukan selang kepercayaan 97%.</p>
+</section>
+<section id="selang-kepercayaan-untuk-latensi-situs-web" class="level3">
+<h3 class="anchored" data-anchor-id="selang-kepercayaan-untuk-latensi-situs-web">28. Selang Kepercayaan untuk Latensi Situs Web</h3>
+<p>Diberikan data latensi situs populer, tentukan selang kepercayaan 95% dan 99% untuk perbedaan rata-rata latensi antara dua situs web.</p>
+</section>
+</section>
+<section id="soal-set-9" class="level2">
+<h2 class="anchored" data-anchor-id="soal-set-9">Soal Set 9</h2>
+<section id="pengujian-hipotesis-1" class="level3">
+<h3 class="anchored" data-anchor-id="pengujian-hipotesis-1">1. Pengujian Hipotesis</h3>
+<p>Tentukan apakah pernyataan berikut menyatakan masalah uji hipotesis atau tidak, dan jelaskan alasannya.</p>
+</section>
+<section id="uji-hipotesis-untuk-temperatur-air" class="level3">
+<h3 class="anchored" data-anchor-id="uji-hipotesis-untuk-temperatur-air">2. Uji Hipotesis untuk Temperatur Air</h3>
+<p>Diketahui temperatur air dari tower pendingin dengan standar deviasi tertentu. Sampel temperatur diambil selama 9 hari. Tentukan: - Apakah temperatur ini dapat diterima dengan signifikansi tertentu. - Nilai p-value dari pengujian ini. - Probabilitas menerima hipotesis nol jika mean sebenarnya lebih besar dari yang diuji.</p>
+</section>
+<section id="uji-hipotesis-untuk-umur-baterai" class="level3">
+<h3 class="anchored" data-anchor-id="uji-hipotesis-untuk-umur-baterai">3. Uji Hipotesis untuk Umur Baterai</h3>
+<p>Sebuah sampel baterai diuji dengan standar deviasi tertentu dan mean umur tertentu. Tentukan: - Apakah ada bukti yang mendukung klaim umur baterai lebih dari 40 jam. - Nilai p-value dari pengujian ini. - Ukuran sampel yang dibutuhkan agar kesalahan tidak melebihi batas tertentu.</p>
+</section>
+<section id="uji-hipotesis-untuk-waktu-penerbangan" class="level3">
+<h3 class="anchored" data-anchor-id="uji-hipotesis-untuk-waktu-penerbangan">4. Uji Hipotesis untuk Waktu Penerbangan</h3>
+<p>Maskapai penerbangan mengklaim waktu terbang antara dua kota adalah 56 menit. Formulasikan uji hipotesis untuk membuktikan bahwa mean waktu penerbangan lebih dari 56 menit dan analisis kemungkinan kesalahan yang bisa terjadi.</p>
+</section>
+<section id="uji-hipotesis-untuk-persentase-produk-cacat" class="level3">
+<h3 class="anchored" data-anchor-id="uji-hipotesis-untuk-persentase-produk-cacat">5. Uji Hipotesis untuk Persentase Produk Cacat</h3>
+<p>Sebuah perusahaan mengklaim bahwa kurang dari 5% dari barang yang dibuat adalah cacat. Dengan sampel 500 barang, diuji apakah klaim ini valid pada tingkat signifikansi tertentu.</p>
+</section>
+<section id="uji-hipotesis-untuk-latensi-internet" class="level3">
+<h3 class="anchored" data-anchor-id="uji-hipotesis-untuk-latensi-internet">6. Uji Hipotesis untuk Latensi Internet</h3>
+<p>Diberikan data latensi situs web dari 30 sampel, tentukan apakah latensi untuk: - Facebook lebih dari 350 ms. - Kaskus kurang dari 150 ms. - Perbedaan latensi Facebook dan Kaskus lebih dari 225 ms. Gunakan berbagai tingkat signifikansi untuk setiap pengujian.</p>
+</section>
+<section id="confidence-interval-untuk-preferensi-belanja-online" class="level3">
+<h3 class="anchored" data-anchor-id="confidence-interval-untuk-preferensi-belanja-online">7. Confidence Interval untuk Preferensi Belanja Online</h3>
+<p>Diberikan survei dengan 808 responden mengenai preferensi belanja online atau offline. Tentukan confidence interval 99% untuk proporsi responden yang lebih memilih belanja online untuk berbagai produk dan jasa.</p>
+</section>
+<section id="uji-hipotesis-selisih-proporsi" class="level3">
+<h3 class="anchored" data-anchor-id="uji-hipotesis-selisih-proporsi">8. Uji Hipotesis Selisih Proporsi</h3>
+<p>Gunakan uji hipotesis selisih dua proporsi untuk menentukan apakah terdapat perbedaan signifikan antara preferensi belanja online untuk kategori makanan/minuman dan tiket bioskop.</p>
+</section>
+<section id="uji-hipotesis-untuk-penggunaan-uang-elektronik" class="level3">
+<h3 class="anchored" data-anchor-id="uji-hipotesis-untuk-penggunaan-uang-elektronik">9. Uji Hipotesis untuk Penggunaan Uang Elektronik</h3>
+<p>Survei tahun 2019 menunjukkan berbagai proporsi penggunaan uang elektronik. Tentukan confidence interval 99% untuk berbagai layanan dan uji hipotesis apakah proporsi penggunaan satu layanan lebih tinggi dari yang lain.</p>
+</section>
+<section id="uji-hipotesis-preferensi-belanja-online-2017-vs-2019" class="level3">
+<h3 class="anchored" data-anchor-id="uji-hipotesis-preferensi-belanja-online-2017-vs-2019">10. Uji Hipotesis Preferensi Belanja Online 2017 vs 2019</h3>
+<p>Bandingkan proporsi belanja online untuk berbagai kategori antara survei tahun 2017 dan 2019. Gunakan uji hipotesis dengan tingkat signifikansi 0.05 dan 0.01.</p>
+</section>
+<section id="uji-hipotesis-untuk-kecepatan-download-isp" class="level3">
+<h3 class="anchored" data-anchor-id="uji-hipotesis-untuk-kecepatan-download-isp">11. Uji Hipotesis untuk Kecepatan Download ISP</h3>
+<p>Diberikan hasil pengukuran kecepatan download dari 11 percobaan, tentukan: - Mean dan variansi sampel. - Confidence interval 99% dari mean. - Uji hipotesis apakah kecepatan download lebih dari 16 Mbps dengan tingkat signifikansi tertentu.</p>
+</section>
+</section>
+<section id="soal-set-10" class="level2">
+<h2 class="anchored" data-anchor-id="soal-set-10">Soal set 10</h2>
+<section id="regresi-linear-untuk-biaya-promosi-dan-penjualan" class="level3">
+<h3 class="anchored" data-anchor-id="regresi-linear-untuk-biaya-promosi-dan-penjualan">1. Regresi Linear untuk Biaya Promosi dan Penjualan</h3>
+<p>Sebuah perusahaan jasa cloud ingin mengetahui hubungan antara biaya promosi (X) dan nilai penjualan layanan cloud (Y). Data biaya promosi bulanan dan penjualan bulanan diberikan. - Gambarkan dalam diagram pencar (scatter plot). - Hitung <span class="math inline">\(S_{xx}\)</span>, <span class="math inline">\(S_{xy}\)</span>, dan <span class="math inline">\(S_{yy}\)</span>. - Buatlah persamaan regresi untuk memprediksi penjualan bulanan dari biaya promosi. - Berapa perkiraan tambahan penjualan per juta rupiah biaya promosi? - Buatlah selang kepercayaan 95% dan 99% untuk tambahan penjualan per biaya promosi dan jelaskan maknanya. - Gunakan uji hipotesis untuk menentukan apakah terdapat hubungan linear antara biaya promosi dan penjualan. - Perkirakan penjualan bulanan jika biaya promosi sebesar 35 juta rupiah, gunakan selang prediksi dengan tingkat kepercayaan 95%.</p>
+</section>
+<section id="regresi-linear-untuk-titik-didih-air-dan-tekanan-barometrik" class="level3">
+<h3 class="anchored" data-anchor-id="regresi-linear-untuk-titik-didih-air-dan-tekanan-barometrik">2. Regresi Linear untuk Titik Didih Air dan Tekanan Barometrik</h3>
+<p>Data titik didih air <span class="math inline">\((Y)\)</span> dan tekanan barometrik <span class="math inline">\((X)\)</span> diberikan. - Gambarkan dalam diagram pencar. - Buat model regresi untuk menghubungkan titik didih air dengan tekanan barometrik. - Estimasikan parameter model regresi. - Tentukan tambahan tekanan barometrik per peningkatan titik didih 1 derajat. - Gunakan uji hipotesis dan koefisien korelasi untuk menentukan apakah terdapat hubungan linear. - Jika titik didih air di suatu tempat adalah 96 derajat, estimasikan tekanan barometriknya dengan estimasi titik dan selang kepercayaan.</p>
+</section>
+<section id="regresi-linear-untuk-kebutuhan-daya-listrik-di-data-center" class="level3">
+<h3 class="anchored" data-anchor-id="regresi-linear-untuk-kebutuhan-daya-listrik-di-data-center">3. Regresi Linear untuk Kebutuhan Daya Listrik di Data Center</h3>
+<p>Data jumlah rak server aktif di 6 Data Center dan kebutuhan daya listrik total di tiap lokasi diberikan. - Gambarkan dalam diagram pencar. - Hitung <span class="math inline">\(S_{xx}\)</span>, <span class="math inline">\(S_{xy}\)</span>, dan <span class="math inline">\(S_{yy}\)</span>. - Hitung SSE (Jumlah Kuadrat Galat). - Hitung estimasi tak bias dari variansi <span class="math inline">\(\sigma^2\)</span> dengan rumus <span class="math inline">\(\sigma^2 = rac{SSE}{n-2}\)</span>. - Buatlah persamaan regresi untuk memprediksi kebutuhan daya berdasarkan jumlah rak server aktif. - Tentukan koefisien determinasi <span class="math inline">\(R^2\)</span> dan jelaskan maknanya. - Berapa perkiraan tambahan kebutuhan daya per rak server aktif? - Tentukan 95% dan 99% confidence interval untuk intercept persamaan regresi. - Tentukan 95% dan 99% confidence interval untuk tambahan kebutuhan daya per rak server aktif. - Gunakan uji hipotesis untuk menentukan apakah gradien regresi berbeda dari nol dengan tingkat signifikansi 5% dan 1%. - Perkirakan kebutuhan daya total jika Data Center baru di Batam memiliki 215 rak server aktif.</p>
+</section>
+</section>
+<section id="soal-set-11" class="level2">
+<h2 class="anchored" data-anchor-id="soal-set-11">Soal Set 11</h2>
+<section id="pengaruh-tinggi-terhadap-daya-pembangkit-listrik-tenaga-air" class="level3">
+<h3 class="anchored" data-anchor-id="pengaruh-tinggi-terhadap-daya-pembangkit-listrik-tenaga-air">1. Pengaruh Tinggi terhadap Daya Pembangkit Listrik Tenaga Air</h3>
+<p>Untuk menentukan pengaruh tinggi terhadap daya yang dihasilkan dalam suatu pembangkit listrik tenaga air, dilakukan observasi dengan data tinggi total (m) dan daya yang dihasilkan (MW/turbin). - Gunakan tingkat signifikansi tertentu untuk menguji apakah tinggi reservoir berpengaruh pada daya yang dihasilkan.</p>
+</section>
+<section id="perbandingan-algoritma-estimasi-biaya-perangkat-lunak" class="level3">
+<h3 class="anchored" data-anchor-id="perbandingan-algoritma-estimasi-biaya-perangkat-lunak">2. Perbandingan Algoritma Estimasi Biaya Perangkat Lunak</h3>
+<p>Sebuah studi di <em>Communications of the ACM</em> (Vol. 30, No.&nbsp;5, 1987) mempelajari algoritma yang berbeda dalam mengestimasi harga pengembangan perangkat lunak. Data error estimasi biaya untuk enam algoritma diuji pada delapan proyek perangkat lunak. - Gunakan uji statistik untuk menentukan apakah terdapat perbedaan signifikan dalam mean akurasi estimasi biaya antar algoritma. - Lakukan analisis residu untuk eksperimen ini. - Algoritma mana yang paling direkomendasikan untuk digunakan dalam praktik?</p>
+</section>
+<section id="eksperimen-benjamin-franklin-tentang-gaya-seret-pada-kapal" class="level3">
+<h3 class="anchored" data-anchor-id="eksperimen-benjamin-franklin-tentang-gaya-seret-pada-kapal">3. Eksperimen Benjamin Franklin tentang Gaya Seret pada Kapal</h3>
+<p>Benjamin Franklin melakukan eksperimen untuk mempelajari efek kedalaman air terhadap gaya seret pada kapal kecil. - Data waktu penyeberangan model kapal untuk berbagai kedalaman air tersedia. - Lakukan analisis variansi dan uji perbedaan waktu akibat kedalaman air. - Buatlah selang kepercayaan berganda untuk masing-masing perlakuan kedalaman air. - Gunakan uji Tukey untuk membandingkan kelompok-kelompok perlakuan. - Apakah terdapat pengaruh kedalaman air terhadap gaya seret kapal? Jelaskan alasannya.</p>
 <p>To learn more about Quarto books visit <a href="https://quarto.org/docs/books" class="uri">https://quarto.org/docs/books</a>.</p>
 
 
+</section>
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -231,7 +1223,18 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
     return false;
   }
-  const onCopySuccess = function(e) {
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
     // button target
     const button = e.trigger;
     // don't keep focus
@@ -263,27 +1266,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }, 1000);
     // clear code selection
     e.clearSelection();
-  }
-  const getTextToCopy = function(trigger) {
-      const codeEl = trigger.previousElementSibling.cloneNode(true);
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
-        }
-      }
-      return codeEl.innerText;
-  }
-  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
-    text: getTextToCopy
   });
-  clipboard.on('success', onCopySuccess);
-  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
-    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
-      text: getTextToCopy,
-      container: window.document.getElementById('quarto-embedded-source-code-modal')
-    });
-    clipboardModal.on('success', onCopySuccess);
-  }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
       var filterRegex = new RegExp('/' + window.location.host + '/');
@@ -291,7 +1274,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }
     // Inspect non-navigation links and adorn them if external
- 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
     for (var i=0; i<links.length; i++) {
       const link = links[i];
       if (!isInternal(link.href)) {
@@ -388,6 +1371,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       if (window.Quarto?.typesetMath) {
         window.Quarto.typesetMath(note);
       }
+      // TODO in 1.5, we should make sure this works without a callout special case
       if (note.classList.contains("callout")) {
         return note.outerHTML;
       } else {
