@@ -4,29 +4,79 @@
     "href": "index.html",
     "title": "II-2211 Probabilitas dan Statistika",
     "section": "",
-    "text": "Preface\nThis is a Quarto book.\nTo learn more about Quarto books visit https://quarto.org/docs/books.",
+    "text": "1 Materi Kuliah Per Minggu\nSedang disusun\nTo learn more about Quarto books visit https://quarto.org/docs/books.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Materi Kuliah Per Minggu</span>"
+    ]
+  },
+  {
+    "objectID": "petunjuk/index.html",
+    "href": "petunjuk/index.html",
+    "title": "Petunjuk",
+    "section": "",
+    "text": "Sedang disusun\nTo learn more about Quarto books visit https://quarto.org/docs/books.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Petunjuk</span>"
+    ]
+  },
+  {
+    "objectID": "materi/index.html",
+    "href": "materi/index.html",
+    "title": "Preface",
+    "section": "",
+    "text": "This is a Quarto book.\nTo learn more about Quarto books visit https://quarto.org/docs/books.",
     "crumbs": [
       "Preface"
     ]
   },
   {
-    "objectID": "intro.html",
-    "href": "intro.html",
-    "title": "1  Introduction",
+    "objectID": "problem-set/index.html",
+    "href": "problem-set/index.html",
+    "title": "Problem Set",
     "section": "",
-    "text": "This is a book created from markdown and executable code.\nSee Knuth (1984) for additional discussion of literate programming.\n\n\n\n\nKnuth, Donald E. 1984. “Literate Programming.” Comput. J. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97.",
+    "text": "Sedang disusun.\nTo learn more about Quarto books visit https://quarto.org/docs/books.",
     "crumbs": [
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Problem Set</span>"
+    ]
+  },
+  {
+    "objectID": "PSCalc/index.html",
+    "href": "PSCalc/index.html",
+    "title": "Proyek KMS PSCalk",
+    "section": "",
+    "text": "Sedang disusun\nTo learn more about Quarto books visit https://quarto.org/docs/books.\nThis is a book created from markdown and executable code.\nSee Knuth (1984) for additional discussion of literate programming.\n\n\n\n\nKnuth, Donald E. 1984. “Literate Programming.” Comput. J. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Proyek KMS PSCalk</span>"
+    ]
+  },
+  {
+    "objectID": "ujian/index.html",
+    "href": "ujian/index.html",
+    "title": "Soal Ujian",
+    "section": "",
+    "text": "Sedang disusun\nTo learn more about Quarto books visit https://quarto.org/docs/books.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Soal Ujian</span>"
+    ]
+  },
+  {
+    "objectID": "tugas-besar/index.html",
+    "href": "tugas-besar/index.html",
+    "title": "Tugas Besar Akhir Semester",
+    "section": "",
+    "text": "Sedang disusun\nTo learn more about Quarto books visit https://quarto.org/docs/books.",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Tugas Besar Akhir Semester</span>"
     ]
   },
   {
     "objectID": "summary.html",
     "href": "summary.html",
-    "title": "2  Summary",
+    "title": "7  Summary",
     "section": "",
     "text": "In summary, this book has no content whatsoever.",
     "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Summary</span>"
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Summary</span>"
     ]
   },
   {
