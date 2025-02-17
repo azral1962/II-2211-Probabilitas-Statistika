@@ -20,40 +20,6 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
 </style>
 
 
@@ -233,26 +199,16 @@ window.Quarto = {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#kerangka-kerja-probabilitas" id="toc-kerangka-kerja-probabilitas" class="nav-link active" data-scroll-target="#kerangka-kerja-probabilitas">Kerangka Kerja Probabilitas</a>
+  <li><a href="#kuis-1---probabilitas-dan-statistik" id="toc-kuis-1---probabilitas-dan-statistik" class="nav-link active" data-scroll-target="#kuis-1---probabilitas-dan-statistik">Kuis 1 - Probabilitas dan Statistik</a>
   <ul class="collapse">
-  <li><a href="#soal-1-ruang-sampel-eksperimen" id="toc-soal-1-ruang-sampel-eksperimen" class="nav-link" data-scroll-target="#soal-1-ruang-sampel-eksperimen">Soal 1: Ruang Sampel Eksperimen</a>
-  <ul class="collapse">
-  <li><a href="#prinsip-yang-digunakan" id="toc-prinsip-yang-digunakan" class="nav-link" data-scroll-target="#prinsip-yang-digunakan">Prinsip yang Digunakan:</a></li>
-  <li><a href="#pola-berpikir" id="toc-pola-berpikir" class="nav-link" data-scroll-target="#pola-berpikir">Pola Berpikir:</a></li>
+  <li><a href="#instruksi" id="toc-instruksi" class="nav-link" data-scroll-target="#instruksi">Instruksi</a></li>
   </ul></li>
-  <li><a href="#jawaban" id="toc-jawaban" class="nav-link" data-scroll-target="#jawaban">Jawaban:</a></li>
-  <li><a href="#soal-2-diagram-venn" id="toc-soal-2-diagram-venn" class="nav-link" data-scroll-target="#soal-2-diagram-venn">Soal 2: Diagram Venn</a>
+  <li><a href="#soal" id="toc-soal" class="nav-link" data-scroll-target="#soal">Soal</a>
   <ul class="collapse">
-  <li><a href="#prinsip-yang-digunakan-1" id="toc-prinsip-yang-digunakan-1" class="nav-link" data-scroll-target="#prinsip-yang-digunakan-1">Prinsip yang Digunakan:</a></li>
-  <li><a href="#pola-berpikir-1" id="toc-pola-berpikir-1" class="nav-link" data-scroll-target="#pola-berpikir-1">Pola Berpikir:</a></li>
-  </ul></li>
-  <li><a href="#jawaban-1" id="toc-jawaban-1" class="nav-link" data-scroll-target="#jawaban-1">Jawaban:</a></li>
-  <li><a href="#soal-3-probabilitas-ruang-sampel" id="toc-soal-3-probabilitas-ruang-sampel" class="nav-link" data-scroll-target="#soal-3-probabilitas-ruang-sampel">Soal 3: Probabilitas Ruang Sampel</a>
-  <ul class="collapse">
-  <li><a href="#prinsip-yang-digunakan-2" id="toc-prinsip-yang-digunakan-2" class="nav-link" data-scroll-target="#prinsip-yang-digunakan-2">Prinsip yang Digunakan:</a></li>
-  <li><a href="#pola-berpikir-2" id="toc-pola-berpikir-2" class="nav-link" data-scroll-target="#pola-berpikir-2">Pola Berpikir:</a></li>
-  </ul></li>
-  <li><a href="#jawaban-2" id="toc-jawaban-2" class="nav-link" data-scroll-target="#jawaban-2">Jawaban:</a></li>
+  <li><a href="#soal-1-ruang-sampel-eksperimen" id="toc-soal-1-ruang-sampel-eksperimen" class="nav-link" data-scroll-target="#soal-1-ruang-sampel-eksperimen">Soal 1: Ruang Sampel Eksperimen</a></li>
+  <li><a href="#soal-2-diagram-venn" id="toc-soal-2-diagram-venn" class="nav-link" data-scroll-target="#soal-2-diagram-venn">Soal 2: Diagram Venn</a></li>
+  <li><a href="#soal-3-probabilitas-ruang-sampel" id="toc-soal-3-probabilitas-ruang-sampel" class="nav-link" data-scroll-target="#soal-3-probabilitas-ruang-sampel">Soal 3: Probabilitas Ruang Sampel</a></li>
+  <li><a href="#soal-4-probabilitas-pada-tabel-data" id="toc-soal-4-probabilitas-pada-tabel-data" class="nav-link" data-scroll-target="#soal-4-probabilitas-pada-tabel-data">Soal 4: Probabilitas pada Tabel Data</a></li>
   <li><a href="#soal-set-2" id="toc-soal-set-2" class="nav-link" data-scroll-target="#soal-set-2">Soal Set 2</a>
   <ul class="collapse">
   <li><a href="#model-komunikasi" id="toc-model-komunikasi" class="nav-link" data-scroll-target="#model-komunikasi">1. Model Komunikasi</a></li>
@@ -438,8 +394,25 @@ window.Quarto = {
 
 
 <p>Sedang disusun. (under construction)</p>
-<section id="kerangka-kerja-probabilitas" class="level1">
-<h1>Kerangka Kerja Probabilitas</h1>
+<section id="kuis-1---probabilitas-dan-statistik" class="level1">
+<h1>Kuis 1 - Probabilitas dan Statistik</h1>
+<section id="instruksi" class="level2">
+<h2 class="anchored" data-anchor-id="instruksi">Instruksi</h2>
+<ul>
+<li>Kuis ini bersifat <strong>open book</strong>, artinya Anda diperbolehkan menggunakan buku, catatan, kalkulator, serta alat bantu lainnya.</li>
+<li><strong>Dilarang menggunakan AI seperti ChatGPT atau alat serupa</strong> dalam menjawab soal.</li>
+<li>Semua jawaban harus dikerjakan sendiri dan di ketik dengan jelas.</li>
+<li>Kuis ini harus dikumpulkan <strong>pada hari Senin sebelum kuliah dimulai</strong>.</li>
+<li><strong>Gunakan template jawaban yang telah disediakan untuk menyusun jawaban kuis.</strong></li>
+<li><strong>Simpan jawaban Anda dalam format PDF.</strong></li>
+<li><strong>Upload file PDF ke cloud storage (misalnya Google Drive, OneDrive, atau Dropbox).</strong></li>
+<li><strong>Laporkan link file PDF tersebut melalui MS Form yang telah disediakan oleh dosen.</strong></li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="soal" class="level1">
+<h1>Soal</h1>
 <section id="soal-1-ruang-sampel-eksperimen" class="level2">
 <h2 class="anchored" data-anchor-id="soal-1-ruang-sampel-eksperimen">Soal 1: Ruang Sampel Eksperimen</h2>
 <p>Tentukan ruang sampel dari eksperimen berikut:</p>
@@ -450,52 +423,6 @@ window.Quarto = {
 <li>Waktu yang dibutuhkan benda jatuh ke tanah setelah dilempar ke udara.</li>
 <li>Dalam penyimpanan data optik, pembacaan dilakukan hingga empat kali sebelum sistem memutuskan kegagalan. Gambarkan ruang sampel dengan diagram pohon.</li>
 </ol>
-<section id="prinsip-yang-digunakan" class="level3">
-<h3 class="anchored" data-anchor-id="prinsip-yang-digunakan">Prinsip yang Digunakan:</h3>
-<ul>
-<li>Ruang sampel adalah himpunan semua kemungkinan hasil dari suatu eksperimen.</li>
-<li>Untuk kasus diskrit, ruang sampel terdiri dari sejumlah elemen yang bisa dihitung.</li>
-<li>Untuk kasus kontinu, ruang sampel terdiri dari rentang nilai.</li>
-</ul>
-</section>
-<section id="pola-berpikir" class="level3">
-<h3 class="anchored" data-anchor-id="pola-berpikir">Pola Berpikir:</h3>
-<ol type="1">
-<li>Identifikasi kejadian utama dalam eksperimen.</li>
-<li>Tentukan apakah hasil eksperimen bersifat diskrit atau kontinu.</li>
-<li>Jika diskrit, buat daftar kemungkinan hasil.</li>
-<li>Jika kontinu, tentukan batas rentang nilai yang mungkin.</li>
-<li>Jika perlu, gunakan diagram pohon untuk memvisualisasikan hasil percobaan yang berulang.</li>
-</ol>
-</section>
-</section>
-<section id="jawaban" class="level2">
-<h2 class="anchored" data-anchor-id="jawaban">Jawaban:</h2>
-<p>(Disertakan jawaban untuk setiap soal dalam bentuk tabel atau diagram sesuai kebutuhan)</p>
-<div id="d8484c59" class="cell" data-execution_count="1">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> networkx <span class="im">as</span> nx</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> draw_tree():</span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>    G <span class="op">=</span> nx.DiGraph()</span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>    edges <span class="op">=</span> [(<span class="st">"Start"</span>, <span class="st">"Read 1"</span>),</span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>             (<span class="st">"Read 1"</span>, <span class="st">"Success"</span>), (<span class="st">"Read 1"</span>, <span class="st">"Read 2"</span>),</span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>             (<span class="st">"Read 2"</span>, <span class="st">"Success"</span>), (<span class="st">"Read 2"</span>, <span class="st">"Read 3"</span>),</span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>             (<span class="st">"Read 3"</span>, <span class="st">"Success"</span>), (<span class="st">"Read 3"</span>, <span class="st">"Failure"</span>)]</span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>    G.add_edges_from(edges)</span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>    pos <span class="op">=</span> nx.spring_layout(G)</span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>    nx.draw(G, pos, with_labels<span class="op">=</span><span class="va">True</span>, node_color<span class="op">=</span><span class="st">'lightblue'</span>, edge_color<span class="op">=</span><span class="st">'gray'</span>)</span>
-<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>    plt.show()</span>
-<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>draw_tree()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display">
-<div>
-<figure class="figure">
-<p><img src="index_files/figure-html/cell-2-output-1.png" width="691" height="499" class="figure-img"></p>
-</figure>
-</div>
-</div>
-</div>
 <hr>
 </section>
 <section id="soal-2-diagram-venn" class="level2">
@@ -507,41 +434,6 @@ window.Quarto = {
 <li><span class="math inline">\(A^c \cup B\)</span></li>
 <li><span class="math inline">\(A \cap (B \cup C)\)</span></li>
 </ol>
-<section id="prinsip-yang-digunakan-1" class="level3">
-<h3 class="anchored" data-anchor-id="prinsip-yang-digunakan-1">Prinsip yang Digunakan:</h3>
-<ul>
-<li>Diagram Venn digunakan untuk memvisualisasikan hubungan antara himpunan dalam probabilitas.</li>
-<li>Operasi himpunan seperti union (<span class="math inline">\(\cup\)</span>) dan intersection (<span class="math inline">\(\cap\)</span>) menunjukkan bagaimana kejadian saling berhubungan.</li>
-</ul>
-</section>
-<section id="pola-berpikir-1" class="level3">
-<h3 class="anchored" data-anchor-id="pola-berpikir-1">Pola Berpikir:</h3>
-<ol type="1">
-<li>Tentukan himpunan yang diberikan dalam soal.</li>
-<li>Gunakan operasi himpunan untuk menemukan daerah yang sesuai.</li>
-<li>Gunakan diagram Venn untuk membantu visualisasi.</li>
-<li>Tandai daerah yang sesuai dengan arsir atau warna.</li>
-</ol>
-</section>
-</section>
-<section id="jawaban-1" class="level2">
-<h2 class="anchored" data-anchor-id="jawaban-1">Jawaban:</h2>
-<div id="4c53ecc7" class="cell" data-execution_count="2">
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> matplotlib_venn <span class="im">import</span> venn3</span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> draw_venn():</span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>    venn3(subsets <span class="op">=</span> (<span class="dv">1</span>, <span class="dv">1</span>, <span class="dv">1</span>, <span class="dv">1</span>, <span class="dv">1</span>, <span class="dv">1</span>, <span class="dv">1</span>), set_labels<span class="op">=</span>(<span class="st">'A'</span>, <span class="st">'B'</span>, <span class="st">'C'</span>))</span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>    plt.show()</span>
-<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>draw_venn()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display">
-<div>
-<figure class="figure">
-<p><img src="index_files/figure-html/cell-3-output-1.png" width="394" height="382" class="figure-img"></p>
-</figure>
-</div>
-</div>
-</div>
 <hr>
 </section>
 <section id="soal-3-probabilitas-ruang-sampel" class="level2">
@@ -554,44 +446,41 @@ window.Quarto = {
 <li><span class="math inline">\(P(A \cap B)\)</span></li>
 <li><span class="math inline">\(P(A^c)\)</span></li>
 </ol>
-<section id="prinsip-yang-digunakan-2" class="level3">
-<h3 class="anchored" data-anchor-id="prinsip-yang-digunakan-2">Prinsip yang Digunakan:</h3>
-<ul>
-<li>Probabilitas dari suatu kejadian adalah jumlah probabilitas elemen yang termasuk dalam kejadian tersebut.</li>
-<li>Probabilitas komplemen dihitung dengan 1 dikurangi probabilitas kejadian.</li>
-<li>Jika dua kejadian tidak memiliki elemen bersama, maka <span class="math inline">\(P(A \cap B) = 0\)</span>.</li>
-</ul>
+<hr>
 </section>
-<section id="pola-berpikir-2" class="level3">
-<h3 class="anchored" data-anchor-id="pola-berpikir-2">Pola Berpikir:</h3>
+<section id="soal-4-probabilitas-pada-tabel-data" class="level2">
+<h2 class="anchored" data-anchor-id="soal-4-probabilitas-pada-tabel-data">Soal 4: Probabilitas pada Tabel Data</h2>
+<p>Tabel berikut menunjukkan hasil uji ketahanan piringan plastik terhadap goresan dan guncangan.</p>
+<table class="table">
+<thead>
+<tr class="header">
+<th>Ketahanan Gores</th>
+<th>Tinggi</th>
+<th>Rendah</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Tinggi</strong></td>
+<td>70</td>
+<td>9</td>
+</tr>
+<tr class="even">
+<td><strong>Rendah</strong></td>
+<td>16</td>
+<td>5</td>
+</tr>
+</tbody>
+</table>
+<p>Hitung probabilitas berikut:</p>
 <ol type="1">
-<li>Identifikasi elemen yang termasuk dalam setiap kejadian.</li>
-<li>Jumlahkan probabilitas elemen yang masuk dalam kejadian tersebut.</li>
-<li>Gunakan aturan probabilitas dasar untuk menghitung probabilitas lainnya.</li>
+<li>Piringan memiliki ketahanan gores yang tinggi.</li>
+<li>Piringan memiliki ketahanan guncang yang tinggi.</li>
+<li>Piringan memiliki ketahanan tinggi untuk keduanya.</li>
+<li>Piringan memiliki ketahanan tinggi terhadap salah satu kriteria.</li>
 </ol>
-</section>
-</section>
-<section id="jawaban-2" class="level2">
-<h2 class="anchored" data-anchor-id="jawaban-2">Jawaban:</h2>
-<div id="49f9dc13" class="cell" data-execution_count="3">
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>P_S <span class="op">=</span> [<span class="fl">0.1</span>, <span class="fl">0.1</span>, <span class="fl">0.2</span>, <span class="fl">0.4</span>, <span class="fl">0.2</span>]</span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>A <span class="op">=</span> [<span class="fl">0.1</span>, <span class="fl">0.1</span>]</span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>B <span class="op">=</span> [<span class="fl">0.2</span>, <span class="fl">0.4</span>]</span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>P_A <span class="op">=</span> <span class="bu">sum</span>(A)</span>
-<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>P_B <span class="op">=</span> <span class="bu">sum</span>(B)</span>
-<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>P_A_union_B <span class="op">=</span> P_A <span class="op">+</span> P_B</span>
-<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>P_A_intersection_B <span class="op">=</span> <span class="dv">0</span>  <span class="co"># karena A dan B tidak memiliki irisan</span></span>
-<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>P_A_complement <span class="op">=</span> <span class="dv">1</span> <span class="op">-</span> P_A</span>
-<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>P_A, P_B, P_A_union_B, P_A_intersection_B, P_A_complement</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display" data-execution_count="3">
-<pre><code>(0.2, 0.6000000000000001, 0.8, 0, 0.8)</code></pre>
-</div>
-</div>
 <hr>
-<p>Dokumen ini berisi soal-soal yang serupa dengan yang ada dalam Problem Set 1, lengkap dengan prinsip yang digunakan, pola berpikir yang diterapkan, serta jawaban dan implementasi kode Python untuk perhitungan probabilitas dan visualisasi diagram.</p>
-<hr>
+<p><strong>Selamat mengerjakan dan semoga sukses!</strong></p>
 </section>
 <section id="soal-set-2" class="level2">
 <h2 class="anchored" data-anchor-id="soal-set-2">Soal Set 2</h2>

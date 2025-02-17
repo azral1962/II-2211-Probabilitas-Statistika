@@ -264,7 +264,17 @@
     "href": "problem-set/index.html",
     "title": "Problem Set",
     "section": "",
-    "text": "Kerangka Kerja Probabilitas",
+    "text": "Kuis 1 - Probabilitas dan Statistik",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Problem Set</span>"
+    ]
+  },
+  {
+    "objectID": "problem-set/index.html#instruksi",
+    "href": "problem-set/index.html#instruksi",
+    "title": "Problem Set",
+    "section": "Instruksi",
+    "text": "Instruksi\n\nKuis ini bersifat open book, artinya Anda diperbolehkan menggunakan buku, catatan, kalkulator, serta alat bantu lainnya.\nDilarang menggunakan AI seperti ChatGPT atau alat serupa dalam menjawab soal.\nSemua jawaban harus dikerjakan sendiri dan di ketik dengan jelas.\nKuis ini harus dikumpulkan pada hari Senin sebelum kuliah dimulai.\nGunakan template jawaban yang telah disediakan untuk menyusun jawaban kuis.\nSimpan jawaban Anda dalam format PDF.\nUpload file PDF ke cloud storage (misalnya Google Drive, OneDrive, atau Dropbox).\nLaporkan link file PDF tersebut melalui MS Form yang telah disediakan oleh dosen.",
     "crumbs": [
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>Problem Set</span>"
     ]
@@ -274,17 +284,7 @@
     "href": "problem-set/index.html#soal-1-ruang-sampel-eksperimen",
     "title": "Problem Set",
     "section": "Soal 1: Ruang Sampel Eksperimen",
-    "text": "Soal 1: Ruang Sampel Eksperimen\nTentukan ruang sampel dari eksperimen berikut:\n\nSebuah paket data dikirimkan melalui jaringan hingga berhasil diterima tanpa kesalahan.\nSistem komunikasi digital mengirimkan sinyal antara tegangan +5V dan -5V.\nPengujian papan sirkuit dengan kemungkinan lulus atau gagal uji. Jika gagal, ditentukan jenis cacatnya dari enam kemungkinan.\nWaktu yang dibutuhkan benda jatuh ke tanah setelah dilempar ke udara.\nDalam penyimpanan data optik, pembacaan dilakukan hingga empat kali sebelum sistem memutuskan kegagalan. Gambarkan ruang sampel dengan diagram pohon.\n\n\nPrinsip yang Digunakan:\n\nRuang sampel adalah himpunan semua kemungkinan hasil dari suatu eksperimen.\nUntuk kasus diskrit, ruang sampel terdiri dari sejumlah elemen yang bisa dihitung.\nUntuk kasus kontinu, ruang sampel terdiri dari rentang nilai.\n\n\n\nPola Berpikir:\n\nIdentifikasi kejadian utama dalam eksperimen.\nTentukan apakah hasil eksperimen bersifat diskrit atau kontinu.\nJika diskrit, buat daftar kemungkinan hasil.\nJika kontinu, tentukan batas rentang nilai yang mungkin.\nJika perlu, gunakan diagram pohon untuk memvisualisasikan hasil percobaan yang berulang.",
-    "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Problem Set</span>"
-    ]
-  },
-  {
-    "objectID": "problem-set/index.html#jawaban",
-    "href": "problem-set/index.html#jawaban",
-    "title": "Problem Set",
-    "section": "Jawaban:",
-    "text": "Jawaban:\n(Disertakan jawaban untuk setiap soal dalam bentuk tabel atau diagram sesuai kebutuhan)\n\nimport matplotlib.pyplot as plt\nimport networkx as nx\n\ndef draw_tree():\n    G = nx.DiGraph()\n    edges = [(\"Start\", \"Read 1\"),\n             (\"Read 1\", \"Success\"), (\"Read 1\", \"Read 2\"),\n             (\"Read 2\", \"Success\"), (\"Read 2\", \"Read 3\"),\n             (\"Read 3\", \"Success\"), (\"Read 3\", \"Failure\")]\n    G.add_edges_from(edges)\n    pos = nx.spring_layout(G)\n    nx.draw(G, pos, with_labels=True, node_color='lightblue', edge_color='gray')\n    plt.show()\n\ndraw_tree()",
+    "text": "Soal 1: Ruang Sampel Eksperimen\nTentukan ruang sampel dari eksperimen berikut:\n\nSebuah paket data dikirimkan melalui jaringan hingga berhasil diterima tanpa kesalahan.\nSistem komunikasi digital mengirimkan sinyal antara tegangan +5V dan -5V.\nPengujian papan sirkuit dengan kemungkinan lulus atau gagal uji. Jika gagal, ditentukan jenis cacatnya dari enam kemungkinan.\nWaktu yang dibutuhkan benda jatuh ke tanah setelah dilempar ke udara.\nDalam penyimpanan data optik, pembacaan dilakukan hingga empat kali sebelum sistem memutuskan kegagalan. Gambarkan ruang sampel dengan diagram pohon.",
     "crumbs": [
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>Problem Set</span>"
     ]
@@ -294,17 +294,7 @@
     "href": "problem-set/index.html#soal-2-diagram-venn",
     "title": "Problem Set",
     "section": "Soal 2: Diagram Venn",
-    "text": "Soal 2: Diagram Venn\nGambarkan diagram Venn untuk tiga kejadian A, B, dan C serta arsirlah daerah yang sesuai untuk kejadian berikut:\n\n\\(A \\cup B\\)\n\\(A \\cap B\\)\n\\(A^c \\cup B\\)\n\\(A \\cap (B \\cup C)\\)\n\n\nPrinsip yang Digunakan:\n\nDiagram Venn digunakan untuk memvisualisasikan hubungan antara himpunan dalam probabilitas.\nOperasi himpunan seperti union (\\(\\cup\\)) dan intersection (\\(\\cap\\)) menunjukkan bagaimana kejadian saling berhubungan.\n\n\n\nPola Berpikir:\n\nTentukan himpunan yang diberikan dalam soal.\nGunakan operasi himpunan untuk menemukan daerah yang sesuai.\nGunakan diagram Venn untuk membantu visualisasi.\nTandai daerah yang sesuai dengan arsir atau warna.",
-    "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Problem Set</span>"
-    ]
-  },
-  {
-    "objectID": "problem-set/index.html#jawaban-1",
-    "href": "problem-set/index.html#jawaban-1",
-    "title": "Problem Set",
-    "section": "Jawaban:",
-    "text": "Jawaban:\n\nfrom matplotlib_venn import venn3\n\ndef draw_venn():\n    venn3(subsets = (1, 1, 1, 1, 1, 1, 1), set_labels=('A', 'B', 'C'))\n    plt.show()\n\ndraw_venn()",
+    "text": "Soal 2: Diagram Venn\nGambarkan diagram Venn untuk tiga kejadian A, B, dan C serta arsirlah daerah yang sesuai untuk kejadian berikut:\n\n\\(A \\cup B\\)\n\\(A \\cap B\\)\n\\(A^c \\cup B\\)\n\\(A \\cap (B \\cup C)\\)",
     "crumbs": [
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>Problem Set</span>"
     ]
@@ -314,17 +304,17 @@
     "href": "problem-set/index.html#soal-3-probabilitas-ruang-sampel",
     "title": "Problem Set",
     "section": "Soal 3: Probabilitas Ruang Sampel",
-    "text": "Soal 3: Probabilitas Ruang Sampel\nDiketahui ruang sampel \\(S = \\{s_1, s_2, s_3, s_4, s_5\\}\\) dengan probabilitas berturut-turut 0.1, 0.1, 0.2, 0.4, dan 0.2. Jika \\(A = \\{s_1, s_2\\}\\) dan \\(B = \\{s_3, s_4\\}\\), tentukan:\n\n\\(P(A)\\)\n\\(P(B)\\)\n\\(P(A \\cup B)\\)\n\\(P(A \\cap B)\\)\n\\(P(A^c)\\)\n\n\nPrinsip yang Digunakan:\n\nProbabilitas dari suatu kejadian adalah jumlah probabilitas elemen yang termasuk dalam kejadian tersebut.\nProbabilitas komplemen dihitung dengan 1 dikurangi probabilitas kejadian.\nJika dua kejadian tidak memiliki elemen bersama, maka \\(P(A \\cap B) = 0\\).\n\n\n\nPola Berpikir:\n\nIdentifikasi elemen yang termasuk dalam setiap kejadian.\nJumlahkan probabilitas elemen yang masuk dalam kejadian tersebut.\nGunakan aturan probabilitas dasar untuk menghitung probabilitas lainnya.",
+    "text": "Soal 3: Probabilitas Ruang Sampel\nDiketahui ruang sampel \\(S = \\{s_1, s_2, s_3, s_4, s_5\\}\\) dengan probabilitas berturut-turut 0.1, 0.1, 0.2, 0.4, dan 0.2. Jika \\(A = \\{s_1, s_2\\}\\) dan \\(B = \\{s_3, s_4\\}\\), tentukan:\n\n\\(P(A)\\)\n\\(P(B)\\)\n\\(P(A \\cup B)\\)\n\\(P(A \\cap B)\\)\n\\(P(A^c)\\)",
     "crumbs": [
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>Problem Set</span>"
     ]
   },
   {
-    "objectID": "problem-set/index.html#jawaban-2",
-    "href": "problem-set/index.html#jawaban-2",
+    "objectID": "problem-set/index.html#soal-4-probabilitas-pada-tabel-data",
+    "href": "problem-set/index.html#soal-4-probabilitas-pada-tabel-data",
     "title": "Problem Set",
-    "section": "Jawaban:",
-    "text": "Jawaban:\n\nP_S = [0.1, 0.1, 0.2, 0.4, 0.2]\nA = [0.1, 0.1]\nB = [0.2, 0.4]\n\nP_A = sum(A)\nP_B = sum(B)\nP_A_union_B = P_A + P_B\nP_A_intersection_B = 0  # karena A dan B tidak memiliki irisan\nP_A_complement = 1 - P_A\n\nP_A, P_B, P_A_union_B, P_A_intersection_B, P_A_complement\n\n(0.2, 0.6000000000000001, 0.8, 0, 0.8)\n\n\n\nDokumen ini berisi soal-soal yang serupa dengan yang ada dalam Problem Set 1, lengkap dengan prinsip yang digunakan, pola berpikir yang diterapkan, serta jawaban dan implementasi kode Python untuk perhitungan probabilitas dan visualisasi diagram.",
+    "section": "Soal 4: Probabilitas pada Tabel Data",
+    "text": "Soal 4: Probabilitas pada Tabel Data\nTabel berikut menunjukkan hasil uji ketahanan piringan plastik terhadap goresan dan guncangan.\n\n\n\nKetahanan Gores\nTinggi\nRendah\n\n\n\n\nTinggi\n70\n9\n\n\nRendah\n16\n5\n\n\n\nHitung probabilitas berikut:\n\nPiringan memiliki ketahanan gores yang tinggi.\nPiringan memiliki ketahanan guncang yang tinggi.\nPiringan memiliki ketahanan tinggi untuk keduanya.\nPiringan memiliki ketahanan tinggi terhadap salah satu kriteria.\n\n\nSelamat mengerjakan dan semoga sukses!",
     "crumbs": [
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>Problem Set</span>"
     ]
@@ -454,7 +444,7 @@
     "href": "PSCalc/index.html#setup-awal-repositori-github-dan-repositori-lokal",
     "title": "Proyek KMS PSCalk",
     "section": "Setup Awal Repositori GitHub dan Repositori Lokal",
-    "text": "Setup Awal Repositori GitHub dan Repositori Lokal\n\nSetiap mahasiswa memasang aplikasi Github-Desktop (atau aplikasi git lainnya yang dikuasai) sambil membuka akun di GitHub\nMengunakan web browser Ketua Tim mem-fork Repositori (Template) PSCalc dari GitHub untuk menjadi Repositori GitHub Tim\nKetua Tim menset Page di Repositori GitHub Tim dengan entry branch main dan directory /docs lalu catat URL yang dihasilkan\nSetiap anggota meng-clone Rspositori GutHub Tim ke Repositori Lokal (Biasanya folder Documents/Github)\nBuka Terminal, pergi ke root directory di Repositori lokal, lalu generate documents dengan perintah quarto render\nAkses Web KMS PSCalc Tim melalui URL yang dihasilkan tadi\nBila berhasil, selamat, tim anda sudah siap mengembangkan KMS PSCalc Tim",
+    "text": "Setup Awal Repositori GitHub dan Repositori Lokal\n\nSetiap mahasiswa memasang aplikasi Github-Desktop (atau aplikasi git lainnya yang dikuasai) sambil membuka akun di GitHub\nMengunakan web browser Ketua Tim mem-fork Repositori (Template) PSCalc dari GitHub untuk menjadi Repositori GitHub Tim\nKetua Tim menset Page di Repositori GitHub Tim dengan entry branch main dan directory /docs lalu catat URL yang dihasilkan\nSetiap anggota meng-clone Rspositori GutHub Tim ke Repositori Lokal (Biasanya folder Documents/Github)\nBuka Terminal, pergi ke /pscalc directory di Repositori lokal, lalu generate documents dengan perintah quarto render\nAkses Web KMS PSCalc Tim melalui URL yang dihasilkan tadi\nBila berhasil, selamat, tim anda sudah siap mengembangkan KMS PSCalc Tim",
     "crumbs": [
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>Proyek KMS PSCalk</span>"
     ]
@@ -464,7 +454,7 @@
     "href": "PSCalc/index.html#mengembangkan-kms-pscalc-tim-dengan-quarto",
     "title": "Proyek KMS PSCalk",
     "section": "Mengembangkan KMS PSCalc Tim Dengan Quarto",
-    "text": "Mengembangkan KMS PSCalc Tim Dengan Quarto\n\nGunakan editor tex untuk membuat dokumen .qmd solusi dari setiap soal problem set\nLihat contoh Problem Set 1\nRender file .qmd karya anda menggunakan Quarto dan Review hasilnnya dengan browsing ke directory /docs sebagaimana di atas\nBila puas dengan hasilnya, gunakan Github-Desktop untuk meng-commit lalu push ke repository GitHub, untuk di approve Anggota tim yang lain\nAnda bisa mengakses versi baru KMS PSCalc melalui URL tadi",
+    "text": "Mengembangkan KMS PSCalc Tim Dengan Quarto\n\nGunakan editor tex untuk membuat dokumen .qmd solusi dari setiap soal problem set. VSC memiliki ekstensi plugin quarto yang bisa dipasang untuk memudahkan visualisasi. Demikian juag RStudio\nLihat contoh Problem Set 1\nRender file .qmd karya anda menggunakan Quarto dan Review hasilnnya dengan browsing ke directory /docs sebagaimana di atas\nBila puas dengan hasilnya, gunakan Github-Desktop untuk meng-commit lalu push ke repository GitHub, untuk di approve Anggota tim yang lain\nAnda bisa mengakses versi baru KMS PSCalc melalui URL tadi",
     "crumbs": [
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>Proyek KMS PSCalk</span>"
     ]
