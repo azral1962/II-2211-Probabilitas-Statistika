@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "II-2211 Probabilitas dan Statistika",
     "section": "",
-    "text": "Pengantar\nSelamat datang di kuliah II-2211 Probabilitas Statistika.\nKompetensi yang diharapkan dari lulusan kuliah ini memahami dan menguasai konsep probabilitas dan statistika, lalu dapat menerapkan konsep itu untuk memecakan masalah analisa, dan pengambilan kesimpulan .",
+    "text": "Pengantar\nSelamat datang di kuliah II-2211 Probabilitas Statistika.\nKompetensi yang diharapkan dari lulusan kuliah ini memahami dan menguasai konsep probabilitas dan statistika, lalu dapat menerapkan konsep itu untuk memecahkan masalah analisa, dan pengambilan kesimpulan .",
     "crumbs": [
       "Pengantar"
     ]
@@ -14,7 +14,7 @@
     "href": "index.html#topik",
     "title": "II-2211 Probabilitas dan Statistika",
     "section": "Topik",
-    "text": "Topik\nSaat ini ada 13 topik materi pengetahuan yang perlu dikuasai, satu untuk tiap minggu. Juga ada enam problem set mewakili pengujian pengusaan materi. Di tahun tahun-tahun sebelumnya soal-soal ini, dan kunci jawaban, sudah tersedia. Namun beban kognitif terlalu berat bagi seorang mahasiwa sendirian untuk mengerjakan semua soal ini dengan kualitas solusi yang memuaskan.",
+    "text": "Topik\nSaat ini ada 13 topik materi pengetahuan yang perlu dikuasai, satu untuk tiap minggu. Juga ada enam problem set mewakili pengujian penguasaan materi. Di tahun-tahun sebelumnya soal-soal ini, dan kunci jawaban, sudah tersedia. Namun beban kognitif terlalu berat bagi seorang mahasiswa untuk sendirian mengerjakan semua soal ini dengan kualitas solusi yang memuaskan.",
     "crumbs": [
       "Pengantar"
     ]
@@ -24,7 +24,7 @@
     "href": "index.html#orientasi-nilai",
     "title": "II-2211 Probabilitas dan Statistika",
     "section": "Orientasi Nilai",
-    "text": "Orientasi Nilai\nDi era kecerdasan artifisial (artificial intelligence, AI), pendidikan tidak lagi menekan kan pada pengetahuan, tetapi pada perannya terhadap penciptaan nilai. Saat ini kuliah ini hendak menonjolkan edukasi nilai yang penting, seperti bekerjasama, sensitif pada hal-hal yang berharga, seperti penggunaan waktu, kualitas pekerjaan, dan komitment untuk memberikan hasil.",
+    "text": "Orientasi Nilai\nDi era kecerdasan artifisial (artificial intelligence, AI), pendidikan tidak lagi menekan kan pada pengetahuan, tetapi secara berimbang pada perannya terhadap penciptaan nilai. Saat ini kuliah ini hendak menonjolkan edukasi nilai yang penting, seperti bekerjasama, sensitif pada hal-hal yang berharga, seperti penggunaan waktu, kualitas pekerjaan, dan komitment untuk memberikan hasil.\nJadi untuk pertama kali mahasiswa diminta mengerjaan semua soal latihan dengan benar sebagai ukuran kompetensi. Target ini diharapkan bisa dicapai menggunan KMS yang dikembangkan bersama dalam tim.",
     "crumbs": [
       "Pengantar"
     ]
@@ -34,7 +34,7 @@
     "href": "index.html#konsep-kms",
     "title": "II-2211 Probabilitas dan Statistika",
     "section": "Konsep KMS",
-    "text": "Konsep KMS\nOleh sebab itu mulai tahun ini proses belajar coba dilakukan dengan mengembangkan sistem pengelolaan pengetahuan (knowledge management system, KMS) yang mengakuisisi pengetahuan, dan menerapkan pada berbagai persoalan.\nDalam bentuk yang paling sederhana, KMS yang dimaksud adalah dokumen pemrograman literasi (Knuth (1984)), di mana ringkasan pengetahuan dan kode (python, R, dan yang sejenis) terembedded di dalamnya, yang diindex berdasarkan topik materi, jenis persoalan, serta pola berpikir untuk menyelesaikan masalah.\nUntuk mengembangkan KMS, diidentifikasi 1. Tiga belas topik materi 2. Lima jenis kategori persoalan 3. Sebuah pola berpikir solutif dengan lima langkah di dalamnya",
+    "text": "Konsep KMS\nOleh sebab itu mulai tahun ini proses belajar coba dilakukan dengan mengembangkan sistem pengelolaan pengetahuan (knowledge management system, KMS) yang mengakuisisi pengetahuan, dan menerapkan pada berbagai persoalan.\nDalam bentuk yang paling sederhana, KMS yang dimaksud adalah dokumen pemrograman literasi (Knuth (1984)), di mana ringkasan pengetahuan dan kode (python, R, dan yang sejenis) ter-embedded di dalamnya, yang di-index berdasarkan topik materi, jenis persoalan, serta pola berpikir untuk menyelesaikan masalah. KMS ini kita beri nama PSCalc: Probability and Statistics Calculator.\nUntuk mengembangkan KMS PSCalc, diidentifikasi{\n\nTiga belas topik materi\nLima jenis kategori persoalan\nSebuah pola berpikir solutif dengan lima langkah di dalamnya",
     "crumbs": [
       "Pengantar"
     ]
@@ -44,7 +44,7 @@
     "href": "index.html#proses-pembelajaran",
     "title": "II-2211 Probabilitas dan Statistika",
     "section": "Proses Pembelajaran",
-    "text": "Proses Pembelajaran\nInstruktur menyediakan problem set serta set ujian-ujian yang sudah pernah, sebagai input, dan secara bertahap mahasiswa mengembangkan solusi dan menjelaskannya ke dalam Dokumen KMS, sebagai ouput. Bila hal ini dilakukan dengan baik, maka saat menghadapi soal (kuiz atau ujian), mahasiswa mencari soal yang serupa di dalam KMS ini, kemudian memanfaatkan langkah penyusunan solusi untuk menjawabnya. Kuliah ini sudah menyediakan kumpulan soal dari berbagai sumber. Tugas peserta adalah menganalisa soal dengan mengidentifikasi topik apa, jenis apa, dan pola berpikir apa yang paling tepat untuk memecahkan persoalan ini.\nJadi garis besar proses belajar yang ditempuh mahasiswa: 1. Setiap Minggu, mahasiswa mendapatkan tugas dari problem-set, sebagai “training set”. 2. Mahasiswa ber kolaborasi menyusun prinsip-prinsip ke dalam dokumen ini, serta menggunakannya untuk menjawab problem set. 2, Instruktur memberikan Kuiz, dan peserta mendemonstrasikan penggunaan KMS untuk menjawabnya secara cepat.\nJadi untuk pertamakali mahasiswa diminta mengerjaan semua soal latihan dengan benar sebagai ukuran kompetensi. Target ini diharapkan bisa dicapai menggunan KMS yang dikembangkan bersama dalam tim.\nDalam kuliah ini penggunaan AI dianjurkan dalam proses akuisisi dan pengelolaan KMS, tetapi tidak untuk ujian.\nSelamat Belajar\nThis is a book created from markdown and executable code.\nSee Knuth (1984) for additional discussion of literate programming.\n\n\n\n\nKnuth, Donald E. 1984. “Literate Programming.” Comput. J. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97.",
+    "text": "Proses Pembelajaran\nInstruktur menyediakan problem set serta set ujian-ujian yang sudah pernah, sebagai input, dan secara bertahap mahasiswa mengembangkan solusi dan menjelaskannya ke dalam Dokumen KMS PSCalc, sebagai ouput.\nBila hal ini dilakukan dengan baik, maka saat menghadapi soal (kuiz atau ujian), mahasiswa mencari soal yang serupa di dalam KMS ini, kemudian memanfaatkan langkah penyusunan solusi untuk menjawabnya.\nKuliah ini sudah menyediakan kumpulan soal dari berbagai sumber. Tugas peserta adalah menganalisa soal dengan mengidentifikasi topik apa, jenis apa, dan pola berpikir apa yang paling tepat untuk memecahkan persoalan ini.\nJadi garis besar proses belajar yang ditempuh mahasiswa:\n\nSetiap Minggu, mahasiswa mendapatkan tugas dari problem-set, sebagai “training set”.\nMahasiswa ber kolaborasi menyusun prinsip-prinsip ke dalam dokumen ini, serta menggunakannya untuk menjawab problem set.\nInstruktur memberikan Kuiz, dan peserta mendemonstrasikan penggunaan KMS untuk menjawabnya secara cepat.\n\nDalam kuliah ini penggunaan AI dianjurkan dalam proses akuisisi dan pengelolaan KMS, tetapi tidak untuk ujian.\nSelamat Belajar\nThis is a book created from markdown and executable code.\nSee Knuth (1984) for additional discussion of literate programming.\n\n\n\n\nKnuth, Donald E. 1984. “Literate Programming.” Comput. J. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97.",
     "crumbs": [
       "Pengantar"
     ]
@@ -422,171 +422,171 @@
   {
     "objectID": "PSCalc/index.html",
     "href": "PSCalc/index.html",
-    "title": "Proyek KMS PSCalk",
+    "title": "Proyek KMS PSCalc",
     "section": "",
     "text": "Aplikasi Yang Perlu di Install",
     "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Proyek KMS PSCalk</span>"
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Proyek KMS PSCalc</span>"
     ]
   },
   {
     "objectID": "PSCalc/index.html#aplikasi-yang-perlu-di-install",
     "href": "PSCalc/index.html#aplikasi-yang-perlu-di-install",
-    "title": "Proyek KMS PSCalk",
+    "title": "Proyek KMS PSCalc",
     "section": "",
     "text": "Editor Teks yang biasa digunakan. Beberapa yang direkomendasikan\n\nVisual Studio\nRStudio\n\nDocument Processing. Direkomendasikan:\n\nQuarto (Quarto.org)\n\nComputing platform. Direkomendasikan\n\nPython\nR\n\nWeb browser\nAI Chat\n\nChatGPT dan yang sejenis",
     "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Proyek KMS PSCalk</span>"
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Proyek KMS PSCalc</span>"
     ]
   },
   {
     "objectID": "PSCalc/index.html#setup-awal-repositori-github-dan-repositori-lokal",
     "href": "PSCalc/index.html#setup-awal-repositori-github-dan-repositori-lokal",
-    "title": "Proyek KMS PSCalk",
+    "title": "Proyek KMS PSCalc",
     "section": "Setup Awal Repositori GitHub dan Repositori Lokal",
     "text": "Setup Awal Repositori GitHub dan Repositori Lokal\n\nSetiap mahasiswa memasang aplikasi Github-Desktop (atau aplikasi git lainnya yang dikuasai) sambil membuka akun di GitHub\nMengunakan web browser Ketua Tim mem-fork Repositori (Template) PSCalc dari GitHub untuk menjadi Repositori GitHub Tim\nKetua Tim menset Page di Repositori GitHub Tim dengan entry branch main dan directory /docs lalu catat URL yang dihasilkan\nSetiap anggota meng-clone Rspositori GutHub Tim ke Repositori Lokal (Biasanya folder Documents/Github)\nBuka Terminal, pergi ke /pscalc directory di Repositori lokal, lalu generate documents dengan perintah quarto render\nAkses Web KMS PSCalc Tim melalui URL yang dihasilkan tadi\nBila berhasil, selamat, tim anda sudah siap mengembangkan KMS PSCalc Tim",
     "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Proyek KMS PSCalk</span>"
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Proyek KMS PSCalc</span>"
     ]
   },
   {
     "objectID": "PSCalc/index.html#mengembangkan-kms-pscalc-tim-dengan-quarto",
     "href": "PSCalc/index.html#mengembangkan-kms-pscalc-tim-dengan-quarto",
-    "title": "Proyek KMS PSCalk",
+    "title": "Proyek KMS PSCalc",
     "section": "Mengembangkan KMS PSCalc Tim Dengan Quarto",
     "text": "Mengembangkan KMS PSCalc Tim Dengan Quarto\n\nGunakan editor tex untuk membuat dokumen .qmd solusi dari setiap soal problem set. VSC memiliki ekstensi plugin quarto yang bisa dipasang untuk memudahkan visualisasi. Demikian juag RStudio\nLihat contoh Problem Set 1\nRender file .qmd karya anda menggunakan Quarto dan Review hasilnnya dengan browsing ke directory /docs sebagaimana di atas\nBila puas dengan hasilnya, gunakan Github-Desktop untuk meng-commit lalu push ke repository GitHub, untuk di approve Anggota tim yang lain\nAnda bisa mengakses versi baru KMS PSCalc melalui URL tadi",
     "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Proyek KMS PSCalk</span>"
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Proyek KMS PSCalc</span>"
     ]
   },
   {
     "objectID": "PSCalc/index.html#rekomendasi-desain",
     "href": "PSCalc/index.html#rekomendasi-desain",
-    "title": "Proyek KMS PSCalk",
+    "title": "Proyek KMS PSCalc",
     "section": "Rekomendasi Desain",
     "text": "Rekomendasi Desain\nProgram Komputer 1. Rancang program Python dan R yang bisa dikembangkan bertahap dan kolaboratif untuk mencari solusi dari berbagai kategori problem 2. Buat rencana pengembangan program ini sejalan dengan rencana kuliah.\n### **Rancangan Program Komputer untuk Solusi Problem Set Probabilitas dan Statistika**\nUntuk mendukung pembelajaran Probabilitas dan Statistika (P&S) secara bertahap dan kolaboratif, kita dapat mengembangkan program Python dan R yang dapat digunakan untuk menyelesaikan berbagai kategori problem set. Program ini akan dirancang modular, sehingga bisa dikembangkan secara bertahap sesuai dengan rencana kuliah, serta memungkinkan kontribusi dari mahasiswa dalam konteks VV-KMS-CPL.",
     "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Proyek KMS PSCalk</span>"
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Proyek KMS PSCalc</span>"
     ]
   },
   {
     "objectID": "PSCalc/index.html#struktur-pengembangan-program",
     "href": "PSCalc/index.html#struktur-pengembangan-program",
-    "title": "Proyek KMS PSCalk",
+    "title": "Proyek KMS PSCalc",
     "section": "1. Struktur Pengembangan Program",
     "text": "1. Struktur Pengembangan Program\n\nA. Bahasa Pemrograman\n\nPython: Menggunakan NumPy, SciPy, pandas, Matplotlib, seaborn untuk perhitungan statistik dan visualisasi data.\nR: Menggunakan tidyverse, ggplot2, dplyr, stats untuk analisis data dan pemodelan statistik.\n\n\n\nB. Struktur Modul Program\n\n\n\n\n\n\n\n\nModul\nFungsi\nKategori Problem Set\n\n\n\n\nprobability.py / probability.R\nMenghitung probabilitas dasar, peluang bersyarat, Teorema Bayes\nProbabilitas Dasar\n\n\ndistributions.py / distributions.R\nSimulasi distribusi diskrit (Binomial, Poisson) dan kontinu (Normal, Eksponensial)\nVariabel Acak & Distribusi\n\n\ndescriptive_stats.py / descriptive_stats.R\nMenghitung statistik deskriptif (mean, median, standar deviasi)\nStatistika Deskriptif\n\n\nhypothesis_testing.py / hypothesis_testing.R\nMelakukan uji hipotesis (t-test, z-test, chi-square)\nInferensi Statistik\n\n\nregression.py / regression.R\nRegresi linier dan analisis korelasi\nRegresi & Korelasi\n\n\nmonte_carlo.py / monte_carlo.R\nSimulasi Monte Carlo untuk estimasi probabilitas\nSimulasi Probabilistik\n\n\nbig_data_analysis.py / big_data_analysis.R\nPemrosesan data besar dengan statistik\nAnalisis Data Besar",
     "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Proyek KMS PSCalk</span>"
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Proyek KMS PSCalc</span>"
     ]
   },
   {
     "objectID": "PSCalc/index.html#rencana-pengembangan-program-sejalan-dengan-rencana-kuliah",
     "href": "PSCalc/index.html#rencana-pengembangan-program-sejalan-dengan-rencana-kuliah",
-    "title": "Proyek KMS PSCalk",
+    "title": "Proyek KMS PSCalc",
     "section": "2. Rencana Pengembangan Program Sejalan dengan Rencana Kuliah",
     "text": "2. Rencana Pengembangan Program Sejalan dengan Rencana Kuliah\nAgar pengembangan program terstruktur dan bertahap, program akan dikembangkan mengikuti rencana kuliah 15 minggu:\n\n\n\n\n\n\n\n\n\nMinggu\nTopik Kuliah\nModul Program yang Dikembangkan\nFitur yang Ditambahkan\n\n\n\n\n1\nPendahuluan & Probabilitas Dasar\nprobability.py / probability.R\nKalkulator probabilitas dasar\n\n\n2\nAturan Dasar Probabilitas\nprobability.py / probability.R\nProbabilitas bersyarat & Teorema Bayes\n\n\n3\nVariabel Acak & Distribusi Diskrit\ndistributions.py / distributions.R\nDistribusi Binomial & Poisson\n\n\n4\nDistribusi Kontinu & Ekspektasi\ndistributions.py / distributions.R\nDistribusi Normal & Eksponensial\n\n\n5\nSampling & Distribusi Sampling\ndescriptive_stats.py / descriptive_stats.R\nSimulasi distribusi sampling\n\n\n6\nStatistika Deskriptif & Visualisasi Data\ndescriptive_stats.py / descriptive_stats.R\nMean, median, variansi, boxplot\n\n\n7\nEstimasi Parameter & Interval Kepercayaan\nhypothesis_testing.py / hypothesis_testing.R\nSelang kepercayaan\n\n\n8\nUTS & Evaluasi Program\nPengujian modul yang telah dikembangkan\n-\n\n\n9\nPengujian Hipotesis\nhypothesis_testing.py / hypothesis_testing.R\nUji-t, uji-z, uji chi-square\n\n\n10\nRegresi & Korelasi\nregression.py / regression.R\nModel regresi linier & korelasi\n\n\n11\nANOVA & Pengujian Multivariat\nregression.py / regression.R\nANOVA\n\n\n12\nProbabilitas dalam Machine Learning\nmonte_carlo.py / monte_carlo.R\nSimulasi probabilitas dalam AI\n\n\n13\nPemodelan Probabilistik & Big Data Analytics\nbig_data_analysis.py / big_data_analysis.R\nAnalisis data besar\n\n\n14\nProyek Akhir\nIntegrasi semua modul\nPengembangan aplikasi analisis data\n\n\n15\nUAS & Finalisasi Program\nEvaluasi proyek & dokumentasi KMS\n-",
     "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Proyek KMS PSCalk</span>"
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Proyek KMS PSCalc</span>"
     ]
   },
   {
     "objectID": "PSCalc/index.html#contoh-implementasi-program-python-r",
     "href": "PSCalc/index.html#contoh-implementasi-program-python-r",
-    "title": "Proyek KMS PSCalk",
+    "title": "Proyek KMS PSCalc",
     "section": "3. Contoh Implementasi Program (Python & R)",
     "text": "3. Contoh Implementasi Program (Python & R)\n\nA. Python\nimport numpy as np\nimport scipy.stats as stats\n\n# 1. Probabilitas Dasar\ndef probability_event(success_cases, total_cases):\n    return success_cases / total_cases\n\n# 2. Distribusi Binomial\ndef binomial_distribution(n, p, k):\n    return stats.binom.pmf(k, n, p)\n\n# 3. Distribusi Normal\ndef normal_distribution(x, mu, sigma):\n    return stats.norm.pdf(x, mu, sigma)\n\n# 4. Pengujian Hipotesis (z-test)\ndef z_test(sample_mean, population_mean, std_dev, sample_size):\n    z_score = (sample_mean - population_mean) / (std_dev / np.sqrt(sample_size))\n    p_value = 2 * (1 - stats.norm.cdf(abs(z_score)))\n    return z_score, p_value\n\n# Contoh penggunaan\nprint(\"Probabilitas mendapatkan angka genap dalam dadu:\", probability_event(3, 6))\nprint(\"Distribusi Binomial P(X=3) dengan n=10, p=0.5:\", binomial_distribution(10, 0.5, 3))\n\n\n\nB. R\n# 1. Probabilitas Dasar\nprobability_event &lt;- function(success_cases, total_cases) {\n  return(success_cases / total_cases)\n}\n\n# 2. Distribusi Binomial\nbinomial_distribution &lt;- function(n, p, k) {\n  return(dbinom(k, n, p))\n}\n\n# 3. Distribusi Normal\nnormal_distribution &lt;- function(x, mu, sigma) {\n  return(dnorm(x, mean=mu, sd=sigma))\n}\n\n# 4. Pengujian Hipotesis (z-test)\nz_test &lt;- function(sample_mean, population_mean, std_dev, sample_size) {\n  z_score &lt;- (sample_mean - population_mean) / (std_dev / sqrt(sample_size))\n  p_value &lt;- 2 * (1 - pnorm(abs(z_score)))\n  return(list(\"z_score\"=z_score, \"p_value\"=p_value))\n}\n\n# Contoh Penggunaan\nprint(paste(\"Probabilitas mendapatkan angka genap dalam dadu:\", probability_event(3, 6)))\nprint(paste(\"Distribusi Binomial P(X=3) dengan n=10, p=0.5:\", binomial_distribution(10, 0.5, 3)))",
     "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Proyek KMS PSCalk</span>"
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Proyek KMS PSCalc</span>"
     ]
   },
   {
     "objectID": "PSCalc/index.html#kolaborasi-dan-pengelolaan-program",
     "href": "PSCalc/index.html#kolaborasi-dan-pengelolaan-program",
-    "title": "Proyek KMS PSCalk",
+    "title": "Proyek KMS PSCalc",
     "section": "4. Kolaborasi dan Pengelolaan Program",
     "text": "4. Kolaborasi dan Pengelolaan Program\n\nA. Pengelolaan dengan KMS & GitHub\n\nMahasiswa berkontribusi secara bertahap dengan mengembangkan modul sesuai dengan topik mingguan.\nDosen dan asisten memvalidasi kode dan memberikan feedback.\nDokumentasi dalam KMS (Obsidian, Notion, atau Google Docs) untuk memudahkan pemahaman.\nCode repository di GitHub/GitLab agar mahasiswa dapat berkontribusi langsung.\n\n\n\nB. Evaluasi & Penggunaan AI\n\nAI digunakan untuk membantu debugging dan optimasi kode.\nReview peer-to-peer untuk memastikan kontribusi setiap mahasiswa.",
     "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Proyek KMS PSCalk</span>"
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Proyek KMS PSCalc</span>"
     ]
   },
   {
     "objectID": "PSCalc/index.html#kesimpulan",
     "href": "PSCalc/index.html#kesimpulan",
-    "title": "Proyek KMS PSCalk",
+    "title": "Proyek KMS PSCalc",
     "section": "Kesimpulan",
     "text": "Kesimpulan\nProgram ini dirancang untuk: ✅ Berkembang bertahap dan kolaboratif sesuai rencana kuliah.\n✅ Memungkinkan personalisasi dan eksplorasi mahasiswa.\n✅ Menerapkan konsep VV-KMS-CPL dalam pengelolaan pengetahuan dan kontribusi mahasiswa.\n✅ Dapat digunakan dalam dunia nyata, tidak hanya teori.",
     "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Proyek KMS PSCalk</span>"
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Proyek KMS PSCalc</span>"
     ]
   },
   {
     "objectID": "PSCalc/index.html#langkah-praktis",
     "href": "PSCalc/index.html#langkah-praktis",
-    "title": "Proyek KMS PSCalk",
+    "title": "Proyek KMS PSCalc",
     "section": "Langkah Praktis",
     "text": "Langkah Praktis",
     "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Proyek KMS PSCalk</span>"
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Proyek KMS PSCalc</span>"
     ]
   },
   {
     "objectID": "PSCalc/index.html#langkah-praktis-pengajar-dan-mahasiswa-setiap-minggu-untuk-pengembangan-program-python-r-dalam-probabilitas-dan-statistika",
     "href": "PSCalc/index.html#langkah-praktis-pengajar-dan-mahasiswa-setiap-minggu-untuk-pengembangan-program-python-r-dalam-probabilitas-dan-statistika",
-    "title": "Proyek KMS PSCalk",
+    "title": "Proyek KMS PSCalc",
     "section": "Langkah Praktis Pengajar dan Mahasiswa Setiap Minggu untuk Pengembangan Program Python & R dalam Probabilitas dan Statistika",
     "text": "Langkah Praktis Pengajar dan Mahasiswa Setiap Minggu untuk Pengembangan Program Python & R dalam Probabilitas dan Statistika\nUntuk memastikan program ini berkembang bertahap dan kolaboratif sesuai dengan VV-KMS-CPL, berikut adalah rencana mingguan yang mencakup peran pengajar dan mahasiswa.",
     "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Proyek KMS PSCalk</span>"
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Proyek KMS PSCalc</span>"
     ]
   },
   {
     "objectID": "PSCalc/index.html#tabel-rencana-praktis-mingguan",
     "href": "PSCalc/index.html#tabel-rencana-praktis-mingguan",
-    "title": "Proyek KMS PSCalk",
+    "title": "Proyek KMS PSCalc",
     "section": "📅 Tabel Rencana Praktis Mingguan",
     "text": "📅 Tabel Rencana Praktis Mingguan\n\n\n\n\n\n\n\n\nMinggu\nAktivitas Pengajar\nAktivitas Mahasiswa\n\n\n\n\n1\n- Menjelaskan tujuan proyek & struktur pengembangan program.  - Memperkenalkan GitHub/GitLab untuk kolaborasi.  - Memberikan template program dasar untuk probabilitas.\n- Setup lingkungan coding (Python/R).  - Clone repository GitHub/GitLab.  - Menulis fungsi probabilitas sederhana (misal peluang kejadian, probabilitas bersyarat).\n\n\n2\n- Mengajarkan aturan probabilitas & Teorema Bayes.  - Memberikan contoh implementasi Teorema Bayes dalam Python/R.\n- Mengerjakan soal latihan probabilitas.  - Menambahkan kode untuk Teorema Bayes dalam repository.\n\n\n3\n- Memperkenalkan distribusi diskrit (Binomial, Poisson).  - Memberikan template program distribusi.\n- Mengembangkan kode distribusi Binomial & Poisson.  - Menguji kode dengan dataset simulasi.\n\n\n4\n- Mengajarkan distribusi kontinu (Normal, Eksponensial).  - Memberikan contoh visualisasi distribusi.\n- Menambahkan fungsi distribusi Normal & Eksponensial.  - Membuat grafik distribusi menggunakan Matplotlib (Python) atau ggplot2 (R).\n\n\n5\n- Mengajarkan sampling & distribusi sampling.  - Menyediakan dataset sampel.\n- Mengembangkan fungsi untuk simulasi Central Limit Theorem.  - Menggunakan Python/R untuk menampilkan distribusi hasil sampling.\n\n\n6\n- Mengajarkan statistika deskriptif & visualisasi data.  - Memberikan contoh analisis dataset real.\n- Mengembangkan fungsi mean, median, modus, variansi, boxplot dalam Python/R.  - Menulis laporan hasil analisis data.\n\n\n7\n- Mengajarkan estimasi parameter & selang kepercayaan.  - Memberikan contoh estimasi parameter dari dataset.\n- Menulis fungsi estimasi parameter (CI 95%).  - Mengimplementasikan simulasi interval kepercayaan.\n\n\n8\n- UTS & Evaluasi Program.  - Review perkembangan program hingga minggu ke-7.\n- Memperbaiki kode dan menambahkan dokumentasi dalam KMS/GitHub.\n\n\n9\n- Mengajarkan pengujian hipotesis (uji-t, uji-z, chi-square).  - Memberikan contoh studi kasus pengujian hipotesis.\n- Mengembangkan fungsi uji-t, uji-z, uji chi-square.  - Melakukan eksperimen pengujian hipotesis dengan dataset real.\n\n\n10\n- Mengajarkan regresi linier & korelasi.  - Memberikan contoh analisis regresi dalam industri.\n- Menulis kode model regresi linier sederhana dengan Python/R.  - Menyiapkan laporan analisis regresi pada dataset real.\n\n\n11\n- Memperkenalkan ANOVA & Pengujian Multivariat.  - Memberikan contoh perbandingan beberapa grup data.\n- Mengembangkan kode untuk ANOVA dalam Python/R.  - Melakukan analisis pada dataset industri.\n\n\n12\n- Mengajarkan Probabilitas dalam Machine Learning.  - Memberikan contoh Naïve Bayes dalam klasifikasi.\n- Mengembangkan model Naïve Bayes untuk klasifikasi data.  - Menguji model dengan dataset real.\n\n\n13\n- Memperkenalkan Pemodelan Probabilistik & Big Data Analytics.  - Menyediakan dataset besar untuk simulasi.\n- Menganalisis dataset besar dengan distribusi probabilitas.  - Mengoptimalkan kode statistik untuk big data.\n\n\n14\n- Presentasi Proyek Akhir.  - Menyediakan feedback & perbaikan kode.\n- Menyelesaikan proyek akhir berbasis data real.  - Membuat dokumentasi final di KMS & GitHub.\n\n\n15\n- UAS & Finalisasi Program.  - Menilai kontribusi setiap mahasiswa.\n- Mengumpulkan laporan akhir & dokumentasi kode.",
     "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Proyek KMS PSCalk</span>"
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Proyek KMS PSCalc</span>"
     ]
   },
   {
     "objectID": "PSCalc/index.html#peran-tanggung-jawab-dalam-pengembangan-program",
     "href": "PSCalc/index.html#peran-tanggung-jawab-dalam-pengembangan-program",
-    "title": "Proyek KMS PSCalk",
+    "title": "Proyek KMS PSCalc",
     "section": "🎯 Peran & Tanggung Jawab dalam Pengembangan Program",
     "text": "🎯 Peran & Tanggung Jawab dalam Pengembangan Program\n\n1. Peran Pengajar\n✅ Menyiapkan Materi: Memberikan referensi teori dan contoh implementasi.\n✅ Menyiapkan Dataset: Menyediakan dataset real-world untuk latihan.\n✅ Mengevaluasi Kode Mahasiswa: Melakukan review kode dan memberikan umpan balik.\n✅ Membantu Mahasiswa Berkolaborasi: Mengajarkan penggunaan GitHub & KMS.\n✅ Memotivasi Mahasiswa: Memberikan challenge coding untuk meningkatkan kreativitas.\n\n\n\n2. Peran Mahasiswa\n✅ Mempelajari Konsep: Memahami teori sebelum menulis kode.\n✅ Menulis Kode Bertahap: Mengembangkan modul sesuai rencana mingguan.\n✅ Menggunakan KMS & GitHub: Mendokumentasikan konsep dan kode.\n✅ Berpartisipasi dalam Diskusi: Aktif di forum untuk bertanya dan memberikan masukan.\n✅ Mengerjakan Proyek Kolaboratif: Menyumbangkan kode dalam proyek besar.",
     "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Proyek KMS PSCalk</span>"
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Proyek KMS PSCalc</span>"
     ]
   },
   {
     "objectID": "PSCalc/index.html#alat-yang-digunakan",
     "href": "PSCalc/index.html#alat-yang-digunakan",
-    "title": "Proyek KMS PSCalk",
+    "title": "Proyek KMS PSCalc",
     "section": "🔧 Alat yang Digunakan",
     "text": "🔧 Alat yang Digunakan\n📌 GitHub/GitLab → Untuk version control & kolaborasi kode.\n📌 Google Colab/Jupyter Notebook (Python) → Untuk coding interaktif.\n📌 RStudio (R) → Untuk analisis statistik dan visualisasi data.\n📌 Obsidian/Notion/Quarto (KMS) → Untuk dokumentasi materi dan solusi problem set.\n📌 ChatGPT/Copilot → Untuk membantu debugging dan optimalisasi kode.",
     "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Proyek KMS PSCalk</span>"
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Proyek KMS PSCalc</span>"
     ]
   },
   {
     "objectID": "PSCalc/index.html#manfaat-pendekatan-ini",
     "href": "PSCalc/index.html#manfaat-pendekatan-ini",
-    "title": "Proyek KMS PSCalk",
+    "title": "Proyek KMS PSCalc",
     "section": "🚀 Manfaat Pendekatan Ini",
     "text": "🚀 Manfaat Pendekatan Ini\n✅ Meningkatkan Pemahaman Konseptual: Mahasiswa tidak hanya menghafal teori tetapi langsung mempraktikkannya.\n✅ Membantu Kolaborasi & Dokumentasi: KMS & GitHub memastikan mahasiswa dapat bekerja sama dalam mengembangkan program.\n✅ Membiasakan Mahasiswa dengan Proyek Nyata: Dengan menggunakan dataset real, mahasiswa dapat memahami bagaimana P&S diterapkan dalam dunia kerja.\n✅ Memotivasi Mahasiswa untuk Eksplorasi: Dengan tantangan mingguan, mahasiswa terdorong untuk mengembangkan solusi lebih kreatif.",
     "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Proyek KMS PSCalk</span>"
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Proyek KMS PSCalc</span>"
     ]
   },
   {
     "objectID": "PSCalc/index.html#kesimpulan-1",
     "href": "PSCalc/index.html#kesimpulan-1",
-    "title": "Proyek KMS PSCalk",
+    "title": "Proyek KMS PSCalc",
     "section": "Kesimpulan",
     "text": "Kesimpulan\nDengan mengikuti rencana ini, pengajar dan mahasiswa memiliki panduan langkah demi langkah untuk membangun program Python & R yang modular, bertahap, dan kolaboratif. Ini bukan hanya sekadar latihan pemrograman, tetapi membantu mahasiswa memahami penerapan P&S dalam dunia nyata dengan pendekatan VV-KMS-CPL.\nTo learn more about Quarto books visit https://quarto.org/docs/books.\nThis is a book created from markdown and executable code.\nSee Knuth (1984) for additional discussion of literate programming.\n\n\n\n\nKnuth, Donald E. 1984. “Literate Programming.” Comput. J. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97.",
     "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Proyek KMS PSCalk</span>"
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Proyek KMS PSCalc</span>"
     ]
   },
   {
