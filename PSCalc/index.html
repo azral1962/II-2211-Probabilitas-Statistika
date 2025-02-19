@@ -1,0 +1,1148 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.6.33">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Proyek KMS PSCalk – II-2211 Probabilitas dan Statistika</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../ujian/index.html" rel="next">
+<link href="../problem-set/index.html" rel="prev">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-07ba0ad10f5680c660e360ac31d2f3b6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-3d950d6bd3fa0e9daa71a88aa3cb2bbc.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+</head>
+
+<body class="nav-sidebar floating">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../PSCalc/index.html"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Proyek KMS PSCalk</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../">II-2211 Probabilitas dan Statistika</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Pengantar</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../petunjuk/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Petunjuk</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../materi/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Bahan Kuliah</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../problem-set/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Problem Set</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../PSCalc/index.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Proyek KMS PSCalk</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../ujian/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Soal Ujian</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../tugas-besar/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Tugas Besar Akhir Semester</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../summary.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Summary</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">References</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#rekomendasi-desain" id="toc-rekomendasi-desain" class="nav-link active" data-scroll-target="#rekomendasi-desain">Rekomendasi Desain</a></li>
+  <li><a href="#struktur-pengembangan-program" id="toc-struktur-pengembangan-program" class="nav-link" data-scroll-target="#struktur-pengembangan-program"><strong>1. Struktur Pengembangan Program</strong></a>
+  <ul class="collapse">
+  <li><a href="#a.-bahasa-pemrograman" id="toc-a.-bahasa-pemrograman" class="nav-link" data-scroll-target="#a.-bahasa-pemrograman"><strong>A. Bahasa Pemrograman</strong></a></li>
+  <li><a href="#b.-struktur-modul-program" id="toc-b.-struktur-modul-program" class="nav-link" data-scroll-target="#b.-struktur-modul-program"><strong>B. Struktur Modul Program</strong></a></li>
+  </ul></li>
+  <li><a href="#rencana-pengembangan-program-sejalan-dengan-rencana-kuliah" id="toc-rencana-pengembangan-program-sejalan-dengan-rencana-kuliah" class="nav-link" data-scroll-target="#rencana-pengembangan-program-sejalan-dengan-rencana-kuliah"><strong>2. Rencana Pengembangan Program Sejalan dengan Rencana Kuliah</strong></a></li>
+  <li><a href="#contoh-implementasi-program-python-r" id="toc-contoh-implementasi-program-python-r" class="nav-link" data-scroll-target="#contoh-implementasi-program-python-r"><strong>3. Contoh Implementasi Program (Python &amp; R)</strong></a>
+  <ul class="collapse">
+  <li><a href="#a.-python" id="toc-a.-python" class="nav-link" data-scroll-target="#a.-python"><strong>A. Python</strong></a></li>
+  <li><a href="#b.-r" id="toc-b.-r" class="nav-link" data-scroll-target="#b.-r"><strong>B. R</strong></a></li>
+  </ul></li>
+  <li><a href="#kolaborasi-dan-pengelolaan-program" id="toc-kolaborasi-dan-pengelolaan-program" class="nav-link" data-scroll-target="#kolaborasi-dan-pengelolaan-program"><strong>4. Kolaborasi dan Pengelolaan Program</strong></a>
+  <ul class="collapse">
+  <li><a href="#a.-pengelolaan-dengan-kms-github" id="toc-a.-pengelolaan-dengan-kms-github" class="nav-link" data-scroll-target="#a.-pengelolaan-dengan-kms-github"><strong>A. Pengelolaan dengan KMS &amp; GitHub</strong></a></li>
+  <li><a href="#b.-evaluasi-penggunaan-ai" id="toc-b.-evaluasi-penggunaan-ai" class="nav-link" data-scroll-target="#b.-evaluasi-penggunaan-ai"><strong>B. Evaluasi &amp; Penggunaan AI</strong></a></li>
+  </ul></li>
+  <li><a href="#kesimpulan" id="toc-kesimpulan" class="nav-link" data-scroll-target="#kesimpulan"><strong>Kesimpulan</strong></a></li>
+  <li><a href="#langkah-praktis" id="toc-langkah-praktis" class="nav-link" data-scroll-target="#langkah-praktis">Langkah Praktis</a></li>
+  <li><a href="#langkah-praktis-pengajar-dan-mahasiswa-setiap-minggu-untuk-pengembangan-program-python-r-dalam-probabilitas-dan-statistika" id="toc-langkah-praktis-pengajar-dan-mahasiswa-setiap-minggu-untuk-pengembangan-program-python-r-dalam-probabilitas-dan-statistika" class="nav-link" data-scroll-target="#langkah-praktis-pengajar-dan-mahasiswa-setiap-minggu-untuk-pengembangan-program-python-r-dalam-probabilitas-dan-statistika"><strong>Langkah Praktis Pengajar dan Mahasiswa Setiap Minggu untuk Pengembangan Program Python &amp; R dalam Probabilitas dan Statistika</strong></a></li>
+  <li><a href="#tabel-rencana-praktis-mingguan" id="toc-tabel-rencana-praktis-mingguan" class="nav-link" data-scroll-target="#tabel-rencana-praktis-mingguan"><strong>📅 Tabel Rencana Praktis Mingguan</strong></a></li>
+  <li><a href="#peran-tanggung-jawab-dalam-pengembangan-program" id="toc-peran-tanggung-jawab-dalam-pengembangan-program" class="nav-link" data-scroll-target="#peran-tanggung-jawab-dalam-pengembangan-program"><strong>🎯 Peran &amp; Tanggung Jawab dalam Pengembangan Program</strong></a>
+  <ul class="collapse">
+  <li><a href="#peran-pengajar" id="toc-peran-pengajar" class="nav-link" data-scroll-target="#peran-pengajar"><strong>1. Peran Pengajar</strong></a></li>
+  <li><a href="#peran-mahasiswa" id="toc-peran-mahasiswa" class="nav-link" data-scroll-target="#peran-mahasiswa"><strong>2. Peran Mahasiswa</strong></a></li>
+  </ul></li>
+  <li><a href="#alat-yang-digunakan" id="toc-alat-yang-digunakan" class="nav-link" data-scroll-target="#alat-yang-digunakan"><strong>🔧 Alat yang Digunakan</strong></a></li>
+  <li><a href="#manfaat-pendekatan-ini" id="toc-manfaat-pendekatan-ini" class="nav-link" data-scroll-target="#manfaat-pendekatan-ini"><strong>🚀 Manfaat Pendekatan Ini</strong></a></li>
+  <li><a href="#kesimpulan-1" id="toc-kesimpulan-1" class="nav-link" data-scroll-target="#kesimpulan-1"><strong>Kesimpulan</strong></a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Proyek KMS PSCalk</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p>(Sedang disusun)</p>
+<section id="rekomendasi-desain" class="level2">
+<h2 class="anchored" data-anchor-id="rekomendasi-desain">Rekomendasi Desain</h2>
+<p>Program Komputer 1. Rancang program Python dan R yang bisa dikembangkan bertahap dan kolaboratif untuk mencari solusi dari berbagai kategori problem 2. Buat rencana pengembangan program ini sejalan dengan rencana kuliah.</p>
+<pre><code>### **Rancangan Program Komputer untuk Solusi Problem Set Probabilitas dan Statistika**</code></pre>
+<p>Untuk mendukung pembelajaran <strong>Probabilitas dan Statistika (P&amp;S)</strong> secara <strong>bertahap dan kolaboratif</strong>, kita dapat mengembangkan <strong>program Python dan R</strong> yang dapat digunakan untuk menyelesaikan berbagai kategori problem set. Program ini akan dirancang <strong>modular</strong>, sehingga bisa dikembangkan secara bertahap sesuai dengan rencana kuliah, serta memungkinkan kontribusi dari mahasiswa dalam konteks <strong>VV-KMS-CPL</strong>.</p>
+<hr>
+</section>
+<section id="struktur-pengembangan-program" class="level2">
+<h2 class="anchored" data-anchor-id="struktur-pengembangan-program"><strong>1. Struktur Pengembangan Program</strong></h2>
+<section id="a.-bahasa-pemrograman" class="level3">
+<h3 class="anchored" data-anchor-id="a.-bahasa-pemrograman"><strong>A. Bahasa Pemrograman</strong></h3>
+<ul>
+<li><strong>Python</strong>: Menggunakan <strong>NumPy, SciPy, pandas, Matplotlib, seaborn</strong> untuk perhitungan statistik dan visualisasi data.</li>
+<li><strong>R</strong>: Menggunakan <strong>tidyverse, ggplot2, dplyr, stats</strong> untuk analisis data dan pemodelan statistik.</li>
+</ul>
+</section>
+<section id="b.-struktur-modul-program" class="level3">
+<h3 class="anchored" data-anchor-id="b.-struktur-modul-program"><strong>B. Struktur Modul Program</strong></h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 23%">
+<col style="width: 23%">
+<col style="width: 53%">
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Modul</strong></th>
+<th><strong>Fungsi</strong></th>
+<th><strong>Kategori Problem Set</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>probability.py</code> / <code>probability.R</code></td>
+<td>Menghitung probabilitas dasar, peluang bersyarat, Teorema Bayes</td>
+<td>Probabilitas Dasar</td>
+</tr>
+<tr class="even">
+<td><code>distributions.py</code> / <code>distributions.R</code></td>
+<td>Simulasi distribusi diskrit (Binomial, Poisson) dan kontinu (Normal, Eksponensial)</td>
+<td>Variabel Acak &amp; Distribusi</td>
+</tr>
+<tr class="odd">
+<td><code>descriptive_stats.py</code> / <code>descriptive_stats.R</code></td>
+<td>Menghitung statistik deskriptif (mean, median, standar deviasi)</td>
+<td>Statistika Deskriptif</td>
+</tr>
+<tr class="even">
+<td><code>hypothesis_testing.py</code> / <code>hypothesis_testing.R</code></td>
+<td>Melakukan uji hipotesis (t-test, z-test, chi-square)</td>
+<td>Inferensi Statistik</td>
+</tr>
+<tr class="odd">
+<td><code>regression.py</code> / <code>regression.R</code></td>
+<td>Regresi linier dan analisis korelasi</td>
+<td>Regresi &amp; Korelasi</td>
+</tr>
+<tr class="even">
+<td><code>monte_carlo.py</code> / <code>monte_carlo.R</code></td>
+<td>Simulasi Monte Carlo untuk estimasi probabilitas</td>
+<td>Simulasi Probabilistik</td>
+</tr>
+<tr class="odd">
+<td><code>big_data_analysis.py</code> / <code>big_data_analysis.R</code></td>
+<td>Pemrosesan data besar dengan statistik</td>
+<td>Analisis Data Besar</td>
+</tr>
+</tbody>
+</table>
+<hr>
+</section>
+</section>
+<section id="rencana-pengembangan-program-sejalan-dengan-rencana-kuliah" class="level2">
+<h2 class="anchored" data-anchor-id="rencana-pengembangan-program-sejalan-dengan-rencana-kuliah"><strong>2. Rencana Pengembangan Program Sejalan dengan Rencana Kuliah</strong></h2>
+<p>Agar pengembangan program <strong>terstruktur dan bertahap</strong>, program akan dikembangkan mengikuti <strong>rencana kuliah 15 minggu</strong>:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 13%">
+<col style="width: 19%">
+<col style="width: 37%">
+<col style="width: 30%">
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Minggu</strong></th>
+<th><strong>Topik Kuliah</strong></th>
+<th><strong>Modul Program yang Dikembangkan</strong></th>
+<th><strong>Fitur yang Ditambahkan</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td>Pendahuluan &amp; Probabilitas Dasar</td>
+<td><code>probability.py</code> / <code>probability.R</code></td>
+<td>Kalkulator probabilitas dasar</td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td>Aturan Dasar Probabilitas</td>
+<td><code>probability.py</code> / <code>probability.R</code></td>
+<td>Probabilitas bersyarat &amp; Teorema Bayes</td>
+</tr>
+<tr class="odd">
+<td>3</td>
+<td>Variabel Acak &amp; Distribusi Diskrit</td>
+<td><code>distributions.py</code> / <code>distributions.R</code></td>
+<td>Distribusi Binomial &amp; Poisson</td>
+</tr>
+<tr class="even">
+<td>4</td>
+<td>Distribusi Kontinu &amp; Ekspektasi</td>
+<td><code>distributions.py</code> / <code>distributions.R</code></td>
+<td>Distribusi Normal &amp; Eksponensial</td>
+</tr>
+<tr class="odd">
+<td>5</td>
+<td>Sampling &amp; Distribusi Sampling</td>
+<td><code>descriptive_stats.py</code> / <code>descriptive_stats.R</code></td>
+<td>Simulasi distribusi sampling</td>
+</tr>
+<tr class="even">
+<td>6</td>
+<td>Statistika Deskriptif &amp; Visualisasi Data</td>
+<td><code>descriptive_stats.py</code> / <code>descriptive_stats.R</code></td>
+<td>Mean, median, variansi, boxplot</td>
+</tr>
+<tr class="odd">
+<td>7</td>
+<td>Estimasi Parameter &amp; Interval Kepercayaan</td>
+<td><code>hypothesis_testing.py</code> / <code>hypothesis_testing.R</code></td>
+<td>Selang kepercayaan</td>
+</tr>
+<tr class="even">
+<td>8</td>
+<td><strong>UTS &amp; Evaluasi Program</strong></td>
+<td><strong>Pengujian modul yang telah dikembangkan</strong></td>
+<td>-</td>
+</tr>
+<tr class="odd">
+<td>9</td>
+<td>Pengujian Hipotesis</td>
+<td><code>hypothesis_testing.py</code> / <code>hypothesis_testing.R</code></td>
+<td>Uji-t, uji-z, uji chi-square</td>
+</tr>
+<tr class="even">
+<td>10</td>
+<td>Regresi &amp; Korelasi</td>
+<td><code>regression.py</code> / <code>regression.R</code></td>
+<td>Model regresi linier &amp; korelasi</td>
+</tr>
+<tr class="odd">
+<td>11</td>
+<td>ANOVA &amp; Pengujian Multivariat</td>
+<td><code>regression.py</code> / <code>regression.R</code></td>
+<td>ANOVA</td>
+</tr>
+<tr class="even">
+<td>12</td>
+<td>Probabilitas dalam Machine Learning</td>
+<td><code>monte_carlo.py</code> / <code>monte_carlo.R</code></td>
+<td>Simulasi probabilitas dalam AI</td>
+</tr>
+<tr class="odd">
+<td>13</td>
+<td>Pemodelan Probabilistik &amp; Big Data Analytics</td>
+<td><code>big_data_analysis.py</code> / <code>big_data_analysis.R</code></td>
+<td>Analisis data besar</td>
+</tr>
+<tr class="even">
+<td>14</td>
+<td><strong>Proyek Akhir</strong></td>
+<td><strong>Integrasi semua modul</strong></td>
+<td>Pengembangan aplikasi analisis data</td>
+</tr>
+<tr class="odd">
+<td>15</td>
+<td><strong>UAS &amp; Finalisasi Program</strong></td>
+<td><strong>Evaluasi proyek &amp; dokumentasi KMS</strong></td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<hr>
+</section>
+<section id="contoh-implementasi-program-python-r" class="level2">
+<h2 class="anchored" data-anchor-id="contoh-implementasi-program-python-r"><strong>3. Contoh Implementasi Program (Python &amp; R)</strong></h2>
+<section id="a.-python" class="level3">
+<h3 class="anchored" data-anchor-id="a.-python"><strong>A. Python</strong></h3>
+<div class="sourceCode" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> scipy.stats <span class="im">as</span> stats</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="co"># 1. Probabilitas Dasar</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> probability_event(success_cases, total_cases):</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> success_cases <span class="op">/</span> total_cases</span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a><span class="co"># 2. Distribusi Binomial</span></span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> binomial_distribution(n, p, k):</span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> stats.binom.pmf(k, n, p)</span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a><span class="co"># 3. Distribusi Normal</span></span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> normal_distribution(x, mu, sigma):</span>
+<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> stats.norm.pdf(x, mu, sigma)</span>
+<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a><span class="co"># 4. Pengujian Hipotesis (z-test)</span></span>
+<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> z_test(sample_mean, population_mean, std_dev, sample_size):</span>
+<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a>    z_score <span class="op">=</span> (sample_mean <span class="op">-</span> population_mean) <span class="op">/</span> (std_dev <span class="op">/</span> np.sqrt(sample_size))</span>
+<span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a>    p_value <span class="op">=</span> <span class="dv">2</span> <span class="op">*</span> (<span class="dv">1</span> <span class="op">-</span> stats.norm.cdf(<span class="bu">abs</span>(z_score)))</span>
+<span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> z_score, p_value</span>
+<span id="cb2-21"><a href="#cb2-21" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-22"><a href="#cb2-22" aria-hidden="true" tabindex="-1"></a><span class="co"># Contoh penggunaan</span></span>
+<span id="cb2-23"><a href="#cb2-23" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Probabilitas mendapatkan angka genap dalam dadu:"</span>, probability_event(<span class="dv">3</span>, <span class="dv">6</span>))</span>
+<span id="cb2-24"><a href="#cb2-24" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Distribusi Binomial P(X=3) dengan n=10, p=0.5:"</span>, binomial_distribution(<span class="dv">10</span>, <span class="fl">0.5</span>, <span class="dv">3</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<hr>
+</section>
+<section id="b.-r" class="level3">
+<h3 class="anchored" data-anchor-id="b.-r"><strong>B. R</strong></h3>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 1. Probabilitas Dasar</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>probability_event <span class="ot">&lt;-</span> <span class="cf">function</span>(success_cases, total_cases) {</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">return</span>(success_cases <span class="sc">/</span> total_cases)</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a><span class="co"># 2. Distribusi Binomial</span></span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>binomial_distribution <span class="ot">&lt;-</span> <span class="cf">function</span>(n, p, k) {</span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">return</span>(<span class="fu">dbinom</span>(k, n, p))</span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a><span class="co"># 3. Distribusi Normal</span></span>
+<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a>normal_distribution <span class="ot">&lt;-</span> <span class="cf">function</span>(x, mu, sigma) {</span>
+<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">return</span>(<span class="fu">dnorm</span>(x, <span class="at">mean=</span>mu, <span class="at">sd=</span>sigma))</span>
+<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-16"><a href="#cb3-16" aria-hidden="true" tabindex="-1"></a><span class="co"># 4. Pengujian Hipotesis (z-test)</span></span>
+<span id="cb3-17"><a href="#cb3-17" aria-hidden="true" tabindex="-1"></a>z_test <span class="ot">&lt;-</span> <span class="cf">function</span>(sample_mean, population_mean, std_dev, sample_size) {</span>
+<span id="cb3-18"><a href="#cb3-18" aria-hidden="true" tabindex="-1"></a>  z_score <span class="ot">&lt;-</span> (sample_mean <span class="sc">-</span> population_mean) <span class="sc">/</span> (std_dev <span class="sc">/</span> <span class="fu">sqrt</span>(sample_size))</span>
+<span id="cb3-19"><a href="#cb3-19" aria-hidden="true" tabindex="-1"></a>  p_value <span class="ot">&lt;-</span> <span class="dv">2</span> <span class="sc">*</span> (<span class="dv">1</span> <span class="sc">-</span> <span class="fu">pnorm</span>(<span class="fu">abs</span>(z_score)))</span>
+<span id="cb3-20"><a href="#cb3-20" aria-hidden="true" tabindex="-1"></a>  <span class="fu">return</span>(<span class="fu">list</span>(<span class="st">"z_score"</span><span class="ot">=</span>z_score, <span class="st">"p_value"</span><span class="ot">=</span>p_value))</span>
+<span id="cb3-21"><a href="#cb3-21" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb3-22"><a href="#cb3-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-23"><a href="#cb3-23" aria-hidden="true" tabindex="-1"></a><span class="co"># Contoh Penggunaan</span></span>
+<span id="cb3-24"><a href="#cb3-24" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(<span class="fu">paste</span>(<span class="st">"Probabilitas mendapatkan angka genap dalam dadu:"</span>, <span class="fu">probability_event</span>(<span class="dv">3</span>, <span class="dv">6</span>)))</span>
+<span id="cb3-25"><a href="#cb3-25" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(<span class="fu">paste</span>(<span class="st">"Distribusi Binomial P(X=3) dengan n=10, p=0.5:"</span>, <span class="fu">binomial_distribution</span>(<span class="dv">10</span>, <span class="fl">0.5</span>, <span class="dv">3</span>)))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<hr>
+</section>
+</section>
+<section id="kolaborasi-dan-pengelolaan-program" class="level2">
+<h2 class="anchored" data-anchor-id="kolaborasi-dan-pengelolaan-program"><strong>4. Kolaborasi dan Pengelolaan Program</strong></h2>
+<section id="a.-pengelolaan-dengan-kms-github" class="level3">
+<h3 class="anchored" data-anchor-id="a.-pengelolaan-dengan-kms-github"><strong>A. Pengelolaan dengan KMS &amp; GitHub</strong></h3>
+<ul>
+<li><strong>Mahasiswa berkontribusi secara bertahap</strong> dengan mengembangkan modul sesuai dengan topik mingguan.</li>
+<li><strong>Dosen dan asisten memvalidasi kode</strong> dan memberikan feedback.</li>
+<li><strong>Dokumentasi dalam KMS (Obsidian, Notion, atau Google Docs)</strong> untuk memudahkan pemahaman.</li>
+<li><strong>Code repository di GitHub/GitLab</strong> agar mahasiswa dapat berkontribusi langsung.</li>
+</ul>
+</section>
+<section id="b.-evaluasi-penggunaan-ai" class="level3">
+<h3 class="anchored" data-anchor-id="b.-evaluasi-penggunaan-ai"><strong>B. Evaluasi &amp; Penggunaan AI</strong></h3>
+<ul>
+<li><strong>AI digunakan untuk membantu debugging dan optimasi kode.</strong></li>
+<li><strong>Review peer-to-peer</strong> untuk memastikan kontribusi setiap mahasiswa.</li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="kesimpulan" class="level2">
+<h2 class="anchored" data-anchor-id="kesimpulan"><strong>Kesimpulan</strong></h2>
+<p>Program ini dirancang untuk: ✅ <strong>Berkembang bertahap dan kolaboratif</strong> sesuai rencana kuliah.<br>
+✅ <strong>Memungkinkan personalisasi dan eksplorasi mahasiswa.</strong><br>
+✅ <strong>Menerapkan konsep VV-KMS-CPL</strong> dalam pengelolaan pengetahuan dan kontribusi mahasiswa.<br>
+✅ <strong>Dapat digunakan dalam dunia nyata</strong>, tidak hanya teori.</p>
+</section>
+<section id="langkah-praktis" class="level2">
+<h2 class="anchored" data-anchor-id="langkah-praktis">Langkah Praktis</h2>
+</section>
+<section id="langkah-praktis-pengajar-dan-mahasiswa-setiap-minggu-untuk-pengembangan-program-python-r-dalam-probabilitas-dan-statistika" class="level2">
+<h2 class="anchored" data-anchor-id="langkah-praktis-pengajar-dan-mahasiswa-setiap-minggu-untuk-pengembangan-program-python-r-dalam-probabilitas-dan-statistika"><strong>Langkah Praktis Pengajar dan Mahasiswa Setiap Minggu untuk Pengembangan Program Python &amp; R dalam Probabilitas dan Statistika</strong></h2>
+<p>Untuk memastikan program ini berkembang <strong>bertahap dan kolaboratif</strong> sesuai dengan <strong>VV-KMS-CPL</strong>, berikut adalah <strong>rencana mingguan yang mencakup peran pengajar dan mahasiswa</strong>.</p>
+<hr>
+</section>
+<section id="tabel-rencana-praktis-mingguan" class="level2">
+<h2 class="anchored" data-anchor-id="tabel-rencana-praktis-mingguan"><strong>📅 Tabel Rencana Praktis Mingguan</strong></h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 23%">
+<col style="width: 36%">
+<col style="width: 40%">
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Minggu</strong></th>
+<th><strong>Aktivitas Pengajar</strong></th>
+<th><strong>Aktivitas Mahasiswa</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>1</strong></td>
+<td>- Menjelaskan <strong>tujuan proyek</strong> &amp; <strong>struktur pengembangan program</strong>. <br> - Memperkenalkan <strong>GitHub/GitLab untuk kolaborasi</strong>. <br> - Memberikan <strong>template program dasar</strong> untuk probabilitas.</td>
+<td>- Setup <strong>lingkungan coding (Python/R)</strong>. <br> - Clone <strong>repository GitHub/GitLab</strong>. <br> - <strong>Menulis fungsi probabilitas sederhana</strong> (misal peluang kejadian, probabilitas bersyarat).</td>
+</tr>
+<tr class="even">
+<td><strong>2</strong></td>
+<td>- Mengajarkan aturan probabilitas &amp; Teorema Bayes. <br> - Memberikan contoh implementasi <strong>Teorema Bayes dalam Python/R</strong>.</td>
+<td>- Mengerjakan <strong>soal latihan probabilitas</strong>. <br> - Menambahkan kode untuk <strong>Teorema Bayes dalam repository</strong>.</td>
+</tr>
+<tr class="odd">
+<td><strong>3</strong></td>
+<td>- Memperkenalkan <strong>distribusi diskrit</strong> (Binomial, Poisson). <br> - Memberikan <strong>template program distribusi</strong>.</td>
+<td>- Mengembangkan kode <strong>distribusi Binomial &amp; Poisson</strong>. <br> - Menguji kode dengan dataset simulasi.</td>
+</tr>
+<tr class="even">
+<td><strong>4</strong></td>
+<td>- Mengajarkan <strong>distribusi kontinu</strong> (Normal, Eksponensial). <br> - Memberikan contoh visualisasi distribusi.</td>
+<td>- Menambahkan fungsi <strong>distribusi Normal &amp; Eksponensial</strong>. <br> - Membuat <strong>grafik distribusi</strong> menggunakan Matplotlib (Python) atau ggplot2 (R).</td>
+</tr>
+<tr class="odd">
+<td><strong>5</strong></td>
+<td>- Mengajarkan <strong>sampling &amp; distribusi sampling</strong>. <br> - Menyediakan <strong>dataset sampel</strong>.</td>
+<td>- Mengembangkan fungsi untuk <strong>simulasi Central Limit Theorem</strong>. <br> - Menggunakan Python/R untuk <strong>menampilkan distribusi hasil sampling</strong>.</td>
+</tr>
+<tr class="even">
+<td><strong>6</strong></td>
+<td>- Mengajarkan <strong>statistika deskriptif</strong> &amp; visualisasi data. <br> - Memberikan contoh analisis dataset real.</td>
+<td>- Mengembangkan <strong>fungsi mean, median, modus, variansi, boxplot</strong> dalam Python/R. <br> - Menulis laporan hasil analisis data.</td>
+</tr>
+<tr class="odd">
+<td><strong>7</strong></td>
+<td>- Mengajarkan <strong>estimasi parameter &amp; selang kepercayaan</strong>. <br> - Memberikan contoh estimasi parameter dari dataset.</td>
+<td>- Menulis fungsi <strong>estimasi parameter (CI 95%)</strong>. <br> - Mengimplementasikan simulasi interval kepercayaan.</td>
+</tr>
+<tr class="even">
+<td><strong>8</strong></td>
+<td>- <strong>UTS &amp; Evaluasi Program</strong>. <br> - Review perkembangan program hingga minggu ke-7.</td>
+<td>- Memperbaiki kode dan menambahkan dokumentasi dalam <strong>KMS/GitHub</strong>.</td>
+</tr>
+<tr class="odd">
+<td><strong>9</strong></td>
+<td>- Mengajarkan <strong>pengujian hipotesis</strong> (uji-t, uji-z, chi-square). <br> - Memberikan <strong>contoh studi kasus pengujian hipotesis</strong>.</td>
+<td>- Mengembangkan fungsi <strong>uji-t, uji-z, uji chi-square</strong>. <br> - Melakukan eksperimen pengujian hipotesis dengan dataset real.</td>
+</tr>
+<tr class="even">
+<td><strong>10</strong></td>
+<td>- Mengajarkan <strong>regresi linier &amp; korelasi</strong>. <br> - Memberikan contoh analisis regresi dalam industri.</td>
+<td>- Menulis kode <strong>model regresi linier sederhana</strong> dengan Python/R. <br> - Menyiapkan laporan analisis regresi pada dataset real.</td>
+</tr>
+<tr class="odd">
+<td><strong>11</strong></td>
+<td>- Memperkenalkan <strong>ANOVA &amp; Pengujian Multivariat</strong>. <br> - Memberikan contoh perbandingan beberapa grup data.</td>
+<td>- Mengembangkan kode untuk <strong>ANOVA</strong> dalam Python/R. <br> - Melakukan analisis pada dataset industri.</td>
+</tr>
+<tr class="even">
+<td><strong>12</strong></td>
+<td>- Mengajarkan <strong>Probabilitas dalam Machine Learning</strong>. <br> - Memberikan contoh <strong>Naïve Bayes</strong> dalam klasifikasi.</td>
+<td>- Mengembangkan model <strong>Naïve Bayes untuk klasifikasi data</strong>. <br> - Menguji model dengan dataset real.</td>
+</tr>
+<tr class="odd">
+<td><strong>13</strong></td>
+<td>- Memperkenalkan <strong>Pemodelan Probabilistik &amp; Big Data Analytics</strong>. <br> - Menyediakan dataset besar untuk simulasi.</td>
+<td>- Menganalisis dataset besar dengan <strong>distribusi probabilitas</strong>. <br> - Mengoptimalkan kode statistik untuk big data.</td>
+</tr>
+<tr class="even">
+<td><strong>14</strong></td>
+<td>- <strong>Presentasi Proyek Akhir</strong>. <br> - Menyediakan <strong>feedback &amp; perbaikan kode</strong>.</td>
+<td>- Menyelesaikan proyek akhir berbasis <strong>data real</strong>. <br> - Membuat dokumentasi final di <strong>KMS &amp; GitHub</strong>.</td>
+</tr>
+<tr class="odd">
+<td><strong>15</strong></td>
+<td>- <strong>UAS &amp; Finalisasi Program</strong>. <br> - Menilai kontribusi setiap mahasiswa.</td>
+<td>- Mengumpulkan laporan akhir &amp; dokumentasi kode.</td>
+</tr>
+</tbody>
+</table>
+<hr>
+</section>
+<section id="peran-tanggung-jawab-dalam-pengembangan-program" class="level2">
+<h2 class="anchored" data-anchor-id="peran-tanggung-jawab-dalam-pengembangan-program"><strong>🎯 Peran &amp; Tanggung Jawab dalam Pengembangan Program</strong></h2>
+<section id="peran-pengajar" class="level3">
+<h3 class="anchored" data-anchor-id="peran-pengajar"><strong>1. Peran Pengajar</strong></h3>
+<p>✅ <strong>Menyiapkan Materi</strong>: Memberikan referensi teori dan contoh implementasi.<br>
+✅ <strong>Menyiapkan Dataset</strong>: Menyediakan dataset real-world untuk latihan.<br>
+✅ <strong>Mengevaluasi Kode Mahasiswa</strong>: Melakukan review kode dan memberikan umpan balik.<br>
+✅ <strong>Membantu Mahasiswa Berkolaborasi</strong>: Mengajarkan penggunaan <strong>GitHub &amp; KMS</strong>.<br>
+✅ <strong>Memotivasi Mahasiswa</strong>: Memberikan challenge coding untuk meningkatkan kreativitas.</p>
+<hr>
+</section>
+<section id="peran-mahasiswa" class="level3">
+<h3 class="anchored" data-anchor-id="peran-mahasiswa"><strong>2. Peran Mahasiswa</strong></h3>
+<p>✅ <strong>Mempelajari Konsep</strong>: Memahami teori sebelum menulis kode.<br>
+✅ <strong>Menulis Kode Bertahap</strong>: Mengembangkan modul sesuai rencana mingguan.<br>
+✅ <strong>Menggunakan KMS &amp; GitHub</strong>: Mendokumentasikan konsep dan kode.<br>
+✅ <strong>Berpartisipasi dalam Diskusi</strong>: Aktif di forum untuk bertanya dan memberikan masukan.<br>
+✅ <strong>Mengerjakan Proyek Kolaboratif</strong>: Menyumbangkan kode dalam proyek besar.</p>
+<hr>
+</section>
+</section>
+<section id="alat-yang-digunakan" class="level2">
+<h2 class="anchored" data-anchor-id="alat-yang-digunakan"><strong>🔧 Alat yang Digunakan</strong></h2>
+<p>📌 <strong>GitHub/GitLab</strong> → Untuk version control &amp; kolaborasi kode.<br>
+📌 <strong>Google Colab/Jupyter Notebook (Python)</strong> → Untuk coding interaktif.<br>
+📌 <strong>RStudio (R)</strong> → Untuk analisis statistik dan visualisasi data.<br>
+📌 <strong>Obsidian/Notion/Quarto (KMS)</strong> → Untuk dokumentasi materi dan solusi problem set.<br>
+📌 <strong>ChatGPT/Copilot</strong> → Untuk membantu debugging dan optimalisasi kode.</p>
+<hr>
+</section>
+<section id="manfaat-pendekatan-ini" class="level2">
+<h2 class="anchored" data-anchor-id="manfaat-pendekatan-ini"><strong>🚀 Manfaat Pendekatan Ini</strong></h2>
+<p>✅ <strong>Meningkatkan Pemahaman Konseptual</strong>: Mahasiswa tidak hanya menghafal teori tetapi langsung mempraktikkannya.<br>
+✅ <strong>Membantu Kolaborasi &amp; Dokumentasi</strong>: KMS &amp; GitHub memastikan mahasiswa dapat bekerja sama dalam mengembangkan program.<br>
+✅ <strong>Membiasakan Mahasiswa dengan Proyek Nyata</strong>: Dengan menggunakan dataset real, mahasiswa dapat memahami bagaimana P&amp;S diterapkan dalam dunia kerja.<br>
+✅ <strong>Memotivasi Mahasiswa untuk Eksplorasi</strong>: Dengan tantangan mingguan, mahasiswa terdorong untuk mengembangkan solusi lebih kreatif.</p>
+<hr>
+</section>
+<section id="kesimpulan-1" class="level2">
+<h2 class="anchored" data-anchor-id="kesimpulan-1"><strong>Kesimpulan</strong></h2>
+<p>Dengan mengikuti rencana ini, <strong>pengajar dan mahasiswa memiliki panduan langkah demi langkah</strong> untuk membangun program Python &amp; R yang <strong>modular, bertahap, dan kolaboratif</strong>. Ini bukan hanya sekadar latihan pemrograman, tetapi <strong>membantu mahasiswa memahami penerapan P&amp;S dalam dunia nyata</strong> dengan pendekatan <strong>VV-KMS-CPL</strong>.</p>
+<p>To learn more about Quarto books visit <a href="https://quarto.org/docs/books" class="uri">https://quarto.org/docs/books</a>.</p>
+<p>This is a book created from markdown and executable code.</p>
+<p>See <span class="citation" data-cites="knuth84">Knuth (<a href="#ref-knuth84" role="doc-biblioref">1984</a>)</span> for additional discussion of literate programming.</p>
+
+
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-knuth84" class="csl-entry" role="listitem">
+Knuth, Donald E. 1984. <span>“Literate Programming.”</span> <em>Comput. J.</em> 27 (2): 97–111. <a href="https://doi.org/10.1093/comjnl/27.2.97">https://doi.org/10.1093/comjnl/27.2.97</a>.
+</div>
+</div>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../problem-set/index.html" class="pagination-link" aria-label="Problem Set">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Problem Set</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../ujian/index.html" class="pagination-link" aria-label="Soal Ujian">
+        <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Soal Ujian</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
