@@ -4,29 +4,619 @@
     "href": "index.html",
     "title": "II-2211 Probabilitas dan Statistika",
     "section": "",
-    "text": "Preface\nThis is a Quarto book.\nTo learn more about Quarto books visit https://quarto.org/docs/books.",
+    "text": "Pengantar\nSelamat datang di kuliah II-2211 Probabilitas Statistika.\nKompetensi yang diharapkan dari lulusan kuliah ini memahami dan menguasai konsep probabilitas dan statistika, lalu dapat menerapkan konsep itu untuk memecahkan masalah analisa, dan pengambilan kesimpulan .",
     "crumbs": [
-      "Preface"
+      "Pengantar"
     ]
   },
   {
-    "objectID": "intro.html",
-    "href": "intro.html",
-    "title": "1  Introduction",
-    "section": "",
-    "text": "This is a book created from markdown and executable code.\nSee Knuth (1984) for additional discussion of literate programming.\n\n\n\n\nKnuth, Donald E. 1984. “Literate Programming.” Comput. J. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97.",
+    "objectID": "index.html#topik",
+    "href": "index.html#topik",
+    "title": "II-2211 Probabilitas dan Statistika",
+    "section": "Topik",
+    "text": "Topik\n\n1. Materi Mata Kuliah Prinsip Dasar Probabilitas dan Statistika\nMata kuliah Prinsip Dasar Probabilitas dan Statistika mencakup konsep fundamental yang menjadi dasar bagi analisis data dan pengambilan keputusan berbasis probabilitas. Berikut adalah materi utama yang biasanya diajarkan:\n\nA. Dasar-dasar Probabilitas\n\nKonsep Peluang dan Ketidakpastian: Apa itu probabilitas? Mengapa penting dalam pengambilan keputusan?\nRuang Sampel dan Kejadian: Cara mendefinisikan eksperimen probabilistik.\nAksioma dan Teorema Probabilitas: Hukum dasar dalam probabilitas.\nProbabilitas Bersyarat dan Teorema Bayes: Bagaimana informasi baru dapat memperbarui probabilitas kejadian.\nVariabel Acak dan Distribusi: Distribusi diskrit dan kontinu (Bernoulli, Binomial, Poisson, Normal, dsb.).\n\n\n\nB. Dasar-dasar Statistika\n\nStatistika Deskriptif: Mean, median, modus, variansi, deviasi standar.\nVisualisasi Data: Histogram, boxplot, scatter plot, dsb.\nInferensi Statistik:\n\nEstimasi parameter (estimasi titik dan selang kepercayaan).\nPengujian hipotesis (uji-t, uji-z, uji chi-square, dsb.).\nRegresi dan Korelasi.\n\nTeori Estimasi dan Sampling: Teknik pengambilan sampel dan distribusi sampling.\nUji Hipotesis dan Pengambilan Keputusan: Cara menggunakan statistik dalam pengambilan keputusan berbasis data.\n\n\n\nC. Penerapan dalam Analisis Data dan Machine Learning\n\nPemodelan Probabilistik: Model probabilitas dalam pengambilan keputusan.\nSimulasi Monte Carlo: Teknik simulasi berbasis probabilitas.\nStatistika dalam Big Data dan AI: Probabilitas dalam algoritma machine learning.\nPenggunaan Perangkat Lunak Statistik: Python, R, Excel, dan tools lainnya.\n\n\n\n\n\n\n\n\n\n\nMinggu\nMateri Utama\nTopik\nKuiz KMS PSCalc\n\n\n\n\n1\nA.1\nBerpikir Probabilitas\n\n\n\n2\nA.2\nRuang Sample, Distribusi dan Probabilitas\nSet-1\nKuiz-1\n\n\n3\nA.4\nTeorema Bayes\n\n\n\n4\nA.5\nRandom Variable\n\n\n\n5\nA.5\nDistribusi Diskrit\n\n\n\n6\nA.5\nDistribusi Kontinu\n\n\n\n7\nA.3\nBivariat dan Fungsi RV\n\n\n\n8\n\nUTS\n\n\n\n9\nB.4\nSampling\n\n\n\n10\nB.1 B.2 B.3\nVisualisasi Data\n\n\n\n11\nB.5\nUji Hipotesis\n\n\n\n12\nB.3\nRegresi Linier\n\n\n\n13\nB.4\nANOVA\n\n\n\n14\nC.1, C2\n\n\n\n\n15\n\n\n\n\n\n16\n\n\n\n\n\n\nSaat ini ada 13 topik materi pengetahuan yang perlu dikuasai, satu untuk tiap minggu. Juga ada enam problem set mewakili pengujian penguasaan materi. Di tahun-tahun sebelumnya soal-soal ini, dan kunci jawaban, sudah tersedia. Namun beban kognitif terlalu berat bagi seorang mahasiswa untuk sendirian mengerjakan semua soal ini dengan kualitas solusi yang memuaskan.",
     "crumbs": [
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction</span>"
+      "Pengantar"
+    ]
+  },
+  {
+    "objectID": "index.html#orientasi-nilai",
+    "href": "index.html#orientasi-nilai",
+    "title": "II-2211 Probabilitas dan Statistika",
+    "section": "Orientasi Nilai",
+    "text": "Orientasi Nilai\nDi era kecerdasan artifisial (artificial intelligence, AI), pendidikan tidak lagi menekan kan pada pengetahuan, tetapi secara berimbang pada perannya terhadap penciptaan nilai. Saat ini kuliah ini hendak menonjolkan edukasi nilai yang penting, seperti bekerjasama, sensitif pada hal-hal yang berharga, seperti penggunaan waktu, kualitas pekerjaan, dan komitment untuk memberikan hasil.\nJadi untuk pertama kali mahasiswa diminta mengerjaan semua soal latihan dengan benar sebagai ukuran kompetensi. Target ini diharapkan bisa dicapai menggunan KMS yang dikembangkan bersama dalam tim.",
+    "crumbs": [
+      "Pengantar"
+    ]
+  },
+  {
+    "objectID": "index.html#konsep-kms",
+    "href": "index.html#konsep-kms",
+    "title": "II-2211 Probabilitas dan Statistika",
+    "section": "Konsep KMS",
+    "text": "Konsep KMS\nOleh sebab itu mulai tahun ini proses belajar coba dilakukan dengan mengembangkan sistem pengelolaan pengetahuan (knowledge management system, KMS) yang mengakuisisi pengetahuan, dan menerapkan pada berbagai persoalan.\nDalam bentuk yang paling sederhana, KMS yang dimaksud adalah dokumen pemrograman literasi (Knuth (1984)), di mana ringkasan pengetahuan dan kode (python, R, dan yang sejenis) ter-embedded di dalamnya, yang di-index berdasarkan topik materi, jenis persoalan, serta pola berpikir untuk menyelesaikan masalah. KMS ini kita beri nama PSCalc: Probability and Statistics Calculator.\nUntuk mengembangkan KMS PSCalc, diidentifikasi{\n\nTiga belas topik materi\nLima jenis kategori persoalan\nSebuah pola berpikir solutif dengan lima langkah di dalamnya",
+    "crumbs": [
+      "Pengantar"
+    ]
+  },
+  {
+    "objectID": "index.html#proses-pembelajaran",
+    "href": "index.html#proses-pembelajaran",
+    "title": "II-2211 Probabilitas dan Statistika",
+    "section": "Proses Pembelajaran",
+    "text": "Proses Pembelajaran\nInstruktur menyediakan problem set serta set ujian-ujian yang sudah pernah, sebagai input, dan secara bertahap mahasiswa mengembangkan solusi dan menjelaskannya ke dalam Dokumen KMS PSCalc, sebagai ouput.\nBila hal ini dilakukan dengan baik, maka saat menghadapi soal (kuiz atau ujian), mahasiswa mencari soal yang serupa di dalam KMS ini, kemudian memanfaatkan langkah penyusunan solusi untuk menjawabnya.\nKuliah ini sudah menyediakan kumpulan soal dari berbagai sumber. Tugas peserta adalah menganalisa soal dengan mengidentifikasi topik apa, jenis apa, dan pola berpikir apa yang paling tepat untuk memecahkan persoalan ini.\nJadi garis besar proses belajar yang ditempuh mahasiswa:\n\nSetiap Minggu, mahasiswa mendapatkan tugas dari problem-set, sebagai “training set”.\nMahasiswa ber kolaborasi menyusun prinsip-prinsip ke dalam dokumen ini, serta menggunakannya untuk menjawab problem set.\nInstruktur memberikan Kuiz, dan peserta mendemonstrasikan penggunaan KMS untuk menjawabnya secara cepat.\n\nDalam kuliah ini penggunaan AI dianjurkan dalam proses akuisisi dan pengelolaan KMS, tetapi tidak untuk ujian.\nSelamat Belajar\nThis is a book created from markdown and executable code.\nSee Knuth (1984) for additional discussion of literate programming.\n\n\n\n\nKnuth, Donald E. 1984. “Literate Programming.” Comput. J. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97.",
+    "crumbs": [
+      "Pengantar"
+    ]
+  },
+  {
+    "objectID": "petunjuk/index.html",
+    "href": "petunjuk/index.html",
+    "title": "Petunjuk",
+    "section": "",
+    "text": "Konsep\nDi era kecerdasan buatan (Artificial Intelligence/AI), terjadi disrupsi signifikan dalam prinsip pendidikan konvensional yang sebelumnya menekankan penguasaan pengetahuan langka yang bersumber dari literatur dan pengajar. Dengan hadirnya model bahasa besar (Large Language Model/LLM), AI mampu menyebarluaskan pengetahuan secara masif, menyebabkan komoditisasi pengetahuan. Meskipun nilai guna pengetahuan tetap tinggi, nilai harga perolehannya menjadi sangat rendah karena biaya produksi pengetahuan telah diminimalisir oleh AI.\nOleh karena itu, orientasi pendidikan tinggi perlu bergeser dari sekadar penguasaan pengetahuan menjadi pendidikan yang berorientasi pada penciptaan nilai bagi organisasi dan masyarakat (value-oriented education) serta rekayasa penciptaan nilai bersama (value co-creation). Dengan melimpahnya pengetahuan yang dihasilkan AI, pembelajaran di perguruan tinggi harus mencari metode baru yang lebih efektif, terkelola, dan efisien biaya, salah satunya adalah dengan membangun sistem manajemen pengetahuan (Knowledge Management System/KMS).\nPentingnya Sistem Manajemen Pengetahuan (KMS) dalam Pendidikan Tinggi\nKMS adalah pendekatan sistematis untuk mengumpulkan, mengorganisir, menyimpan, dan membagikan pengetahuan dalam sebuah organisasi. Dalam konteks pendidikan tinggi, KMS mendorong kolaborasi dan berbagi pengetahuan antarindividu, memungkinkan akses yang lebih luas dan pemanfaatan pengetahuan secara optimal. Dengan adanya KMS, mahasiswa dan dosen dapat dengan mudah mengakses informasi yang relevan, berkontribusi pada pengetahuan kolektif, dan memecahkan masalah bersama. citeturn0search1\nKolaborasi dan Personalisasi dalam Pembelajaran\nPembentukan KMS dapat dipermudah melalui kolaborasi dan penggunaan alat bantu AI serta teknologi informasi. AI memungkinkan pembelajaran dilakukan secara personal, di mana profil kompetensi mahasiswa menjadi dasar untuk merancang materi pembelajaran dan set masalah yang sesuai dengan kebutuhan individu. Pendekatan ini memastikan bahwa setiap mahasiswa mendapatkan pengalaman belajar yang disesuaikan dengan kemampuan dan minat mereka, meningkatkan efektivitas dan efisiensi proses pembelajaran. citeturn0search2\nImplementasi Konsep VV-KMS-CPL\nKonsep pembelajaran berorientasi nilai dan bertujuan penciptaan nilai bersama melalui pembuatan KMS ini dilakukan mahasiswa secara kolaboratif dan personal. Konsep yang dinamakan VV-KMS-CPL perlu dikembangkan agar menjadi praktis bagi pengajar maupun mahasiswa peserta kuliah. Implementasi konsep ini melibatkan beberapa langkah, antara lain:\nDengan mengadopsi konsep VV-KMS-CPL, pendidikan tinggi dapat bertransformasi menjadi lebih adaptif dan responsif terhadap perkembangan teknologi dan kebutuhan masyarakat. Hal ini tidak hanya meningkatkan kualitas pembelajaran, tetapi juga memastikan bahwa lulusan memiliki kompetensi yang relevan dan mampu berkontribusi secara signifikan dalam berbagai bidang.\nTantangan dan Solusi dalam Implementasi\nMeskipun konsep VV-KMS-CPL menawarkan berbagai manfaat, implementasinya tidak lepas dari tantangan. Beberapa tantangan yang mungkin dihadapi antara lain:\nUntuk mengatasi tantangan tersebut, institusi pendidikan dapat mengambil langkah-langkah berikut:\nDengan pendekatan yang komprehensif dan kolaboratif, implementasi konsep VV-KMS-CPL diharapkan dapat berjalan efektif dan memberikan dampak positif bagi seluruh pemangku kepentingan dalam pendidikan tinggi.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Petunjuk</span>"
+    ]
+  },
+  {
+    "objectID": "petunjuk/index.html#konsep",
+    "href": "petunjuk/index.html#konsep",
+    "title": "Petunjuk",
+    "section": "",
+    "text": "Identifikasi Nilai yang Ingin Dicapai: Menentukan tujuan pembelajaran yang berfokus pada penciptaan nilai bagi mahasiswa, organisasi, dan masyarakat.\nPengembangan KMS Kolaboratif: Membangun platform KMS yang memungkinkan mahasiswa dan dosen untuk berbagi pengetahuan, sumber daya, dan ide secara efektif.\nPersonalisasi Pembelajaran: Menggunakan AI untuk menyesuaikan materi dan metode pembelajaran sesuai dengan profil dan kebutuhan masing-masing mahasiswa.\nEvaluasi dan Umpan Balik: Melakukan evaluasi berkala terhadap efektivitas KMS dan proses pembelajaran, serta menyediakan umpan balik konstruktif untuk perbaikan berkelanjutan.\n\n\n\n\n\nResistensi terhadap Perubahan: Baik dosen maupun mahasiswa mungkin menunjukkan resistensi terhadap perubahan metode pembelajaran tradisional.\nKeterbatasan Teknologi: Tidak semua institusi memiliki infrastruktur teknologi yang memadai untuk mendukung implementasi KMS dan AI.\nKebutuhan Pelatihan: Dosen dan mahasiswa memerlukan pelatihan untuk memahami dan memanfaatkan KMS serta alat bantu AI secara efektif.\n\n\n\nSosialisasi dan Edukasi: Meningkatkan kesadaran akan manfaat konsep VV-KMS-CPL melalui seminar, workshop, dan diskusi.\nInvestasi dalam Teknologi: Mengalokasikan sumber daya untuk pengembangan infrastruktur teknologi yang mendukung.\nPelatihan dan Pengembangan: Menyediakan program pelatihan bagi dosen dan mahasiswa untuk meningkatkan kompetensi dalam menggunakan KMS dan AI.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Petunjuk</span>"
+    ]
+  },
+  {
+    "objectID": "petunjuk/index.html#capaian-pembelajaran-mata-kuliah",
+    "href": "petunjuk/index.html#capaian-pembelajaran-mata-kuliah",
+    "title": "Petunjuk",
+    "section": "Capaian Pembelajaran Mata Kuliah",
+    "text": "Capaian Pembelajaran Mata Kuliah\nUntuk Kuliah Probabilitas dan Statistika dalam konteks VV-KMS-CPL 1. Apa saja tujuan Pembelajaran? Kompetensi apa yang diharapkan dicapai di akhir kuliah 2. Bagaimana cara mencapai tujuan ini\nUntuk merancang kuliah Probabilitas dan Statistika dalam konteks VV-KMS-CPL, kita perlu mendefinisikan tujuan pembelajaran dan cara mencapainya. Konsep VV-KMS-CPL (Value-Oriented, Value Co-Creation, Knowledge Management System, Collaborative and Personalized Learning) mengarahkan pembelajaran tidak hanya pada penguasaan materi, tetapi juga pada penciptaan nilai bersama serta pemanfaatan teknologi untuk kolaborasi dan personalisasi.\n\n\n1. Tujuan Pembelajaran dan Kompetensi yang Diharapkan\nPada akhir kuliah Probabilitas dan Statistika, mahasiswa diharapkan memiliki kompetensi berikut:\n\nA. Kompetensi Konseptual\n\nMemahami konsep dasar probabilitas, variabel acak, distribusi probabilitas, inferensi statistik, dan teori estimasi.\nMampu menerapkan teori probabilitas dan statistika dalam berbagai kasus nyata, khususnya di bidang Teknologi Informasi dan Sistem.\nMemahami bagaimana statistika digunakan dalam pengambilan keputusan berbasis data.\n\n\n\nB. Kompetensi Teknis (Hard Skills)\n\nMampu menggunakan perangkat lunak statistik (misalnya Python, R, atau Excel) untuk analisis data.\nMengembangkan model probabilitas untuk prediksi dan pengambilan keputusan.\nMampu melakukan uji hipotesis, analisis regresi, dan pengolahan big data.\n\n\n\nC. Kompetensi Kolaboratif dan Berorientasi Nilai\n\nMampu membangun dan mengelola Knowledge Management System (KMS) yang berisi catatan konsep, contoh soal, studi kasus, dan solusi yang diperoleh secara kolaboratif.\nMengembangkan kemampuan bekerja dalam tim interdisipliner untuk menganalisis dan menyelesaikan masalah berbasis data.\nMengasah keterampilan komunikasi untuk menyampaikan hasil analisis secara efektif dalam bentuk laporan atau presentasi.\nMemahami etika dalam pengolahan dan interpretasi data, termasuk isu-isu privasi dan bias dalam data.\n\n\n\nD. Kompetensi Personal dan Adaptif\n\nMampu mengembangkan strategi belajar mandiri melalui personalisasi materi dengan bantuan AI.\nMemiliki keterampilan problem-solving dalam menghadapi ketidakpastian menggunakan pendekatan probabilistik.\nMengembangkan sikap adaptif terhadap perkembangan teknologi dan data-driven decision making.\n\n\n\n\n\n2. Strategi dan Metode Pembelajaran untuk Mencapai Tujuan\nAgar mahasiswa dapat mencapai kompetensi tersebut dalam konteks VV-KMS-CPL, strategi berikut dapat diterapkan:\n\nA. Penerapan Knowledge Management System (KMS)\n\nMahasiswa secara kolaboratif membangun KMS yang berisi ringkasan materi, contoh soal, solusi, dan dokumentasi studi kasus.\nPenggunaan AI dalam mengorganisir dan memvalidasi konten KMS sehingga informasi yang terkumpul menjadi sistematis dan dapat digunakan untuk pembelajaran berkelanjutan.\nPeer review dan kontribusi aktif: Setiap mahasiswa harus berkontribusi dengan menyusun materi atau menyelesaikan soal, serta memberikan umpan balik terhadap kontribusi teman sekelas.\n\n\n\nB. Pembelajaran Berbasis Proyek dan Kasus Nyata\n\nMahasiswa mengerjakan proyek berbasis data nyata yang relevan dengan bidang mereka, misalnya:\n\nAnalisis tren data pengguna pada sistem TI.\nPeramalan penggunaan sumber daya dalam sistem informasi.\nPenerapan machine learning berbasis probabilitas.\n\nStudi kasus diambil dari data industri atau penelitian akademik sehingga mahasiswa memahami aplikasi nyata probabilitas dan statistika.\n\n\n\nC. Personalisasi Pembelajaran dengan AI\n\nSistem AI digunakan untuk memberikan rekomendasi materi, soal latihan, dan proyek berdasarkan progres belajar mahasiswa.\nSetiap mahasiswa mendapatkan tantangan dan studi kasus yang sesuai dengan tingkat pemahaman dan minat mereka.\nMahasiswa diberikan umpan balik otomatis melalui sistem KMS yang terintegrasi dengan AI.\n\n\n\nD. Evaluasi Berbasis Kompetensi dan Kolaborasi\n\nPenilaian tidak hanya berdasarkan ujian, tetapi juga:\n\nKontribusi dalam KMS: Kualitas materi dan solusi yang diberikan oleh mahasiswa.\nKeterampilan analisis data dalam proyek kolaboratif.\nKeterampilan komunikasi dalam menyajikan hasil analisis.\nPenggunaan alat statistik secara efisien dalam menyelesaikan permasalahan nyata.\n\n\n\n\nE. Penggunaan AI dan Teknologi untuk Mendukung Pembelajaran\n\nLLM (Large Language Model) seperti ChatGPT atau AI lainnya digunakan sebagai asisten pembelajaran dalam memahami konsep statistik yang kompleks.\nPemanfaatan data visualization tools untuk mempermudah interpretasi data.\nPemanfaatan platform Obsidian untuk mendukung dokumentasi pengetahuan dan berbagi materi antar mahasiswa.\n\n\n\n\n\nKesimpulan\nDengan menerapkan VV-KMS-CPL, kuliah Probabilitas dan Statistika tidak hanya berfokus pada penguasaan materi, tetapi juga mengajarkan kolaborasi, penciptaan nilai bersama, dan pemanfaatan teknologi dalam proses pembelajaran. Dengan demikian, mahasiswa akan memiliki kompetensi yang lebih komprehensif, baik dari sisi teknis, akademik, maupun profesional, serta lebih siap menghadapi tantangan dunia kerja berbasis data.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Petunjuk</span>"
+    ]
+  },
+  {
+    "objectID": "petunjuk/index.html#rencana-kuliah",
+    "href": "petunjuk/index.html#rencana-kuliah",
+    "title": "Petunjuk",
+    "section": "Rencana Kuliah",
+    "text": "Rencana Kuliah\nBerikut adalah Rancangan Rencana Kuliah Probabilitas dan Statistika (P&S) dalam 15 minggu, serta persiapan yang diperlukan oleh pengajar dan mahasiswa.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Petunjuk</span>"
+    ]
+  },
+  {
+    "objectID": "petunjuk/index.html#rencana-kuliah-probabilitas-dan-statistika-dalam-15-minggu",
+    "href": "petunjuk/index.html#rencana-kuliah-probabilitas-dan-statistika-dalam-15-minggu",
+    "title": "Petunjuk",
+    "section": "1. Rencana Kuliah Probabilitas dan Statistika dalam 15 Minggu",
+    "text": "1. Rencana Kuliah Probabilitas dan Statistika dalam 15 Minggu\n\n\n\n\n\n\n\n\nMinggu\nTopik\nSubtopik & Kegiatan Pembelajaran\n\n\n\n\n1\nPendahuluan dan Konsep Dasar Probabilitas\n- Pengenalan P&S dan perannya dalam IT & Sistem.  - Definisi probabilitas dan ruang sampel.  - Studi kasus & diskusi.\n\n\n2\nAturan Dasar Probabilitas\n- Aksioma probabilitas.  - Probabilitas bersyarat dan independensi.  - Teorema Bayes.  - Latihan soal dan penerapan di AI.\n\n\n3\nVariabel Acak & Distribusi Diskrit\n- Definisi variabel acak.  - Distribusi Bernoulli, Binomial, Poisson.  - Implementasi di Python/R.\n\n\n4\nDistribusi Kontinu & Ekspektasi Matematis\n- Distribusi Normal, Eksponensial.  - Ekspektasi dan variansi.  - Contoh aplikasi dalam data analytics.\n\n\n5\nSampling & Distribusi Sampling\n- Teknik sampling & distribusi sampling.  - Central Limit Theorem.  - Simulasi Monte Carlo dengan Python.\n\n\n6\nStatistika Deskriptif & Visualisasi Data\n- Mean, median, modus, variansi.  - Histogram, boxplot, scatter plot.  - Implementasi dengan Python/R.\n\n\n7\nEstimasi Parameter & Interval Kepercayaan\n- Estimasi titik dan selang kepercayaan.  - Penggunaan distribusi Normal dan t-Student.  - Latihan studi kasus data real.\n\n\n8\nUjian Tengah Semester (UTS)\n- Evaluasi konsep dasar P&S.  - Proyek analisis data sederhana.\n\n\n9\nPengujian Hipotesis (Uji-t, Uji-z, Chi-square)\n- Pengujian satu sampel dan dua sampel.  - Uji chi-square untuk independensi.  - Latihan dengan dataset nyata.\n\n\n10\nRegresi dan Korelasi\n- Regresi linier sederhana dan korelasi Pearson.  - Implementasi dengan Python/R.\n\n\n11\nANOVA dan Pengujian Multivariat\n- Analisis variansi (ANOVA).  - Penerapan dalam data eksperimen.\n\n\n12\nProbabilitas dalam Machine Learning\n- Algoritma berbasis probabilitas (Naïve Bayes, Hidden Markov Model).  - Studi kasus penerapan di AI.\n\n\n13\nPemodelan Probabilistik & Big Data Analytics\n- Model probabilitas dalam analisis data besar.  - Simulasi dan eksperimen.\n\n\n14\nProyek Akhir & Presentasi\n- Mahasiswa mengerjakan proyek berbasis data.  - Presentasi hasil analisis statistik.\n\n\n15\nUjian Akhir Semester (UAS)\n- Evaluasi keterampilan statistik dan pemrograman.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Petunjuk</span>"
+    ]
+  },
+  {
+    "objectID": "petunjuk/index.html#persiapan-yang-harus-dilakukan-pengajar",
+    "href": "petunjuk/index.html#persiapan-yang-harus-dilakukan-pengajar",
+    "title": "Petunjuk",
+    "section": "2. Persiapan yang Harus Dilakukan Pengajar",
+    "text": "2. Persiapan yang Harus Dilakukan Pengajar\nAgar kuliah berjalan efektif, pengajar perlu menyiapkan:\n\nA. Sebelum Semester Dimulai\n\nMenyusun Silabus & RPS: Menentukan cakupan materi, metode pembelajaran, dan sistem evaluasi.\nMembuat atau Memilih Buku Ajar: Misalnya:\n\nSheldon Ross, Introduction to Probability Models.\nMontgomery & Runger, Applied Statistics and Probability for Engineers.\nModul berbasis Python atau R untuk implementasi praktis.\n\nMenyiapkan Platform KMS: Menggunakan Obsidian atau platform LMS (Moodle, Google Classroom) untuk dokumentasi materi dan kolaborasi mahasiswa.\nMenyiapkan Dataset: Mengumpulkan dataset nyata dari berbagai sumber (misal Kaggle, UCI Machine Learning Repository).\n\n\n\nB. Sepanjang Semester\n\nMenyediakan Materi dan Soal Latihan: Presentasi, video pembelajaran, artikel, dan tugas mingguan.\nMenggunakan AI untuk Personalisasi: AI dapat memberikan rekomendasi materi tambahan berdasarkan progres mahasiswa.\nMemberikan Proyek Berbasis Data: Mahasiswa diminta menganalisis dataset nyata untuk meningkatkan pemahaman praktis.\nMenggunakan KMS untuk Dokumentasi Pembelajaran: Mahasiswa berkontribusi dalam menyusun dan memperbaiki catatan pembelajaran.\n\n\n\nC. Evaluasi dan Feedback\n\nEvaluasi Rutin: Quiz mingguan dan refleksi belajar mahasiswa.\nUmpan Balik Interaktif: Diskusi dalam forum atau grup Telegram/Discord.\nMemeriksa Kontribusi KMS: Menilai seberapa banyak mahasiswa berkontribusi dalam pengelolaan pengetahuan.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Petunjuk</span>"
+    ]
+  },
+  {
+    "objectID": "petunjuk/index.html#persiapan-dan-tanggung-jawab-mahasiswa",
+    "href": "petunjuk/index.html#persiapan-dan-tanggung-jawab-mahasiswa",
+    "title": "Petunjuk",
+    "section": "3. Persiapan dan Tanggung Jawab Mahasiswa",
+    "text": "3. Persiapan dan Tanggung Jawab Mahasiswa\nAgar berhasil dalam mata kuliah ini, mahasiswa harus:\n\nA. Persiapan Awal\n\nMenguasai Konsep Dasar Matematika: Aljabar, kalkulus dasar, dan logika.\nMempelajari Pemrograman Dasar: Python atau R untuk analisis data.\nMengenal Platform KMS: Belajar cara mengelola catatan belajar dalam Obsidian/LMS.\n\n\n\nB. Tanggung Jawab Mahasiswa Selama Semester\n\nMengikuti Kuliah dan Diskusi: Terlibat aktif dalam diskusi kelas dan forum online.\nBerpartisipasi dalam KMS: Berkontribusi dengan membuat atau memperbaiki catatan materi dan solusi soal.\nMengerjakan Tugas dan Proyek: Menggunakan alat statistik dalam analisis data nyata.\nMengeksplorasi Kasus Nyata: Melakukan penelitian mini tentang aplikasi statistik dalam bidang IT dan bisnis.\nMenjalin Kolaborasi dengan Tim: Belajar bersama, berdiskusi, dan mengerjakan proyek kelompok.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Petunjuk</span>"
+    ]
+  },
+  {
+    "objectID": "petunjuk/index.html#kesimpulan-1",
+    "href": "petunjuk/index.html#kesimpulan-1",
+    "title": "Petunjuk",
+    "section": "Kesimpulan",
+    "text": "Kesimpulan\nRancangan kuliah Probabilitas dan Statistika dalam 15 minggu menyeimbangkan teori dan praktik dengan pendekatan kolaboratif dan berbasis nilai (VV-KMS-CPL).\n\nPengajar harus menyiapkan silabus, materi, proyek, serta memastikan mahasiswa aktif dalam Knowledge Management System (KMS).\nMahasiswa bertanggung jawab atas pembelajaran mandiri, kontribusi dalam KMS, serta menyelesaikan proyek berbasis data nyata.\n\nDengan pendekatan ini, mahasiswa tidak hanya memahami konsep probabilitas dan statistika, tetapi juga mampu menerapkannya dalam dunia nyata dan berkontribusi dalam pengelolaan pengetahuan.\nTo learn more about Quarto books visit https://quarto.org/docs/books.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Petunjuk</span>"
+    ]
+  },
+  {
+    "objectID": "materi/index.html",
+    "href": "materi/index.html",
+    "title": "Bahan Kuliah",
+    "section": "",
+    "text": "Pendahuluan",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Bahan Kuliah</span>"
+    ]
+  },
+  {
+    "objectID": "materi/index.html#pendahuluan",
+    "href": "materi/index.html#pendahuluan",
+    "title": "Bahan Kuliah",
+    "section": "",
+    "text": "Probabilitas dan Statistik adalah cabang matematika yang berperan penting dalam berbagai bidang.\nDigunakan untuk menganalisis data, membuat prediksi, dan mengambil keputusan berbasis bukti.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Bahan Kuliah</span>"
+    ]
+  },
+  {
+    "objectID": "materi/index.html#tujuan-pembelajaran",
+    "href": "materi/index.html#tujuan-pembelajaran",
+    "title": "Bahan Kuliah",
+    "section": "Tujuan Pembelajaran",
+    "text": "Tujuan Pembelajaran\n\nMemahami konsep dasar probabilitas dan statistik.\nMengenal aplikasi probabilitas dan statistik dalam dunia nyata.\nMenyadari pentingnya data dalam pengambilan keputusan.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Bahan Kuliah</span>"
+    ]
+  },
+  {
+    "objectID": "materi/index.html#definisi-probabilitas",
+    "href": "materi/index.html#definisi-probabilitas",
+    "title": "Bahan Kuliah",
+    "section": "Definisi Probabilitas",
+    "text": "Definisi Probabilitas\n\nProbabilitas adalah ukuran kemungkinan terjadinya suatu peristiwa.\nDituliskan dalam rentang 0 hingga 1, di mana:\n\n0 berarti tidak mungkin terjadi.\n1 berarti pasti terjadi.\n\n\n\nContoh Sederhana\n\nMelempar koin:\n\nPeluang muncul kepala = 1/2\nPeluang muncul ekor = 1/2",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Bahan Kuliah</span>"
+    ]
+  },
+  {
+    "objectID": "materi/index.html#statistik-ilmu-data",
+    "href": "materi/index.html#statistik-ilmu-data",
+    "title": "Bahan Kuliah",
+    "section": "Statistik: Ilmu Data",
+    "text": "Statistik: Ilmu Data\n\nStatistik adalah ilmu yang mempelajari cara mengumpulkan, mengolah, menganalisis, dan menyajikan data.\nStatistik terbagi menjadi dua jenis utama:\n\nStatistik Deskriptif (ringkasan data)\nStatistik Inferensial (pengambilan kesimpulan dari data)",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Bahan Kuliah</span>"
+    ]
+  },
+  {
+    "objectID": "materi/index.html#quadran-deterministik-vs-prediktabilitas",
+    "href": "materi/index.html#quadran-deterministik-vs-prediktabilitas",
+    "title": "Bahan Kuliah",
+    "section": "Quadran Deterministik vs Prediktabilitas",
+    "text": "Quadran Deterministik vs Prediktabilitas\n\n\n\n\n\n\n\n\n\nPrediktabilitas Tinggi\nPrediktabilitas Rendah\n\n\n\n\nDeterministik\nModel Persamaan Diferensial\nModel Chaos\n\n\nNon-Deterministik\nModel Random\nModel Undetermined\n\n\n\n\nPersamaan Diferensial: Sistem yang dapat diprediksi dengan model matematis tertentu.\nChaos: Sistem deterministik tetapi sangat sensitif terhadap kondisi awal.\nRandom: Sistem yang benar-benar acak tanpa pola yang jelas.\nUndetermined: Sistem yang tidak memiliki pola pasti dan sulit diprediksi.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Bahan Kuliah</span>"
+    ]
+  },
+  {
+    "objectID": "materi/index.html#peran-probabilitas-dan-statistik",
+    "href": "materi/index.html#peran-probabilitas-dan-statistik",
+    "title": "Bahan Kuliah",
+    "section": "Peran Probabilitas dan Statistik",
+    "text": "Peran Probabilitas dan Statistik\n\nDigunakan dalam:\n\nIlmu Komputer (AI, Machine Learning)\nKesehatan (Analisis medis)\nEkonomi (Prediksi pasar)\nTeknik (Keandalan sistem)",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Bahan Kuliah</span>"
+    ]
+  },
+  {
+    "objectID": "materi/index.html#kesimpulan",
+    "href": "materi/index.html#kesimpulan",
+    "title": "Bahan Kuliah",
+    "section": "Kesimpulan",
+    "text": "Kesimpulan\n\nProbabilitas dan statistik membantu kita dalam memahami ketidakpastian.\nDengan statistik, kita dapat mengambil keputusan lebih baik berdasarkan data.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Bahan Kuliah</span>"
+    ]
+  },
+  {
+    "objectID": "materi/index.html#diskusi",
+    "href": "materi/index.html#diskusi",
+    "title": "Bahan Kuliah",
+    "section": "Diskusi",
+    "text": "Diskusi\n\nApa contoh aplikasi probabilitas dan statistik yang pernah Anda temui?\nBagaimana probabilitas membantu dalam pengambilan keputusan sehari-hari?",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Bahan Kuliah</span>"
+    ]
+  },
+  {
+    "objectID": "materi/index.html#prinsip-dasar",
+    "href": "materi/index.html#prinsip-dasar",
+    "title": "Bahan Kuliah",
+    "section": "Prinsip Dasar",
+    "text": "Prinsip Dasar\nPrinsip Dasar Probabilitas dan Statistika P&S 1. Apa saja materi matakuliah prinsip dasar P&S? 2. Masalah seperti apa yang di pecahkan ilmu P&S 3. Bidang apa saja penerapan ilmu P&S\n\n1. Materi Mata Kuliah Prinsip Dasar Probabilitas dan Statistika\nMata kuliah Prinsip Dasar Probabilitas dan Statistika mencakup konsep fundamental yang menjadi dasar bagi analisis data dan pengambilan keputusan berbasis probabilitas. Berikut adalah materi utama yang biasanya diajarkan:\n\nA. Dasar-dasar Probabilitas\n\nKonsep Peluang dan Ketidakpastian: Apa itu probabilitas? Mengapa penting dalam pengambilan keputusan?\nRuang Sampel dan Kejadian: Cara mendefinisikan eksperimen probabilistik.\nAksioma dan Teorema Probabilitas: Hukum dasar dalam probabilitas.\nProbabilitas Bersyarat dan Teorema Bayes: Bagaimana informasi baru dapat memperbarui probabilitas kejadian.\nVariabel Acak dan Distribusi: Distribusi diskrit dan kontinu (Bernoulli, Binomial, Poisson, Normal, dsb.).\n\n\n\nB. Dasar-dasar Statistika\n\nStatistika Deskriptif: Mean, median, modus, variansi, deviasi standar.\nVisualisasi Data: Histogram, boxplot, scatter plot, dsb.\nInferensi Statistik:\n\nEstimasi parameter (estimasi titik dan selang kepercayaan).\nPengujian hipotesis (uji-t, uji-z, uji chi-square, dsb.).\nRegresi dan Korelasi.\n\nTeori Estimasi dan Sampling: Teknik pengambilan sampel dan distribusi sampling.\nUji Hipotesis dan Pengambilan Keputusan: Cara menggunakan statistik dalam pengambilan keputusan berbasis data.\n\n\n\nC. Penerapan dalam Analisis Data dan Machine Learning\n\nPemodelan Probabilistik: Model probabilitas dalam pengambilan keputusan.\nSimulasi Monte Carlo: Teknik simulasi berbasis probabilitas.\nStatistika dalam Big Data dan AI: Probabilitas dalam algoritma machine learning.\nPenggunaan Perangkat Lunak Statistik: Python, R, Excel, dan tools lainnya.\n\n\n\n\n\n2. Masalah yang Dapat Diselesaikan dengan Probabilitas dan Statistika\nIlmu Probabilitas dan Statistika digunakan untuk memecahkan berbagai masalah di dunia nyata yang melibatkan ketidakpastian, pengambilan keputusan, dan analisis data. Beberapa contoh masalah yang dapat diselesaikan meliputi:\n\nA. Pengambilan Keputusan dalam Ketidakpastian\n\nPrediksi Cuaca: Probabilitas hujan berdasarkan data cuaca historis.\nAnalisis Risiko Keuangan: Menentukan kemungkinan gagal bayar suatu investasi.\nManajemen Rantai Pasok: Memastikan ketersediaan stok barang dengan memperhitungkan variabilitas permintaan.\n\n\n\nB. Analisis Data dan Pemodelan Statistik\n\nDeteksi Anomali dalam Keamanan Siber: Menggunakan distribusi probabilitas untuk mengidentifikasi aktivitas mencurigakan dalam jaringan.\nAnalisis Tren Konsumen: Memahami perilaku pelanggan berdasarkan data transaksi.\nPemantauan Kesehatan Masyarakat: Prediksi penyebaran penyakit berdasarkan data epidemiologi.\n\n\n\nC. Eksperimen dan Optimasi\n\nA/B Testing dalam Pengembangan Produk: Membandingkan efektivitas dua versi produk atau kampanye pemasaran.\nOptimasi Produksi di Industri: Menentukan parameter optimal untuk meningkatkan efisiensi pabrik.\nAnalisis Kinerja Sistem Komputer: Memodelkan waktu respons sistem dengan distribusi probabilitas.\n\n\n\n\n\n3. Bidang Penerapan Ilmu Probabilitas dan Statistika\nIlmu Probabilitas dan Statistika digunakan dalam berbagai bidang, mulai dari sains hingga industri. Beberapa bidang utama penerapannya meliputi:\n\nA. Teknologi dan Sistem Informasi\n\nMachine Learning dan AI: Banyak algoritma AI menggunakan konsep probabilitas dan statistika, seperti Naïve Bayes, Hidden Markov Models, dan Gaussian Mixture Models.\nKeamanan Siber: Deteksi serangan dengan analisis probabilitas.\nPemrosesan Bahasa Alami (NLP): Model probabilistik untuk memahami teks, seperti LLM (Large Language Model).\n\n\n\nB. Keuangan dan Ekonomi\n\nAnalisis Risiko Investasi: Model stokastik dalam pasar saham.\nPrediksi Inflasi dan Pertumbuhan Ekonomi: Menggunakan model regresi dan analisis data time-series.\nPenentuan Kredit dan Asuransi: Model probabilitas untuk menilai risiko nasabah.\n\n\n\nC. Kesehatan dan Biostatistika\n\nAnalisis Data Medis: Mendeteksi pola penyakit dari data pasien.\nUji Klinis Obat: Statistik inferensial dalam penelitian obat dan pengobatan baru.\nModel Epidemiologi: Memprediksi penyebaran penyakit dan efektivitas vaksin.\n\n\n\nD. Teknik dan Manufaktur\n\nReliabilitas dan Kualitas Produk: Menggunakan distribusi probabilitas untuk memperkirakan masa pakai produk.\nPemeliharaan Prediktif (Predictive Maintenance): Probabilitas kegagalan mesin dalam industri.\nOptimasi Logistik: Model statistik untuk menentukan jalur pengiriman yang paling efisien.\n\n\n\nE. Ilmu Sosial dan Psikologi\n\nSurvei dan Analisis Data Sosial: Teknik sampling dalam survei politik dan opini publik.\nPsikometri dan Pengukuran Kinerja: Penggunaan statistika dalam tes kepribadian dan pendidikan.\nKriminologi dan Forensik: Model probabilitas dalam analisis pola kejahatan.\n\n\n\nF. Transportasi dan Smart City\n\nModel Lalu Lintas: Prediksi kemacetan dan optimalisasi transportasi publik.\nSistem Navigasi dan Self-Driving Cars: Algoritma probabilistik untuk kendaraan otonom.\nPerencanaan Tata Kota: Penggunaan statistika dalam desain urban berdasarkan pola kepadatan penduduk.\n\n\n\n\n\nKesimpulan\nIlmu Probabilitas dan Statistika memiliki cakupan luas dan menjadi fondasi dalam berbagai bidang sains dan industri. Mata kuliah ini mengajarkan konsep probabilitas, analisis data, inferensi statistik, serta aplikasinya dalam pemodelan dan pengambilan keputusan berbasis data.\nProbabilitas dan Statistika tidak hanya menyajikan teori, tetapi juga alat penting untuk menghadapi dunia berbasis data-driven decision making, yang semakin krusial di era digital saat ini.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Bahan Kuliah</span>"
+    ]
+  },
+  {
+    "objectID": "materi/index.html#kategori-problem",
+    "href": "materi/index.html#kategori-problem",
+    "title": "Bahan Kuliah",
+    "section": "Kategori Problem",
+    "text": "Kategori Problem\nProblem Set 1. Apa saja kategori problem set dari matakuliah P&S? 2. Bagaimana pola berpikir P&S untuk mencari solusi dan menjawab problem set?\n## **1. Kategori Problem Set dalam Mata Kuliah Probabilitas dan Statistika (P&S)**\nDalam mata kuliah Probabilitas dan Statistika (P&S), problem set dapat dikategorikan berdasarkan tingkat kesulitan, jenis permasalahan, dan aplikasi dunia nyata. Berikut adalah beberapa kategori utama:\n\nA. Problem Set Konseptual (Pemahaman Teori)\n\nProbabilitas Dasar: Menghitung peluang kejadian sederhana dan majemuk.\n\nContoh: Jika sebuah dadu dilempar dua kali, berapa probabilitas mendapatkan jumlah mata dadu ≥ 8?\n\nTeorema Bayes & Probabilitas Bersyarat: Menentukan probabilitas suatu kejadian berdasarkan informasi baru.\n\nContoh: Jika 5% orang di suatu populasi menderita penyakit X dan tes diagnostik memiliki akurasi 90%, berapa peluang seseorang benar-benar sakit jika hasil tesnya positif?\n\nDistribusi Peluang: Menentukan distribusi diskrit (Binomial, Poisson) dan kontinu (Normal, Eksponensial).\n\nContoh: Sebuah pabrik menemukan bahwa jumlah cacat dalam produksi per jam mengikuti distribusi Poisson dengan rata-rata 3 cacat. Berapa probabilitas menemukan 5 cacat dalam satu jam?\n\n\n\n\nB. Problem Set Perhitungan (Kuantitatif)\n\nStatistika Deskriptif: Menghitung mean, median, variansi, standar deviasi dari dataset.\n\nContoh: Diberikan kumpulan data nilai ujian, hitung rata-rata dan deviasi standarnya.\n\nInferensi Statistik: Estimasi parameter, uji hipotesis, dan interval kepercayaan.\n\nContoh: Suatu perusahaan ingin mengetahui apakah rata-rata waktu tunggu pelanggan lebih dari 10 menit dengan tingkat signifikansi 5%.\n\nRegresi dan Korelasi: Menggunakan regresi linier sederhana/multivariat untuk memahami hubungan antarvariabel.\n\nContoh: Menentukan hubungan antara jumlah jam belajar dengan nilai ujian menggunakan analisis regresi.\n\n\n\n\nC. Problem Set Simulasi & Pemrograman\n\nSimulasi Monte Carlo: Menggunakan metode Monte Carlo untuk memprediksi probabilitas suatu kejadian.\n\nContoh: Menulis kode Python untuk mensimulasikan probabilitas memenangkan permainan dadu.\n\nDistribusi Sampling: Menggunakan metode statistik untuk memahami distribusi sampel.\n\nContoh: Menggunakan Python/R untuk memverifikasi Central Limit Theorem dengan mengambil 1000 sampel dari distribusi berbeda.\n\nPengolahan Data Statistik dengan Python/R: Implementasi algoritma statistik dengan dataset dunia nyata.\n\nContoh: Menggunakan dataset real dari Kaggle untuk menganalisis tren pasar saham menggunakan statistik deskriptif dan inferensi.\n\n\n\n\nD. Problem Set Aplikasi Dunia Nyata\n\nAnalisis Data dalam Industri: Menerapkan statistika dalam produksi, pemasaran, atau pengambilan keputusan berbasis data.\n\nContoh: Sebuah perusahaan e-commerce ingin mengetahui apakah ada perbedaan signifikan dalam rata-rata transaksi pelanggan antara bulan Januari dan Februari.\n\nPengambilan Keputusan dalam Keuangan: Menggunakan probabilitas untuk memprediksi risiko investasi.\n\nContoh: Menghitung probabilitas gagal bayar (default) pada pinjaman bank menggunakan distribusi probabilitas.\n\nPenerapan Statistik dalam Machine Learning: Menggunakan probabilitas dalam algoritma Naïve Bayes untuk klasifikasi data.\n\nContoh: Menganalisis probabilitas spam pada email berdasarkan kata-kata dalam teks.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Bahan Kuliah</span>"
+    ]
+  },
+  {
+    "objectID": "materi/index.html#pola-berpikir-probabilitas-dan-statistika-dalam-menjawab-problem-set",
+    "href": "materi/index.html#pola-berpikir-probabilitas-dan-statistika-dalam-menjawab-problem-set",
+    "title": "Bahan Kuliah",
+    "section": "2. Pola Berpikir Probabilitas dan Statistika dalam Menjawab Problem Set",
+    "text": "2. Pola Berpikir Probabilitas dan Statistika dalam Menjawab Problem Set\nUntuk menyelesaikan problem set dalam Probabilitas dan Statistika, diperlukan pola berpikir yang sistematis. Berikut adalah langkah-langkah utama:\n\nA. Memahami Konteks Masalah\n\nApa yang diketahui? (Parameter, data, distribusi probabilitas, asumsi yang diberikan)\nApa yang ditanyakan? (Probabilitas suatu kejadian, estimasi parameter, uji hipotesis, dll.)\nBagaimana data diberikan? (Apakah dalam bentuk tabel, grafik, atau deskripsi numerik?)\n\nContoh:\n“Sebuah studi menunjukkan bahwa 20% pengguna aplikasi e-commerce meninggalkan keranjang belanja mereka tanpa menyelesaikan transaksi. Jika kita memilih 5 pengguna secara acak, berapa probabilitas setidaknya 2 dari mereka tidak menyelesaikan transaksi?”\n- Yang diketahui: Probabilitas pengguna meninggalkan transaksi = 0,2, jumlah sampel = 5. - Yang ditanyakan: Probabilitas setidaknya 2 pengguna tidak menyelesaikan transaksi.\n\n\n\nB. Menentukan Model Probabilitas atau Statistik yang Sesuai\n\nApakah masalah ini melibatkan peristiwa independen?\nApakah memerlukan hukum probabilitas dasar, teorema Bayes, atau distribusi probabilitas tertentu?\nJika masalahnya berbasis sampel, apakah membutuhkan uji hipotesis atau estimasi parameter?\n\nContoh:\nKasus di atas mengikuti Distribusi Binomial, karena: - Setiap pengguna bisa menyelesaikan atau tidak menyelesaikan transaksi (dua kemungkinan). - Probabilitas meninggalkan transaksi tetap sama untuk setiap pengguna. - Kita ingin mengetahui probabilitas setidaknya 2 pengguna tidak menyelesaikan transaksi.\n\n\n\nC. Melakukan Perhitungan atau Simulasi\n\nGunakan rumus probabilitas jika kasusnya masih sederhana.\nJika kasus kompleks, gunakan pendekatan numerik atau simulasi dengan Python/R.\n\nContoh Penyelesaian dengan Rumus Binomial: [ P(X ) = 1 - P(X = 0) - P(X = 1) ]\nJika menggunakan Python:\nfrom scipy.stats import binom\n\np_0 = binom.pmf(0, 5, 0.2)\np_1 = binom.pmf(1, 5, 0.2)\np_geq_2 = 1 - (p_0 + p_1)\n\nprint(f\"Probabilitas setidaknya 2 pengguna tidak menyelesaikan transaksi: {p_geq_2:.4f}\")\n\n\n\nD. Menafsirkan Hasil\n\nSetelah mendapatkan hasil perhitungan, kita perlu menghubungkannya dengan konteks masalah.\nApakah hasilnya masuk akal? Jika tidak, mungkin ada kesalahan dalam asumsi atau perhitungan.\nApa implikasi dari hasil ini dalam dunia nyata? Misalnya, jika hasil menunjukkan 60% pelanggan meninggalkan transaksi, perusahaan bisa mempertimbangkan strategi pemasaran untuk mengurangi angka ini.\n\n\n\n\nE. Mengevaluasi & Memberikan Insight\n\nBagaimana jika kita mengubah asumsi (misalnya, meningkatkan diskon untuk mencegah pelanggan meninggalkan transaksi)?\nBagaimana kita bisa menggunakan hasil ini untuk pengambilan keputusan?\nApakah metode yang digunakan cukup kuat, atau perlu pendekatan lain seperti simulasi Monte Carlo?",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Bahan Kuliah</span>"
+    ]
+  },
+  {
+    "objectID": "materi/index.html#kesimpulan-2",
+    "href": "materi/index.html#kesimpulan-2",
+    "title": "Bahan Kuliah",
+    "section": "Kesimpulan",
+    "text": "Kesimpulan\n\nProblem set dalam P&S mencakup berbagai kategori, dari pemahaman konsep hingga analisis data berbasis aplikasi dunia nyata.\nPola berpikir dalam P&S bersifat sistematis, meliputi:\n\nMemahami masalah (mengidentifikasi data dan pertanyaan),\nMenentukan model probabilitas/statistik yang tepat,\nMelakukan perhitungan atau simulasi,\nMenafsirkan hasil, dan\nMengevaluasi solusi untuk mendapatkan insight praktis.\n\n\nDengan pemikiran yang terstruktur, mahasiswa tidak hanya mampu menjawab soal, tetapi juga menggunakan probabilitas dan statistika untuk memecahkan masalah di dunia nyata. 🚀\nThis is a Quarto book.\nTo learn more about Quarto books visit https://quarto.org/docs/books.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Bahan Kuliah</span>"
+    ]
+  },
+  {
+    "objectID": "problem-set/index.html",
+    "href": "problem-set/index.html",
+    "title": "Problem Set",
+    "section": "",
+    "text": "Kuis 1 - Probabilitas dan Statistik",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Problem Set</span>"
+    ]
+  },
+  {
+    "objectID": "problem-set/index.html#instruksi",
+    "href": "problem-set/index.html#instruksi",
+    "title": "Problem Set",
+    "section": "Instruksi",
+    "text": "Instruksi\n\nKuis ini bersifat open book, artinya Anda diperbolehkan menggunakan buku, catatan, kalkulator, serta alat bantu lainnya.\nDilarang menggunakan AI seperti ChatGPT atau alat serupa dalam menjawab soal.\nSemua jawaban harus dikerjakan sendiri dan di ketik dengan jelas.\nKuis ini harus dikumpulkan pada hari Senin sebelum kuliah dimulai.\nGunakan template jawaban yang telah disediakan untuk menyusun jawaban kuis.\nSimpan jawaban Anda dalam format PDF.\nUpload file PDF ke cloud storage (misalnya Google Drive, OneDrive, atau Dropbox).\nLaporkan link file PDF tersebut melalui MS Form yang telah disediakan oleh dosen.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Problem Set</span>"
+    ]
+  },
+  {
+    "objectID": "problem-set/index.html#soal-1-ruang-sampel-eksperimen",
+    "href": "problem-set/index.html#soal-1-ruang-sampel-eksperimen",
+    "title": "Problem Set",
+    "section": "Soal 1: Ruang Sampel Eksperimen",
+    "text": "Soal 1: Ruang Sampel Eksperimen\nTentukan ruang sampel dari eksperimen berikut:\n\nSebuah paket data dikirimkan melalui jaringan hingga berhasil diterima tanpa kesalahan.\nSistem komunikasi digital mengirimkan sinyal antara tegangan +5V dan -5V.\nPengujian papan sirkuit dengan kemungkinan lulus atau gagal uji. Jika gagal, ditentukan jenis cacatnya dari enam kemungkinan.\nWaktu yang dibutuhkan benda jatuh ke tanah setelah dilempar ke udara.\nDalam penyimpanan data optik, pembacaan dilakukan hingga empat kali sebelum sistem memutuskan kegagalan. Gambarkan ruang sampel dengan diagram pohon.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Problem Set</span>"
+    ]
+  },
+  {
+    "objectID": "problem-set/index.html#soal-2-diagram-venn",
+    "href": "problem-set/index.html#soal-2-diagram-venn",
+    "title": "Problem Set",
+    "section": "Soal 2: Diagram Venn",
+    "text": "Soal 2: Diagram Venn\nGambarkan diagram Venn untuk tiga kejadian A, B, dan C serta arsirlah daerah yang sesuai untuk kejadian berikut:\n\n\\(A \\cup B\\)\n\\(A \\cap B\\)\n\\(A^c \\cup B\\)\n\\(A \\cap (B \\cup C)\\)",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Problem Set</span>"
+    ]
+  },
+  {
+    "objectID": "problem-set/index.html#soal-3-probabilitas-ruang-sampel",
+    "href": "problem-set/index.html#soal-3-probabilitas-ruang-sampel",
+    "title": "Problem Set",
+    "section": "Soal 3: Probabilitas Ruang Sampel",
+    "text": "Soal 3: Probabilitas Ruang Sampel\nDiketahui ruang sampel \\(S = \\{s_1, s_2, s_3, s_4, s_5\\}\\) dengan probabilitas berturut-turut 0.1, 0.1, 0.2, 0.4, dan 0.2. Jika \\(A = \\{s_1, s_2\\}\\) dan \\(B = \\{s_3, s_4\\}\\), tentukan:\n\n\\(P(A)\\)\n\\(P(B)\\)\n\\(P(A \\cup B)\\)\n\\(P(A \\cap B)\\)\n\\(P(A^c)\\)",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Problem Set</span>"
+    ]
+  },
+  {
+    "objectID": "problem-set/index.html#soal-4-probabilitas-pada-tabel-data",
+    "href": "problem-set/index.html#soal-4-probabilitas-pada-tabel-data",
+    "title": "Problem Set",
+    "section": "Soal 4: Probabilitas pada Tabel Data",
+    "text": "Soal 4: Probabilitas pada Tabel Data\nTabel berikut menunjukkan hasil uji ketahanan piringan plastik terhadap goresan dan guncangan.\n\n\n\nKetahanan Gores\nTinggi\nRendah\n\n\n\n\nTinggi\n70\n9\n\n\nRendah\n16\n5\n\n\n\nHitung probabilitas berikut:\n\nPiringan memiliki ketahanan gores yang tinggi.\nPiringan memiliki ketahanan guncang yang tinggi.\nPiringan memiliki ketahanan tinggi untuk keduanya.\nPiringan memiliki ketahanan tinggi terhadap salah satu kriteria.\n\n\nSelamat mengerjakan dan semoga sukses!",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Problem Set</span>"
+    ]
+  },
+  {
+    "objectID": "problem-set/index.html#kuiz-2-soal-set-2",
+    "href": "problem-set/index.html#kuiz-2-soal-set-2",
+    "title": "Problem Set",
+    "section": "KUIZ 2 Soal Set 2",
+    "text": "KUIZ 2 Soal Set 2\n\n1. Model Komunikasi\nBanyak sistem komunikasi dapat dimodelkan dengan cara ini. Pengguna memasukkan sebuah 0 atau 1 ke dalam sistem, dan sinyal yang sesuai akan dikirimkan. Penerima membuat keputusan berdasarkan sinyal yang diterima. Jika pengguna mengirimkan 0 dengan probabilitas \\(1 - p\\) dan 1 dengan probabilitas \\(p\\), serta kesalahan penerima terjadi dengan probabilitas tertentu. Tentukan probabilitas keputusan penerima untuk berbagai skenario dan gambarkan diagram pohonnya!\n\n\n2. Probabilitas Website Judi dan Teorema Bayes\nDiketahui bahwa 5% website yang diakses penduduk Indonesia bermuatan judi. Sebuah sistem klasifikasi berbasis Data Science memiliki tingkat akurasi dan false positive tertentu. Gunakan Teorema Bayes untuk menentukan probabilitas website benar-benar bermuatan judi saat diuji positif!\n\n\n3. Parkir Kampus\nPak Abbas mengamati peluang mendapatkan parkiran di kampus dengan tiga pilihan parkir: SR, Kubus, dan Sipil. Jika tidak tersedia, maka ia berlanjut ke opsi berikutnya dengan probabilitas tertentu. Tentukan probabilitas Pak Abbas mendapatkan parkir gratis!\n\n\n4. Asuransi dan Risiko Kecelakaan\nSuatu perusahaan asuransi membagi masyarakat menjadi dua kelas: rawan kecelakaan dan tidak rawan kecelakaan, dengan probabilitas kecelakaan masing-masing. Tentukan probabilitas seseorang mengalami kecelakaan dan apakah mereka rawan kecelakaan jika mengalami kecelakaan!\n\n\n5. Tes Darah dan False Positives\nSebuah tes darah memiliki efektivitas tertentu dalam mendeteksi suatu penyakit. Gunakan Teorema Bayes untuk menentukan probabilitas seseorang benar-benar sakit jika tesnya positif!",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Problem Set</span>"
+    ]
+  },
+  {
+    "objectID": "problem-set/index.html#kuiz-3-soal-set-3",
+    "href": "problem-set/index.html#kuiz-3-soal-set-3",
+    "title": "Problem Set",
+    "section": "KUIZ 3 Soal Set 3",
+    "text": "KUIZ 3 Soal Set 3\n\n1. Random Variable Diskrit\nMisalkan \\(X\\) adalah random variable diskrit dengan PMF tertentu. Tentukan: - \\(P(X = x)\\) untuk berbagai nilai \\(x\\). - Range dari \\(X\\). - \\(E(X)\\) dan \\(Var(X)\\).\n\n\n2. Fungsi Distribusi Random Variable Diskrit\nDiketahui fungsi distribusi random variable \\(X\\) sebagai berikut: - Gambarkan grafik fungsi distribusi! - Tentukan fungsi massa probabilitas dari \\(X\\)! - Hitung \\(P(X &lt; 1)\\), \\(P(0 &lt; X \\leq 3)\\), \\(P(0 \\leq X &lt; 3)\\), \\(P(0 &lt; X &lt; 3)\\), dan \\(P(0 \\leq X \\leq 3)\\).\n\n\n3. Timbangan Elektrik\nSebuah timbangan elektrik menampilkan berat dengan ketelitian tertentu dan batas maksimal tertentu. Tentukan range dari random variable berat yang ditampilkan.\n\n\n4. Sampling Part Mesin\nSebanyak 500 part mesin mengandung 10 part cacat. Sebuah sampel sebanyak 5 part diambil. - Tentukan distribusi jumlah part cacat dalam sampel. - Tentukan probabilitas setidaknya 1 part dalam sampel cacat.\n\n\n5. Sistem Komunikasi\nSebuah sistem komunikasi memiliki 4 jalur eksternal. Pada waktu tertentu, probabilitas satu jalur digunakan adalah 0,8. Tentukan: - Ruang sampel dari jumlah jalur yang digunakan. - Tabel probabilitas dari jumlah jalur yang digunakan.\n\n\n6. Analisis Keberhasilan Produk\nDivisi Marketing memperkirakan sebuah produk dapat sangat berhasil, berhasil, atau gagal dengan probabilitas tertentu. Tentukan PMF dari pendapatan tahunan yang dihasilkan produk tersebut.\n\n\n7. Manufaktur Semikonduktor\nDalam proses manufaktur semikonduktor, 3 wafer diuji. Probabilitas setiap wafer lolos uji adalah 0,8. Tentukan: - PMF dari jumlah wafer yang lolos. - CMF dari jumlah wafer yang lolos. - Mean dan variansi dari random variable tersebut.\n\n\n8. Maskapai Penerbangan\nSebuah maskapai menjual 125 tiket untuk 120 kursi. Probabilitas seorang penumpang tidak datang adalah 0,1. Tentukan: - Probabilitas semua penumpang yang datang mendapatkan kursi. - Probabilitas terdapat kursi kosong dalam penerbangan.\n\n\n9. Distribusi Poisson dalam Panggilan Telepon\nMisalkan jumlah panggilan telepon yang masuk dalam satu jam mengikuti distribusi Poisson dengan rata-rata 10 panggilan per jam. Hitung: - Probabilitas terdapat tepat 5 panggilan dalam 1 jam. - Probabilitas terdapat 3 atau kurang panggilan dalam 1 jam. - Probabilitas terdapat tepat 15 panggilan dalam 2 jam. - Probabilitas terdapat tepat 5 panggilan dalam 30 menit.\n\n\n10. Distribusi Poisson dalam Cacat Panel Plastik\nJumlah cacat permukaan pada panel plastik digunakan dalam interior mobil mengikuti distribusi Poisson dengan rata-rata 0,05 cacat per ft². Jika interior mobil mengandung 10 ft² panel plastik, tentukan: - Probabilitas tidak ada cacat permukaan. - Probabilitas dari 10 mobil, tidak ada yang memiliki cacat permukaan. - Probabilitas paling banyak satu mobil memiliki cacat permukaan. - Probabilitas lebih sedikit dari 5 panel memiliki cacat permukaan dalam 100 panel.\n\n\n11. Infrastruktur Data Center\nSebuah bank menggunakan 5 Data Center untuk menjalankan sistem Core Banking. Probabilitas setiap Data Center berfungsi dengan baik adalah 0,8. Tentukan: - Tabel distribusi probabilitas jumlah Data Center yang berfungsi. - Distribusi kumulatif dari jumlah Data Center yang berfungsi. - Estimasi median dari distribusi ini. - Mean dan variansi dari jumlah Data Center yang berfungsi. - Probabilitas sistem down secara total. - Probabilitas sistem nyaris down (hanya 1 Data Center berfungsi). - Probabilitas minimal 1 Data Center berfungsi.\n\n\n12. Distribusi Geometrik dalam Umur Komponen\nSebuah komponen memiliki umur yang mengikuti distribusi geometrik dengan parameter tertentu. Tentukan: - Distribusi probabilitas umur komponen. - Distribusi kumulatif umur komponen. - Median dari distribusi ini. - Ekspektasi umur komponen. - Probabilitas komponen bertahan setidaknya sampai hari ke-i.\n\n\n13. Fungsi Probabilitas Kontinu\nDiketahui fungsi probabilitas density function (PDF) dari random variable kontinu \\(X\\): - Hitung nilai konstanta \\(k\\). - Gambarkan grafik \\(f(x)\\). - Hitung fungsi distribusi kumulatif \\(F(x)\\). - Hitung \\(P(X &lt; 1/2)\\) dan \\(P(1/2 &lt; X &lt; 1)\\).\n\n\n14. Distribusi Pareto dalam Running Time\nSebuah algoritma memiliki running time minimal 1 unit waktu dan mengikuti distribusi Pareto. Tentukan probabilitas running time melebihi 1000 unit waktu.\n\n\n15. Distribusi Eksponensial dalam FTP\nSebuah sesi FTP memiliki durasi minimum tertentu dan mengikuti distribusi eksponensial. Tentukan probabilitas sesi melebihi waktu tertentu.\n\n\n16. Distribusi Uniform dalam Kedatangan Kereta\nKereta tiba setiap 15 menit, dan seorang penumpang tiba secara uniform dalam rentang 30 menit. Tentukan probabilitas penumpang menunggu kurang dari 5 menit.\n\n\n17. Distribusi Poisson dalam Kesalahan Ketik\nKesalahan ketik dalam buku mengikuti distribusi Poisson dengan rata-rata 0,01 kesalahan per halaman. Tentukan probabilitas terdapat kurang dari atau sama dengan tiga kesalahan dalam 100 halaman.\n\n\n18. Probabilitas Lampu Hijau di Persimpangan\nLampu lalu lintas memiliki probabilitas hijau 20% saat dilewati setiap pagi. Tentukan: - Probabilitas hijau hanya 1 kali dalam 5 pagi. - Probabilitas hijau tepat 4 kali dalam 20 pagi. - Probabilitas hijau lebih dari 4 kali dalam 20 minggu.\n\n\n19. Distribusi Binomial dalam Komponen Cacat\nSuatu perusahaan menyimpan komponen dengan 2% cacat. Berapa banyak komponen yang dibutuhkan agar 100 order dapat dipenuhi dengan probabilitas minimal 0,95 tanpa komponen cacat?\n\n\n20. Distribusi Eksponensial dalam Daya Tahan Aki\nJarak tempuh mobil hingga aki habis mengikuti distribusi eksponensial dengan rata-rata 10.000 km. Tentukan probabilitas mobil dapat menempuh 5000 km tanpa mengganti aki.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Problem Set</span>"
+    ]
+  },
+  {
+    "objectID": "problem-set/index.html#soal-set-4",
+    "href": "problem-set/index.html#soal-set-4",
+    "title": "Problem Set",
+    "section": "Soal Set 4",
+    "text": "Soal Set 4\n\n1. Distribusi Seragam\nMisalkan \\(X\\) adalah peubah acak berdistribusi seragam dengan rentang bilangan bulat dari 0 sampai 9. Tentukan: - Rataan (\\(E(X)\\)), - Variansi (\\(Var(X)\\)), - Standar deviasi dari \\(X\\), - Bandingkan hasilnya dengan nilai yang diperoleh secara empiris.\n\n\n2. Distribusi Normal\nMisalkan tinggi rata-rata mahasiswa di suatu universitas mengikuti distribusi normal dengan mean 170 cm dan standar deviasi 10 cm. Tentukan: - Probabilitas seorang mahasiswa memiliki tinggi lebih dari 180 cm. - Probabilitas seorang mahasiswa memiliki tinggi antara 160 cm dan 175 cm. - Persentil ke-90 dari distribusi tinggi mahasiswa.\n\n\n3. Distribusi Binomial\nSebuah perusahaan memiliki tingkat keberhasilan produksi sebesar 90%. Dari 15 unit yang diproduksi, tentukan: - Probabilitas tepat 12 unit berhasil. - Probabilitas minimal 13 unit berhasil. - Probabilitas kurang dari 10 unit berhasil.\n\n\n4. Distribusi Poisson\nSebuah sistem panggilan darurat menerima rata-rata 4 panggilan per jam. Hitung: - Probabilitas menerima tepat 3 panggilan dalam satu jam. - Probabilitas menerima lebih dari 5 panggilan dalam satu jam. - Probabilitas tidak ada panggilan dalam 30 menit.\n\n\n5. Distribusi Eksponensial\nMisalkan waktu antara dua kegagalan pada mesin industri mengikuti distribusi eksponensial dengan rata-rata 20 jam. - Tentukan probabilitas mesin mengalami kegagalan dalam waktu kurang dari 10 jam. - Tentukan probabilitas mesin bertahan lebih dari 30 jam tanpa kegagalan.\n\n\n6. Distribusi Geometrik\nSuatu mesin hanya berfungsi jika tombol dinyalakan dengan benar. Probabilitas menyalakan tombol dengan benar adalah 0.7. Hitung: - Probabilitas bahwa pertama kali berhasil menyalakan tombol pada percobaan ke-3. - Probabilitas bahwa tombol menyala dalam percobaan pertama atau kedua.\n\n\n7. Distribusi Bernoulli\nDalam sebuah ujian pilihan ganda dengan 5 pilihan per soal, seorang mahasiswa menebak jawabannya secara acak. Hitung probabilitas mahasiswa tersebut menjawab benar jika: - Satu soal dijawab secara acak. - Dari 10 soal, mahasiswa menjawab benar minimal 3 soal.\n\n\n8. Distribusi Pareto\nMisalkan waktu tunggu untuk mendapatkan layanan di suatu kantor mengikuti distribusi Pareto dengan parameter tertentu. Tentukan probabilitas seorang pelanggan menunggu lebih dari 30 menit.\n\n\n9. Distribusi Weibull\nDalam suatu uji keandalan komponen elektronik, waktu kegagalan suatu komponen mengikuti distribusi Weibull dengan parameter skala tertentu. Tentukan probabilitas komponen bertahan lebih dari waktu tertentu.\n\n\n10. Fungsi Kepadatan Probabilitas (PDF)\nDiketahui fungsi kepadatan probabilitas suatu distribusi kontinu. Hitung: - Nilai normalisasi konstanta. - Fungsi distribusi kumulatif (CDF). - Probabilitas dalam interval tertentu.\n\n\n11. Distribusi Gamma\nSebuah pabrik memiliki mesin dengan umur pakai yang mengikuti distribusi Gamma. Tentukan probabilitas mesin bertahan lebih dari waktu tertentu.\n\n\n12. Statistik Deskriptif\nDiberikan sekumpulan data observasi, hitung: - Mean, - Median, - Modus, - Kuartil, - Standar deviasi, - Variansi, - Skewness, - Kurtosis.\n\n\n13. Pengujian Hipotesis\nSeorang peneliti ingin menguji apakah rata-rata penghasilan di suatu daerah lebih dari Rp5 juta per bulan. Gunakan uji-t untuk menjawab pertanyaan tersebut.\n\n\n14. Regresi Linier\nMisalkan hubungan antara pengalaman kerja (tahun) dan gaji (juta rupiah) di suatu perusahaan dapat dimodelkan dengan regresi linier. Tentukan: - Persamaan regresi linier berdasarkan data sampel. - Koefisien determinasi (\\(R^2\\)). - Signifikansi hubungan antara pengalaman dan gaji.\n\n\n15. Analisis Varians (ANOVA)\nSuatu penelitian membandingkan rata-rata skor ujian dari tiga metode pembelajaran yang berbeda. Gunakan uji ANOVA untuk menentukan apakah terdapat perbedaan yang signifikan antara metode pembelajaran tersebut.\n\n\n16. Chi-Square Test\nSebuah supermarket ingin mengetahui apakah terdapat hubungan antara jenis kelamin pelanggan dan preferensi produk tertentu. Gunakan uji Chi-Square untuk menguji hipotesis ini.\n\n\n17. Simulasi Monte Carlo\nGunakan metode simulasi Monte Carlo untuk memperkirakan nilai \\(\\pi\\) dengan menggunakan pendekatan acak.\n\n\n18. Teorema Bayes\nSeorang dokter melakukan tes medis untuk mendeteksi suatu penyakit dengan akurasi tertentu. Tentukan probabilitas seorang pasien benar-benar memiliki penyakit jika hasil tesnya positif.\n\n\n19. Estimasi Interval Kepercayaan\nDiberikan data sampel mengenai tinggi badan mahasiswa, hitung interval kepercayaan 95% untuk mean populasi.\n\n\n20. Probabilitas Gabungan dan Bersyarat\nDua kejadian \\(A\\) dan \\(B\\) memiliki hubungan probabilitas tertentu. Tentukan: - Probabilitas gabungan \\(P(A \\cap B)\\). - Probabilitas bersyarat \\(P(A | B)\\). - Probabilitas \\(P(A \\cup B)\\) dengan aturan probabilitas.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Problem Set</span>"
+    ]
+  },
+  {
+    "objectID": "problem-set/index.html#soal-set-5",
+    "href": "problem-set/index.html#soal-set-5",
+    "title": "Problem Set",
+    "section": "Soal Set 5",
+    "text": "Soal Set 5\n\n1. Distribusi Eksponensial dalam Kegagalan Komponen\nMisalkan waktu kegagalan sebuah komponen elektronik dalam mesin fotokopi mengikuti distribusi eksponensial. Tentukan: - Probabilitas komponen bertahan lebih dari 3000 jam sebelum mengalami kegagalan. - Probabilitas komponen gagal dalam rentang 1000 hingga 2000 jam. - Probabilitas komponen gagal sebelum 1000 jam. - Waktu saat 10% dari seluruh komponen telah mengalami kegagalan.\n\n\n2. Fungsi Distribusi Kumulatif\nLebar gap suatu kepala rekaman magnetik merupakan variabel acak kontinu dalam rentang 0 hingga 2. Jika fungsi kepadatan probabilitasnya diberikan, tentukan: - Fungsi distribusi kumulatifnya.\n\n\n3. Distribusi Kontinu dalam Ketebalan Coating\nKetebalan sebuah conductive coating memiliki fungsi kepadatan tertentu pada interval tertentu. Tentukan: - Nilai rata-rata dan variansi dari ketebalan coating. - Biaya rata-rata proses coating jika dikenakan biaya per mikrometer ketebalan.\n\n\n4. Distribusi Uniform dalam Berat Paket Kimia\nBerat bersih sebuah paket senyawa kimia mengikuti distribusi seragam pada interval tertentu. Tentukan: - Rata-rata dan variansi berat paket. - Fungsi distribusi kumulatifnya.\n\n\n5. Distribusi Normal dalam Pembelahan Sel\nWaktu yang dibutuhkan sel untuk mitosis mengikuti distribusi normal dengan rata-rata dan standar deviasi tertentu. Tentukan: - Probabilitas sel membelah dalam waktu kurang dari 45 menit. - Probabilitas sel membelah dalam waktu lebih dari 65 menit. - Waktu minimum untuk 99% sel menyelesaikan mitosis.\n\n\n6. Distribusi Normal dalam Kekuatan Semen\nKekuatan sampel semen mengikuti distribusi normal dengan rata-rata dan standar deviasi tertentu. Tentukan: - Probabilitas kekuatan sampel kurang dari nilai tertentu. - Probabilitas kekuatan sampel dalam rentang tertentu. - Kekuatan yang dimiliki oleh lebih dari 95% sampel.\n\n\n7. Distribusi Binomial dalam Produksi Chip\nSuatu proses manufaktur menghasilkan chip dengan tingkat kecacatan 2%. Dari 1000 chip, tentukan: - Probabilitas lebih dari 25 chip cacat. - Probabilitas antara 20 hingga 30 chip cacat.\n\n\n8. Distribusi Poisson dalam Partikel Asbes\nJumlah partikel asbes dalam sampel debu mengikuti distribusi Poisson. Tentukan: - Probabilitas 10 cm² debu mengandung lebih dari 10.000 partikel menggunakan pendekatan normal.\n\n\n9. Distribusi Eksponensial dalam Umur Regulator Voltase\nRegulator voltase mobil mengikuti distribusi eksponensial dengan rata-rata 6 tahun. Jika mobil telah digunakan selama 6 tahun, tentukan: - Probabilitas regulator mengalami kegagalan dalam 6 tahun ke depan. - Rata-rata waktu hingga kegagalan berikutnya setelah penggantian regulator.\n\n\n10. Distribusi Eksponensial dalam Kegagalan Kipas PC\nMisalkan waktu kegagalan kipas PC mengikuti distribusi eksponensial. Tentukan: - Probabilitas kipas bertahan setidaknya 10.000 jam. - Probabilitas kipas bertahan paling lama 7.000 jam.\n\n\n11. Distribusi Eksponensial dalam Kegagalan Laser\nWaktu antara kegagalan laser dalam mesin sitogenik mengikuti distribusi eksponensial. Tentukan: - Variansi waktu antar kegagalan. - Prakiraan waktu hingga kegagalan kedua. - Probabilitas waktu hingga kegagalan ketiga lebih dari 50.000 jam.\n\n\n12. Distribusi Poisson dalam Error Kepingan Optik\nError pada kepingan optik muncul dengan kecepatan tertentu mengikuti distribusi Poisson. Tentukan: - Nilai rata-rata bilangan bit hingga 5 error muncul. - Standar deviasi dari bilangan bit hingga 5 error muncul. - Probabilitas terdapat 3 atau lebih error dalam rentang tertentu.\n\n\n13. Distribusi Weibull dalam Umur Kepingan Magnetik\nUmur paket kepingan magnetik terkena gas korosif mengikuti distribusi Weibull. Tentukan: - Probabilitas kepingan bertahan setidaknya 500 jam. - Probabilitas kepingan gagal sebelum 400 jam. - Distribusi lain yang sesuai untuk variabel ini serta nilai ekspektasinya.\n\n\n14. Distribusi Eksponensial dalam Umur Aki Mobil\nJarak tempuh mobil hingga aki habis mengikuti distribusi eksponensial dengan rata-rata 10.000 km. Jika seseorang ingin melakukan perjalanan 5000 km, tentukan: - Probabilitas perjalanan selesai tanpa mengganti aki.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Problem Set</span>"
+    ]
+  },
+  {
+    "objectID": "problem-set/index.html#problem-set6",
+    "href": "problem-set/index.html#problem-set6",
+    "title": "Problem Set",
+    "section": "Problem Set:6",
+    "text": "Problem Set:6\n\nSoal 1: Fungsi Massa Probabilitas Gabungan\nTunjukkan bahwa fungsi berikut memenuhi sifat-sifat dari fungsi massa probabilitas gabungan:\n\\[ f(x, y) = \\frac{k}{x+y}, \\quad \\text{untuk } x = 1, 2, 3 \\text{ dan } y = 1, 2, 3. \\]\nTentukan nilai ( k ) agar ( f(x, y) ) menjadi fungsi massa probabilitas gabungan yang valid.\n\n\n\nSoal 2: Distribusi Probabilitas Gabungan dari Dua Variabel\nDua sensor pendeteksi kesalahan dalam sistem produksi bekerja secara independen. Sensor pertama (X) mendeteksi kesalahan pada sebuah produk dengan probabilitas 0,3, sedangkan sensor kedua (Y) mendeteksi kesalahan dengan probabilitas 0,5. Jika 4 produk diperiksa, tentukan distribusi probabilitas gabungan dari X (jumlah produk yang dideteksi rusak oleh sensor pertama) dan Y (jumlah produk yang dideteksi rusak oleh sensor kedua).\n\n\n\nSoal 3: Probabilitas Kondisional\nSebuah toko online memiliki 200 halaman web, dengan 50% berisi grafik rendah, 30% grafik sedang, dan 20% grafik tinggi. Sebuah sampel 5 halaman diambil tanpa penggantian. Definisikan X sebagai jumlah halaman dengan grafik sedang dan Y sebagai jumlah halaman dengan grafik tinggi. Tentukan:\n\n( f_{Y|X=2}(y) ), distribusi probabilitas bersyarat dari Y ketika X = 2.\nApakah X dan Y independen?\n\n\n\n\nSoal 4: Distribusi Multinomial\nEmpat telepon seluler mengalami cacat akibat kesalahan produksi. Setiap telepon diklasifikasikan ke dalam tiga kategori cacat: berat, sedang, dan ringan. Berdasarkan data sebelumnya, 50% dari telepon yang rusak mengalami cacat berat, 35% cacat sedang, dan 15% cacat ringan.\n\nApakah distribusi probabilitas jumlah telepon dalam setiap kategori bersifat multinomial? Mengapa atau mengapa tidak?\nBerapa probabilitas bahwa dari empat telepon tersebut, 2 mengalami cacat berat, 1 cacat sedang, dan 1 cacat ringan?\n\n\n\n\nSoal 5: Probabilitas pada Distribusi Eksponensial\nSebuah sistem pemrosesan pesanan online memiliki dua server yang bekerja secara independen. Waktu antar kedatangan pesanan pada server pertama dan kedua masing-masing berdistribusi eksponensial dengan rata-rata 4 menit dan 5 menit.\n\nBerapa probabilitas tidak ada pesanan yang diterima dalam waktu 6 menit sejak pesanan terakhir?\nBerapa probabilitas bahwa kedua server menerima setidaknya 1 pesanan dalam 8 menit?\n\n\n\n\nSoal 6: Distribusi Normal dan Batas Spesifikasi\nSebuah perusahaan manufaktur memproduksi chip elektronik yang memiliki ukuran ketebalan distribusi normal dengan rata-rata 1,5 mm dan standar deviasi 0,02 mm. Produk hanya dianggap memenuhi spesifikasi jika ketebalannya berada antara 1,47 mm dan 1,53 mm.\n\nBerapa probabilitas bahwa sebuah chip acak memenuhi spesifikasi?\nJika sampel 30 chip diambil secara acak, berapa probabilitas bahwa setidaknya 28 di antaranya memenuhi spesifikasi?\n\n\n\n\nSoal 7: Korelasi dan Kovarian dalam Distribusi Probabilitas Gabungan\nDiberikan fungsi massa probabilitas gabungan:\n\\[ f(x, y) = c (x + y), \\quad \\text{untuk } x = 1, 2, 3 \\text{ dan } y = 1, 2, 3. \\]\n\nTentukan nilai ( c ).\nHitung nilai kovarian dan korelasi antara X dan Y.\n\n\n\n\nSoal 8: Distribusi Normal Bivariat\nX dan Y melambangkan suhu dan tekanan pada suatu reaktor kimia. X dan Y berdistribusi normal bivariat dengan rata-rata ( _X = 300 ) dan ( _Y = 150 ), standar deviasi ( _X = 5 ) dan ( _Y = 10 ), serta koefisien korelasi ( = 0.6 ).\n\nGambarkan plot kontur dari fungsi probabilitas gabungan untuk ( = 0, = -0.5, = 0.5 ).\nJika ( X = 305 ), berapa probabilitas bahwa ( Y &gt; 160 )?\n\n\n\n\nSoal 9: Probabilitas Sampel dalam Distribusi Binomial\nSebuah uji coba vaksin menunjukkan bahwa 20% dari populasi mengalami efek samping ringan, 10% mengalami efek samping sedang, dan 5% mengalami efek samping parah. Dari 50 orang yang diberi vaksin:\n\nBerapa probabilitas bahwa 5 orang mengalami efek samping sedang dan 3 orang mengalami efek samping parah?\nBerapa probabilitas bahwa tidak ada yang mengalami efek samping parah?\nHitung nilai rata-rata dan variansi dari jumlah orang yang mengalami efek samping parah.\n\n\n\n\nSoal 10: Investasi dan Risiko\nSebuah perusahaan ingin menginvestasikan dana dalam dua jenis aset. Aset pertama memiliki tingkat pengembalian rata-rata 6% dengan standar deviasi 3%, sedangkan aset kedua memiliki tingkat pengembalian rata-rata 4% dengan standar deviasi 5%. Korelasi antara dua aset adalah -0.4. Jika perusahaan menginvestasikan $500,000 dalam setiap aset, tentukan:\n\nRata-rata dan standar deviasi dari total pengembalian investasi.\nBandingkan risiko strategi ini dengan strategi investasi hanya pada aset pertama.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Problem Set</span>"
+    ]
+  },
+  {
+    "objectID": "problem-set/index.html#soal-7",
+    "href": "problem-set/index.html#soal-7",
+    "title": "Problem Set",
+    "section": "Soal 7",
+    "text": "Soal 7\n\n1. Definisi Populasi dan Sampel\nDefinisikan populasi yang sesuai dari sampel berikut: - 200 orang yang berdomisili di Bandung ditanyakan nama kandidat yang mereka pilih dalam pemilihan Walikota Bandung. - 200 pasang sepatu diuji ketahanannya, dan rata-rata hanya bertahan selama 1 tahun. - Seorang dosen membutuhkan waktu 21, 25, 29, 32, dan 26 menit untuk menyetir dari kampus ke rumah dalam 5 kesempatan.\n\n\n2. Sampling Tidak Acak\nJelaskan mengapa proses berikut tidak menghasilkan sampel random: - Wawancara kepada penumpang kapal pesiar untuk menentukan pengeluaran liburan orang biasa. - Survei penghasilan alumni universitas berdasarkan respons angkatan 2010. - Pewawancara bertanya: “Apa kamu rasa praktik tidak adil ini harus dihentikan?” untuk menentukan sentimen publik. - Inspeksi barang setiap 20 barang dalam produksi.\n\n\n3. Statistik Deskriptif\nDiberikan waktu tunggu pasien dalam menit: 5, 11, 10, 5, 8, 10, 15, 6, 10, 5. Hitung: - Mean sampel - Median sampel - Mode sampel - Variansi sampel\nWaktu reaksi terhadap stimulus pada 9 subjek: 2.5, 3.6, 3.1, 4.3, 2.9, 2.3, 2.6, 4.1, 3.4. Hitung: - Mean sampel - Median sampel - Variansi sampel\n\n\n4. Distribusi Sampling\nMisalkan populasi tak terhitung memiliki distribusi sebagai berikut: | X | 1 | 2 | 3 | 4 | 5 | |—-|—-|—-|—-|—-|—-| | P(X)| 0.2 | 0.2 | 0.3 | 0.25 | 0.05 | - Tuliskan semua sampel berukuran 2 dan buat distribusi sampling untuk rata-rata. - Tuliskan semua sampel berukuran 3 dan buat distribusi sampling untuk rata-rata. - Verifikasi mean dan variansi distribusi sampling.\n\n\n5. Standar Error dan Ukuran Sampel\nBagaimana standar error berubah jika ukuran sampel: - Meningkat dari 40 menjadi 1000? - Turun dari 256 ke 65? - Meningkat dari 225 ke 1225? - Turun dari 450 ke 18?\n\n\n6. Estimasi Probabilitas Error\nGunakan Teorema Chebyshev dan Central Limit Theorem untuk memperkirakan probabilitas error kurang dari 1.2 dalam estimasi mean.\n\n\n7. Distribusi Chi-Square\nTentukan: - \\(\\chi^2_{0.05, 10}\\) - \\(\\chi^2_{0.01, 15}\\) - \\(\\chi^2_{0.10, 20}\\) - \\(\\chi^2_{0.05, 25}\\)\n\n\n8. Distribusi Normal dalam Ujian\nDistribusi nilai mahasiswa di ujian memiliki mean 76 dan standar deviasi 8. Hitung probabilitas bahwa total nilai dari 50 mahasiswa kurang dari 3250.\n\n\n9. Distribusi Normal dalam Resistor\nMesin produksi resistor menghasilkan komponen dengan mean dan standar deviasi tertentu. Tentukan probabilitas bahwa resistansi total dari sampel 36 resistor melebihi nilai tertentu.\n\n\n10. Uji Statistik pada Material Baja\nDua campuran baja diuji dengan kapasitas beban tertentu. Tentukan apakah terdapat perbedaan signifikan antara kedua campuran menggunakan analisis statistik.\n\n\n11. Distribusi F-Test dalam Variansi\nDua sampel dengan variansi berbeda diuji untuk menentukan kesamaan variansinya. Hitung nilai statistik uji F.\n\n\n12. Uji T untuk Perbandingan Mean\nSebuah populasi normal dengan mean 20 diuji dengan sampel random berukuran 9. Apakah mungkin mendapatkan mean sampel 24 dengan standar deviasi 4.1?\n\n\n13. Pengaruh Pembungkusan pada Kuat Tarik\nHasil uji kuat tarik timah sebelum dan setelah pembungkusan diberikan. Tentukan apakah ada peningkatan signifikan dalam kekuatan tarik.\n\n\n14. Perbandingan Variansi dari Dua Tambang\nData panas yang dihasilkan oleh batu bara dari dua tambang diberikan. Gunakan uji statistik untuk menentukan apakah variansi kedua tambang sama.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Problem Set</span>"
+    ]
+  },
+  {
+    "objectID": "problem-set/index.html#soal-8",
+    "href": "problem-set/index.html#soal-8",
+    "title": "Problem Set",
+    "section": "Soal 8",
+    "text": "Soal 8\n\n1. Selang Kepercayaan untuk Variansi Diketahui\nUntuk sebuah populasi normal dengan variansi yang diketahui, tentukan tingkat kepercayaan untuk berbagai selang kepercayaan yang diberikan.\n\n\n2. Selang Kepercayaan untuk Gain Perangkat Semikonduktor\nMisalkan gain perangkat semikonduktor berdistribusi normal dengan standar deviasi tertentu. Tentukan selang kepercayaan untuk: - 95% ketika \\(n=25\\) dan \\(var{x} = 10\\) - 95% ketika \\(n=30\\) dan \\(var{x} = 12\\) - 99% ketika \\(n=25\\) dan \\(var{x} = 10\\) - 99% ketika \\(n=30\\) dan \\(var{x} = 12\\)\nHitung juga \\(n\\) yang diperlukan jika panjang selang kepercayaan 95% adalah 20.\n\n\n3. Selang Kepercayaan untuk Siklus Kegagalan Mekanisme Kait\nDiberikan dua selang kepercayaan untuk siklus kegagalan mekanisme kait pintu otomotif: - Tentukan nilai mean sampel dari siklus sampai gagal. - Tentukan selang kepercayaan dengan tingkat 95% dan 99%.\n\n\n4. Selang Kepercayaan untuk Konsentrasi Kalsium\nDiberikan 100 sampel random air danau dengan selang kepercayaan tertentu, jawab pertanyaan: - Apakah selang kepercayaan 99% akan lebih panjang dari 95%? - Interpretasi selang kepercayaan dan kemungkinan 95%.\n\n\n5. Selang Kepercayaan untuk Umur Guna Ban\nDiberikan 16 ban diuji dengan mean dan standar deviasi tertentu, tentukan selang kepercayaan 95% untuk umur guna ban.\n\n\n6. Selang Kepercayaan untuk Kandungan Asam Lemak\nDiberikan sampel margarin rendah lemak, tentukan selang kepercayaan 99% untuk kandungan asam lemak tak jenuh.\n\n\n7. Selang Kepercayaan untuk Diameter Batang Logam\nSebuah mesin memproduksi batang logam dengan data sampel tertentu, tentukan: - Selang kepercayaan 95%. - Selang kepercayaan satu sisi bawah 99%.\n\n\n8. Selang Kepercayaan untuk Ketebalan Botol Kaca\nDiberikan 25 botol kaca dengan ketebalan rata-rata dan standar deviasi tertentu, tentukan selang kepercayaan satu sisi bawah dengan tingkat kepercayaan 95%.\n\n\n9. Persentil untuk Selang Kepercayaan\nTentukan persentil yang diperlukan untuk berbagai tingkat kepercayaan dan derajat kebebasan.\n\n\n10. Selang Kepercayaan untuk Kadar Sirup Gula\nMisalkan kadar sirup gula dalam buah kaleng berdistribusi normal. Tentukan selang kepercayaan 95% untuk rata-rata kadar sirup gula.\n\n\n11. Selang Kepercayaan untuk Kandungan Titanium\nDiberikan sampel logam campuran pesawat, tentukan selang kepercayaan 99% untuk kandungan titanium.\n\n\n12. Selang Kepercayaan untuk Tingkat Kematian Kanker Paru\nDiberikan data tingkat kematian kanker paru-paru, tentukan: - Selang kepercayaan 95%. - Sampel yang diperlukan untuk tingkat kesalahan &lt; 0.03.\n\n\n13. Selang Kepercayaan untuk Helm yang Rusak\nDiberikan 50 helm diuji dengan 18 helm rusak, tentukan: - Selang kepercayaan dua sisi untuk proporsi populasi. - Jumlah helm yang harus diuji agar tingkat kesalahan &lt; 0.02.\n\n\n14. Selang Kepercayaan untuk Batas Kecepatan Jalan\nBerapa banyak survei yang dibutuhkan agar tingkat kesalahan dalam estimasi batas kecepatan jalan raya tidak lebih dari 0.05 dengan kepercayaan 99%?\n\n\n15. Selang Prediksi untuk Umur Guna Ban\nHitung selang prediksi 95% untuk umur guna ban dan bandingkan dengan selang kepercayaan mean populasi.\n\n\n16. Selang Prediksi untuk Kandungan Asam Lemak\nHitung selang prediksi 99% untuk kandungan asam lemak dan bandingkan dengan selang kepercayaan mean populasi.\n\n\n17. Selang Prediksi untuk Diameter Batang Logam\nHitung selang prediksi 95% untuk diameter batang logam dan bandingkan dengan selang kepercayaan mean populasi.\n\n\n18. Selang Prediksi untuk Pengayaan Fuel Rod\nHitung selang prediksi 99% untuk pengayaan fuel rod berikutnya dan bandingkan dengan selang kepercayaan mean populasi.\n\n\n19. Selang Toleransi untuk Uji Izod Impact\nDiberikan sampel pipa PVC, hitung selang toleransi 99% dan bandingkan dengan selang kepercayaan mean populasi.\n\n\n20. Selang Kepercayaan untuk Kandungan Sirup dalam Minuman\nHitung selang kepercayaan 95% dan selang toleransi 95% untuk rata-rata jumlah sirup dalam minuman.\n\n\n21. Uji Keakuratan Estimasi Sampel\nDiberikan populasi normal dengan mean 50 dan variansi tidak diketahui, hitung probabilitas bahwa nilai rata-rata sampel berbeda dari mean populasi.\n\n\n22. Estimasi Waktu Respon Sistem Operasi\nTentukan jumlah sampel yang diperlukan agar panjang selang kepercayaan 95% untuk waktu respon sistem operasi tidak lebih dari 5 ms.\n\n\n23. Selang Kepercayaan untuk Tinggi Busa Sampo\nDiberikan data tinggi busa sampo, tentukan: - Selang kepercayaan 95%. - Selang prediksi 95%. - Selang mencakup 95% dengan tingkat kepercayaan 99%.\n\n\n24. Selang Kepercayaan untuk Proporsi Kalkulator Cacat\nDiberikan 1200 kalkulator diuji dengan 8 kalkulator cacat, tentukan selang kepercayaan 95% untuk proporsi kalkulator cacat.\n\n\n25. Perbandingan Plastik dalam Produksi Komponen Elektronik\nDua jenis plastik diuji untuk ketahanan. Gunakan uji statistik untuk menentukan apakah plastik 1 lebih baik dari plastik 2.\n\n\n26. Perbandingan Waktu Respons SMS Banking\nDiberikan data waktu pengiriman SMS melalui tiga operator, tentukan apakah ada perbedaan signifikan dalam waktu pengiriman.\n\n\n27. Selang Kepercayaan untuk Kepuasan Layanan Pelanggan\nDiberikan survei kepada pengguna broadband mengenai gangguan customer service, tentukan selang kepercayaan 97%.\n\n\n28. Selang Kepercayaan untuk Latensi Situs Web\nDiberikan data latensi situs populer, tentukan selang kepercayaan 95% dan 99% untuk perbedaan rata-rata latensi antara dua situs web.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Problem Set</span>"
+    ]
+  },
+  {
+    "objectID": "problem-set/index.html#soal-set-9",
+    "href": "problem-set/index.html#soal-set-9",
+    "title": "Problem Set",
+    "section": "Soal Set 9",
+    "text": "Soal Set 9\n\n1. Pengujian Hipotesis\nTentukan apakah pernyataan berikut menyatakan masalah uji hipotesis atau tidak, dan jelaskan alasannya.\n\n\n2. Uji Hipotesis untuk Temperatur Air\nDiketahui temperatur air dari tower pendingin dengan standar deviasi tertentu. Sampel temperatur diambil selama 9 hari. Tentukan: - Apakah temperatur ini dapat diterima dengan signifikansi tertentu. - Nilai p-value dari pengujian ini. - Probabilitas menerima hipotesis nol jika mean sebenarnya lebih besar dari yang diuji.\n\n\n3. Uji Hipotesis untuk Umur Baterai\nSebuah sampel baterai diuji dengan standar deviasi tertentu dan mean umur tertentu. Tentukan: - Apakah ada bukti yang mendukung klaim umur baterai lebih dari 40 jam. - Nilai p-value dari pengujian ini. - Ukuran sampel yang dibutuhkan agar kesalahan tidak melebihi batas tertentu.\n\n\n4. Uji Hipotesis untuk Waktu Penerbangan\nMaskapai penerbangan mengklaim waktu terbang antara dua kota adalah 56 menit. Formulasikan uji hipotesis untuk membuktikan bahwa mean waktu penerbangan lebih dari 56 menit dan analisis kemungkinan kesalahan yang bisa terjadi.\n\n\n5. Uji Hipotesis untuk Persentase Produk Cacat\nSebuah perusahaan mengklaim bahwa kurang dari 5% dari barang yang dibuat adalah cacat. Dengan sampel 500 barang, diuji apakah klaim ini valid pada tingkat signifikansi tertentu.\n\n\n6. Uji Hipotesis untuk Latensi Internet\nDiberikan data latensi situs web dari 30 sampel, tentukan apakah latensi untuk: - Facebook lebih dari 350 ms. - Kaskus kurang dari 150 ms. - Perbedaan latensi Facebook dan Kaskus lebih dari 225 ms. Gunakan berbagai tingkat signifikansi untuk setiap pengujian.\n\n\n7. Confidence Interval untuk Preferensi Belanja Online\nDiberikan survei dengan 808 responden mengenai preferensi belanja online atau offline. Tentukan confidence interval 99% untuk proporsi responden yang lebih memilih belanja online untuk berbagai produk dan jasa.\n\n\n8. Uji Hipotesis Selisih Proporsi\nGunakan uji hipotesis selisih dua proporsi untuk menentukan apakah terdapat perbedaan signifikan antara preferensi belanja online untuk kategori makanan/minuman dan tiket bioskop.\n\n\n9. Uji Hipotesis untuk Penggunaan Uang Elektronik\nSurvei tahun 2019 menunjukkan berbagai proporsi penggunaan uang elektronik. Tentukan confidence interval 99% untuk berbagai layanan dan uji hipotesis apakah proporsi penggunaan satu layanan lebih tinggi dari yang lain.\n\n\n10. Uji Hipotesis Preferensi Belanja Online 2017 vs 2019\nBandingkan proporsi belanja online untuk berbagai kategori antara survei tahun 2017 dan 2019. Gunakan uji hipotesis dengan tingkat signifikansi 0.05 dan 0.01.\n\n\n11. Uji Hipotesis untuk Kecepatan Download ISP\nDiberikan hasil pengukuran kecepatan download dari 11 percobaan, tentukan: - Mean dan variansi sampel. - Confidence interval 99% dari mean. - Uji hipotesis apakah kecepatan download lebih dari 16 Mbps dengan tingkat signifikansi tertentu.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Problem Set</span>"
+    ]
+  },
+  {
+    "objectID": "problem-set/index.html#soal-set-10",
+    "href": "problem-set/index.html#soal-set-10",
+    "title": "Problem Set",
+    "section": "Soal set 10",
+    "text": "Soal set 10\n\n1. Regresi Linear untuk Biaya Promosi dan Penjualan\nSebuah perusahaan jasa cloud ingin mengetahui hubungan antara biaya promosi (X) dan nilai penjualan layanan cloud (Y). Data biaya promosi bulanan dan penjualan bulanan diberikan. - Gambarkan dalam diagram pencar (scatter plot). - Hitung \\(S_{xx}\\), \\(S_{xy}\\), dan \\(S_{yy}\\). - Buatlah persamaan regresi untuk memprediksi penjualan bulanan dari biaya promosi. - Berapa perkiraan tambahan penjualan per juta rupiah biaya promosi? - Buatlah selang kepercayaan 95% dan 99% untuk tambahan penjualan per biaya promosi dan jelaskan maknanya. - Gunakan uji hipotesis untuk menentukan apakah terdapat hubungan linear antara biaya promosi dan penjualan. - Perkirakan penjualan bulanan jika biaya promosi sebesar 35 juta rupiah, gunakan selang prediksi dengan tingkat kepercayaan 95%.\n\n\n2. Regresi Linear untuk Titik Didih Air dan Tekanan Barometrik\nData titik didih air \\((Y)\\) dan tekanan barometrik \\((X)\\) diberikan. - Gambarkan dalam diagram pencar. - Buat model regresi untuk menghubungkan titik didih air dengan tekanan barometrik. - Estimasikan parameter model regresi. - Tentukan tambahan tekanan barometrik per peningkatan titik didih 1 derajat. - Gunakan uji hipotesis dan koefisien korelasi untuk menentukan apakah terdapat hubungan linear. - Jika titik didih air di suatu tempat adalah 96 derajat, estimasikan tekanan barometriknya dengan estimasi titik dan selang kepercayaan.\n\n\n3. Regresi Linear untuk Kebutuhan Daya Listrik di Data Center\nData jumlah rak server aktif di 6 Data Center dan kebutuhan daya listrik total di tiap lokasi diberikan. - Gambarkan dalam diagram pencar. - Hitung \\(S_{xx}\\), \\(S_{xy}\\), dan \\(S_{yy}\\). - Hitung SSE (Jumlah Kuadrat Galat). - Hitung estimasi tak bias dari variansi \\(\\sigma^2\\) dengan rumus \\(\\sigma^2 = \\frac{SSE}{n-2}\\). - Buatlah persamaan regresi untuk memprediksi kebutuhan daya berdasarkan jumlah rak server aktif. - Tentukan koefisien determinasi \\(R^2\\) dan jelaskan maknanya. - Berapa perkiraan tambahan kebutuhan daya per rak server aktif? - Tentukan 95% dan 99% confidence interval untuk intercept persamaan regresi. - Tentukan 95% dan 99% confidence interval untuk tambahan kebutuhan daya per rak server aktif. - Gunakan uji hipotesis untuk menentukan apakah gradien regresi berbeda dari nol dengan tingkat signifikansi 5% dan 1%. - Perkirakan kebutuhan daya total jika Data Center baru di Batam memiliki 215 rak server aktif.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Problem Set</span>"
+    ]
+  },
+  {
+    "objectID": "problem-set/index.html#soal-set-11",
+    "href": "problem-set/index.html#soal-set-11",
+    "title": "Problem Set",
+    "section": "Soal Set 11",
+    "text": "Soal Set 11\n\n1. Pengaruh Tinggi terhadap Daya Pembangkit Listrik Tenaga Air\nUntuk menentukan pengaruh tinggi terhadap daya yang dihasilkan dalam suatu pembangkit listrik tenaga air, dilakukan observasi dengan data tinggi total (m) dan daya yang dihasilkan (MW/turbin). - Gunakan tingkat signifikansi tertentu untuk menguji apakah tinggi reservoir berpengaruh pada daya yang dihasilkan.\n\n\n2. Perbandingan Algoritma Estimasi Biaya Perangkat Lunak\nSebuah studi di Communications of the ACM (Vol. 30, No. 5, 1987) mempelajari algoritma yang berbeda dalam mengestimasi harga pengembangan perangkat lunak. Data error estimasi biaya untuk enam algoritma diuji pada delapan proyek perangkat lunak. - Gunakan uji statistik untuk menentukan apakah terdapat perbedaan signifikan dalam mean akurasi estimasi biaya antar algoritma. - Lakukan analisis residu untuk eksperimen ini. - Algoritma mana yang paling direkomendasikan untuk digunakan dalam praktik?\n\n\n3. Eksperimen Benjamin Franklin tentang Gaya Seret pada Kapal\nBenjamin Franklin melakukan eksperimen untuk mempelajari efek kedalaman air terhadap gaya seret pada kapal kecil. - Data waktu penyeberangan model kapal untuk berbagai kedalaman air tersedia. - Lakukan analisis variansi dan uji perbedaan waktu akibat kedalaman air. - Buatlah selang kepercayaan berganda untuk masing-masing perlakuan kedalaman air. - Gunakan uji Tukey untuk membandingkan kelompok-kelompok perlakuan. - Apakah terdapat pengaruh kedalaman air terhadap gaya seret kapal? Jelaskan alasannya.\nTo learn more about Quarto books visit https://quarto.org/docs/books.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Problem Set</span>"
+    ]
+  },
+  {
+    "objectID": "PSCalc/index.html",
+    "href": "PSCalc/index.html",
+    "title": "Proyek KMS PSCalc",
+    "section": "",
+    "text": "Aplikasi Yang Perlu di Install",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Proyek KMS PSCalc</span>"
+    ]
+  },
+  {
+    "objectID": "PSCalc/index.html#aplikasi-yang-perlu-di-install",
+    "href": "PSCalc/index.html#aplikasi-yang-perlu-di-install",
+    "title": "Proyek KMS PSCalc",
+    "section": "",
+    "text": "Editor Teks yang biasa digunakan. Beberapa yang direkomendasikan\n\nVisual Studio\nRStudio\n\nDocument Processing. Direkomendasikan:\n\nQuarto (Quarto.org)\n\nComputing platform. Direkomendasikan\n\nPython\nR\n\nWeb browser\nAI Chat\n\nChatGPT dan yang sejenis",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Proyek KMS PSCalc</span>"
+    ]
+  },
+  {
+    "objectID": "PSCalc/index.html#setup-awal-repositori-github-dan-repositori-lokal",
+    "href": "PSCalc/index.html#setup-awal-repositori-github-dan-repositori-lokal",
+    "title": "Proyek KMS PSCalc",
+    "section": "Setup Awal Repositori GitHub dan Repositori Lokal",
+    "text": "Setup Awal Repositori GitHub dan Repositori Lokal\n\nSetiap mahasiswa memasang aplikasi Github-Desktop (atau aplikasi git lainnya yang dikuasai) sambil membuka akun di GitHub\nMengunakan web browser Ketua Tim mem-fork Repositori (Template) PSCalc dari GitHub untuk menjadi Repositori GitHub Tim\nKetua Tim menset Page di Repositori GitHub Tim dengan entry branch main dan directory /docs lalu catat URL yang dihasilkan\nSetiap anggota meng-clone Rspositori GutHub Tim ke Repositori Lokal (Biasanya folder Documents/Github)\nBuka Terminal, pergi ke /pscalc directory di Repositori lokal, lalu generate documents dengan perintah quarto render\nAkses Web KMS PSCalc Tim melalui URL yang dihasilkan tadi\nBila berhasil, selamat, tim anda sudah siap mengembangkan KMS PSCalc Tim",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Proyek KMS PSCalc</span>"
+    ]
+  },
+  {
+    "objectID": "PSCalc/index.html#mengembangkan-kms-pscalc-tim-dengan-quarto",
+    "href": "PSCalc/index.html#mengembangkan-kms-pscalc-tim-dengan-quarto",
+    "title": "Proyek KMS PSCalc",
+    "section": "Mengembangkan KMS PSCalc Tim Dengan Quarto",
+    "text": "Mengembangkan KMS PSCalc Tim Dengan Quarto\n\nGunakan editor tex untuk membuat dokumen .qmd solusi dari setiap soal problem set. VSC memiliki ekstensi plugin quarto yang bisa dipasang untuk memudahkan visualisasi. Demikian juag RStudio\nLihat contoh Problem Set 1\nRender file .qmd karya anda menggunakan Quarto dan Review hasilnnya dengan browsing ke directory /docs sebagaimana di atas\nBila puas dengan hasilnya, gunakan Github-Desktop untuk meng-commit lalu push ke repository GitHub, untuk di approve Anggota tim yang lain\nAnda bisa mengakses versi baru KMS PSCalc melalui URL tadi",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Proyek KMS PSCalc</span>"
+    ]
+  },
+  {
+    "objectID": "PSCalc/index.html#rekomendasi-desain",
+    "href": "PSCalc/index.html#rekomendasi-desain",
+    "title": "Proyek KMS PSCalc",
+    "section": "Rekomendasi Desain",
+    "text": "Rekomendasi Desain\nProgram Komputer 1. Rancang program Python dan R yang bisa dikembangkan bertahap dan kolaboratif untuk mencari solusi dari berbagai kategori problem 2. Buat rencana pengembangan program ini sejalan dengan rencana kuliah.\n### **Rancangan Program Komputer untuk Solusi Problem Set Probabilitas dan Statistika**\nUntuk mendukung pembelajaran Probabilitas dan Statistika (P&S) secara bertahap dan kolaboratif, kita dapat mengembangkan program Python dan R yang dapat digunakan untuk menyelesaikan berbagai kategori problem set. Program ini akan dirancang modular, sehingga bisa dikembangkan secara bertahap sesuai dengan rencana kuliah, serta memungkinkan kontribusi dari mahasiswa dalam konteks VV-KMS-CPL.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Proyek KMS PSCalc</span>"
+    ]
+  },
+  {
+    "objectID": "PSCalc/index.html#struktur-pengembangan-program",
+    "href": "PSCalc/index.html#struktur-pengembangan-program",
+    "title": "Proyek KMS PSCalc",
+    "section": "1. Struktur Pengembangan Program",
+    "text": "1. Struktur Pengembangan Program\n\nA. Bahasa Pemrograman\n\nPython: Menggunakan NumPy, SciPy, pandas, Matplotlib, seaborn untuk perhitungan statistik dan visualisasi data.\nR: Menggunakan tidyverse, ggplot2, dplyr, stats untuk analisis data dan pemodelan statistik.\n\n\n\nB. Struktur Modul Program\n\n\n\n\n\n\n\n\nModul\nFungsi\nKategori Problem Set\n\n\n\n\nprobability.py / probability.R\nMenghitung probabilitas dasar, peluang bersyarat, Teorema Bayes\nProbabilitas Dasar\n\n\ndistributions.py / distributions.R\nSimulasi distribusi diskrit (Binomial, Poisson) dan kontinu (Normal, Eksponensial)\nVariabel Acak & Distribusi\n\n\ndescriptive_stats.py / descriptive_stats.R\nMenghitung statistik deskriptif (mean, median, standar deviasi)\nStatistika Deskriptif\n\n\nhypothesis_testing.py / hypothesis_testing.R\nMelakukan uji hipotesis (t-test, z-test, chi-square)\nInferensi Statistik\n\n\nregression.py / regression.R\nRegresi linier dan analisis korelasi\nRegresi & Korelasi\n\n\nmonte_carlo.py / monte_carlo.R\nSimulasi Monte Carlo untuk estimasi probabilitas\nSimulasi Probabilistik\n\n\nbig_data_analysis.py / big_data_analysis.R\nPemrosesan data besar dengan statistik\nAnalisis Data Besar",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Proyek KMS PSCalc</span>"
+    ]
+  },
+  {
+    "objectID": "PSCalc/index.html#rencana-pengembangan-program-sejalan-dengan-rencana-kuliah",
+    "href": "PSCalc/index.html#rencana-pengembangan-program-sejalan-dengan-rencana-kuliah",
+    "title": "Proyek KMS PSCalc",
+    "section": "2. Rencana Pengembangan Program Sejalan dengan Rencana Kuliah",
+    "text": "2. Rencana Pengembangan Program Sejalan dengan Rencana Kuliah\nAgar pengembangan program terstruktur dan bertahap, program akan dikembangkan mengikuti rencana kuliah 15 minggu:\n\n\n\n\n\n\n\n\n\nMinggu\nTopik Kuliah\nModul Program yang Dikembangkan\nFitur yang Ditambahkan\n\n\n\n\n1\nPendahuluan & Probabilitas Dasar\nprobability.py / probability.R\nKalkulator probabilitas dasar\n\n\n2\nAturan Dasar Probabilitas\nprobability.py / probability.R\nProbabilitas bersyarat & Teorema Bayes\n\n\n3\nVariabel Acak & Distribusi Diskrit\ndistributions.py / distributions.R\nDistribusi Binomial & Poisson\n\n\n4\nDistribusi Kontinu & Ekspektasi\ndistributions.py / distributions.R\nDistribusi Normal & Eksponensial\n\n\n5\nSampling & Distribusi Sampling\ndescriptive_stats.py / descriptive_stats.R\nSimulasi distribusi sampling\n\n\n6\nStatistika Deskriptif & Visualisasi Data\ndescriptive_stats.py / descriptive_stats.R\nMean, median, variansi, boxplot\n\n\n7\nEstimasi Parameter & Interval Kepercayaan\nhypothesis_testing.py / hypothesis_testing.R\nSelang kepercayaan\n\n\n8\nUTS & Evaluasi Program\nPengujian modul yang telah dikembangkan\n-\n\n\n9\nPengujian Hipotesis\nhypothesis_testing.py / hypothesis_testing.R\nUji-t, uji-z, uji chi-square\n\n\n10\nRegresi & Korelasi\nregression.py / regression.R\nModel regresi linier & korelasi\n\n\n11\nANOVA & Pengujian Multivariat\nregression.py / regression.R\nANOVA\n\n\n12\nProbabilitas dalam Machine Learning\nmonte_carlo.py / monte_carlo.R\nSimulasi probabilitas dalam AI\n\n\n13\nPemodelan Probabilistik & Big Data Analytics\nbig_data_analysis.py / big_data_analysis.R\nAnalisis data besar\n\n\n14\nProyek Akhir\nIntegrasi semua modul\nPengembangan aplikasi analisis data\n\n\n15\nUAS & Finalisasi Program\nEvaluasi proyek & dokumentasi KMS\n-",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Proyek KMS PSCalc</span>"
+    ]
+  },
+  {
+    "objectID": "PSCalc/index.html#contoh-implementasi-program-python-r",
+    "href": "PSCalc/index.html#contoh-implementasi-program-python-r",
+    "title": "Proyek KMS PSCalc",
+    "section": "3. Contoh Implementasi Program (Python & R)",
+    "text": "3. Contoh Implementasi Program (Python & R)\n\nA. Python\nimport numpy as np\nimport scipy.stats as stats\n\n# 1. Probabilitas Dasar\ndef probability_event(success_cases, total_cases):\n    return success_cases / total_cases\n\n# 2. Distribusi Binomial\ndef binomial_distribution(n, p, k):\n    return stats.binom.pmf(k, n, p)\n\n# 3. Distribusi Normal\ndef normal_distribution(x, mu, sigma):\n    return stats.norm.pdf(x, mu, sigma)\n\n# 4. Pengujian Hipotesis (z-test)\ndef z_test(sample_mean, population_mean, std_dev, sample_size):\n    z_score = (sample_mean - population_mean) / (std_dev / np.sqrt(sample_size))\n    p_value = 2 * (1 - stats.norm.cdf(abs(z_score)))\n    return z_score, p_value\n\n# Contoh penggunaan\nprint(\"Probabilitas mendapatkan angka genap dalam dadu:\", probability_event(3, 6))\nprint(\"Distribusi Binomial P(X=3) dengan n=10, p=0.5:\", binomial_distribution(10, 0.5, 3))\n\n\n\nB. R\n# 1. Probabilitas Dasar\nprobability_event &lt;- function(success_cases, total_cases) {\n  return(success_cases / total_cases)\n}\n\n# 2. Distribusi Binomial\nbinomial_distribution &lt;- function(n, p, k) {\n  return(dbinom(k, n, p))\n}\n\n# 3. Distribusi Normal\nnormal_distribution &lt;- function(x, mu, sigma) {\n  return(dnorm(x, mean=mu, sd=sigma))\n}\n\n# 4. Pengujian Hipotesis (z-test)\nz_test &lt;- function(sample_mean, population_mean, std_dev, sample_size) {\n  z_score &lt;- (sample_mean - population_mean) / (std_dev / sqrt(sample_size))\n  p_value &lt;- 2 * (1 - pnorm(abs(z_score)))\n  return(list(\"z_score\"=z_score, \"p_value\"=p_value))\n}\n\n# Contoh Penggunaan\nprint(paste(\"Probabilitas mendapatkan angka genap dalam dadu:\", probability_event(3, 6)))\nprint(paste(\"Distribusi Binomial P(X=3) dengan n=10, p=0.5:\", binomial_distribution(10, 0.5, 3)))",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Proyek KMS PSCalc</span>"
+    ]
+  },
+  {
+    "objectID": "PSCalc/index.html#kolaborasi-dan-pengelolaan-program",
+    "href": "PSCalc/index.html#kolaborasi-dan-pengelolaan-program",
+    "title": "Proyek KMS PSCalc",
+    "section": "4. Kolaborasi dan Pengelolaan Program",
+    "text": "4. Kolaborasi dan Pengelolaan Program\n\nA. Pengelolaan dengan KMS & GitHub\n\nMahasiswa berkontribusi secara bertahap dengan mengembangkan modul sesuai dengan topik mingguan.\nDosen dan asisten memvalidasi kode dan memberikan feedback.\nDokumentasi dalam KMS (Obsidian, Notion, atau Google Docs) untuk memudahkan pemahaman.\nCode repository di GitHub/GitLab agar mahasiswa dapat berkontribusi langsung.\n\n\n\nB. Evaluasi & Penggunaan AI\n\nAI digunakan untuk membantu debugging dan optimasi kode.\nReview peer-to-peer untuk memastikan kontribusi setiap mahasiswa.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Proyek KMS PSCalc</span>"
+    ]
+  },
+  {
+    "objectID": "PSCalc/index.html#kesimpulan",
+    "href": "PSCalc/index.html#kesimpulan",
+    "title": "Proyek KMS PSCalc",
+    "section": "Kesimpulan",
+    "text": "Kesimpulan\nProgram ini dirancang untuk: ✅ Berkembang bertahap dan kolaboratif sesuai rencana kuliah.\n✅ Memungkinkan personalisasi dan eksplorasi mahasiswa.\n✅ Menerapkan konsep VV-KMS-CPL dalam pengelolaan pengetahuan dan kontribusi mahasiswa.\n✅ Dapat digunakan dalam dunia nyata, tidak hanya teori.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Proyek KMS PSCalc</span>"
+    ]
+  },
+  {
+    "objectID": "PSCalc/index.html#langkah-praktis",
+    "href": "PSCalc/index.html#langkah-praktis",
+    "title": "Proyek KMS PSCalc",
+    "section": "Langkah Praktis",
+    "text": "Langkah Praktis",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Proyek KMS PSCalc</span>"
+    ]
+  },
+  {
+    "objectID": "PSCalc/index.html#langkah-praktis-pengajar-dan-mahasiswa-setiap-minggu-untuk-pengembangan-program-python-r-dalam-probabilitas-dan-statistika",
+    "href": "PSCalc/index.html#langkah-praktis-pengajar-dan-mahasiswa-setiap-minggu-untuk-pengembangan-program-python-r-dalam-probabilitas-dan-statistika",
+    "title": "Proyek KMS PSCalc",
+    "section": "Langkah Praktis Pengajar dan Mahasiswa Setiap Minggu untuk Pengembangan Program Python & R dalam Probabilitas dan Statistika",
+    "text": "Langkah Praktis Pengajar dan Mahasiswa Setiap Minggu untuk Pengembangan Program Python & R dalam Probabilitas dan Statistika\nUntuk memastikan program ini berkembang bertahap dan kolaboratif sesuai dengan VV-KMS-CPL, berikut adalah rencana mingguan yang mencakup peran pengajar dan mahasiswa.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Proyek KMS PSCalc</span>"
+    ]
+  },
+  {
+    "objectID": "PSCalc/index.html#tabel-rencana-praktis-mingguan",
+    "href": "PSCalc/index.html#tabel-rencana-praktis-mingguan",
+    "title": "Proyek KMS PSCalc",
+    "section": "📅 Tabel Rencana Praktis Mingguan",
+    "text": "📅 Tabel Rencana Praktis Mingguan\n\n\n\n\n\n\n\n\nMinggu\nAktivitas Pengajar\nAktivitas Mahasiswa\n\n\n\n\n1\n- Menjelaskan tujuan proyek & struktur pengembangan program.  - Memperkenalkan GitHub/GitLab untuk kolaborasi.  - Memberikan template program dasar untuk probabilitas.\n- Setup lingkungan coding (Python/R).  - Clone repository GitHub/GitLab.  - Menulis fungsi probabilitas sederhana (misal peluang kejadian, probabilitas bersyarat).\n\n\n2\n- Mengajarkan aturan probabilitas & Teorema Bayes.  - Memberikan contoh implementasi Teorema Bayes dalam Python/R.\n- Mengerjakan soal latihan probabilitas.  - Menambahkan kode untuk Teorema Bayes dalam repository.\n\n\n3\n- Memperkenalkan distribusi diskrit (Binomial, Poisson).  - Memberikan template program distribusi.\n- Mengembangkan kode distribusi Binomial & Poisson.  - Menguji kode dengan dataset simulasi.\n\n\n4\n- Mengajarkan distribusi kontinu (Normal, Eksponensial).  - Memberikan contoh visualisasi distribusi.\n- Menambahkan fungsi distribusi Normal & Eksponensial.  - Membuat grafik distribusi menggunakan Matplotlib (Python) atau ggplot2 (R).\n\n\n5\n- Mengajarkan sampling & distribusi sampling.  - Menyediakan dataset sampel.\n- Mengembangkan fungsi untuk simulasi Central Limit Theorem.  - Menggunakan Python/R untuk menampilkan distribusi hasil sampling.\n\n\n6\n- Mengajarkan statistika deskriptif & visualisasi data.  - Memberikan contoh analisis dataset real.\n- Mengembangkan fungsi mean, median, modus, variansi, boxplot dalam Python/R.  - Menulis laporan hasil analisis data.\n\n\n7\n- Mengajarkan estimasi parameter & selang kepercayaan.  - Memberikan contoh estimasi parameter dari dataset.\n- Menulis fungsi estimasi parameter (CI 95%).  - Mengimplementasikan simulasi interval kepercayaan.\n\n\n8\n- UTS & Evaluasi Program.  - Review perkembangan program hingga minggu ke-7.\n- Memperbaiki kode dan menambahkan dokumentasi dalam KMS/GitHub.\n\n\n9\n- Mengajarkan pengujian hipotesis (uji-t, uji-z, chi-square).  - Memberikan contoh studi kasus pengujian hipotesis.\n- Mengembangkan fungsi uji-t, uji-z, uji chi-square.  - Melakukan eksperimen pengujian hipotesis dengan dataset real.\n\n\n10\n- Mengajarkan regresi linier & korelasi.  - Memberikan contoh analisis regresi dalam industri.\n- Menulis kode model regresi linier sederhana dengan Python/R.  - Menyiapkan laporan analisis regresi pada dataset real.\n\n\n11\n- Memperkenalkan ANOVA & Pengujian Multivariat.  - Memberikan contoh perbandingan beberapa grup data.\n- Mengembangkan kode untuk ANOVA dalam Python/R.  - Melakukan analisis pada dataset industri.\n\n\n12\n- Mengajarkan Probabilitas dalam Machine Learning.  - Memberikan contoh Naïve Bayes dalam klasifikasi.\n- Mengembangkan model Naïve Bayes untuk klasifikasi data.  - Menguji model dengan dataset real.\n\n\n13\n- Memperkenalkan Pemodelan Probabilistik & Big Data Analytics.  - Menyediakan dataset besar untuk simulasi.\n- Menganalisis dataset besar dengan distribusi probabilitas.  - Mengoptimalkan kode statistik untuk big data.\n\n\n14\n- Presentasi Proyek Akhir.  - Menyediakan feedback & perbaikan kode.\n- Menyelesaikan proyek akhir berbasis data real.  - Membuat dokumentasi final di KMS & GitHub.\n\n\n15\n- UAS & Finalisasi Program.  - Menilai kontribusi setiap mahasiswa.\n- Mengumpulkan laporan akhir & dokumentasi kode.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Proyek KMS PSCalc</span>"
+    ]
+  },
+  {
+    "objectID": "PSCalc/index.html#peran-tanggung-jawab-dalam-pengembangan-program",
+    "href": "PSCalc/index.html#peran-tanggung-jawab-dalam-pengembangan-program",
+    "title": "Proyek KMS PSCalc",
+    "section": "🎯 Peran & Tanggung Jawab dalam Pengembangan Program",
+    "text": "🎯 Peran & Tanggung Jawab dalam Pengembangan Program\n\n1. Peran Pengajar\n✅ Menyiapkan Materi: Memberikan referensi teori dan contoh implementasi.\n✅ Menyiapkan Dataset: Menyediakan dataset real-world untuk latihan.\n✅ Mengevaluasi Kode Mahasiswa: Melakukan review kode dan memberikan umpan balik.\n✅ Membantu Mahasiswa Berkolaborasi: Mengajarkan penggunaan GitHub & KMS.\n✅ Memotivasi Mahasiswa: Memberikan challenge coding untuk meningkatkan kreativitas.\n\n\n\n2. Peran Mahasiswa\n✅ Mempelajari Konsep: Memahami teori sebelum menulis kode.\n✅ Menulis Kode Bertahap: Mengembangkan modul sesuai rencana mingguan.\n✅ Menggunakan KMS & GitHub: Mendokumentasikan konsep dan kode.\n✅ Berpartisipasi dalam Diskusi: Aktif di forum untuk bertanya dan memberikan masukan.\n✅ Mengerjakan Proyek Kolaboratif: Menyumbangkan kode dalam proyek besar.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Proyek KMS PSCalc</span>"
+    ]
+  },
+  {
+    "objectID": "PSCalc/index.html#alat-yang-digunakan",
+    "href": "PSCalc/index.html#alat-yang-digunakan",
+    "title": "Proyek KMS PSCalc",
+    "section": "🔧 Alat yang Digunakan",
+    "text": "🔧 Alat yang Digunakan\n📌 GitHub/GitLab → Untuk version control & kolaborasi kode.\n📌 Google Colab/Jupyter Notebook (Python) → Untuk coding interaktif.\n📌 RStudio (R) → Untuk analisis statistik dan visualisasi data.\n📌 Obsidian/Notion/Quarto (KMS) → Untuk dokumentasi materi dan solusi problem set.\n📌 ChatGPT/Copilot → Untuk membantu debugging dan optimalisasi kode.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Proyek KMS PSCalc</span>"
+    ]
+  },
+  {
+    "objectID": "PSCalc/index.html#manfaat-pendekatan-ini",
+    "href": "PSCalc/index.html#manfaat-pendekatan-ini",
+    "title": "Proyek KMS PSCalc",
+    "section": "🚀 Manfaat Pendekatan Ini",
+    "text": "🚀 Manfaat Pendekatan Ini\n✅ Meningkatkan Pemahaman Konseptual: Mahasiswa tidak hanya menghafal teori tetapi langsung mempraktikkannya.\n✅ Membantu Kolaborasi & Dokumentasi: KMS & GitHub memastikan mahasiswa dapat bekerja sama dalam mengembangkan program.\n✅ Membiasakan Mahasiswa dengan Proyek Nyata: Dengan menggunakan dataset real, mahasiswa dapat memahami bagaimana P&S diterapkan dalam dunia kerja.\n✅ Memotivasi Mahasiswa untuk Eksplorasi: Dengan tantangan mingguan, mahasiswa terdorong untuk mengembangkan solusi lebih kreatif.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Proyek KMS PSCalc</span>"
+    ]
+  },
+  {
+    "objectID": "PSCalc/index.html#kesimpulan-1",
+    "href": "PSCalc/index.html#kesimpulan-1",
+    "title": "Proyek KMS PSCalc",
+    "section": "Kesimpulan",
+    "text": "Kesimpulan\nDengan mengikuti rencana ini, pengajar dan mahasiswa memiliki panduan langkah demi langkah untuk membangun program Python & R yang modular, bertahap, dan kolaboratif. Ini bukan hanya sekadar latihan pemrograman, tetapi membantu mahasiswa memahami penerapan P&S dalam dunia nyata dengan pendekatan VV-KMS-CPL.\nTo learn more about Quarto books visit https://quarto.org/docs/books.\nThis is a book created from markdown and executable code.\nSee Knuth (1984) for additional discussion of literate programming.\n\n\n\n\nKnuth, Donald E. 1984. “Literate Programming.” Comput. J. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Proyek KMS PSCalc</span>"
+    ]
+  },
+  {
+    "objectID": "ujian/index.html",
+    "href": "ujian/index.html",
+    "title": "Soal Ujian",
+    "section": "",
+    "text": "Sedang disusun\nTo learn more about Quarto books visit https://quarto.org/docs/books.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Soal Ujian</span>"
+    ]
+  },
+  {
+    "objectID": "tugas-besar/index.html",
+    "href": "tugas-besar/index.html",
+    "title": "Tugas Besar Akhir Semester",
+    "section": "",
+    "text": "Sedang disusun\nTo learn more about Quarto books visit https://quarto.org/docs/books.",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Tugas Besar Akhir Semester</span>"
     ]
   },
   {
     "objectID": "summary.html",
     "href": "summary.html",
-    "title": "2  Summary",
+    "title": "7  Summary",
     "section": "",
     "text": "In summary, this book has no content whatsoever.",
     "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Summary</span>"
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Summary</span>"
     ]
   },
   {
